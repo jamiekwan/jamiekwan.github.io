@@ -2,14 +2,12 @@
 
 body{
 	border-top: 5px solid #99b9dd;
-
-	
 }
 
 #page{
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 a, a:active, a:focus, a:visited {
