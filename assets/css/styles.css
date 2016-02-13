@@ -5,8 +5,8 @@ body{
 }
 
 #page{
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 a, a:active, a:focus, a:visited {
@@ -38,7 +38,7 @@ a, a:active, a:focus, a:visited {
 
 #header{
 	padding-bottom: 5px;
-	padding-top: 5%;
+	padding-top: 0%;
 
 }
 
