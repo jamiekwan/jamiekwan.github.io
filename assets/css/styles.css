@@ -1,13 +1,14 @@
 @CHARSET "UTF-8";
 
 body{
-	border-top: 10px solid #99b9dd;
-	padding-top:10%;
+	border-top: 5px solid #99b9dd;
 }
 
 #page{
 	padding-left: 10%;
 	padding-right: 10%;
+	padding-top:10%;
+
 }
 
 a, a:active, a:focus, a:visited {
