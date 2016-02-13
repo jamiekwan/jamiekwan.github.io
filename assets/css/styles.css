@@ -8,8 +8,19 @@ body{
 #page{
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-top:2%;
+	padding-top:1%;
+}
 
+ul#navigation li{
+	display:inline;
+	padding-right:0;
+	margin-right:0;
+	font-style: "Helvetica", Helvetica, sans-serif;
+	font-size:15px;
+}
+
+ul#navigation .active-page{
+	font-weight: bold;
 }
 
 a, a:active, a:focus, a:visited {
