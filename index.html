@@ -1,7 +1,142 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Jamie Kwan | Home</title>
+
+	<!-- Using image gallery, http://www.bootstrapzen.com/item/351/filterable-image-gallery/ -->
+
+	<link href="http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<script src="assets/js/bootstrap-select.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css" />
+	<script src="assets/js/jquery.fluidbox.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/fluidbox.css" />
+
+	<link rel="shortcut icon" href="assets/images/favicon-jk.ico">
+    <link rel="apple-touch-icon" href="assets/images/favicon-jk.png"> 
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	
+	<script>
+	<!--
+	$(function(){
+		// $("#items a").fluidbox(); //lightbox effect 
+		
+		var $container = $("#items");
+		imagesLoaded("#items",function(){
+			$container.isotope({
+			  itemSelector: ".item",
+			  // layoutMode: 'fitRows'
+			  layoutMode: 'masonry'
+			});
+		});
+		
+		$("#select-filter").selectpicker({size: 6}).change(function(){
+			$container.isotope({ filter: "."+$(this).val(), transitionDuration: "1s" });
+			// $("#items a").fluidbox();
+		});
+	});
+	-->
+	</script>
+
+
+	
+	<section id="page" class="container"><!-- PAGE -->
+
+        <!-- Page Heading -->
+        <div id="header" class="row">
+            <div class="col-md-12">
+                    <img src="assets/images/logo.jpg" width=250px></img>
+                    <h1>I'm a designer / urbanist / storyteller&#42;</h1>
+                    <h2>&#42;I design spaces. I design things. I tell stories. I create experiences.</h2>
+                    <hr>
+            </div>
+        </div>
+        <!-- /.header -->
+
+		<section class="row"><!--.filter-->
+			<section class="col-xs-12" id="drop-down-menu">
+				<select name="category" id="select-filter">
+					<option value="all">All</option>
+					<option value="category1">Architecture</option>
+					<option value="category2">Digital Media</option>
+					<option value="category3">Exhibit</option>
+					<option value="category4">Graphics</option>
+				</select>
+			</section>
+		</section><!--.filter-->
+
+		<section id="items" class="row"> <!--.gallery-->
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category2 category5">
+				<a href="#">
+					<img src="assets/images/projects/ad-astra.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category3 category4">
+				<a href="#">
+					<img src="assets/images/projects/sandbox.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category3 category4 category5">
+				<a href="#">
+					<img src="assets/images/projects/cube-hotel.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category1 category3">
+				<a href="#">
+					<img src="assets/images/projects/creative-catalyst.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category2 category4">
+				<a href="#">
+					<img src="assets/images/projects/ctgu.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category1 category2 category3 category5">
+				<a href="#">
+					<img src="assets/images/6.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category4 category5">
+				<a href="#">
+					<img src="assets/images/7.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category3 category5">
+				<a href="#">
+					<img src="assets/images/8.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category1 category2">
+				<a href="#">
+					<img src="assets/images/9.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+			<section class="item col-xs-12 col-sm-6 col-md-4 all category2 category4">
+				<a href="#">
+					<img src="assets/images/10.jpg" alt="" class="img-responsive" />
+				</a>
+			</section>
+		</section><!--.gallery-->
+
+	</section> <!-- PAGE -->
+	
 </body>
 </html>

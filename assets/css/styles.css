@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+#page{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 10px;
+}
+
+a, a:active, a:focus, a:visited {
+	outline: none !important;
+}
+.gallery_nav {
+	margin: 25px 0;
+}
+
+#items > section {
+	margin: 15px 0;
+}
+#items > section a {
+	display: block;
+	position: relative;
+}
+
+/*Page Styles*/
+
+::selection {
+    color: white;
+    background: #99b9dd;
+}
+
+::-moz-selection {
+    color: white;
+    background: #99b9dd;
+}
+
+#header{
+	padding-bottom: 5px;
+	padding-top: 10%;
+
+}
+
+#header h1{
+	font-family:"Palatino Linotype", Palatino, serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#header h2{
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size:15px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#drop-down-menu {
+	font-style: italic;
+
+}
