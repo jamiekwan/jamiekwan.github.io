@@ -15,12 +15,19 @@ ul#navigation li{
 	display:inline;
 	padding-right:0;
 	margin-right:0;
-	font-family:"Palatino Linotype", Palatino, serif;
-	font-size:15px;
+	font-size:12px;
+	font-family: "Open Sans";
 }
 
+ul#navigation li a:hover{
+	text-decoration: none;
+	color: #637992;
+	border-bottom: 2px solid #637992;
+}
 ul#navigation .active-page{
-	font-weight: bold;
+	text-decoration: none;
+	color: #637992;
+	border-bottom: 2px solid #637992;
 }
 
 a, a:active, a:focus, a:visited {
@@ -68,7 +75,7 @@ a, a:active, a:focus, a:visited {
 }
 
 #drop-down-menu {
-	font-style: italic;
+	font-family: "Open Sans";
 }
 
 #footer{
