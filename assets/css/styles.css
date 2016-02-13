@@ -1,10 +1,15 @@
 @CHARSET "UTF-8";
 
+body{
+	border-top: 5px solid #99b9dd;
+
+	
+}
+
 #page{
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-top: 10px;
-	border-top: 5px solid #99b9dd;
 }
 
 a, a:active, a:focus, a:visited {
