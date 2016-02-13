@@ -7,6 +7,7 @@ body{
 #page{
 	padding-left: 10%;
 	padding-right: 10%;
+	padding-top:2%;
 
 }
 
@@ -29,17 +30,16 @@ a, a:active, a:focus, a:visited {
 
 ::selection {
     color: white;
-    background: #99b9dd;
+    background: #637992;
 }
 
 ::-moz-selection {
     color: white;
-    background: #99b9dd;
+    background: #637992;
 }
 
 #header{
 	padding-bottom: 5px;
-
 }
 
 #header h1{
@@ -57,5 +57,9 @@ a, a:active, a:focus, a:visited {
 
 #drop-down-menu {
 	font-style: italic;
+}
 
+#footer{
+	padding-bottom: 20px;
+	font-size:12px;
 }
