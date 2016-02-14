@@ -77,9 +77,11 @@ a, a:active, a:focus, a:visited {
 }
 
 .btn {
-	border: 0 ;
+	border: 0.5 ;
+	border-radius: 0;
 	background-color: #FEFEFA;
 	font-family: "Open Sans";
+	font-size:12px;
 }
 
 
