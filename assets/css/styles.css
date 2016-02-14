@@ -58,6 +58,7 @@ a, a:active, a:focus, a:visited {
 }
 
 #header{
+	padding-top:5%;
 	padding-bottom: 5px;
 }
 
@@ -76,6 +77,11 @@ a, a:active, a:focus, a:visited {
 
 #drop-down-menu {
 	font-family: "Open Sans";
+}
+
+.btn {
+	border: 1 ;
+	background-color: #FEFEFA;
 }
 
 #footer{
