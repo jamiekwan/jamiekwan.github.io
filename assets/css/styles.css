@@ -80,15 +80,9 @@ a {
 	font-weight: bold;
 }
 
-#body{
-	padding-top:5%;
-	padding-bottom: 5px;
-}
-
-#body h1{
-	font-family:"Palatino Linotype", Palatino, serif;
-	font-size: 20px;
-	font-weight: bold;
+#body p{
+	font-family:"Open Sans";
+	font-size: 12px;
 }
 
 #body h2{
