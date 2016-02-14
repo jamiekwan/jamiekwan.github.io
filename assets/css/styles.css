@@ -34,6 +34,9 @@ ul#navigation .active-page{
 a, a:active, a:focus, a:visited {
 	outline: none !important;
 }
+a {
+	color: #99b9dd;
+}
 
 .gallery_nav {
 	margin: 25px 0;
@@ -77,6 +80,24 @@ a, a:active, a:focus, a:visited {
 	font-weight: bold;
 }
 
+#body{
+	padding-top:5%;
+	padding-bottom: 5px;
+}
+
+#body h1{
+	font-family:"Palatino Linotype", Palatino, serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#body h2{
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size:15px;
+	font-style: italic;
+	font-weight: bold;
+}
+
 .btn {
 	border: 0.5 ;
 	border-radius: 0;
@@ -85,16 +106,40 @@ a, a:active, a:focus, a:visited {
 	font-size:12px;
 }
 
-
+/*
 select{
 	display:inline;
+}*/
+
+img {
+  -webkit-transition: all 0,3s ease;
+     -moz-transition: all 0,3s ease;
+       -o-transition: all 0,3s ease;
+      -ms-transition: all 0,3s ease;
+          transition: all 0,3s ease;
+}
+
+img:hover{
+/*	 -webkit-filter: opacity(0.3);*/
+ 	 -webkit-filter: ;
+
 }
 
 #footer{
+	text-decoration: none;
 	padding-bottom: 20px;
+	color: #99b9dd;
 	font-size:12px;
+	font-family: "Open Sans";
 }
 
-a {
+#footer a:hover{
+	text-decoration: none;
+	padding-bottom: 20px;
 	color: #99b9dd;
+	font-size:12px;
+	font-family: "Open Sans";
+	font-weight: bold;
 }
+
+
