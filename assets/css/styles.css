@@ -76,14 +76,13 @@ a, a:active, a:focus, a:visited {
 	font-weight: bold;
 }
 
-#drop-down-menu {
+.btn {
+	border: 0 ;
+	background-color: #FEFEFA;
 	font-family: "Open Sans";
 }
 
-.btn {
-	border: 1 ;
-	background-color: #FEFEFA;
-}
+
 select{
 	display:inline;
 }
