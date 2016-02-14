@@ -8,7 +8,7 @@ body{
 #page{
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-top:1%;
+	padding-top:10px;
 }
 
 ul#navigation li{
@@ -30,6 +30,7 @@ ul#navigation .active-page{
 	border-bottom: 2px solid #637992;
 }
 
+}
 a, a:active, a:focus, a:visited {
 	outline: none !important;
 }
@@ -83,8 +84,15 @@ a, a:active, a:focus, a:visited {
 	border: 1 ;
 	background-color: #FEFEFA;
 }
+select{
+	display:inline;
+}
 
 #footer{
 	padding-bottom: 20px;
 	font-size:12px;
+}
+
+a {
+	color: #99b9dd;
 }
