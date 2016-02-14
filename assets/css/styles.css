@@ -6,8 +6,8 @@ body{
 }
 
 #page{
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
 	padding-top:10px;
 }
 
@@ -34,6 +34,7 @@ ul#navigation .active-page{
 a, a:active, a:focus, a:visited {
 	outline: none !important;
 }
+
 .gallery_nav {
 	margin: 25px 0;
 }
