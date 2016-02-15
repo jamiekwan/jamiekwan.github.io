@@ -105,7 +105,8 @@ a {
 	font-weight: bold;
 }
 
-.btn {
+/*Styling for Drop Down*/
+.btn { 
 	border: 0.5 ;
 	border-radius: 0;
 	background-color: #FEFEFA;
