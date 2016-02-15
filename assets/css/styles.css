@@ -1,5 +1,13 @@
 @CHARSET "UTF-8";
 
+/* COLOURS
+
+#FEFEFA -- off-white
+#99b9dd -- light blue
+#637992 -- dark blue
+
+*/
+
 body{
 	border-top: 5px solid #99b9dd;
 	background-color: #FEFEFA;
