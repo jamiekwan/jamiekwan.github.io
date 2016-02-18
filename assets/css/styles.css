@@ -8,6 +8,8 @@
 
 */
 
+/* Page Styles */
+
 body{
 	border-top: 5px solid #99b9dd;
 	background-color: #FEFEFA;
@@ -18,6 +20,71 @@ body{
 	padding-right: 5%;
 	padding-top:10px;
 }
+
+a, a:active, a:focus, a:visited {
+	outline: none !important;
+}
+a {
+	color: #99b9dd;
+}
+
+::selection { /* Text Selection Highlight Colour */
+    color: white;
+    background: #637992;
+}
+
+::-moz-selection {
+    color: white;
+    background: #637992;
+}
+
+#typ-body p{ /* Used for CV page -- check if necessary, or if this can reset default bootstrap css */
+	padding-left: 0;
+	padding-right: 0;
+	padding-top:0;
+	font-family:"Open Sans";
+	font-size: 12px;
+}
+
+#typ-body li{
+	list-style-type: none;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top:0;
+	font-family:"Open Sans";
+	font-size: 12px;
+}
+
+#typ-body h2{
+	padding-left: 0;
+	padding-right: 0;
+	top:0;
+	font-family:"Open Sans";
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* Header */
+
+#header{
+	padding-top:5%;
+	padding-bottom: 5px;
+}
+
+#header h1{
+	font-family:"Palatino Linotype", Palatino, serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#header h2{
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size:15px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Navigation */
 
 ul#navigation li{
 	display:inline;
@@ -38,11 +105,67 @@ ul#navigation .active-page{
 	border-bottom: 2px solid #637992;
 }
 
+/* Image Gallery */
+
+.btn { /*Styling for Drop Down*/
+	border: 0.5 ;
+	border-radius: 0;
+	background-color: #FEFEFA;
+	font-family: "Open Sans";
+	font-size:12px;
 }
-a, a:active, a:focus, a:visited {
-	outline: none !important;
+
+.image-container{
+	position: relative;
 }
-a {
+
+#media-body{
+  background: rgba(99,121,146, 0.8);
+  bottom: 0;
+  color: white;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  vertical-align: center;
+  text-align: center;
+  top: 0;
+  right: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+#media-body:hover{
+	opacity: 1;
+}
+
+h2.text-label{
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Open Sans";
+	margin-top: 30px;
+	margin-bottom: 1em;
+
+}
+
+p.one-line{
+	text-align: center;
+	margin: 10%;
+	font-size: 12px;
+	font-style: italic;
+	font-family: "Open Sans";
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+.extension{
+	color: white;
+	font-family: "Open Sans";
+	font-size: 15px;
+}
+
+.extension:hover{
 	color: #99b9dd;
 }
 
@@ -58,65 +181,7 @@ a {
 	position: relative;
 }
 
-/*Page Styles*/
-
-::selection {
-    color: white;
-    background: #637992;
-}
-
-::-moz-selection {
-    color: white;
-    background: #637992;
-}
-
-#header{
-	padding-top:5%;
-	padding-bottom: 5px;
-}
-
-#header h1{
-	font-family:"Palatino Linotype", Palatino, serif;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-#header h2{
-	font-family: "Palatino Linotype", Palatino, serif;
-	font-size:15px;
-	font-style: italic;
-	font-weight: bold;
-}
-
-#typ-body p{
-	padding-left: 0;
-	padding-right: 0;
-	padding-top:0;
-	font-family:"Open Sans";
-	font-size: 12px;
-}
-
-#typ-body li{
-	list-style-type: none;
-
-}
-
-#typ-body h2{
-	padding-left: 0;
-	padding-right: 0;
-	padding-top:0;
-	font-family:"Open Sans";
-	font-size: 15px;
-	font-weight: bold;
-}
-
-.btn { /*Styling for Drop Down*/
-	border: 0.5 ;
-	border-radius: 0;
-	background-color: #FEFEFA;
-	font-family: "Open Sans";
-	font-size:12px;
-}
+/* Footer */
 
 #footer{
 	text-decoration: none;
