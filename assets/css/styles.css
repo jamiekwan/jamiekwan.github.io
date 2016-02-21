@@ -49,6 +49,12 @@ a {
 	font-size: 12px;
 }
 
+#typ-body p{
+	font-family:"Lato";
+	font-size: 12px;
+}
+
+
 #typ-body span{
 	padding-left: 0;
 	padding-right: 0;
