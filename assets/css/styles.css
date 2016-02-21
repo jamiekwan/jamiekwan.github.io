@@ -117,22 +117,28 @@ ul#navigation .active-page{
 
 .image-container{
 	position: relative;
+	  display: table;
+
 }
 
 #media-body{
-  background: rgba(99,121,146, 0.8);
-  bottom: 0;
+  background: rgba(99,121,146,0.8);
   color: white;
-  left: 0;
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  vertical-align: center;
   text-align: center;
   top: 0;
+  left: 0;
   right: 0;
+  bottom: 0;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+}
+
+.description{
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #media-body:hover{
