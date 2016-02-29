@@ -205,4 +205,10 @@ p.one-line{
 	font-family: "Open Sans";
 }
 
+/* TESTING */
+
+img.item-image:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
 
