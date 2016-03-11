@@ -140,24 +140,6 @@ ul#navigation .active-page{
     transition: 0.5s;
 }
 
-.title {
-  position: absolute;
-  top: 100;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #fff;
-
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: visibility opacity 0.5s;
-}
-
-#thumbnail-img:hover .title {
-  visibility: visible;
-  opacity: 1;
-}
-
 
 /* Footer */
 
