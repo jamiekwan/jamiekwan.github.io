@@ -151,7 +151,7 @@ ul#navigation .active-page{
 
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility opacity 0.2s;
+  -webkit-transition: visibility opacity 0.5s;
 }
 
 #thumbnail-img:hover .title {
