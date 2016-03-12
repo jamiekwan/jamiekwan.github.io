@@ -141,27 +141,6 @@ ul#navigation .active-page{
     transition: 0.5s;
 }
 
-#thumbnail-title{
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  display: table-cell;
-	vertical-align: middle;
-}
-
-#thumbnail-title h2{
-	font-family: "Open Sans";
-	font-size:12px;
-	color: white;
-
-}
 
 /* Footer */
 
