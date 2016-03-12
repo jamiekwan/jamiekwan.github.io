@@ -152,6 +152,8 @@ ul#navigation .active-page{
   bottom: 0;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  display: table-cell;
+	vertical-align: middle;
 }
 
 #thumbnail-title h2{
