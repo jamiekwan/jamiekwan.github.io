@@ -127,10 +127,7 @@ ul#navigation .active-page{
 	position: relative;
 }
 
-#thumbnail-img{
-	position: relative;
-	display: table;
-}
+
 
 #thumbnail-img img:hover{
 /*	-webkit-transform: scale(1.05);
@@ -141,6 +138,20 @@ ul#navigation .active-page{
     transition: 0.5s;
 }
 
+
+/* Icons */
+i {
+  height: 1.2em;
+  width: 1.2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+  i.cdn-flag {
+    background-image: url("/assets/images/emoji/cdn-flag.png"); }
 
 /* Footer */
 
