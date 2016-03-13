@@ -139,20 +139,6 @@ ul#navigation .active-page{
 }
 
 
-/* Icons */
-i {
-  height: 1.2em;
-  width: 1.2em;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  vertical-align: middle; 
-}
-
-  i.cdn-flag {
-    background-image: url("/assets/images/emoji/cdn-flag.png"); }
-
 /* Footer */
 
 #footer{
