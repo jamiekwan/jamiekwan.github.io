@@ -11,8 +11,10 @@
 /* Page Styles */
 
 body{
-	border-top: 5px solid #99b9dd;
-	background-color: #FEFEFA;
+	/*border-top: 5px solid #99b9dd;*/
+	border-top: 5px solid #637992;
+	/*background-color: #FEFEFA; /* baby power white */
+	background-color: #FFFAFA; /* snow white*/
 }
 
 #page{
