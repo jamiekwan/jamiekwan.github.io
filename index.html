@@ -5,8 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Jamie Kwan | Home</title>
 
-	<!-- Using image gallery, http://www.bootstrapzen.com/item/351/filterable-image-gallery/ -->
-
 	<link href="http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
@@ -37,21 +35,17 @@
 	
 	<script>
 	<!--
-	$(function(){
-		// $("#items a").fluidbox(); //lightbox effect 
-		
+	$(function(){		
 		var $container = $("#items");
 		imagesLoaded("#items",function(){
 			$container.isotope({
 			  itemSelector: ".item",
-			  // layoutMode: 'fitRows'
 			  layoutMode: 'masonry'
 			});
 		});
 		
 		$("#select-filter").selectpicker({size: 6}).change(function(){
 			$container.isotope({ filter: "."+$(this).val(), transitionDuration: "1s" });
-			// $("#items a").fluidbox();
 		});
 	});
 	-->
