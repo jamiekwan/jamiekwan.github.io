@@ -125,6 +125,10 @@ a {
 	color: #637992;
 }
 
+#icon i:hover{
+	opacity:0.9;
+}
+
 /* Header */
 
 #header{
