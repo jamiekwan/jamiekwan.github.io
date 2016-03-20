@@ -120,12 +120,12 @@ a {
 	text-align: center;
 }
 
-#icon i{
+#icon-404 i{
 	font-size:70px;
 	color: #637992;
 }
 
-#icon i:hover{
+#icon-404 i:hover{
 	opacity:0.8;
 }
 
