@@ -89,6 +89,7 @@ a {
 }
 
 #error-page h1{
+	color: #637992;
 	font-family:"Palatino Linotype", Palatino, serif;
 	font-size: 30px;
 	font-weight: bold;
@@ -96,6 +97,7 @@ a {
 }
 
 #error-page h2{
+	color: #637992;
 	font-family:"Lato";
 	font-size: 20px;
 	font-weight: bold;
@@ -103,6 +105,7 @@ a {
 }
 
 #error-page h3{
+	color: #637992;
 	font-family:"Lato";
 	font-size: 15px;
 	text-align: center;
@@ -110,8 +113,16 @@ a {
 	line-height: 5%;
 }
 
+#error-page h4{
+	color: #637992;
+	font-family:"Lato";
+	font-size: 20px;
+	text-align: center;
+}
+
 #icon i{
 	font-size:70px;
+	color: #637992;
 }
 
 /* Header */
@@ -160,9 +171,29 @@ ul#navigation .active-page{
 .btn { /*Styling for Drop Down*/
 	border: 0.5 ;
 	border-radius: 0;
-	background-color: #FEFEFA;
 	font-family: "Lato";
 	font-size:12px;
+}
+
+.btn2 { /*Styling for 404 Button*/
+	text-decoration: none;
+	border-radius: 1;
+	font-family: "Lato";
+	font-size:14px;
+	color: white;
+	background: #637992 ;  
+	padding: 7px;
+}
+
+.btn2:hover { /*Styling for 404 Button*/
+	text-decoration: none;
+	border-radius: 1;
+	font-family: "Lato";
+	font-size:14px;
+	color: white;
+	background: #99b9dd ;  
+	padding: 7px;
+
 }
 
 .gallery_nav {
