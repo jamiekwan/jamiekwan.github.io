@@ -84,6 +84,13 @@ a {
 	border-bottom: 2px solid #637992;
 }
 
+.404page h1{
+	font-family:"Palatino Linotype", Palatino, serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
 /* Header */
 
 #header{
