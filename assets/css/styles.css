@@ -84,6 +84,10 @@ a {
 	border-bottom: 2px solid #637992;
 }
 
+#mid-page{
+	padding-top: 10%;
+}
+
 #error-page h1{
 	font-family:"Palatino Linotype", Palatino, serif;
 	font-size: 30px;
@@ -104,6 +108,10 @@ a {
 	text-align: center;
 	font-style: italic;
 	line-height: 5%;
+}
+
+#icon i{
+	font-size:70px;
 }
 
 /* Header */
