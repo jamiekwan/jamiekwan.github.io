@@ -84,14 +84,14 @@ a {
 	border-bottom: 2px solid #637992;
 }
 
-.404page h1{
+#error-page h1{
 	font-family:"Palatino Linotype", Palatino, serif;
 	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
 }
 
-.404page h2{
+#error-page h2{
 	font-family:"Palatino Linotype", Palatino, serif;
 	font-size: 15px;
 	font-weight: bold;
