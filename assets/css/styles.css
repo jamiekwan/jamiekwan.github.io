@@ -257,10 +257,29 @@ ul#navigation .active-page{
 
 /* Project Pages */
 
-.project-info ul{
-	padding: 0;
-	list-style-type: none;
+#project-title span {
+	color: white;
+	background-color: #637992;
+	padding: 5px;
 }
+
+.project-info {
+	padding-top: 20px;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.project-subheading h4{
+	color: #637992;
+	font-family:"Lato";
+	font-size: 18px;
+	font-style: italic;
+}
+/*
+.key-image {
+	padding-bottom: 20px;
+}*/
+
 
 /* Footer */
 
