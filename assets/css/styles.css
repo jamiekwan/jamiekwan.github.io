@@ -271,9 +271,9 @@ ul#navigation .active-page{
 
 .project-subheading h4{
 	color: #637992;
-	font-family:"Lato";
+	font-family:"Palatino Linotype", Palatino, serif;
 	font-size: 18px;
-	font-style: italic;
+	font-weight: bold;
 }
 /*
 .key-image {
