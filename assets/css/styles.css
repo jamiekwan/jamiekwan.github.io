@@ -275,10 +275,27 @@ ul#navigation .active-page{
 	font-size: 18px;
 	font-weight: bold;
 }
-/*
-.key-image {
-	padding-bottom: 20px;
-}*/
+
+/* Project Image Galleries */
+
+
+#project-gallery li {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+#project-gallery li img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+#project-gallery li img.landscape {
+  max-width: none;
+  max-height: 100%;
+}
 
 
 /* Footer */
