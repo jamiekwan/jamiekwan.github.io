@@ -278,25 +278,21 @@ ul#navigation .active-page{
 
 /* Project Image Galleries */
 
+.small-img {
+	height: 100px;
+}
 
-/*#project-gallery li {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  margin: 10px;
-  display: inline-block;
-  vertical-align: top;
+.crop {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
 }
-#project-gallery li img {
-  max-width: 100%;
-  height: auto;
-  width: auto;
+
+.crop:hover {
+	opacity: 0.5;
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
 }
-#project-gallery li img.landscape {
-  max-width: none;
-  max-height: 100%;
-}
-*/
 
 /* Footer */
 
