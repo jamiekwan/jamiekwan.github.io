@@ -278,21 +278,43 @@ ul#navigation .active-page{
 
 /* Project Image Galleries */
 
-.small-img {
-	height: 100px;
+.sm-img {
+	padding-bottom: 20px;
 }
 
-.crop {
+.sm-img:hover {
+	opacity: 0.5;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.lg-img {
+
+}
+
+/*.img-gallery {
+	position: relative;
 	width: 150px;
 	height: 150px;
-	object-fit: cover;
+	overflow: hidden;
 }
 
-.crop:hover {
-	opacity: 0.5;
-	-webkit-transition: 0.5s;
-    transition: 0.5s;
+.img-gallery img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 100%;
+	width: auto;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
+
+.img-gallery img.portrait {
+	width: 100%;
+	height: auto;
+}*/
 
 /* Footer */
 
