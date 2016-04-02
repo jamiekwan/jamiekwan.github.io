@@ -279,7 +279,7 @@ ul#navigation .active-page{
 /* Project Image Galleries */
 
 .sm-img {
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 .sm-img:hover {
@@ -290,7 +290,7 @@ ul#navigation .active-page{
 }
 
 .lg-img {
-
+	padding-bottom: 30px;
 }
 
 /*.img-gallery {
