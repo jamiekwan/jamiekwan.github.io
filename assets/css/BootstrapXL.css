@@ -65,7 +65,7 @@
     }
 
     .col-xl-4 {
-        width: 33.33%;
+        width: 33.33%;  /*changed from 33.33333333%*/
     }
 
     .col-xl-3 {
