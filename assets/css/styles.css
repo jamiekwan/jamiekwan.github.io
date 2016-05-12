@@ -97,6 +97,15 @@ a {
 	opacity:0.8;
 }
 
+#icon-contact i{
+	font-size:50px;
+	color: #637992;
+}
+
+#icon-contact i:hover{
+	opacity:0.8;
+}
+
 /* Header */
 
 #header{
