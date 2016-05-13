@@ -12,9 +12,9 @@
 
 body{
 	/*border-top: 5px solid #99b9dd;*/
-	border-top: 5px solid #637992;
-	/*background-color: #FEFEFA; /* baby power white */
-	background-color: #FFFAFA; /* snow white*/
+	border-top: 7px solid #637992;
+	background-color: #FEFEFA; /* baby power white 
+	/*background-color: #FFFAFA;*/ /* snow white*/
 }
 
 #page{
@@ -56,7 +56,7 @@ a {
 }
 
 #typ-body p{
-	font-size: 15px;
+	font-size: 14px;
 }
 
 
@@ -64,7 +64,7 @@ a {
 	padding-left: 0;
 	padding-right: 0;
 	top:0;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: bold;
 }
 
@@ -132,7 +132,7 @@ ul#navigation li{
 	display:inline;
 	padding-right:0;
 	margin-right:0;
-	font-size:12px;
+	font-size:14px;
 	font-family: "Lato";
 }
 
@@ -299,7 +299,7 @@ ul#navigation .active-page{
 	text-decoration: none;
 	padding-bottom: 20px;
 	color: #99b9dd;
-	font-size:12px;
+	font-size:14px;
 	font-family: "Lato";
 }
 
@@ -307,7 +307,7 @@ ul#navigation .active-page{
 	text-decoration: none;
 	padding-bottom: 20px;
 	color: #637992;
-	font-size:12px;
+	font-size:14px;
 	font-family: "Lato";
 }
 
