@@ -40,95 +40,7 @@ a {
     background: #637992;
 }
 
-/* Page Typography */
-
-#typ-body{
-	font-family:"Lato";
-
-}
-
-#typ-body li{
-	list-style-type: none;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top:0;
-	font-size: 12px;
-}
-
-#typ-body p{
-	font-size: 14px;
-}
-
-
-#typ-body span{
-	padding-left: 0;
-	padding-right: 0;
-	top:0;
-	font-size: 14px;
-	font-weight: bold;
-}
-
-#typ-body h1{
-/*	font-family:"Palatino Linotype", Palatino, serif;
-	font-size: 20px;
-	font-weight: bold;*/
-	color: #637992;
-	font-family:"Palatino Linotype", Palatino, serif;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-#typ-body a{
-	color: #637992;
-}
-
-#typ-body a:hover{
-	text-decoration: none;
-	color: #637992;
-	border-bottom: 2px solid #637992;
-}
-
-#mid-page{
-	padding-top: 10%;
-}
-
-#icon-404 i{
-	font-size:70px;
-	color: #637992;
-}
-
-#icon-404 i:hover{
-	opacity:0.8;
-}
-
-#icon-contact i{
-	font-size:50px;
-	color: #637992;
-}
-
-#icon-contact i:hover{
-	opacity:0.8;
-}
-
-/* Header */
-
-#header{
-	padding-top:5%;
-	padding-bottom: 5px;
-}
-
-#header h1{
-	font-family:"Palatino Linotype", Palatino, serif;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-#header h2{
-	font-family: "Palatino Linotype", Palatino, serif;
-	font-size:16px;
-	font-style: italic;
-	font-weight: bold;
-}
+/* =========== Page Typography =========== */
 
 /* Navigation */
 
@@ -137,21 +49,133 @@ ul#navigation li{
 	padding-right:0;
 	margin-right:0;
 	font-size:14px;
-	font-family: "Lato";
+	font-family: "Lato"; }
+		ul#navigation li a:hover{
+			text-decoration: none;
+			color: #637992;
+			border-bottom: 2px solid #637992;
+		}
+		ul#navigation .active-page{
+			text-decoration: none;
+			color: #637992;
+			border-bottom: 2px solid #637992;
+		}
+/* Header */
+
+#header{
+	padding-top:5%;
+	padding-bottom: 5px; }
+		#header h1{
+			font-family:"Palatino Linotype", Palatino, serif;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		#header h2{
+			font-family: "Palatino Linotype", Palatino, serif;
+			font-size:16px;
+			font-style: italic;
+			font-weight: bold;
+		}
+
+#typ-body{
+	font-family:"Lato"; }
+
+		#typ-body p{
+			font-size: 14px;
+		}
+
+		#typ-body h4{
+			color: #637992;
+			font-family:"Palatino Linotype", Palatino, serif;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		#typ-body li{
+			list-style-type: none;
+			padding-left: 0;
+			padding-right: 0;
+			padding-top:0;
+			font-size: 12px;
+		}
+
+		#typ-body span{
+			padding-left: 0;
+			padding-right: 0;
+			top:0;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		#typ-body a{
+			color: #637992;
+		}
+
+		#typ-body a:hover{
+			text-decoration: none;
+			color: #637992;
+			border-bottom: 2px solid #637992;
+		}
+
+/* Project Pages */
+
+#project-title span {
+	color: white;
+	background-color: #637992;
+	padding: 5px;
+	font-family:"Lato";
 }
 
-ul#navigation li a:hover{
-	text-decoration: none;
-	color: #637992;
-	border-bottom: 2px solid #637992;
-}
-ul#navigation .active-page{
-	text-decoration: none;
-	color: #637992;
-	border-bottom: 2px solid #637992;
+.project-info {
+	padding-top: 20px;
+	font-style: italic;
+	font-size: 12px;
 }
 
-/* Image Gallery */
+.project-subheading h4{ /*same as typ-body*/
+	color: #637992;
+	font-family:"Palatino Linotype", Palatino, serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* Other Pages */
+
+/*
+#mid-page{
+	padding-top: 10%;
+}*/
+
+#icon-404 i{
+	font-size:70px;
+	color: #637992; }
+
+		#icon-404 i:hover{
+			opacity:0.8;
+		}
+
+
+/* Footer */
+
+#footer {
+	text-decoration: none;
+	padding-bottom: 20px;
+	color: #99b9dd;
+	font-size:14px;
+	font-family: "Lato"; }
+
+		#footer a:hover{
+			text-decoration: none;
+			padding-bottom: 20px;
+			color: #637992;
+			font-size:14px;
+			font-family: "Lato";
+		}
+
+
+
+/* =========== Image Gallery =========== */
 
 .btn { /*Styling for Drop Down*/
 	border: 0.5 ;
@@ -236,27 +260,6 @@ ul#navigation .active-page{
     transition: 0.5s;
 }
 
-/* Project Pages */
-
-#project-title span {
-	color: white;
-	background-color: #637992;
-	padding: 5px;
-}
-
-.project-info {
-	padding-top: 20px;
-	font-style: italic;
-	font-size: 12px;
-}
-
-.project-subheading h4{
-	color: #637992;
-	font-family:"Palatino Linotype", Palatino, serif;
-	font-size: 18px;
-	font-weight: bold;
-}
-
 /* Project Image Galleries */
 
 .sm-img {
@@ -296,22 +299,4 @@ ul#navigation .active-page{
 	width: 100%;
 	height: auto;
 }*/
-
-/* Footer */
-
-#footer{
-	text-decoration: none;
-	padding-bottom: 20px;
-	color: #99b9dd;
-	font-size:14px;
-	font-family: "Lato";
-}
-
-#footer a:hover{
-	text-decoration: none;
-	padding-bottom: 20px;
-	color: #637992;
-	font-size:14px;
-	font-family: "Lato";
-}
 
