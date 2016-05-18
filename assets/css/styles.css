@@ -177,6 +177,14 @@ ul#navigation li{
 
 /* =========== Image Gallery =========== */
 
+#img-01 { display:block; }
+#img-02 { display:none; }
+
+@media (max-width: 768px) {
+  #img-01 { display:none; }
+  #img-02 { display:block; }
+}
+
 .btn { /*Styling for Drop Down*/
 	border: 0.5 ;
 	border-radius: 0;
