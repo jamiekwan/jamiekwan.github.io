@@ -180,7 +180,7 @@ ul#navigation li{
 #img-01 { display:block; }
 #img-02 { display:none; }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #img-01 { display:none; }
   #img-02 { display:block; }
 }
