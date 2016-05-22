@@ -155,6 +155,9 @@ ul#navigation li{
 			opacity:0.8;
 		}
 
+#social-icon {
+	font-size:18px;
+}
 
 /* Footer */
 
@@ -169,8 +172,6 @@ ul#navigation li{
 			text-decoration: none;
 			padding-bottom: 20px;
 			color: #637992;
-			font-size:14px;
-			font-family: "Lato";
 		}
 
 
