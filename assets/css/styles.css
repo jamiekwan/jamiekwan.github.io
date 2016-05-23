@@ -131,7 +131,16 @@ ul#navigation li{
 	padding-top: 20px;
 	font-style: italic;
 	font-size: 12px;
+	font-family:"Lato";
 }
+	.project-info a{
+			color: #637992;
+		}
+	.project-info a:hover{
+			text-decoration: none;
+			color: #637992;
+			border-bottom: 2px solid #637992;
+		}
 
 .project-subheading h4{ /*same as typ-body*/
 	color: #637992;
