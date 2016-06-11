@@ -294,6 +294,20 @@ ul#navigation li{
 	padding-bottom: 30px;
 }
 
+@media (min-width: 970px) {
+ .profile-row {
+    position: relative;
+  }
+
+ .bottom-align-text {
+    position: absolute;
+    padding-bottom:10px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
 /*.img-gallery {
 	position: relative;
 	width: 150px;
