@@ -318,6 +318,8 @@ ul#navigation li{
   }
 }
 
+/* Profile Page */
+
 .bg-info {
 /*	background: white;*/
 	/*padding: 10px;*/
@@ -327,26 +329,23 @@ ul#navigation li{
 	padding-bottom: 0px;
 }
 
-/*.img-gallery {
-	position: relative;
-	width: 150px;
-	height: 150px;
-	overflow: hidden;
+.resume-icon img{
+	opacity:0.5;
 }
 
-.img-gallery img {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	height: 100%;
-	width: auto;
-	-webkit-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
+.resume-icon img:hover{
+	opacity:1;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: 0.3s;
+	transform: scale(1.1)
 }
 
-.img-gallery img.portrait {
-	width: 100%;
-	height: auto;
-}*/
+.resume-icon a{
+	text-decoration: none;
+}
+
+.resume-icon p{
+	color: #637992;
+}
+
 
