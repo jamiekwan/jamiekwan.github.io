@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<div align=center>
-	<strong>{{ page.title }}</strong>
-	<p class="meta text-muted"><i>{{ page.date | date_to_string }}</i></p>
+<div class="col-xs-12 col-md-8 col-md-offset-2 col-xl-8 col-xl-offset-2">
+	<div align=center>
+		<strong>{{ page.title }}</strong>
+		<p class="meta text-muted"><i>{{ page.date | date_to_string }}</i></p>
+		<br>
+	</div>
+
+	<div class="post">
+	  {{ content }}
+	</div>
+
 	<br>
+	<div align=center><p><a href="/notes">Back to Notes Index</a></p></div>
 </div>
-
-<div class="post">
-  {{ content }}
-</div>
-
-<br>
-<div align=center><p><a href="/notes">Return to Notes Index</a></p></div>
