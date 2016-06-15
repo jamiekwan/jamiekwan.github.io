@@ -1,4 +1,4 @@
 name: Jamie Kwan | Designer
 markdown: kramdown
 
-permalink: /blog/:year/:month/:day/:title
+permalink: /notes/:year/:month/:day/:title
