@@ -11,7 +11,17 @@ layout: default
 	<div class="post">
 	  {{ content }}
 	</div>
-
 	<br>
-	<div align=center><p><a href="/notes">Back to Notes Index</a></p></div>
+</div>
+
+<div class="col-xs-6 col-md-4 col-md-offset-2 col-xl-4 col-xl-offset-2">
+	<div><p><a href="/notes">Back to Archive</a></p></div>
+</div>
+
+<div class="col-xs-6 col-md-4 col-xl-4">
+	<div  align=right class="PageNavigation">
+	  {% if page.next.url %}
+	    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+	  {% endif %}
+	</div>
 </div>
