@@ -40,6 +40,12 @@ a {
     background: #637992;
 }
 
+#mobile-only { display:none; }
+
+@media (max-width: 970px) {
+  #mobile-only { display:block; }
+}
+
 /* =========== Page Typography =========== */
 
 /* Navigation */
