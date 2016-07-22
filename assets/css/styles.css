@@ -32,12 +32,12 @@ a {
 
 ::selection { /* Text Selection Highlight Colour */
     color: white;
-    background: #637992;
+    background: black;
 }
 
 ::-moz-selection {
     color: white;
-    background: #637992;
+    background: black;
 }
 
 #mobile-only { display:none; }
