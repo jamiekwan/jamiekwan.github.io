@@ -177,6 +177,10 @@ ul#navigation li{
 			opacity:0.8;
 		}
 
+#error-page h1{
+	font-family:"Ubuntu";
+}
+
 /* Footer */
 
 #footer a {
