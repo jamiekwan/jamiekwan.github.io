@@ -55,7 +55,7 @@ ul#navigation li{
 	padding-right:0;
 	margin-right:0;
 	font-size:14px;
-	font-family: "Lato"; }
+	font-family: "Cabin"; }
 		ul#navigation li a:hover{
 			text-decoration: none;
 			color: #637992;
@@ -73,20 +73,19 @@ ul#navigation li{
 	padding-top:5%;
 	padding-bottom: 5px; }
 		#header h1{
-			font-family:"Cabin";
+			font-family:"Ubuntu";
 			font-size: 24px;
-/*			font-weight: bold;
-*/		}
+		}
 
 		#header h2{
 			font-family: "Cabin";
 			font-size:16px;
 			font-style: italic;
-/*			font-weight: bold;
-*/		}
+			margin-top: 10px;
+		}
 
 #typ-body{
-	font-family:"Lato"; }
+	font-family:"Cabin"; }
 
 		#typ-body p{
 			font-size: 14px;
@@ -94,9 +93,8 @@ ul#navigation li{
 
 		#typ-body h4{
 			color: #637992;
-			font-family:"Palatino Linotype", Palatino, serif;
+			font-family:"Cabin";
 			font-size: 18px;
-			font-weight: bold;
 		}
 
 		#typ-body li{
@@ -131,14 +129,14 @@ ul#navigation li{
 	color: white;
 	background-color: #637992;
 	padding: 5px;
-	font-family:"Lato";
+	font-family:"Ubuntu";
 }
 
 .project-info {
-	padding-top: 20px;
+	padding-top: 10px;
 	font-style: italic;
 	font-size: 12px;
-	font-family:"Lato";
+	font-family:"Cabin";
 }
 	.project-info a{
 			color: #637992;
@@ -151,10 +149,10 @@ ul#navigation li{
 
 .project-subheading h4{ /*same as typ-body*/
 	color: #637992;
-	font-family:"Palatino Linotype", Palatino, serif;
+	font-family:"Cabin";
 	font-size: 18px;
-	font-weight: bold;
-}
+/*	font-weight: bold;
+*/}
 
 /* Other Pages */
 
@@ -178,7 +176,7 @@ ul#navigation li{
 	padding-bottom: 20px;
 	color: #637992;
 	font-size:14px;
-	font-family: "Lato"; }
+	font-family: "Cabin"; }
 
 		#footer a:hover{
 			text-decoration: none;
@@ -215,14 +213,14 @@ ul#navigation li{
 .btn { /*Styling for Drop Down*/
 	border: 0.5 ;
 	border-radius: 0;
-	font-family: "Lato";
+	font-family: "Cabin";
 	font-size:12px;
 }
 
 .btn2 { /*Styling for 404 Button*/
 	text-decoration: none;
 	border-radius: 1;
-	font-family: "Lato";
+	font-family: "Cabin";
 	font-size:16px;
 	color: white;
 	background: #99b9dd ;  
@@ -232,7 +230,7 @@ ul#navigation li{
 .btn2:hover { /*Styling for 404 Button*/
 	text-decoration: none;
 	border-radius: 1;
-	font-family: "Lato";
+	font-family: "Cabin";
 	font-size:16px;
 	color: white;
 	background: #637992 ;  
@@ -271,7 +269,7 @@ ul#navigation li{
    color: white; 
  /*  font-family:"Lato";
    font-size: 14px;*/
-   font: 300 14px/0.5 'Lato', sans-serif;   
+   font: 300 14px/0.5 'Cabin', sans-serif;   
    background: rgba(99,121,146,1);
    padding: 5px; 
 }
