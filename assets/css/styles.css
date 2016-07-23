@@ -155,6 +155,13 @@ ul#navigation li{
 /*	font-weight: bold;
 */}
 
+.short-thick-hr {
+	color: #637992;
+	background-color: #637992;
+	width: 25%;
+	height: 3px;
+}
+
 /* Other Pages */
 
 
