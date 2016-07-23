@@ -5,6 +5,7 @@
 #FEFEFA -- off-white
 #99b9dd -- light blue
 #637992 -- dark blue (99,121,146)
+#283645 -- true dark
 
 */
 
@@ -181,7 +182,7 @@ ul#navigation li{
 		#footer a:hover{
 			text-decoration: none;
 			padding-bottom: 20px;
-			color: #99b9dd;
+			color: #283645;
 		}
 
 #social-icon i{
