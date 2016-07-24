@@ -47,6 +47,11 @@ a {
   #mobile-only { display:block; }
 }
 
+@media (max-width: 970px) {
+	.wide-only { display:none; }	
+}
+
+
 /* =========== Page Typography =========== */
 
 /* Navigation */
@@ -161,6 +166,8 @@ ul#navigation li{
 	width: 25%;
 	height: 3px;
 }
+
+
 
 /* Other Pages */
 
@@ -364,5 +371,4 @@ ul#navigation li{
 .resume-icon p{
 	color: #637992;
 }
-
 
