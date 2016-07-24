@@ -15,9 +15,9 @@ Are these new types of people a non-social group invading the social civic squar
 I argue, no. They're merely communicating in a very different way within a physically social environment. While they may appear to be isolating themselves within a social space, they are actually connecting to others via a digital realm - connecting in many ways far greater than face-to-face. And this constant connection on a global scale has both positive and negative implications.
 
 <ol>
-<li>What is happening to the life of face-to-face communication? The materiality of everyday life?
-<li>How do we enable the benefits of this global digital connection to face-to-face communication? Should we?
-<li>How can the physical landscape of the city shape to the behaviour of these new types of mobile users, and what change does this make on urban design?
+<li>What is happening to the life of face-to-face communication? The materiality of everyday life?</li>
+<li>How do we enable the benefits of this global digital connection to face-to-face communication? Should we?</li>
+<li>How can the physical landscape of the city shape to the behaviour of these new types of mobile users, and what change does this make on urban design?</li>
 </ol>
 
 But a main question does come to mind when applied to Toronto City Hall: how can we restore civic qualities of civic spaces? Further, how can we crowdsource city building, and enable residents to shape their own neighbourhood? Where do these collective actions take place?
