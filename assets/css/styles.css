@@ -94,7 +94,7 @@ ul#navigation li{
 	font-family:"Cabin"; }
 
 		#typ-body p{
-			font-size: 14px;
+			font-size: 15px;
 		}
 
 		#typ-body h4{
@@ -108,14 +108,14 @@ ul#navigation li{
 			padding-left: 0;
 			padding-right: 0;
 			padding-top:0;
-			font-size: 14px;
+			font-size: 15px;
 		}
 
 		#typ-body span{
 			padding-left: 0;
 			padding-right: 0;
 			top:0;
-			font-size: 14px;
+			font-size: 15px;
 			font-weight: bold;
 		}
 
@@ -141,7 +141,7 @@ ul#navigation li{
 .project-info {
 	padding-top: 10px;
 	font-style: italic;
-	font-size: 12px;
+	font-size: 13px;
 	font-family:"Cabin";
 }
 	.project-info a{
