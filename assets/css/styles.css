@@ -11,6 +11,7 @@
 
 /* Page Styles */
 
+
 body{
 	/*border-top: 5px solid #99b9dd;*/
 /*	border-top: 7px solid #637992;
@@ -41,13 +42,15 @@ a {
 }
 
 ::selection { /* Text Selection Highlight Colour */
-    color: white;
-    background: #283645;
+    color: black;
+    /*background: #283645;*/
+    background: rgb(255,255,0);
 }
 
 ::-moz-selection {
-    color: white;
-    background: #283645;
+    color: black;
+    /*background: #283645;*/
+    background: rgb(255,255,0);   
 }
 
 #mobile-only { display:none; }
@@ -303,11 +306,11 @@ ul#navigation li{
 }
 
 #thumbnail-img h2 span {
-   color: white; 
+   color: black; 
  /*  font-family:"Lato";
    font-size: 14px;*/
    font: 300 14px/0.5 'Cabin', sans-serif;   
-   background: rgba(99,121,146,1);
+   background: rgba(255,255,0,1);
    padding: 5px; 
 }
 
@@ -326,6 +329,9 @@ ul#navigation li{
 #gallery-block:hover img{
 	visibility: visible;
 	opacity: 0.7;
+	-webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+    filter: grayscale(50%);
+
 	-webkit-transition: 0.5s;
     transition: 0.5s;
     -webkit-font-smoothing: antialiased;
@@ -391,4 +397,23 @@ ul#navigation li{
 .resume-icon p{
 	color: #637992;
 }
+
+
+
+/* Playful */
+.designer a:hover{
+    background: rgb(255,255,0);
+    
+}
+
+.urbanist span:hover{
+
+}
+
+.storyteller span:hover{
+
+}
+
+
+
 
