@@ -311,9 +311,11 @@ ul#navigation li{
 
 #gallery-block:hover img{
 	visibility: visible;
-	opacity: 0.5;
+	opacity: 0.7;
 	-webkit-transition: 0.5s;
     transition: 0.5s;
+    -webkit-font-smoothing: antialiased;
+	transform: scale(1.05)
 }
 
 /* Project Image Galleries */
