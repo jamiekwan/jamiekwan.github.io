@@ -88,6 +88,11 @@ ul#navigation li{
 		padding-top:8%;}
 	}
 
+@media (min-width: 750px) and (max-width: 1000px) {
+	.body-mobile{
+		padding-top:5%;}
+	}
+
 #header{
 	padding-top:7%;
 	padding-bottom: 5px; }
