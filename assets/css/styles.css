@@ -112,7 +112,8 @@ ul#navigation li{
 		}
 
 		#header span:hover.designer{
-			font-style: italic;
+			font-family: 'Montserrat', sans-serif;
+			/*text-transform: uppercase;*/
    			border-bottom: 5px solid rgb(255,255,0);
 
 		}
