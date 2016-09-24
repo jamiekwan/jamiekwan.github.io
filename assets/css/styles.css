@@ -113,7 +113,6 @@ ul#navigation li{
 
 		#header span:hover.designer{
 			font-style: italic;
-			/*color: #637992;*/
    			border-bottom: 5px solid rgb(255,255,0);
 
 		}

@@ -9,6 +9,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Cabin:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Slab:300" rel="stylesheet">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -62,7 +63,7 @@
         <div id="header" class="row">
             <div class="col-md-12 col-xl-12">
                     <a href="http://jamiemkwan.com"><img src="../assets/images/logo.png" width=250px></img></a>
-                    <h1>I'm a designer / urbanist / storyteller&#42;</h1>
+                    <h1>I'm a <span class="designer">designer</span> / <span class="urbanist">urbanist</span> / <span class="storyteller">storyteller</span>&#42;</h1>
                     <h2>&#42;I'm passionate about creating experiences that connect with people.</h2>
                     <hr>
             </div>
@@ -154,28 +155,6 @@
 		  {% for post in site.posts %}
 		    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 		  {% endfor %}
-		</ul>
-	</div>
-
-	<div id="mobile-only"><hr></div>
-
-	<div class="col-md-6">
-		<p><strong>Speaking Engagements</strong></p>
-		<ul class="posts">
-			<li><span>Apr 2016</span> » Immersive &amp; Multisensory Museum Experiences. Museums and the Web Conference, 2016. (Los Angeles) [<a href="http://mw2016.museumsandtheweb.com/session/immersive-and-multi-sensory-museum-experiences/">Link</a>]</li>
-			<br>
-			<li><span>Sep 2015</span> » Disrupting Design: Emerging Digital Mediums. George Brown College Ideation Bootcamp, 2015. (Toronto) [<a href="http://bit.ly/gbc-ideate">Slideshow</a>]</li>
-		</ul>
-		<hr>
-		<p><strong>Published Articles</strong></p>
-		<ul class="posts">
-			<li><span>Jun 2016</span> » Chu, J. H., Harley, D., <strong>Kwan, J.</strong>, McBride, M., &amp; Mazalek, A. (2016). Sensing History: Contextualizing Artifacts with Sensory Interactions and Narrative Design. <i>In Proceedings of the 2016 ACM Conference on Designing Interactive Systems</i> (pp. 1294-1302). ACM.</li>
-			<br>
-			<li><span>Apr 2016</span> » Harley, D., McBride, M., Chu, J. H., <strong>Kwan, J.</strong>, Nolan, J., &amp; Mazalek, A. (2016). Sensing context: Reflexive design principles for intersensory museum interactions. <i>MW2016: Museums and the Web 2016</i></li>
-			<br>
-			<li><span>Feb 2016</span> » <strong>Kwan, J.</strong>, Chu, J. H., Harley, D., McBride, M., &amp; Mazalek, A. (2016). Grasping Cultural Context through Multisensory Interactions. <i>In Proceedings of the TEI'16: Tenth International Conference on Tangible, Embedded, and Embodied Interaction</i> (pp. 482-487). ACM.</li>
-			<br>
-			<li><span>Feb 2016</span> » Harley, D., Chu, J. H., <strong>Kwan, J.</strong>, &amp; Mazalek, A. (2016). Towards a Framework for Tangible Narratives. <i>In Proceedings of the TEI'16: Tenth International Conference on Tangible, Embedded, and Embodied Interaction</i> (pp. 62-69). ACM.</li>
 		</ul>
 	</div>
 
