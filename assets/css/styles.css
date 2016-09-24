@@ -111,6 +111,20 @@ ul#navigation li{
 			margin-top: 10px;
 		}
 
+		#header span:hover.designer{
+			
+		}
+		#header span:hover.urbanist{
+   			font-family: 'Fjalla One', sans-serif;
+   			border-bottom: 5px solid rgb(255,255,0);
+	    	text-transform: uppercase;
+	    }
+		#header span:hover.storyteller{
+   			background: rgb(255,255,0);
+   			font-family: 'Roboto Slab', serif;
+		}
+
+
 #typ-body{
 	font-family:"Cabin"; }
 
@@ -329,6 +343,7 @@ ul#navigation li{
 #gallery-block:hover img{
 	visibility: visible;
 	opacity: 0.7;
+
 	-webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
     filter: grayscale(50%);
 
@@ -397,23 +412,6 @@ ul#navigation li{
 .resume-icon p{
 	color: #637992;
 }
-
-
-
-/* Playful */
-.designer a:hover{
-    background: rgb(255,255,0);
-    
-}
-
-.urbanist span:hover{
-
-}
-
-.storyteller span:hover{
-
-}
-
 
 
 
