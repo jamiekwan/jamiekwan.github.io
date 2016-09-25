@@ -14,8 +14,8 @@
 
 body{
 	/*border-top: 5px solid #99b9dd;*/
-/*	border-top: 7px solid #637992;
-*/	background-color: #FFFFFF; /* baby power white 
+	/*border-top: 7px solid #637992;*/
+	background-color: #FFFFFF; /* baby power white 
 	/*background-color: #FFFAFA;*/ /* snow white*/
 }
 
@@ -116,14 +116,15 @@ ul#navigation li{
 		}
 
 		#header span:hover.designer{
-			font-family: 'Montserrat', sans-serif;
-			/*text-transform: uppercase;*/
-   			border-bottom: 5px solid rgb(255,255,0);
+			font-family: 'Bitter', serif;
+			/*font-family: 'Noto Serif', serif;*/
+			font-size: 99%;
+   			border-top: 5px solid rgb(255,255,0);
 
 		}
 		#header span:hover.urbanist{
    			font-family: 'Fjalla One', sans-serif;
-   			border-top: 5px solid rgb(255,255,0);
+   			border-bottom: 5px solid rgb(255,255,0);
 	    	text-transform: uppercase;
 	    }
 		#header span:hover.storyteller{
