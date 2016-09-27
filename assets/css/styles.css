@@ -115,19 +115,25 @@ ul#navigation li{
 			margin-top: 10px;
 		}
 
-		#header span:hover.designer{
+		#header a.designer{color: #000000;}
+		#header a.urbanist{color: #000000;}
+		#header a.storyteller{color: #000000;}
+
+		#header a:hover.designer{
+			text-decoration: none;
 			font-family: 'Bitter', serif;
-			/*font-family: 'Noto Serif', serif;*/
 			font-size: 99%;
    			border-top: 5px solid rgb(255,255,0);
 
 		}
-		#header span:hover.urbanist{
+		#header a:hover.urbanist{
+			text-decoration: none;
    			font-family: 'Fjalla One', sans-serif;
    			border-bottom: 5px solid rgb(255,255,0);
 	    	text-transform: uppercase;
 	    }
-		#header span:hover.storyteller{
+		#header a:hover.storyteller{
+			text-decoration: none;
    			background: rgb(255,255,0);
    			font-family: 'Roboto Slab', serif;
 		}
