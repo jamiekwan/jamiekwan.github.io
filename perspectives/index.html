@@ -78,8 +78,18 @@
 	       	<div class="col-md-10">
 	       		<h4><b>I'm a big believer in life-long learning.</b></h4> And I believe learning is collaborative. Here, I share my perspective in different ways as a conversation that will forever be evolving. 
 	       	</div>
-
        	</div>
+       	
+       	<div id ="typ-body" class="row">
+			<div class="col-md-6">
+				<p><strong>Big Thoughts in Little Notes...</strong></p>	
+				<ul class="posts">
+				  {% for post in site.posts %}
+				    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+				  {% endfor %}
+				</ul>
+			</div>
+		</div> 
 
        	<div id="typ-body" class="row">
        		<div class="col-md-4">
@@ -146,20 +156,5 @@
 
 
 
-<!-- 
+ 
 
-**INSERT LINK TO "DEFAULT" LAYOUT**
-
-<div id ="typ-body" class="row">
-	<div class="col-md-6">
-		<p><strong>Big Thoughts in Little Notes...</strong></p>	
-		<ul class="posts">
-		  {% for post in site.posts %}
-		    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-		  {% endfor %}
-		</ul>
-	</div>
-
-</div> 
-
--->
