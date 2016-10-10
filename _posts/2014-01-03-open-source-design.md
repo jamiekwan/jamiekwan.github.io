@@ -2,6 +2,7 @@
 layout: post
 title: "Open Source Design in Architecture"
 date: 2014-01-03
+details: "Blog Post"
 ---
 
 So I've recently been doing a lot of research in the application of digital media in architectural design for my graduate school applications, and among several projects, I came across Paperhouses. And no - this isn't a post about using paper as a material for residential buildings - but rather the application of "open-source" technology in the realm of architecture. Paperhouse was created as a means of creating a free open-source platform for "world-class design", so that anyone around the world has access to a library of architectural plans, which would then be modified to match user-specific needs. While I think this idea of accessibility to design is great, the approach that Paperhouse (and several other projects) takes seems somewhat backwards...
