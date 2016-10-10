@@ -2,68 +2,38 @@
 layout: default
 title: Perspectives
 ---
+<div id="perspectives" class="row">
+	<div class="col-sm-12 col-md-10 col-md-offset-1 col-xl-10 col-xl-offset-1">
+		<ul class="posts" align="center">
+		{% for post in site.posts %}
+			<li>
+				<span class="article-date">{{ post.date | date_to_string }}</span><br>
+				<a href="{{ post.url }}" title="{{ post.title }}" class="article-name">{{ post.title }}</a><br>
+				<span class="article-details">OAA Perspectives: The Journal of the Ontario Association of Architects</span>
+			</li><br>
+			{% endfor %}
+			
+			<li>
+				<span class="article-date">Forthcoming, 2017</span><br>
+				<a href="#" class="article-name">Into the Millennial: Why Weirdos Will Change the World</a><br>
+				<span class="article-details">OAA Perspectives: The Journal of the Ontario Association of Architects</span>
+			</li><br>
 
-       	<div id ="project-title" class="row">
-        	<div class="col-md-12 col-xl-12">
-        		<h4><span>PERSPECTIVES</span></h4>
-        	</div>
-        </div>
+			<li>
+				<span class="article-date">Forthcoming, 2017</span><br>
+				<a href="#" class="article-name">Into the Millennial: Why Weirdos Will Change the World</a><br>
+				<span class="article-details">OAA Perspectives: The Journal of the Ontario Association of Architects</span>
+			</li><br>
+			<li>
+				<span class="article-date">Sep 2016</span><br>
+				<a href="http://www.nxtbook.com/naylor/OAAQ/OAAQ0316/index.php#/34" class="article-name">Form Follows Narrative: Pixel Experience in a Collective Environment</a><br>
+				<span class="article-details">OAA Perspectives: The Journal of the Ontario Association of Architects, 24(3)</span>
+			</li><br>
+		</ul>
+	</div>
+</div>
 
-       	<div id="typ-body" class="row">
-	       	<div class="col-md-10">
-	       		<h4><b>I'm a big believer in life-long learning.</b></h4> And I believe learning is collaborative. Here, I share my perspective in different ways as a conversation that will forever be evolving. 
-	       	</div>
-       	</div>
 
-       	<div id="typ-body" class="row">
-       		<div class="col-md-4">
-	       		<hr class="short-thick-hr" align="left">
-	       	</div>	
-	    </div>
-       	
-       	<!-- <div id ="typ-body" class="row">
-			<div class="col-md-8">
-				<p><strong>Big Thoughts in Little Notes...</strong></p>	
-				<ul class="posts">
-				  {% for post in site.posts %}
-				    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-				  {% endfor %}
-				</ul>
-			</div>
-		</div> 
-		
-		<hr> -->
-
-       	<div id="typ-body" class="row">
-       		<div class="col-sm-12 col-md-8 col-xl-8">
-       			<p><strong>Published Articles</strong></p>
-					<ul class="posts">
-						<li><span>Forthcoming</span> » <mark>Into the Millennial: Why Weirdos Will Change the World</mark>. OAA Perspectives: The Journal of the Ontario Association of Architects.</li>
-						<br>
-						<li><span>Sep 2016</span> » <mark>Form Follows Narrative: Pixel Experience in a Collective Environment</mark>. OAA Perspectives: The Journal of the Ontario Association of Architects. 24(<i>3</i>). [<a href="http://www.nxtbook.com/naylor/OAAQ/OAAQ0316/index.php#/34" target= _blank>Link</a>]</li>
-						<br>
-						<li><span>2013 - present</span> » Staff Writer, <a href="http://www.calculatedtraveller.com/author/jamie-m-kwan/" target= _blank>Calculated Traveller Online Magazine</a></li>
-					</ul>
-				<hr>
-       			<p><strong>Speaking Engagements</strong></p>
-					<ul class="posts">
-						<li><span>Apr 2016</span> » <mark>Immersive &amp; Multisensory Museum Experiences</mark>. Museums and the Web Conference, 2016. (Los Angeles) [<a href="http://mw2016.museumsandtheweb.com/session/immersive-and-multi-sensory-museum-experiences/" target= _blank>Link</a>]</li>
-						<br>
-						<li><span>Sep 2015</span> » <mark>Disrupting Design: Emerging Digital Mediums</mark>. George Brown College Ideation Bootcamp, 2015. (Toronto) [<a href="http://bit.ly/gbc-ideate" target= _blank>Presentation</a>]</li>
-					</ul>
-				<hr>
-				<p><strong>Academic Publications</strong></p>
-					<ul class="posts">
-						<li><span>Jun 2016</span> » Chu, J. H., Harley, D., <strong>Kwan, J.</strong>, McBride, M., &amp; Mazalek, A. (2016). <mark>Sensing History: Contextualizing Artifacts with Sensory Interactions and Narrative Design</mark>. <i>In Proceedings of the 2016 ACM Conference on Designing Interactive Systems</i> (pp. 1294-1302). ACM. [<a href="http://dl.acm.org/citation.cfm?id=2901829" target= _blank>Link</a>]</li>
-						<br>
-						<li><span>Apr 2016</span> » Harley, D., McBride, M., Chu, J. H., <strong>Kwan, J.</strong>, Nolan, J., &amp; Mazalek, A. (2016). <mark>Sensing context: Reflexive design principles for intersensory museum interactions</mark>. <i>MW2016: Museums and the Web 2016</i>. [<a href="http://mw2016.museumsandtheweb.com/paper/sensing-context-reflexive-design-principles-for-inter-sensory-museum-interactions/" target= _blank>Link</a>]</li>
-						<br>
-						<li><span>Feb 2016</span> » <strong>Kwan, J.</strong>, Chu, J. H., Harley, D., McBride, M., &amp; Mazalek, A. (2016). <mark>Grasping Cultural Context through Multisensory Interactions</mark>. <i>In Proceedings of the TEI'16: Tenth International Conference on Tangible, Embedded, and Embodied Interaction</i> (pp. 482-487). ACM. [<a href="http://dl.acm.org/citation.cfm?id=2856537" target= _blank>Link</a>]</li>
-						<br>
-						<li><span>Feb 2016</span> » Harley, D., Chu, J. H., <strong>Kwan, J.</strong>, &amp; Mazalek, A. (2016). <mark>Towards a Framework for Tangible Narratives</mark>. <i>In Proceedings of the TEI'16: Tenth International Conference on Tangible, Embedded, and Embodied Interaction</i> (pp. 62-69). ACM. [<a href="http://dl.acm.org/citation.cfm?id=2839471" target= _blank>Link</a>]</li>
-					</ul>
-       		</div>
-       	</div>
        
 
 

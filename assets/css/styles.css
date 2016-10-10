@@ -427,3 +427,33 @@ ul#navigation li{
 	color: #637992;
 }
 
+/* Perspectives */
+#perspectives{
+	font-family:"Cabin";
+	font-size: 15px; }
+
+		#perspectives li{
+			list-style-type: none; }
+
+		#perspectives span{
+			font-size:15px; }
+
+			#perspectives span.article-date{
+				font-weight:bold;
+				color: rgba(0,0,0, 0.6); }
+
+			#perspectives span.article-details{
+				font-style:italic;
+				color: rgba(0,0,0, 0.6); }
+
+		#perspectives a.article-name{
+			color: #637992;
+			font-size: 22px;
+			background-color: rgba(255,255,0, 0.2);
+			font-family: 'Roboto Slab', serif; }
+
+			#perspectives a:hover{
+				text-decoration: none;
+				color: #283645;
+				border-bottom: 2px solid #283645; }
+
