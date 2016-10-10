@@ -21,7 +21,7 @@ title: Perspectives
 		{% for post in site.posts %}
 			<li>
 				<span class="article-date">{{ post.date | date_to_string }}</span><br>
-				<a href="{{ post.url }}" title="{{ post.title }}" class="article-name">{{ post.title }}</a><br>
+				<a href="{{ post.url }}" title="{{ post.title }}" class="article-name" target="_blank">{{ post.title }}</a><br>
 				<span class="article-details">{{ post.details }}</span>
 			</li><br>
 			{% endfor %}
