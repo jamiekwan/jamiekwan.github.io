@@ -6,14 +6,6 @@ title: Perspectives
 	<div class="col-sm-12 col-md-10 col-md-offset-1 col-xl-10 col-xl-offset-1">
 		<ul class="posts" align="center">
 
-		{% for post in site.posts %}
-			<li>
-				<span class="article-date">{{ post.date | date_to_string }}</span><br>
-				<a href="{{ post.url }}" title="{{ post.title }}" class="article-name">{{ post.title }}</a><br>
-				<span class="article-details">{{ post.details }}</span>
-			</li><br>
-			{% endfor %}
-
 			<li>
 				<span class="article-date">Forthcoming, 2017</span><br>
 				<a href="#" class="article-name">Into the Millennial: Why Weirdos Will Change the World</a><br>
@@ -24,7 +16,17 @@ title: Perspectives
 				<a href="http://www.nxtbook.com/naylor/OAAQ/OAAQ0316/index.php#/34" class="article-name">Form Follows Narrative: Pixel Experience in a Collective Environment</a><br>
 				<span class="article-details">OAA Perspectives: The Journal of the Ontario Association of Architects, 24(3)</span>
 			</li><br>
+
 			
+		{% for post in site.posts %}
+			<li>
+				<span class="article-date">{{ post.date | date_to_string }}</span><br>
+				<a href="{{ post.url }}" title="{{ post.title }}" class="article-name">{{ post.title }}</a><br>
+				<span class="article-details">{{ post.details }}</span>
+			</li><br>
+			{% endfor %}
+
+
 		</ul>
 	</div>
 </div>

@@ -2,6 +2,7 @@
 layout: post
 title: "Laser Archaeology Changing the World"
 date: 2014-03-02
+details: "Blog Post"
 ---
 
 For the past 10-15 years, my house has had a subscription to National Geographic magazine. Some we got ourselves. Most we got as gifts. They've added up to quite a long period, but either way we love the photographs and articles they publish. We're nerds like that.

@@ -2,6 +2,7 @@
 layout: post
 title: "MRP Research: Restoring the Civic Square"
 date: 2014-09-24
+details: "Blog Post"
 ---
 
 When Toronto's new City Hall opened in 1965, it became a place where Torontonians congregated, socialized, protested, and in general, exercised their civil character. It was a place where democracy was truly represented, and brings to mind the social life of the Ancient Greek Agora - where democracy was first brought to life. The architect, Viljo Revell, even designed the new City Hall to formally represent democracy: two towers cradling the council chamber, brought to the exterior of the building, extending into Nathan Phillips Square in full public access. 
