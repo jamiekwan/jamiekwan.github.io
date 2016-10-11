@@ -431,7 +431,9 @@ ul#navigation li{
 #notes{
 	font-family:"Cabin";
 	font-size: 15px; }
-
+		#notes h1{
+			font-family:"Ubuntu";
+			font-size: 22px; }
 		#notes li{
 			list-style-type: none; }
 
