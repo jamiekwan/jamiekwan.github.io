@@ -2,6 +2,7 @@
 layout: default
 title: Writing &amp; Speaking
 ---
+
 <div id="notes" class="row">
 	<div class="col-sm-12 col-md-10 col-md-offset-1 col-xl-10 col-xl-offset-1">
 		<ul class="posts" align="center">
@@ -17,14 +18,20 @@ title: Writing &amp; Speaking
 				<span class="article-details">OAA Perspectives: The Journal of the Ontario Association of Architects, 24(3)</span>
 			</li><br>
 
+
 			
 		{% for post in site.posts %}
+		{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+		{% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+		{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+		{% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+
 			<li>
 				<span class="article-date">{{ post.date | date_to_string }}</span><br>
 				<a href="{{ post.url }}" title="{{ post.title }}" class="article-name" target="_blank">{{ post.title }}</a><br>
 				<span class="article-details">{{ post.details }}</span>
 			</li><br>
-			{% endfor %}
+		{% endfor %}
 
 
 		</ul>
