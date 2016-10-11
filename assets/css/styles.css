@@ -458,4 +458,8 @@ ul#navigation li{
 				text-decoration: none;
 				color: #283645;
 				border-bottom: 2px solid #283645; }
-
+		#notes span.article-name{
+			color: #283645;
+			font-size: 22px;
+			background-color: rgba(255,255,0, 0.2);
+			font-family: 'Roboto Slab', serif; }

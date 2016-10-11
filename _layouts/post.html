@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div id ="typ-body" class="row">
+<div id ="notes" class="row">
 	<div class="col-xs-12 col-md-8 col-md-offset-2 col-xl-8 col-xl-offset-2">
 		<div align=center>
-			<strong>{{ page.title }}</strong>
-			<p class="meta text-muted"><i>{{ page.date | date_to_string }}</i></p>
+			<span class="article-name"><strong>{{ page.title }}</strong></span>
+			<p class="meta text-muted"><i>{{ page.date | date_to_long_string }}</i></p>
 			<br>
 		</div>
 
