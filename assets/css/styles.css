@@ -427,32 +427,32 @@ ul#navigation li{
 	color: #637992;
 }
 
-/* Perspectives */
-#perspectives{
+/* Writing/Notes */
+#notes{
 	font-family:"Cabin";
 	font-size: 15px; }
 
-		#perspectives li{
+		#notes li{
 			list-style-type: none; }
 
-		#perspectives span{
+		#notes span{
 			font-size:15px; }
 
-			#perspectives span.article-date{
+			#notes span.article-date{
 				font-weight:bold;
 				color: rgba(0,0,0, 0.6); }
 
-			#perspectives span.article-details{
+			#notes span.article-details{
 				font-style:italic;
 				color: rgba(0,0,0, 0.6); }
 
-		#perspectives a.article-name{
-			color: #637992;
+		#notes a.article-name{
+			color: #283645;
 			font-size: 22px;
 			background-color: rgba(255,255,0, 0.2);
 			font-family: 'Roboto Slab', serif; }
 
-			#perspectives a:hover{
+			#notes a:hover{
 				text-decoration: none;
 				color: #283645;
 				border-bottom: 2px solid #283645; }
