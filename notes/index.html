@@ -13,7 +13,7 @@ title: Writing &amp; Speaking
 				<span class="article-details">OAA Perspectives: The Journal of the Ontario Association of Architects</span>
 			</li><br>
 			<li>
-				<span class="article-date">Sep 2016</span><br>
+				<span class="article-date">September 2016</span><br>
 				<a href="http://www.nxtbook.com/naylor/OAAQ/OAAQ0316/index.php#/34" target="_blank" class="article-name">Form Follows Narrative: Pixel Experience in a Collective Environment</a><br>
 				<span class="article-details">OAA Perspectives: The Journal of the Ontario Association of Architects, 24(3)</span>
 			</li><br>
@@ -27,7 +27,7 @@ title: Writing &amp; Speaking
 		{% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
 			<li>
-				<span class="article-date">{{ post.date | date_to_string }}</span><br>
+				<span class="article-date">{{ post.date | date_to_long_string }}</span><br>
 				<a href="{{ post.url }}" title="{{ post.title }}" class="article-name" target="_blank">{{ post.title }}</a><br>
 				<span class="article-details">{{ post.details }}</span>
 			</li><br>
