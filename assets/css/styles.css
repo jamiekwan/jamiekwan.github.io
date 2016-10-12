@@ -438,7 +438,7 @@ ul#navigation li{
 		}
 		#notes li{
 			list-style-type: none; 
-			padding: 0;
+			padding-left: 0;
 		}
 
 		#notes span{
