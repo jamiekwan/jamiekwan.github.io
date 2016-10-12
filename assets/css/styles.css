@@ -184,8 +184,7 @@ ul#navigation li{
 	color: white;
 	background-color: #637992;
 	padding: 5px;
-	font-family:"Bitter";
-	text-transform: lowercase;
+	font-family:"Ubuntu";
 }
 
 .project-info {
@@ -443,7 +442,8 @@ ul#navigation li{
 
 			#notes span.article-date{
 				font-weight:bold;
-				color: rgba(0,0,0, 0.6); }
+				color: rgba(0,0,0, 0.6);
+				font-style: "Montserrat", sans serif; }
 
 			#notes span.article-details{
 				font-style:italic;
