@@ -184,7 +184,8 @@ ul#navigation li{
 	color: white;
 	background-color: #637992;
 	padding: 5px;
-	font-family:"Ubuntu";
+	font-family:"Bitter";
+	text-transform: capitalize;
 }
 
 .project-info {
