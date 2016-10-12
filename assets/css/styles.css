@@ -436,8 +436,9 @@ ul#navigation li{
 			font-family:"Ubuntu", sans-serif;
 			font-size: 22px; 
 		}
-		#notes li{
+		#notes ul li{
 			list-style-type: none; 
+			padding-left: 0 !important;
 		}
 
 		#notes span{
