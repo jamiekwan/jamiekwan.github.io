@@ -412,12 +412,12 @@ ul#navigation li{
 	opacity:0.8;
 }
 
-.resume-icon img:hover{
-	opacity:1;
-	-webkit-font-smoothing: antialiased;
-	-webkit-transition: 0.3s;
-	transform: scale(1.1)
-}
+	.resume-icon img:hover{
+		opacity:1;
+		-webkit-font-smoothing: antialiased;
+		-webkit-transition: 0.3s;
+		transform: scale(1.1)
+	}
 
 .resume-icon a{
 	text-decoration: none;
@@ -428,6 +428,7 @@ ul#navigation li{
 }
 
 /* Writing/Notes */
+
 #notes{
 	font-family:"Cabin", sans-serif;
 }
