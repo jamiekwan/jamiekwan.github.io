@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Form Follows Narrative: Pixel Experience in a Collective Environment"
-date: 2016-09
+date: 2016-09-30
 details: "OAA Perspectives: The Journal of the Ontario Association of Architects, 24(3)"
 ---
 
