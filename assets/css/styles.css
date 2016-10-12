@@ -429,11 +429,6 @@ ul#navigation li{
 
 /* Writing/Notes */
 
-.posts ul{
-	list-style-position: inside;
-	padding-left: 0;
-}
-
 #notes{
 	font-family:"Cabin", sans-serif;
 }
