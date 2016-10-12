@@ -444,7 +444,7 @@ ul#navigation li{
 			font-size:15px; 
 		}
 
-			#notes span.article-date{
+			#notes h2 span.article-date{
 				font-weight:bold;
 				color: rgba(0,0,0, 0.6);
 			}
