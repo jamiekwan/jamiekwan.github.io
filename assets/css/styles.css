@@ -429,12 +429,11 @@ ul#navigation li{
 
 /* Writing/Notes */
 #notes{
-	font-family:"Cabin";
-	font-size: 15px; 
+	font-family:"Cabin", sans-serif;
 }
 		#notes h2{
-			font-family:"Ubuntu";
-			font-size: 50px; 
+			font-family:"Ubuntu", sans-serif;
+			font-size: 22px; 
 		}
 		#notes li{
 			list-style-type: none; 
@@ -461,7 +460,7 @@ ul#navigation li{
 			font-family: 'Roboto Slab', serif; 
 		}
 
-			#notes a:hover{
+			#notes a.article-name:hover{
 				text-decoration: none;
 				color: #283645;
 				border-bottom: 2px solid #283645; 
