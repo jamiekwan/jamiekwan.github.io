@@ -429,6 +429,11 @@ ul#navigation li{
 
 /* Writing/Notes */
 
+.posts ul{
+	list-style-position: inside;
+	padding-left: 0;
+}
+
 #notes{
 	font-family:"Cabin", sans-serif;
 }
@@ -436,10 +441,8 @@ ul#navigation li{
 			font-family:"Ubuntu", sans-serif;
 			font-size: 22px; 
 		}
-		#notes ul li{
+		#notes li{
 			list-style-type: none; 
-			padding-left: 0;
-			list-style-position: outside;
 		}
 
 		#notes span{
