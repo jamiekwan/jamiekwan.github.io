@@ -439,7 +439,7 @@ ul#navigation li{
 		#notes ul li{
 			list-style-type: none; 
 			padding-left: 0;
-			list-style-position: inside;
+			list-style-position: outside;
 		}
 
 		#notes span{
