@@ -6,17 +6,12 @@
 #99b9dd -- light blue
 #637992 -- dark blue (99,121,146)
 #283645 -- true dark
-
 */
 
 /* Page Styles */
 
-
 body{
-	/*border-top: 5px solid #99b9dd;*/
-	/*border-top: 7px solid #637992;*/
-	background-color: #FFFFFF; /* baby power white 
-	/*background-color: #FFFAFA;*/ /* snow white*/
+	background-color: #FFFFFF;
 }
 
 mark{
@@ -47,13 +42,11 @@ a {
 
 ::selection { /* Text Selection Highlight Colour */
     color: black;
-    /*background: #283645;*/
     background: rgb(255,255,0);
 }
 
 ::-moz-selection {
     color: black;
-    /*background: #283645;*/
     background: rgb(255,255,0);   
 }
 
@@ -66,8 +59,6 @@ a {
 @media (max-width: 970px) {
 	.wide-only { display:none; }	
 }
-
-/* =========== Page Typography =========== */
 
 /* Navigation */
 
@@ -206,8 +197,7 @@ ul#navigation li{
 	color: #637992;
 	font-family:"Cabin";
 	font-size: 18px;
-/*	font-weight: bold;
-*/}
+}
 
 .short-thick-hr {
 	color: #637992;
@@ -328,15 +318,12 @@ ul#navigation li{
    top: -10px; 
    left: 5%; 
    width: 100%; 
-/*   text-align: center;*/
    visibility: hidden;
    opacity: 0;
 }
 
 #thumbnail-img h2 span {
    color: black; 
- /*  font-family:"Lato";
-   font-size: 14px;*/
    font: 300 14px/0.5 'Cabin', sans-serif;   
    background: rgba(255,255,0,1);
    padding: 5px; 
@@ -391,8 +378,7 @@ ul#navigation li{
 
  .bottom-align-text {
     position: absolute;
-/*    padding-bottom:10px;
-*/    bottom: 0;
+    bottom: 0;
     right: 0;
   }
 }
@@ -400,8 +386,6 @@ ul#navigation li{
 /* Profile Page */
 
 .bg-info {
-/*	background: white;*/
-	/*padding: 10px;*/
 	padding-top:20px;
 	padding-right: 20px;
 	padding-left: 10px;
@@ -428,9 +412,7 @@ ul#navigation li{
 }
 
 /* Writing/Notes */
-.posts ul{
-	padding-left: 0!important;
-}
+
 #notes{
 	font-family:"Cabin", sans-serif;
 }
