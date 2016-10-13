@@ -420,6 +420,9 @@ ul#navigation li{
 			font-family:"Ubuntu", sans-serif;
 			font-size: 22px; 
 		}
+		#notes ul{
+			padding-left: 0px !important;
+		}
 		#notes li{
 			list-style-type: none; 
     		}
