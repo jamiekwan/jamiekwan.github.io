@@ -421,7 +421,7 @@ ul#navigation li{
 			font-size: 22px; 
 		}
 		#notes ul{
-			padding-left: 0px !important;
+			padding-left: 0px;
 		}
 		#notes li{
 			list-style-type: none; 
