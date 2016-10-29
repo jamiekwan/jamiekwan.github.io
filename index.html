@@ -1,321 +1,228 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+---
+layout: default
+title: Jamie Kwan | Experience Design
+---
 
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Jamie Kwan | Designer</title>
+<script>
 
-	<link href='https://fonts.googleapis.com/css?family=Cabin:400,400italic,700,700italic|Ubuntu:500|Fjalla+One|Roboto+Slab:300|Bitter:400i' rel='stylesheet' type='text/css'>
-
-	<!-- Latest compiled and minified CSS --> 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="assets/css/whhg.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/BootstrapXL.css" />
-	
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-	<script src="assets/js/isotope.pkgd.min.js"></script>
-	<script src="assets/js/bootstrap-select.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css" />
-	<script src="assets/js/jquery.fluidbox.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/fluidbox.css" />
-	<script type="text/javascript" src="assets/js/processing.js"></script>
-	<script type="text/javascript" src="assets/js/processing.min.js"></script>
-
-
-	<link rel="shortcut icon" href="assets/images/favicon-jk.ico">
-    <link rel="apple-touch-icon" href="assets/images/favicon-jk.png"> 
-</head>
-<body>
-	
-	<script>
-	
-	$(function(){		
-		var $container = $("#items");
-		imagesLoaded("#items",function(){
-			$container.isotope({
-			  itemSelector: ".item",
-			  layoutMode: 'masonry'
-			});
-		});
-		
-		$("#select-filter").selectpicker({size: 6}).change(function(){
-			$container.isotope({ filter: "."+$(this).val(), transitionDuration: "1s" });
-		});
+$(function(){		
+var $container = $("#items");
+imagesLoaded("#items",function(){
+	$container.isotope({
+	  itemSelector: ".item",
+	  layoutMode: 'masonry'
 	});
-	
-	</script>
+});
 
+$("#select-filter").selectpicker({size: 6}).change(function(){
+	$container.isotope({ filter: "."+$(this).val(), transitionDuration: "1s" });
+});
+});
 
-	
-	<section id="page" class="container"><!-- PAGE -->
-		<nav class="navbar-fixed-top">
-			<div class="col-md-12 col-xl-12">
-				<ul id="navigation" align="right">
-					<li><a href="profile">profile</a></li>
-					<li>&nbsp;&nbsp;&nbsp;</li>
-					<li><a href="index" class="active-page">work</a></li>
-					<li>&nbsp;&nbsp;&nbsp;</li>
-					<!-- <li><a href="notes">notes</a></li>
-					<li>&nbsp;&nbsp;&nbsp;</li> -->
-					<li><a href="http://www.curiosityinfocus.tumblr.com" target="_blank">travel</a></li>
-<!-- 					<li>&nbsp;&nbsp;&nbsp;</li>					
-					<li><a href="contact">contact</a></li> -->
-				</ul>
+</script>
+
+<section class="row"><!--.filter-->
+	<section class="col-xs-12">
+		<select name="category" id="select-filter" data-width="fit">
+			<option value="all">All Projects</option>
+			<option data-divider="true"></option>
+			<option value="ARCH">Architecture</option>
+			<option value="DIGITAL">Digital Media</option>
+			<option value="EXHIBIT">Exhibition</option>
+			<option value="SOCIAL">Community</option>
+			<option value="GRAPHICS">Graphics</option>
+			<option value="OTHER">Other</option>
+		</select>
+	</section>
+</section><!--.filter-->
+
+<section id="items" class="row"> <!--.gallery-->
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all OTHER">
+		<div id="gallery-block">	
+			<div id="thumbnail-img">
+				<a href="../profile">
+					<img src="assets/images/bio.jpg" alt="Profile" class="img-responsive" />
+					
+				</a>
 			</div>
-		</nav>
-
-		<div class="body-mobile">
-
-        <!-- Page Heading -->
-        <div id="header" class="row">
-            <div class="col-md-12 col-xl-12">
-                    <a href="http://jamiemkwan.com"><img src="assets/images/logo.png" width=250px></img></a>
-                    <h1>I'm a <a href="profile" class="designer">designer</a> / <a href="profile" class="urbanist">urbanist</a> / <a href="profile" class="storyteller">storyteller</a>&#42;</h1>
-                    <h2>&#42;I'm passionate about creating experiences that connect with people.</h2>
-                    <hr>
-            </div>
-        </div>
-        <!-- /.header -->
-
-		<section class="row"><!--.filter-->
-			<section class="col-xs-12">
-				<select name="category" id="select-filter" data-width="fit">
-					<option value="all">All Projects</option>
-					<option data-divider="true"></option>
-					<option value="ARCH">Architecture</option>
-					<option value="DIGITAL">Digital Media</option>
-					<option value="EXHIBIT">Exhibition</option>
-					<option value="SOCIAL">Community</option>
-					<option value="GRAPHICS">Graphics</option>
-					<option value="OTHER">Other</option>
-				</select>
-			</section>
-		</section><!--.filter-->
-
-		<section id="items" class="row"> <!--.gallery-->
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all OTHER">
-				<div id="gallery-block">	
-					<div id="thumbnail-img">
-						<a href="../profile">
-							<img src="assets/images/bio.jpg" alt="Profile" class="img-responsive" />
-							
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH EXHIBIT">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/ad-astra">				
-							<img src="assets/images/projects/ad-astra.jpg" alt="Ad Astra" class="img-responsive" />
-							<h2><span><b>AD ASTRA&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Interactive Installation for Nuit Blanche</i></span></h2>
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH DIGITAL">
-				<div id="gallery-block">	
-					<div id="thumbnail-img">
-						<a href="projects/thesis">
-							<img src="assets/images/projects/thesis.jpg" alt="Thesis: Sensing Context" class="img-responsive" />
-							<h2><span><b>THESIS: "FORM FOLLOWS NARRATIVE"&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Design-Research on Experiential Storytelling</i></span></h2>
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all DIGITAL">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/freeform">
-							<img src="assets/images/projects/freeform.jpg" alt="FreeForm" class="img-responsive" />
-							<h2><span><b>FREEFORM&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Empowering Consumers Through 3D Printing</i></span></h2>
-						</a>	
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all OTHER">
-				<div id="gallery-block">	
-					<div id="thumbnail-img">
-						<a href="../notes">
-							<img src="assets/images/writing.jpg" alt="Writing" class="img-responsive" />
-							
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all SOCIAL DIGITAL">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/studiobud">
-							<img src="assets/images/projects/studiobud2.jpg" alt="Studio BUD" class="img-responsive" />
-							<h2><span><b>STUDIO BUD&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Creative Initiative for GenZ Engagement</i></span></h2>
-						</a>					
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all OTHER">
-				<div id="gallery-block">	
-					<div id="thumbnail-img">
-						<a href="http://www.curiosityinfocus.tumblr.com" target="_blank">
-							<img src="assets/images/travel.jpg" alt="Travel: Curiosity In Focus" class="img-responsive" />
-							
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all DIGITAL EXHIBIT">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/creative-catalyst">
-							<img src="assets/images/projects/creative-catalyst(2).jpg" alt="Creative Catalyst" class="img-responsive" />
-							<h2><span><b>CREATIVE CATALYST&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Interactives for Uncovering Critical Play</i></span></h2>
-						</a>						
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all DIGITAL EXHIBIT">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/sandbox">
-							<img src="assets/images/projects/sandbox.jpg" alt="Augmented Reality Sandbox" class="img-responsive" />
-							<h2><span><b>AR SANDBOX&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Research Project in Tangible Interactions</i></span></h2>
-						</a>	
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH EXHIBIT SOCIAL">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/wild-for-bees">				
-							<img src="assets/images/projects/bee-hotel.jpg" alt="Wild for Bees" class="img-responsive" />
-							<h2><span><b>WILD FOR BEES&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>National Environmental Campaign for Wild Bees</i></span></h2>
-						</a>
-					</div>
-				</div<>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all DIGITAL GRAPHICS">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/narrative-drive">
-							<img src="assets/images/projects/narrative-drive.jpg" alt="Narrative Drive" class="img-responsive" />
-							<h2><span><b>NARRATIVE DRIVE&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Logo and Brand Identity</i></span></h2>
-						</a>	
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
-				<div id="gallery-block">				
-					<div id="thumbnail-img">
-						<a href="projects/china-study">				
-							<img src="assets/images/projects/china-study.jpg" alt="China Sketchbook" class="img-responsive" />
-							<h2><span><b>CHINA SKETCHBOOK&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Study Abroad, Three Gorges University</i></span></h2>
-						</a>						
-					</div>
-				</div>
-			</section>
-			
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/ctgu">
-							<img src="assets/images/projects/ctgu.jpg" alt="CTGU Water Science Center" class="img-responsive" />
-							<h2><span><b>CTGU WATER SCIENCE CENTER&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Conceptual Design and Masterplan</i></span></h2>
-						</a>						
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/cube-hotel">
-							<img src="assets/images/projects/cube-hotel.jpg" alt="Cube Hotel" class="img-responsive" />
-							<h2><span><b>CUBE HOTEL&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Radical Innovations in Hospitality</i></span></h2>
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/george-condo">
-							<img src="assets/images/projects/george-condo.jpg" alt="George St Condo" class="img-responsive" />
-							<h2><span><b>GEORGE ST CONDOMINIUM&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Conceptual Design for an Urban Mid-Rise Condo</i></span></h2>
-						</a>						
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/grenadier-pav">
-							<img src="assets/images/projects/grenadier-pav.jpg" alt="Grenadier Pavilion" class="img-responsive" />
-							<h2><span><b>GRENADIER PAVILION&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Small Building Design (High Park, Toronto)</i></span></h2>
-						</a>						
-					</div>
-				</div>
-			</section>
-
-			<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
-				<div id="gallery-block">
-					<div id="thumbnail-img">
-						<a href="projects/tracecase">
-							<img src="assets/images/projects/tracecase.jpg" alt="Trace Case" class="img-responsive" />
-							<h2><span><b>TRACECASE&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Product Design and Digital Fabrication</i></span></h2>
-						</a>	
-					</div>
-				</div>
-			</section>
-
-		</section><!--.gallery--> 
-
-
-		<hr>
-
-		<div id="footer" class="row"> 
-
-			<div class="col-xs-6 col-md-6 col-xl-6">
-				<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">&#169; 2016 <strong>Jamie Kwan</strong></a>
-			</div>
-			
-
-			<div id="social-icon" class="col-xs-6 col-md-6 col-xl-6" align="right">
-
-				<a href="mailto:jamie@studiobud.ca"><i class="icon-envelope"></i></a>&nbsp;&nbsp;&nbsp;				
-				<a href="https://www.facebook.com/jamiemkwan"><i class="icon-circlefacebook"></i></a>&nbsp;&nbsp;&nbsp;				
-				<a href="https://www.twitter.com/jamiemkwan"><i class="icon-circletwitter"></i></a>&nbsp;&nbsp;&nbsp;
-				<a href="https://www.instagram.com/jamiemkwan"><i class="icon-circleinstagram"></i></a>
-				<!-- <a href="https://ca.linkedin.com/in/jamiemkwan"><i class="icon-linkedin"></i></a> -->
-
-			</div>
-			
 		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH EXHIBIT">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/ad-astra">				
+					<img src="assets/images/projects/ad-astra.jpg" alt="Ad Astra" class="img-responsive" />
+					<h2><span><b>AD ASTRA&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Interactive Installation for Nuit Blanche</i></span></h2>
+				</a>
+			</div>
 		</div>
-	</section> <!-- PAGE -->	
-</body>
-</html>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH DIGITAL">
+		<div id="gallery-block">	
+			<div id="thumbnail-img">
+				<a href="projects/thesis">
+					<img src="assets/images/projects/thesis.jpg" alt="Thesis: Sensing Context" class="img-responsive" />
+					<h2><span><b>THESIS: "FORM FOLLOWS NARRATIVE"&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Design-Research on Experiential Storytelling</i></span></h2>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all DIGITAL">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/freeform">
+					<img src="assets/images/projects/freeform.jpg" alt="FreeForm" class="img-responsive" />
+					<h2><span><b>FREEFORM&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Empowering Consumers Through 3D Printing</i></span></h2>
+				</a>	
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all OTHER">
+		<div id="gallery-block">	
+			<div id="thumbnail-img">
+				<a href="../notes">
+					<img src="assets/images/writing.jpg" alt="Writing" class="img-responsive" />
+					
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all SOCIAL DIGITAL">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/studiobud">
+					<img src="assets/images/projects/studiobud2.jpg" alt="Studio BUD" class="img-responsive" />
+					<h2><span><b>STUDIO BUD&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Creative Initiative for GenZ Engagement</i></span></h2>
+				</a>					
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all OTHER">
+		<div id="gallery-block">	
+			<div id="thumbnail-img">
+				<a href="http://www.curiosityinfocus.tumblr.com" target="_blank">
+					<img src="assets/images/travel.jpg" alt="Travel: Curiosity In Focus" class="img-responsive" />
+					
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all DIGITAL EXHIBIT">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/creative-catalyst">
+					<img src="assets/images/projects/creative-catalyst(2).jpg" alt="Creative Catalyst" class="img-responsive" />
+					<h2><span><b>CREATIVE CATALYST&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Interactives for Uncovering Critical Play</i></span></h2>
+				</a>						
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all DIGITAL EXHIBIT">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/sandbox">
+					<img src="assets/images/projects/sandbox.jpg" alt="Augmented Reality Sandbox" class="img-responsive" />
+					<h2><span><b>AR SANDBOX&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Research Project in Tangible Interactions</i></span></h2>
+				</a>	
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH EXHIBIT SOCIAL">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/wild-for-bees">				
+					<img src="assets/images/projects/bee-hotel.jpg" alt="Wild for Bees" class="img-responsive" />
+					<h2><span><b>WILD FOR BEES&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>National Environmental Campaign for Wild Bees</i></span></h2>
+				</a>
+			</div>
+		</div<>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all DIGITAL GRAPHICS">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/narrative-drive">
+					<img src="assets/images/projects/narrative-drive.jpg" alt="Narrative Drive" class="img-responsive" />
+					<h2><span><b>NARRATIVE DRIVE&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Logo and Brand Identity</i></span></h2>
+				</a>	
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
+		<div id="gallery-block">				
+			<div id="thumbnail-img">
+				<a href="projects/china-study">				
+					<img src="assets/images/projects/china-study.jpg" alt="China Sketchbook" class="img-responsive" />
+					<h2><span><b>CHINA SKETCHBOOK&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Study Abroad, Three Gorges University</i></span></h2>
+				</a>						
+			</div>
+		</div>
+	</section>
+	
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/ctgu">
+					<img src="assets/images/projects/ctgu.jpg" alt="CTGU Water Science Center" class="img-responsive" />
+					<h2><span><b>CTGU WATER SCIENCE CENTER&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Conceptual Design and Masterplan</i></span></h2>
+				</a>						
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/cube-hotel">
+					<img src="assets/images/projects/cube-hotel.jpg" alt="Cube Hotel" class="img-responsive" />
+					<h2><span><b>CUBE HOTEL&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Radical Innovations in Hospitality</i></span></h2>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/george-condo">
+					<img src="assets/images/projects/george-condo.jpg" alt="George St Condo" class="img-responsive" />
+					<h2><span><b>GEORGE ST CONDOMINIUM&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Conceptual Design for an Urban Mid-Rise Condo</i></span></h2>
+				</a>						
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/grenadier-pav">
+					<img src="assets/images/projects/grenadier-pav.jpg" alt="Grenadier Pavilion" class="img-responsive" />
+					<h2><span><b>GRENADIER PAVILION&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Small Building Design (High Park, Toronto)</i></span></h2>
+				</a>						
+			</div>
+		</div>
+	</section>
+
+	<section class="item col-xs-12 col-sm-6 col-md-4 col-xl-4 all ARCH">
+		<div id="gallery-block">
+			<div id="thumbnail-img">
+				<a href="projects/tracecase">
+					<img src="assets/images/projects/tracecase.jpg" alt="Trace Case" class="img-responsive" />
+					<h2><span><b>TRACECASE&nbsp;</b><span class='spacer'></span><br><span class='spacer'></span><i>Product Design and Digital Fabrication</i></span></h2>
+				</a>	
+			</div>
+		</div>
+	</section>
+
+</section><!--.gallery--> 
