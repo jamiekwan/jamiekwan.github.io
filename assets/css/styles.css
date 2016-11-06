@@ -62,7 +62,7 @@ a {
 
 /* Navigation */
 
-ul#navigation li{
+ul#navigation li a{
 	color: #99b9dd;
 	display:inline;
 	padding-right:0;
