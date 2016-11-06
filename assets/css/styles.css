@@ -37,7 +37,7 @@ a, a:active, a:focus, a:visited {
 	outline: none !important;
 }
 a {
-	color: #99b9dd;
+	color: #637992;
 }
 
 ::selection { /* Text Selection Highlight Colour */
@@ -63,6 +63,7 @@ a {
 /* Navigation */
 
 ul#navigation li{
+	color: #99b9dd;
 	display:inline;
 	padding-right:0;
 	margin-right:0;
