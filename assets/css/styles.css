@@ -455,7 +455,7 @@ ul#navigation li{
 			}
 
 		#notes a.article-name{
-			color: #283645;
+			color: black;
 			font-size: 22px;
 			background-color: rgba(255,255,0, 0.2);
 			font-family: 'Roboto Slab', serif; 
