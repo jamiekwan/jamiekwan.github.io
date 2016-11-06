@@ -475,5 +475,6 @@ ul#navigation li{
 		#notes h4.article-subheading{
 			color: #283645;
 			font-size: 22px;
+			background-color: rgba(255,255,0, 0.2);			
 			font-family: 'Roboto Slab', serif;  
 		}
