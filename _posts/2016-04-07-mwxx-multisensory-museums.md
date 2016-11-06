@@ -27,13 +27,13 @@ I spoke about the bottom-up approach taken in designing the prototype, including
 For the prototype, I used microcontrollers, 3D printing, projection, speakers, and analog materials to provide information and media in multiple sensory forms based on interactions that encouraged a sense of discovery. Touching the objects in specific ways revealed specific information relevant to the semantics of the interaction (opening the object, for example), and subsequent interactions built upon the previous. Smells were embedded inside within the objects that related to both visual and audial feedback, while experientially it together attempted to put visitors into personally meditative states of controlled breathing.
 
 A few principles and considerations emerged:
-<ul>
+<ol>
 <li><strong>(Inter)sensory vs. (Multi)sensory</strong> – critically think about the senses as an ecosystem of experiences, rather than "nodes" within a space</li><br>
 <li><strong>Design for Subjectivity</strong> – assume an open-ended, but structured experience unique to every single person, where cultural and personal bias has a direct impact on the end-result.</li><br>
 <li><strong>Design for Play & Exploration</strong> – Reflect multiple and unknown means of entry into an interaction – subjective to an individual</li><br>
 <li><strong>Design for Situated Experiences</strong> – what impact does the museum context and other ambient experiences have on subjectivity? How can something like F&B actually be used to add meaning to an interactive?</li><br>
 <li><strong>Form Follows Narrative</strong> – How can architecture and physical design impact what's being experienced in digital form?</li><br>
-</ul>
+</ol>
 
 I discovered that intersensory interactions (versus multisensory, to describe the relationships between the senses and not just the presence of a sensory spectrum) are deeply personal and subjective, and needs to be thought of as an overarching, and even architectural, ecosystem. And <italic><strong>that</strong></italic> subjectivity was where the educational potential was situated.
 
