@@ -19,7 +19,7 @@ mark{
 }
 
 .navbar-fixed-top {
-	padding-top: 15px;
+	padding-top: 16px;
 	padding-right: 10%;
 	padding-bottom: 4px;
 	background-color: rgba(255,255,255,1);
@@ -134,7 +134,7 @@ ul#navigation li{
 	font-family:"Cabin"; }
 
 		#typ-body p{
-			font-size: 15px;
+			font-size: 16px;
 		}
 
 		#typ-body h4{
@@ -148,14 +148,14 @@ ul#navigation li{
 			padding-left: 0;
 			padding-right: 0;
 			padding-top:0;
-			font-size: 15px;
+			font-size: 16px;
 		}
 
 		#typ-body span{
 			padding-left: 0;
 			padding-right: 0;
 			top:0;
-			font-size: 15px;
+			font-size: 16px;
 			font-weight: bold;
 		}
 
@@ -301,7 +301,7 @@ ul#navigation li{
 }
 
 #items > section {
-	margin: 15px 0;
+	margin: 16px 0;
 }
 #items > section a {
 	display: block;
@@ -415,7 +415,7 @@ ul#navigation li{
 
 #notes{
 	font-family:"Cabin", sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 }
 		#notes a:hover{
 			text-decoration: none;
@@ -434,7 +434,7 @@ ul#navigation li{
     		}
 
 		#notes span{
-			font-size:15px; 
+			font-size:16px; 
 		}
 
 			#notes h2 span.article-date{
