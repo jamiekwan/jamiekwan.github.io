@@ -14,7 +14,7 @@ I find museums fascinating as they walk the boundaries of several interest group
 I wanted to address both of these interests by proposing a bottom-up approach to developing interactives and exhibitions: conscious of both implementation, scalability, meaning and educational impact.
 
 <br>
-<span class="article-subheading">Dino Poop as Inspiration?</span>
+<h4 class="article-subheading">Dino Poop as Inspiration?</h4>
 <hr class="xs-thick-hr" align="left">
 
 The prototype I designed in grad school was a hypothetical interactive for 16th century miniature boxwood rosary beads, which are currently exhibited at the Art Gallery of Ontario and the Metropoltan Museum of Art: artefacts that are approximately 6cm in diameter and often displayed behind a massive glass box. They're incredibly sensory and personal objects at the smallest scale: the owners used to hold them in their palms as a vehicle for prayer, stuff them with scented materials to facilitate contemplation. There's an amazing amount of detail in the artistry and sculpture that is evident beyond a visual level. 
@@ -41,5 +41,5 @@ I discovered that intersensory interactions (versus multisensory, to describe th
 
 <br>
 <hr class="xs-thick-hr" align="left">
-<span class="article-subheading">Interested in learning more about my research?</span>
+<h4 class="article-subheading">Interested in learning more about my research?</h4>
 Here's where you can find a <a href="http://mw2016.museumsandtheweb.com/session/immersive-and-multi-sensory-museum-experiences/" target="_blank">link</a> to the session and paper at MW2016. 
