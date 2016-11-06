@@ -3,6 +3,7 @@ layout: post
 title: "A New Playground"
 date: 2016-11-06
 details: "Blog Post"
+categories: "feature"
 ---
 
 It's nearly there! I'm so excited to finally share something that has been on the drawing board for months now: my new website! I've completely overhauled my portfolio into a website hosted on Github Pages, and COMPLETELY coded by yours truly. Though to be quite honest I don't think it will ever be "complete" and will always be in a state of iteration – as it should be. But it's now serving the real purpose of being a digital playground for the work that I do.
