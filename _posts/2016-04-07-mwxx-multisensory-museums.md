@@ -28,6 +28,8 @@ For the prototype, I used microcontrollers, 3D printing, projection, speakers, a
 
 I discovered that intersensory interactions (versus multisensory, to describe the relationships between the senses and not just the presence of a sensory spectrum) are deeply personal and subjective, and needs to be thought of as an overarching, and even architectural, ecosystem. And <italic><strong>that</strong></italic> subjectivity was where the educational potential was situated.
 
+<p><img src="/assets/images/projects/thesis/mwxx01.jpg" class="img-responsive"></p>
+
 <br>
 <hr class="xs-thick-hr" align="left">
 <h4 class="article-subheading">Interested in learning more about my research?</h4>
