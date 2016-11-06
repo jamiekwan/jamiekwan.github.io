@@ -14,7 +14,7 @@ I find museums fascinating as they walk the boundaries of several interest group
 I wanted to address both of these interests by proposing a bottom-up approach to developing interactives and exhibitions: conscious of both implementation, scalability, meaning and educational impact.
 
 <br>
-<h4 class="article-subheading">Dino Poop as Inspiration?</h4>
+<span class="article-subheading">Dino Poop as Inspiration?</span>
 <hr class="xs-thick-hr" align="left">
 
 The prototype I designed in grad school was a hypothetical interactive for 16th century miniature boxwood rosary beads, which are currently exhibited at the Art Gallery of Ontario and the Metropoltan Museum of Art: artefacts that are approximately 6cm in diameter and often displayed behind a massive glass box. They're incredibly sensory and personal objects at the smallest scale: the owners used to hold them in their palms as a vehicle for prayer, stuff them with scented materials to facilitate contemplation. There's an amazing amount of detail in the artistry and sculpture that is evident beyond a visual level. 
@@ -27,13 +27,13 @@ I spoke about the bottom-up approach taken in designing the prototype, including
 For the prototype, I used microcontrollers, 3D printing, projection, speakers, and analog materials to provide information and media in multiple sensory forms based on interactions that encouraged a sense of discovery. Touching the objects in specific ways revealed specific information relevant to the semantics of the interaction (opening the object, for example), and subsequent interactions built upon the previous. Smells were embedded inside within the objects that related to both visual and audial feedback, while experientially it together attempted to put visitors into personally meditative states of controlled breathing.
 
 A few principles and considerations emerged:
-<ol>
-<li><strong>(Inter)sensory vs. (Multi)sensory</strong> – critically think about the senses as an ecosystem of experiences, rather than "nodes" within a space</li>
-<li><strong>Design for Subjectivity</strong> – assume an open-ended, but structured experience unique to every single person, where cultural and personal bias has a direct impact on the end-result.</li>
-<li><strong>Design for Play & Exploration</strong> – Reflect multiple and unknown means of entry into an interaction – subjective to an individual</li>
-<li><strong>Design for Situated Experiences</strong> – what impact does the museum context and other ambient experiences have on subjectivity? How can something like F&B actually be used to add meaning to an interactive?</li>
-<li><strong>Form Follows Narrative</strong> – How can architecture and physical design impact what's being experienced in digital form?</li>
-</ol>
+<ul>
+<li><strong>(Inter)sensory vs. (Multi)sensory</strong> – critically think about the senses as an ecosystem of experiences, rather than "nodes" within a space</li><br>
+<li><strong>Design for Subjectivity</strong> – assume an open-ended, but structured experience unique to every single person, where cultural and personal bias has a direct impact on the end-result.</li><br>
+<li><strong>Design for Play & Exploration</strong> – Reflect multiple and unknown means of entry into an interaction – subjective to an individual</li><br>
+<li><strong>Design for Situated Experiences</strong> – what impact does the museum context and other ambient experiences have on subjectivity? How can something like F&B actually be used to add meaning to an interactive?</li><br>
+<li><strong>Form Follows Narrative</strong> – How can architecture and physical design impact what's being experienced in digital form?</li><br>
+</ul>
 
 I discovered that intersensory interactions (versus multisensory, to describe the relationships between the senses and not just the presence of a sensory spectrum) are deeply personal and subjective, and needs to be thought of as an overarching, and even architectural, ecosystem. And <italic><strong>that</strong></italic> subjectivity was where the educational potential was situated.
 
@@ -41,5 +41,5 @@ I discovered that intersensory interactions (versus multisensory, to describe th
 
 <br>
 <hr class="xs-thick-hr" align="left">
-<h4 class="article-subheading">Interested in learning more about my research?</h4>
+<span class="article-subheading">Interested in learning more about my research?</span>
 Here's where you can find a <a href="http://mw2016.museumsandtheweb.com/session/immersive-and-multi-sensory-museum-experiences/" target="_blank">link</a> to the session and paper at MW2016. 
