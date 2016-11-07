@@ -9,9 +9,9 @@ Today's my 25th birthday. It's been a year since I finished some sort of formal 
 
 This part of my life definitely has me thinking -- much like any other Millennial -- what do I actually do? What am I passionate about, enough to make it into my career? 
 
-<br><br>
+
 <h4 class="article-subheading">Can my professional identity be defined in some sort of title, beyond the name of my actual job?</h4>
-<br>
+
 
 I seek to do meaningful work. The reason I loved architecture so much was that it was the most public of the arts: it was both an artistic and pragmatic discipline that was deeply involved in how human beings interacted with one another, and went about their daily lives. 
 
