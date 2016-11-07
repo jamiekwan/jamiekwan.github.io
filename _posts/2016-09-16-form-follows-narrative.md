@@ -22,7 +22,7 @@ Personal computers and smartphones became household objects in the latter half o
 As I entered architecture school, Blackberries, iPhones and other smartphones were becoming a common sight, and completely shifting the 21st-century learning experience. Smartphones also meant that we were never bored commuting to work or school, with games, reading, and news accessible literally at our fingertips—with a simple fingerprint and a few taps on a screen. It now feels completely unnatural to be separated from those mini-supercomputers in our pockets, and going about daily life as a luddite, attempting to purge digital technology, is next to impossible. Trust me—trying to lead a normal life, without anything digital, amongst equally connected people, even for 48 hours, is a nightmare. 
 
 We engage with digital media and technology almost instinctively, every day, and these actions exist within—and impact—how we experience physical spaces. Some events in public spaces happen only because of the mass-organization through digital media: gathering to watch in important game, to celebrate a special event, to observe a global event or, even stranger, to participate in a large-scale pillow fight or slip-and-slide through the streets of downtown.
-<br>
+<br><br>
 <h4 class="article-subheading">
 The ubiquity that Weiser referred to in 1991 is almost a reality today, but architectural space has yet to truly respond to these new social processes through form, function and experience.</h4>
 <br>
@@ -37,7 +37,7 @@ Digital technology also has a powerful connection to data and communication chan
 My examples thus far are mostly social networks, interactive games and new media art. But what I find most interesting is that these digital experiences draw from architectural metaphors that serve as the structure to a consciously designed virtual space. From the Facebook “wall” and “communities” of content creators, to digital media that exists in or on architectural components, or requires a full-body interaction to engage with content, digital media takes cues from the real world to generate experiences in which people find meaning and value. 
 
 But what about the reverse? What opportunities exist if we turn that thought around: instead of thinking about digital media within the context of architecture, what happens when architecture is designed experientially in the context of new media and digital technology?
-<br>
+<br><br>
 <h4 class="article-subheading">Imagine if we saw architectural design at the very outset as co-designed, holistic experiences. </h4>
 <br>
 Public spaces designed both physically and digitally to support social play using large-scale digital media; schools designed to consider evolving teaching practices and curriculum in a digital age, designed to work with the mindset of youth studying with smartphones and amongst social networks, games, and media. What about community architecture that truly works with social networks in bringing a neighbourhood closer together and creating a greater sense of place? Informal gathering spaces that take Snapchat’s defining spontaneous features into consideration, towards a more social in-person and joyful public experience. Retail centres that integrate online shopping experiences into a social shopping experience in-store, pushing information to your devices as you walk by to instil a sense of exploration.
@@ -45,9 +45,7 @@ Public spaces designed both physically and digitally to support social play usin
 In my mind, the consideration of digital technology in the design of architectural spaces exists in every building typology. In a short 25 years, it’s no doubt that digital media is encroaching onto the experience of physical spaces—and that doesn’t have to be a negative thought. I don’t have the silver bullet to offer, but I do know that thinking holistically about an architectural experience, down to the pixel scale, allows creative professionals to begin to create truly meaningful spaces for people living in the digital age. If both virtual and physical form follow the narrative of a designed experience, scaled to every detail possible, then perhaps Weiser’s vision for ubiquity could finally be achieved within the urban landscape.
 
 <small> NOTES:<br>
-1.	Weiser, M. (1991, September). The computer of the 21st century. Scientific American, 265(3), 94-104.</small>
-
-
-
+1.	Weiser, M. (1991, September). The computer of the 21st century. Scientific American, 265(3), 94-104.
 
 <a href="http://bit.ly/jkwan-perspectives" target="_blank">Full Article: OAA Perspectives: The Journal of the Ontario Association of Architects, 24(3)</a>
+</small>
