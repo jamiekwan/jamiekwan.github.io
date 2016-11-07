@@ -3,6 +3,7 @@ layout: post
 title: "Design Philosophy: 25 years later"
 date: 2016-11-07
 details: "Blog Post"
+published: false
 ---
 
 Today's my 25th birthday. It's been a year since I finished some sort of formal education. It's been a year since I started working my first full-time career. I thought that the quarter century milestone was an appropriate time to look back and reflect.
