@@ -15,7 +15,7 @@ This part of my life definitely has me thinking -- much like any other Millennia
 
 I seek to do meaningful work. The reason I loved architecture so much was that it was the most public of the arts: it was both an artistic and pragmatic discipline that was deeply involved in how human beings interacted with one another, and went about their daily lives. 
 
-
+<br>
 <h4 class="article-subheading">I am an Experience Designer.</h4>
 <hr class="xs-thick-hr" align="left">
 
