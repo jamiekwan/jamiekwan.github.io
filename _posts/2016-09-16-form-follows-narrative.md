@@ -44,8 +44,7 @@ Public spaces designed both physically and digitally to support social play usin
 
 In my mind, the consideration of digital technology in the design of architectural spaces exists in every building typology. In a short 25 years, it’s no doubt that digital media is encroaching onto the experience of physical spaces—and that doesn’t have to be a negative thought. I don’t have the silver bullet to offer, but I do know that thinking holistically about an architectural experience, down to the pixel scale, allows creative professionals to begin to create truly meaningful spaces for people living in the digital age. If both virtual and physical form follow the narrative of a designed experience, scaled to every detail possible, then perhaps Weiser’s vision for ubiquity could finally be achieved within the urban landscape.
 
-<small> NOTES:<br>
-1.	Weiser, M. (1991, September). The computer of the 21st century. Scientific American, 265(3), 94-104.
-
 <a href="http://bit.ly/jkwan-perspectives" target="_blank">Full Article: OAA Perspectives: The Journal of the Ontario Association of Architects, 24(3)</a>
-</small>
+
+<small> NOTES:<br>
+1.	Weiser, M. (1991, September). The computer of the 21st century. Scientific American, 265(3), 94-104.</small>
