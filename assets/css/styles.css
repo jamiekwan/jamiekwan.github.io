@@ -73,7 +73,6 @@ ul#navigation li{
 			text-decoration: none;
 			color: #637992;
 			border-bottom: 2px solid #637992;
-			font-weight: bold;
 		}
 		ul#navigation .active-page{
 			text-decoration: none;
