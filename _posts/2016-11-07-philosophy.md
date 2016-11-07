@@ -6,7 +6,13 @@ details: "Blog Post"
 published: false
 ---
 
-Today's my 25th birthday. It's been a year since I finished some sort of formal education. 
+Today's my 25th birthday. It's been a year since I finished some sort of formal education. It's been a year since I started working my first full-time career. 
+
+This part of my life has me thinking -- much like any other Millennial -- what do I actually do? I have a relatively unique background as a designer, and seek to combine what I do.
+
+<h4 class="article-subheading">Can my professional identity be defined in some sort of title, beyond the name of my actual job?</h4>
+
+
 
 <br>
 <h4 class="article-subheading">I am an Experience Designer.</h4>
