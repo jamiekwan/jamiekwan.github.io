@@ -13,7 +13,7 @@ My last website was hosted on Squarespace since 2013 – when I first finished m
 In the process of making this, I learned a ton. The obvious being HTML/CSS/Javascript. I'm truly a person that learns by doing – so I took the courage of trying it out myself, reading a ton of articles, and experimenting with this site. Github offered an awesome place to do so because it was free of charge for an unlimited number of pages under one domain, and worked with existing open-sourced frameworks like Jekyll and Twitter Bootstrap. 
 
 <br>
-<h4 class="article-subheading">A Place for Digital Play, Experimentation, and Curiosity to Live</h4>
+<h4 class="article-subheading">A Place for Digital Play and Learning</h4>
 <hr class="xs-thick-hr" align="left">
 
 This new website gives me the freedom to explore more web-based explorations, and I'll be starting with learning more about generative art, Processing, and p5.js! If you're into my work, keep an eye out for new things coming onto this website, where I'll explore my ideas/thoughts/philosophy through writing, code, and design. 
