@@ -393,6 +393,14 @@ ul#navigation li{
 
 /* Profile Page */
 
+#profile h1{
+	color: #283645;
+	font-size: 22px;
+	background-color: rgba(255,255,0, 0.2);
+	font-family: 'Roboto Slab', serif; 
+	font-style: italic;
+}
+
 .bg-info {
 	padding-top:20px;
 	padding-right: 20px;
