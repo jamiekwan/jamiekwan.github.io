@@ -450,11 +450,6 @@ ul#navigation li{
 		border-left: 3px solid #637992;
 	}
 
-	#portfolio blockquote.secondary {
-		font-style:italic;
-		color: rgba(0,0,0, 0.6); 
-	}
-
 	#portfolio h2.heading {
 		color: #283645;
 		font-size: 22px;
@@ -478,6 +473,11 @@ ul#navigation li{
 		color: #283645;
 		font-size: 22px;
 		font-family: 'Roboto Slab', serif;  
+	}
+
+	#portfolio blockquote.secondary {
+		font-style:italic;
+		color: rgba(0,0,0, 0.6); 
 	}
 
 /* Writing/Notes */
