@@ -444,10 +444,15 @@ ul#navigation li{
 		font-family: 'Roboto Slab', serif; 
 	}
 
-	#portfolio blockquote {
+	#portfolio blockquote.primary {
 		margin: 1em 3em;
 		padding: 10px;
 		border-left: 3px solid #637992;
+	}
+
+	#portfolio blockquote.secondary {
+		font-style:italic;
+		color: rgba(0,0,0, 0.6); 
 	}
 
 	#portfolio h2.heading {
