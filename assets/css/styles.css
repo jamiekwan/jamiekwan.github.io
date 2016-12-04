@@ -438,13 +438,28 @@ ul#navigation li{
 	font-family:"Cabin", sans-serif;
 	font-size: 16px;
 }
-	#portfolio.title {
+	#portfolio h1.title {
 		color: black;
 		font-size: 28px;
 		background-color: rgba(255,255,0, 0.2);
 		font-family: 'Roboto Slab', serif; 
 	}
 
+	#portfolio h2.heading {
+		color: #283645;
+		font-size: 22px;
+		font-family: 'Roboto Slab', serif;  
+	}
+
+	#portfolio p.info {
+		font-style:italic;
+		color: rgba(0,0,0, 0.6); 
+	}
+
+	#portfolio img.feature-img {
+		height: 200px;
+    	overflow: hidden;
+	}
 
 
 /* Writing/Notes */
