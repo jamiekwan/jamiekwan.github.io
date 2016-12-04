@@ -469,6 +469,11 @@ ul#navigation li{
     	padding-bottom: 50px;
 	}
 
+	#portfolio h4.subheading{
+		color: #283645;
+		font-size: 22px;
+		font-family: 'Roboto Slab', serif;  
+	}
 
 /* Writing/Notes */
 
