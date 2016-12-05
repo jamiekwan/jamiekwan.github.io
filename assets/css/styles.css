@@ -465,6 +465,7 @@ ul#navigation li{
 		width: 100%;
 		height: 500px;
     	object-fit: cover;
+    	padding-bottom: 10px;
 	}
 
 	#portfolio h4.subheading{
