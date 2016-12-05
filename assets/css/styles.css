@@ -440,6 +440,7 @@ ul#navigation li{
 }
 	#portfolio a.home-link {
 		color: rgba(99,121,146,1);
+		font-size: 12px;
 	}
 
 	#portfolio a.home-link:hover {
