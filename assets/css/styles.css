@@ -479,7 +479,8 @@ ul#navigation li{
 	#portfolio blockquote.secondary {
 		font-family: 'Roboto Slab', serif; 
 		margin: 1em 3em;
-		padding: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		font-size: 22px;
 		font-style:italic;
 		color: rgba(0,0,0, 0.6); 
@@ -490,6 +491,8 @@ ul#navigation li{
 		font-size: 12px;
 		font-weight: bold;
 		color: rgba(0,0,0, 0.6); 
+		padding-top: 10px;
+		text-transform: uppercase;
 	}
 
 /* Writing/Notes */
