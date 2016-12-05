@@ -438,8 +438,9 @@ ul#navigation li{
 	font-family:"Cabin", sans-serif;
 	font-size: 16px;
 }
-	#portfolio h1.title {
+	#portfolio span.title {
 		color: black;
+		background-color: (255,255,0);
 		font-size: 50px;
 		font-family: 'Roboto Slab', serif; 
 	}
@@ -453,7 +454,6 @@ ul#navigation li{
 	#portfolio h2.heading {
 		color: #283645;
 		font-size: 22px;
-		background-color: (255,255,0)
 		font-family: 'Roboto Slab', serif;  
 	}
 
@@ -488,6 +488,7 @@ ul#navigation li{
 
 	#portfolio p.quote-detail {
 		font-family: 'Cabin', sans-serif;
+		font-style: normal;
 		font-size: 12px;
 		font-weight: bold;
 		color: rgba(0,0,0, 0.6); 
