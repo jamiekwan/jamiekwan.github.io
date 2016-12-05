@@ -439,6 +439,7 @@ ul#navigation li{
 	font-size: 16px;
 }
 	#portfolio a.home-link {
+		text-decoration: none;
 		color: rgba(99,121,146,1);
 		font-size: 12px;
 		padding-bottom: 10px;
@@ -447,6 +448,7 @@ ul#navigation li{
 
 	#portfolio a.home-link:hover {
 		color: rgba(99,121,146,0.5);	
+		border-bottom: 2px solid rgba(99,121,146,0.5);
 	}
 
 	#portfolio span.title {
