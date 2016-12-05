@@ -438,6 +438,14 @@ ul#navigation li{
 	font-family:"Cabin", sans-serif;
 	font-size: 16px;
 }
+	#portfolio a.home-link {
+		color: rgba(99,121,146,1);
+	}
+
+	#portfolio a.home-link:hover {
+		color: rgba(99,121,146,0.5);	
+	}
+
 	#portfolio span.title {
 		color: black;
 		font-size: 50px;
