@@ -451,7 +451,7 @@ ul#navigation li{
 
 	#portfolio span.heading {
 		color: #283645;
-		background-color: rgba(255,255,0, 1);
+		background-color: rgba(255,255,0, 0.2);
 		font-size: 22px;
 		font-family: 'Roboto Slab', serif;  
 	}
