@@ -440,7 +440,6 @@ ul#navigation li{
 }
 	#portfolio span.title {
 		color: black;
-		background-color: (255,255,0);
 		font-size: 50px;
 		font-family: 'Roboto Slab', serif; 
 	}
@@ -452,6 +451,7 @@ ul#navigation li{
 
 	#portfolio p.heading {
 		color: #283645;
+		background-color: (255,255,0);
 		font-size: 22px;
 		font-family: 'Roboto Slab', serif;  
 	}
