@@ -466,8 +466,7 @@ ul#navigation li{
 		height: 75%;
     	object-fit: cover;
     	padding-bottom: 10px;
-    	border: 3px;
-    	border-color: rgb(255,255,0);
+    	border: 3px solid rgb(255,255,0);
 	}
 
 	#portfolio h4.subheading{
