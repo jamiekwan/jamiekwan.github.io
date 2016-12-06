@@ -36,61 +36,61 @@
 
 <body>
 
-<section id="page" class="container"><!-- PAGE -->
+<div id="page" class="container">
 	<nav class="navbar-fixed-top">
 		<div class="col-md-12 col-xl-12">
-			<uL id="navigation" align="right">
+			<ul id="navigation" align="right">
 				<li><a href="http://www.jamiemkwan.com/profile">profile</a></li>
 				<li>&nbsp;&nbsp;&nbsp;</li>
 				<li><a href="http://www.jamiemkwan.com" class="active-page">work</a></li>
 				<li>&nbsp;&nbsp;&nbsp;</li>
-				<!-- <li><a href="http://www.jamiemkwan.com/notes" class="active-page">notes</a></li>
-				<li>&nbsp;&nbsp;&nbsp;</li> -->
 				<li><a href="http://www.curiosityinfocus.tumblr.com">travel</a></li>
-<!-- 					<li>&nbsp;&nbsp;&nbsp;</li>					
-				<li><a href="../contact">contact</a></li> -->
 			</ul>
 		</div>
 	</nav>
+</div>
 
+<div id="page" class="container">
 	<div class="body-mobile">
-
 	    <div id="header" class="row">
 	        <div class="col-md-12 col-xl-12">
-	                <a href="http://jamiemkwan.com"><img src="/assets/images/logo.png" width=250px></img></a>
-	                    <h1>I'm a <a href="http://jamiemkwan.com/profile" class="designer">designer</a> / <a href="http://jamiemkwan.com/profile" class="urbanist">urbanist</a> / <a href="http://jamiemkwan.com/profile" class="storyteller">storyteller</a>&#42;</h1>
-	                <h2>&#42;I'm passionate about creating experiences that connect with people.</h2>
-	                <hr>
+                <a href="http://jamiemkwan.com"><img src="/assets/images/logo.png" width=250px></img></a>
+                <h1>I'm a <a href="http://jamiemkwan.com/profile" class="designer">designer</a> / <a href="http://jamiemkwan.com/profile" class="urbanist">urbanist</a> / <a href="http://jamiemkwan.com/profile" class="storyteller">storyteller</a>&#42;</h1>
+                <h2>&#42;I'm passionate about creating experiences that connect with people.</h2>
+                <hr>
 	        </div>
 	    </div>
+	</div>
 		
-	    <div id="portfolio" class="row">
-	    	<div class="col-md-12 col-xl-12">
-	    		<span class="title">{{ page.title }}</span>
-	    	</div>
+    <div id="portfolio" class="row">
+    	<div class="col-md-12 col-xl-12">
+    		<span class="title">{{ page.title }}</span>
+    	</div>
 
-	    	<blockquote class="primary col-md-offset-1 col-xl-offset-1 col-md-10 col-xl-10">
-	    		<p><span class="heading">{{ page.heading }}</span></p>
-	    		<p class="info">{{ page.info }}</p>
-	    		<p class="info">{{page.extra }}</p>
-	    	</blockquote>
+    	<blockquote class="primary col-md-offset-1 col-xl-offset-1 col-md-10 col-xl-10">
+    		<p><span class="heading">{{ page.heading }}</span></p>
+    		<p class="info">{{ page.info }}</p>
+    		<p class="info">{{page.extra }}</p>
+    	</blockquote>
+    </div>
+</div>
 
-	    </div>
+<div id="portfolio" class="row">	    	
+	<div class="col-md-12 col-xl-12">
+		<img src="{{ page.featureimage_url }}" class="feature-img img-responsive"></img>
+	</div>
+</div>
 
-	    <div id="portfolio" class="row">	    	
-	    	<div class="col-md-12 col-xl-12">
-	    		<img src="{{ page.featureimage_url }}" class="feature-img img-responsive"></img>
-	    	</div>
-	    </div>
 
-	    <div id="portfolio" class="row">
-	    	<div class="col-md-offset-1 col-xl-offset-1 col-md-10 col-xl-10">
-			{{ content }}	
-			</div>
+<div id="page" class="container">
+    <div id="portfolio" class="row">
+    	<div class="col-md-offset-1 col-xl-offset-1 col-md-10 col-xl-10">
+		{{ content }}	
 		</div>
+	</div>
 
-	</div><!-- /.container -->
 	<hr>
+
 	<div id="footer" class="row">
 		<div class="col-xs-6 col-md-6 col-xl-6">
 			<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">&#169; 2016 <strong>Jamie Kwan</strong></a>
@@ -105,9 +105,9 @@
 			<!-- <a href="https://ca.linkedin.com/in/jamiemkwan"><i class="icon-linkedin"></i></a> -->
 		</div>	
 	</div>
-	</div>
+</div>
 
-</section>
+
 <script src="../assets/js/lightbox.js"></script>
 </body>
 </html>
