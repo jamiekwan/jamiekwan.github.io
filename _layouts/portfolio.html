@@ -27,6 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-select.min.css" />
 	<script src="/assets/js/jquery.fluidbox.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="/assets/css/fluidbox.css" />
+	<script src="/assets/js/ScrollMagic.js"></script>
 
 	<link rel="stylesheet" href="../assets/css/lightbox.css"> 
 
@@ -35,6 +36,31 @@
 </head>
 
 <body>
+
+<script> // ScrollMagic Section Wipe
+	$(function () { // wait for document ready
+		// init
+		var controller = new ScrollMagic.Controller({
+			globalSceneOptions: {
+				triggerHook: 'onLeave'
+			}
+		});
+
+		// get all slides
+		var slides = document.querySelectorAll("section.panel");
+
+		// create scene for every slide
+		for (var i=0; i<slides.length; i++) {
+			new ScrollMagic.Scene({
+					triggerElement: slides[i]
+				})
+				.setPin(slides[i])
+				.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+		}
+	});
+</script>
+
 
 <div id="page" class="container">
 	<nav class="navbar-fixed-top">
@@ -75,9 +101,11 @@
     </div>
 </div>
 
-<div id="portfolio">
-	<img src="{{ page.featureimage_url }}" class="feature-img img-responsive"></img>
-</div>
+<section class="panel">
+	<div id="portfolio">
+		<img src="{{ page.featureimage_url }}" class="feature-img img-responsive"></img>
+	</div>
+</section>
 
 <div id="page" class="container">
     <div id="portfolio" class="row">
