@@ -103,11 +103,12 @@
 
 <section class="panel">
 	<div id="portfolio">
-		<img src="{{ page.featureimage_url }}" class="feature-img img-responsive"></img>
+		<div style="background-image: url({{ page.featureimage_url }});"></div>
+		<!-- <img src="{{ page.featureimage_url }}" class="feature-img img-responsive"></img> -->
 	</div>
 </section>
 
-<div id="page panel-after" class="container">
+<div id="page" class="container">
     <div id="portfolio" class="row">
     	<div class="col-md-offset-1 col-xl-offset-1 col-md-10 col-xl-10">
 		{{ content }}	
