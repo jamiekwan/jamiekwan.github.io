@@ -463,9 +463,8 @@ ul#navigation li{
 
 	#portfolio img.feature-img {
 		width: 100%;
-		height: 100%;
+		height: 500px;
     	object-fit: cover;
-    	margin-bottom: 400px
 	}
 
 	#portfolio h4.subheading{
