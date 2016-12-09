@@ -434,15 +434,6 @@ ul#navigation li{
 
 /* Portfolio */
 
-.panel {
-	width: 100%;
-	height: 100%;
-}
-
-.panel-after{
-	background-color: #FFFFFF;
-}
-
 #portfolio{
 	font-family:"Cabin", sans-serif;
 	font-size: 16px;
@@ -471,6 +462,8 @@ ul#navigation li{
 	}
 
 	#portfolio img.feature-img {
+		width: 100%;
+		height: 100%;
     	object-fit: cover;
 	}
 
