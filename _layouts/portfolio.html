@@ -43,7 +43,7 @@
 
 	// Scene Handler
 	var feature = new ScrollMagic.Scene({
-	  triggerElement: ".pin-trigger1", // point of execution
+	  triggerElement: "section.pin-trigger1", // point of execution
 	  duration: $(window).height() + 100, // pin element for the window height - 1
 	  triggerHook: 0, // don't trigger until trigger1 hits the top of the viewport
 	  reverse: true // allows the effect to trigger when scrolled in the reverse direction
@@ -52,7 +52,7 @@
 
 	// Scene2 Handler
 	var content = new ScrollMagic.Scene({
-	  triggerElement: ".pin-trigger2", // point of execution
+	  triggerElement: "section.pin-trigger2", // point of execution
 	  duration: 400 // pin the element for a total of 400px
 	})
 	.setPin(".pin-content"); // the element we want to pin
