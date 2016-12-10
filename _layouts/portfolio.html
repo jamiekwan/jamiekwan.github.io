@@ -39,30 +39,27 @@
 <body>
 
 <script> // ScrollMagic 
-	// init ScrollMagic Controller
-	var controller = new ScrollMagic.Controller();
+	$(function () { // wait for document ready
+		// init
+		var controller = new ScrollMagic.Controller({
+			globalSceneOptions: {
+				triggerHook: 'onLeave'
+			}
+		});
 
-	// Scene Handler
-	var Scene = new ScrollMagic.Scene({
-	  triggerElement: "section.pin-trigger1", // point of execution
-	  duration: $(window).height() + 100, // pin element for the window height - 1
-	  triggerHook: 0, // don't trigger until trigger1 hits the top of the viewport
-	  reverse: true // allows the effect to trigger when scrolled in the reverse direction
-	})
-	.setPin("div.pin-feature"); // the element we want to pin
+		// get all slides
+		var slides = document.querySelectorAll("section.panel");
 
-	// Scene2 Handler
-	var Scene2 = new ScrollMagic.Scene({
-	  triggerElement: "section.pin-trigger2", // point of execution
-	  duration: 400 // pin the element for a total of 400px
-	})
-	.setPin("div.pin-content"); // the element we want to pin
-
-	// Add Scenes to ScrollMagic Controller
-	controller.addScene([
-	  Scene,
-	  Scene2
-	]);
+		// create scene for every slide
+		for (var i=0; i<slides.length; i++) {
+			new ScrollMagic.Scene({
+					triggerElement: slides[i]
+				})
+				.setPin(slides[i])
+				.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+		}
+	});
 </script>
 
 
@@ -105,16 +102,16 @@
     </div>
 </div>
 
-<section class="pin-trigger1">
-	<div class="pin-feature">
+<section class="panel">
+	<div class="feature">
 		<div id="portfolio">
-			<img src="{{ page.featureimage_url }}" class="feature-img"></img>
+			<img src="{{ page.featureimage_url }}" class="feature-img img-responsive"></img>
 		</div>
 	</div>
 </section>
 
-<section class="pin-trigger2">
-	<div class="pin-content">	
+<section class="panel">
+	<div class="content">	
 		<div id="page" class="container">
 		    <div id="portfolio" class="row">
 		    	<div class="col-md-offset-1 col-xl-offset-1 col-md-10 col-xl-10">
