@@ -27,7 +27,8 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-select.min.css" />
 	<script src="/assets/js/jquery.fluidbox.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="/assets/css/fluidbox.css" />
-	<script src="/assets/js/ScrollMagic.js"></script>
+	<script src="/assets/js/ScrollMagic/ScrollMagic.js"></script>
+	<script src="/assets/js/ScrollMagic/plugins/debug.addIndicators.js"></script>
 
 	<link rel="stylesheet" href="../assets/css/lightbox.css"> 
 
@@ -42,7 +43,7 @@
 	var controller = new ScrollMagic.Controller();
 
 	// Scene Handler
-	var feature = new ScrollMagic.Scene({
+	var Scene = new ScrollMagic.Scene({
 	  triggerElement: "section.pin-trigger1", // point of execution
 	  duration: $(window).height() + 100, // pin element for the window height - 1
 	  triggerHook: 0, // don't trigger until trigger1 hits the top of the viewport
@@ -51,7 +52,7 @@
 	.setPin("div.pin-feature"); // the element we want to pin
 
 	// Scene2 Handler
-	var content = new ScrollMagic.Scene({
+	var Scene2 = new ScrollMagic.Scene({
 	  triggerElement: "section.pin-trigger2", // point of execution
 	  duration: 400 // pin the element for a total of 400px
 	})
@@ -59,8 +60,8 @@
 
 	// Add Scenes to ScrollMagic Controller
 	controller.addScene([
-	  feature,
-	  content
+	  Scene,
+	  Scene2
 	]);
 </script>
 
