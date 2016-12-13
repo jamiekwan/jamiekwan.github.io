@@ -21,19 +21,19 @@ images:
 
 <script>
 
-$(function(){		
-var $container = $("#items");
-imagesLoaded("#items",function(){
-	$container.isotope({
-	  itemSelector: ".item",
-	  layoutMode: 'masonry'
+	$(function(){		
+	var $container = $("#items");
+	imagesLoaded("#items",function(){
+		$container.isotope({
+		  itemSelector: ".item",
+		  layoutMode: 'masonry'
+		});
 	});
-});
 
-$("#select-filter").selectpicker({size: 6}).change(function(){
-	$container.isotope({ filter: "."+$(this).val(), transitionDuration: "1s" });
-});
-});
+	$("#select-filter").selectpicker({size: 6}).change(function(){
+		$container.isotope({ filter: "."+$(this).val(), transitionDuration: "1s" });
+	});
+	});
 
 </script>
 
@@ -41,6 +41,7 @@ $("#select-filter").selectpicker({size: 6}).change(function(){
 <section id="items" class="row"> <!--.gallery-->
 
 	{% for image in page.images %}
+	
 	<section class="item col-xs-12 col-sm-4 col-md-3 col-xl-3">
 		<div id="gallery-block">
 			<a href="{{ image.image_path }}" data-lightbox="wanderlust">	
@@ -48,6 +49,7 @@ $("#select-filter").selectpicker({size: 6}).change(function(){
 			</a>
 		</div>
 	</section>
+
 	{% endfor %}
 
 </section>
