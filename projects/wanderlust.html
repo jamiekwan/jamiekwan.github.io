@@ -1,0 +1,30 @@
+---
+layout: default
+title: Wandering Wanderlust
+images:
+  - image_path: ../assets/images/projects/1.jpg
+    title: 1
+  - image_path: ../assets/images/projects/2.jpg
+    title: 2
+  - image_path: ../assets/images/projects/3.jpg
+    title: 3
+  - image_path: ../assets/images/projects/4.jpg
+    title: 4
+  - image_path: ../assets/images/projects/5.jpg
+    title: 5
+  - image_path: ../assets/images/projects/6.jpg
+    title: 6
+  - image_path: ../assets/images/projects/7.jpg
+    title: 7
+   
+---
+
+<div class="row">
+	<div class="col-md-12 col-xl-12">
+		<ul class="photo-gallery">
+		  {% for image in page.images %}
+		    <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
+		  {% endfor %}
+		</ul>
+	</div>
+</div>
