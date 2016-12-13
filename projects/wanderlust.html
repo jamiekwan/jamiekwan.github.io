@@ -18,10 +18,28 @@ images:
     title: 7
    
 ---
+<script>
 
-<div class="row photo-gallery">
+$(function(){		
+var $container = $("#items");
+imagesLoaded("#items",function(){
+	$container.isotope({
+	  itemSelector: ".item",
+	  layoutMode: 'masonry'
+	});
+});
+
+$("#select-filter").selectpicker({size: 6}).change(function(){
+	$container.isotope({ filter: "."+$(this).val(), transitionDuration: "1s" });
+});
+});
+
+</script>
+
+
+<div class="row items">
 	{% for image in page.images %}
-	  <div class="col-md-3">
+	  <div class="col-md-3 gallery-block">
 	  	<img src="{{ image.image_path }}" alt="{{ image.title}}"/ class="img-responsive">
 	  </div>
 	{% endfor %}
