@@ -42,8 +42,10 @@ $("#select-filter").selectpicker({size: 6}).change(function(){
 
 	{% for image in page.images %}
 	<section class="item col-xs-12 col-sm-4 col-md-3 col-xl-3">
-		<div id="gallery-block">	
+		<div id="gallery-block">
+			<a href="{{ image.image_path }}" data-lightbox="wanderlust">	
 			<img src="{{ image.image_path }}" alt="{{ image.title}}"/ class="img-responsive">
+			</a>
 		</div>
 	</section>
 	{% endfor %}
