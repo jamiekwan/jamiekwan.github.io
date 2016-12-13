@@ -26,7 +26,7 @@ var $container = $("#items");
 imagesLoaded("#items",function(){
 	$container.isotope({
 	  itemSelector: ".item",
-	  layoutMode: 'masonry'
+	  layoutMode: 'fitRows'
 	});
 });
 
@@ -41,7 +41,7 @@ $("#select-filter").selectpicker({size: 6}).change(function(){
 <section id="items" class="row"> <!--.gallery-->
 
 	{% for image in page.images %}
-	<section class="item col-xs-6 col-sm-4 col-md-3 col-xl-3">
+	<section class="item col-xs-12 col-sm-4 col-md-3 col-xl-3">
 		<div id="gallery-block">	
 			<img src="{{ image.image_path }}" alt="{{ image.title}}"/ class="img-responsive">
 		</div>
