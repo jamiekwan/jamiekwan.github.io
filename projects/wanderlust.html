@@ -20,37 +20,15 @@ images:
 ---
 
 <script>
-
-$(function(){		
-var $container = $("#items");
-imagesLoaded("#items",function(){
-	$container.isotope({
-	  itemSelector: ".item",
-	  layoutMode: 'masonry'
+	$(function(){		
+	var $container = $("#items");
+	imagesLoaded("#items",function(){
+		$container.isotope({
+		  itemSelector: ".item",
+		  layoutMode: 'masonry'
+		});
 	});
-});
-
-$("#select-filter").selectpicker({size: 6}).change(function(){
-	$container.isotope({ filter: "."+$(this).val(), transitionDuration: "1s" });
-});
-});
-
 </script>
-
-<section class="row"><!--.filter-->
-	<section class="col-xs-12">
-		<select name="category" id="select-filter" data-width="fit">
-			<option value="all">All Projects</option>
-			<option data-divider="true"></option>
-			<option value="ARCH">Architecture</option>
-			<option value="DIGITAL">Digital Media</option>
-			<option value="EXHIBIT">Exhibition</option>
-			<option value="SOCIAL">Community</option>
-			<option value="GRAPHICS">Graphics</option>
-			<option value="OTHER">Other</option>
-		</select>
-	</section>
-</section><!--.filter-->
 
 <section id="items" class="row"> <!--.gallery-->
 
