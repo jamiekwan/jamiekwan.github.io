@@ -4,10 +4,7 @@ title: "Into the Millennial: Why Weirdoes Will Change the World"
 date: 2016-12-22
 details: "OAA Perspectives: The Journal of the Ontario Association of Architects, 25(1)"
 ---
-<br><br>
-<h4 class="article-subheading">
-Millennial Architects, 50 years from now.</h4>
-<br>
+
 It's another long weekend, three days away from the architectural grind, and all I see on my Twitter and Facebook feeds are announcements of my friends’ travels, both far and near. As I write this, I’m sitting in seat 43K on my flight to Vancouver. 
 
 The Millennial generation is a unique set of humans. How we travel is one of the many clues into our differentiating factor. My parents, both considered boomers, have a very different perspective of travel and holidays. Why spend money on travel when you can spend some quality time at home, in the backyard on a late summer’s cool evening? And when you travel (plans are usually made way in advance), it's to escape from daily life—just to go somewhere else. Millennials, on the other hand, are constantly connected to digital alerts for last-minute flight deals, as we frantically try to arrange a holiday, to visit friends all around the world whose couches we can sleep on at a moment's notice. We’re more connected than ever, and want to experience everything first-hand.
