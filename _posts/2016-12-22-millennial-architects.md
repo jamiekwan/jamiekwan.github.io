@@ -16,10 +16,11 @@ The architectural profession is at an interesting place as we approach Canada's 
 We entered higher education on a path toward a well-defined profession, but we often ended up doing something completely different as a career or on the side. I always wanted to be an architect, but I discovered my passion for digital media, and have returned to working in an architectural office in a very different role. We might be defined by a job title, but most importantly, we’re embracing the fact that we are what creative recruiter Maria Scileppi refers to as “wonderful weirdos.”
 
 With our constant access to information, we haven't necessarily become experts in everything, but we’ve come pretty close to knowing a lot about a diverse range of topics that don’t necessarily intersect. We've gained an ability to communicate, understand, and collaborate with other kinds of people with other kinds of interests. Millennials have all become weirdos in the sense that we have vastly diverse interests and knowledge bases, that are increasingly informing our outlook on the industry and on our career paths.
-<br><br>
+
+
 <h4 class="article-subheading">
 So what does the next 50 years hold for the architectural profession? </h4>
-<br>
+
 It's the same as any other industry. I think there's going to be an embrace of us wonderful weirdos, and a generation of new leaders who know how to collaborate with diverse groups will emerge. Technologists working in city planning, biologists working in architecture, even play and toy designers working in urban design. 
 <br><br>
 <h4 class="article-subheading">
