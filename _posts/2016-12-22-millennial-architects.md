@@ -2,7 +2,7 @@
 layout: post
 title: "Into the Millennial: Why Weirdoes Will Change the World"
 date: 2016-12-22
-details: "OAA Perspectives: The Journal of the Ontario Association of Architects, 25(1)"
+details: "OAA Perspectives: The Journal of the Ontario Association of Architects, 24(4)"
 ---
 
 It's another long weekend, three days away from the architectural grind, and all I see on my Twitter and Facebook feeds are announcements of my friends’ travels, both far and near. As I write this, I’m sitting in seat 43K on my flight to Vancouver. 
@@ -29,4 +29,4 @@ Interests will bring a unique spin to every single “master builder” and unco
 
 Next time you talk to a Millennial, ask them honestly what are they passionate about outside their careers? What do they want to do with their lives? You might hear an answer you weren’t expecting, and you might even get a glimpse of the future. 
 
-<a href="#" target="_blank">Full Article: OAA Perspectives: The Journal of the Ontario Association of Architects, 25(1)</a>
+<a href="http://bit.ly/jkwan-perspective-02" target="_blank">Full Article: OAA Perspectives: The Journal of the Ontario Association of Architects, 24(4)</a>
