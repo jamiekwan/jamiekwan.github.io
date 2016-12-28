@@ -41,13 +41,13 @@ a {
 }
 
 ::selection { /* Text Selection Highlight Colour */
-    color: black;
-    background: rgb(255,255,0);
+    color: white;
+    background: #637992;
 }
 
 ::-moz-selection {
-    color: black;
-    background: rgb(255,255,0);   
+    color: white;
+    background: #637992;   
 }
 
 #mobile-only { display:none; }
