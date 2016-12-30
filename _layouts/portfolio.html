@@ -64,6 +64,30 @@
 	});
 </script> -->
 
+<script>
+	// init controller
+	var controller = new ScrollMagic.Controller();
+</script>
+
+<script>
+	$(function () { // wait for document ready
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: ".trigger1", duration: 300})
+					.setPin(".pin1")
+					.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+					.addTo(controller);
+});
+</script>
+
+<script>
+	$(function () { // wait for document ready
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: ".pin2"})
+					.setPin(".pin2")
+					.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+					.addTo(controller);
+});
+</script>
 
 <div id="page" class="container">
 	<nav class="navbar-fixed-top">
@@ -104,9 +128,9 @@
     </div>
 </div>
 
-<section class="panel">
+<section class="trigger1">
 <!-- START OF CAROUSEL -->
-<div id="carousel" class="carousel slide" data-ride="carousel"> 
+<div id="carousel" class="carousel slide pin1" data-ride="carousel"> 
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -147,7 +171,7 @@
 	</div>
 </section> -->
 
-<section class="panel">
+<section class="panel pin2">
 	<div class="content">	
 		<div id="page" class="container">
 		    <div id="portfolio" class="row">
