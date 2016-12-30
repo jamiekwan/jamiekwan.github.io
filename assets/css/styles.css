@@ -495,8 +495,7 @@ ul#navigation li{
 	}
 
 
-.carousel-inner img{
-	width: 100%;
+.carousel {
 	height: 500px;
 }
 
