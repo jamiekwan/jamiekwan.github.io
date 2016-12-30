@@ -494,6 +494,10 @@ ul#navigation li{
 		text-transform: uppercase;
 	}
 
+#carousel{
+	height: 1vh;
+}
+
 /* Writing/Notes */
 
 #notes{
