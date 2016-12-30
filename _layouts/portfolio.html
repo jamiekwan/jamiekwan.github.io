@@ -37,15 +37,6 @@
 </head>
 
 <body>
-
-<script>
-	// init controller
-	var controller = new ScrollMagic.Controller();
-			globalSceneOptions: {
-			triggerHook: 'onLeave'
-		}
-</script>
-
 <div id="page" class="container">
 	<nav class="navbar-fixed-top">
 		<div class="col-md-12 col-xl-12">
@@ -85,9 +76,9 @@
     </div>
 </div>
 
-<section class="trigger1">
+<section class="pin1">
 	<!-- START OF CAROUSEL -->
-	<div id="carousel" class="carousel slide pin1" data-ride="carousel"> 
+	<div id="carousel" class="carousel slide" data-ride="carousel"> 
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
 	    <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -118,19 +109,9 @@
 	  </a>
 	</div>
 	<!-- END OF CAROUSEL -->
-
-	<script>
-		$(function () { // wait for document ready
-		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: ".trigger1", duration: 300})
-						.setPin(".pin1")
-						.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-						.addTo(controller);
-	});
-	</script>
 </section>
 
-<section class="panel pin2">
+<section class="pin2">
 	<div class="content">	
 		<div id="page" class="container">
 		    <div id="portfolio" class="row">
@@ -157,18 +138,6 @@
 			</div>
 		</div>
 	</div>
-
-
-	<script>
-		$(function () { // wait for document ready
-		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: ".pin2"})
-						.setPin(".pin2")
-						.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
-						.addTo(controller);
-	});
-	</script>
-	
 </section>
 
 <script src="../assets/js/lightbox.js"></script>
