@@ -494,6 +494,12 @@ ul#navigation li{
 		text-transform: uppercase;
 	}
 
+
+.carousel-inner img{
+	width: 100%;
+	height: 500px;
+}
+
 /* Writing/Notes */
 
 #notes{
