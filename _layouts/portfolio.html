@@ -38,55 +38,9 @@
 
 <body>
 
-<!-- <script> // ScrollMagic 
-
-
-	$(function () { // wait for document ready
-		// init
-		var controller = new ScrollMagic.Controller({
-			globalSceneOptions: {
-				triggerHook: 'onLeave'
-			}
-		});
-
-		// get all slides
-		var slides = document.querySelectorAll("section.panel");
-
-		// create scene for every slide
-		for (var i=0; i<slides.length; i++) {
-			new ScrollMagic.Scene({
-					triggerElement: slides[i]
-				})
-				.setPin(slides[i])
-				.addIndicators() // add indicators (requires plugin)
-				.addTo(controller);
-		}
-	});
-</script> -->
-
 <script>
 	// init controller
 	var controller = new ScrollMagic.Controller();
-</script>
-
-<script>
-	$(function () { // wait for document ready
-	// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: ".trigger1", duration: 300})
-					.setPin(".pin1")
-					.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-					.addTo(controller);
-});
-</script>
-
-<script>
-	$(function () { // wait for document ready
-	// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: ".pin2"})
-					.setPin(".pin2")
-					.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
-					.addTo(controller);
-});
 </script>
 
 <div id="page" class="container">
@@ -161,15 +115,17 @@
   </a>
 </div>
 <!-- END OF CAROUSEL -->
-</section>
 
-<!-- <section class="panel">
-	<div class="feature">
-		<div id="portfolio">
-			<img src="{{ page.featureimage_url }}" class="feature-img img-responsive"></img>
-		</div>
-	</div>
-</section> -->
+<script>
+	$(function () { // wait for document ready
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: ".trigger1", duration: 300})
+					.setPin(".pin1")
+					.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+					.addTo(controller);
+});
+</script>
+</section>
 
 <section class="panel pin2">
 	<div class="content">	
@@ -198,6 +154,17 @@
 			</div>
 		</div>
 	</div>
+
+
+<script>
+	$(function () { // wait for document ready
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: ".pin2"})
+					.setPin(".pin2")
+					.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+					.addTo(controller);
+});
+</script>
 </section>
 
 <script src="../assets/js/lightbox.js"></script>
