@@ -496,6 +496,7 @@ ul#navigation li{
 
 #carousel{
 	height: 500px;
+	position: absolute;
 }
 
 /* Writing/Notes */
