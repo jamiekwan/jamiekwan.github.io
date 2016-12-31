@@ -463,7 +463,7 @@ ul#navigation li{
 
 	#portfolio img.feature-img {
 		width: 100%;
-		height: 0.5vh;
+		height: 50vh;
     	object-fit: cover;
 	}
 
