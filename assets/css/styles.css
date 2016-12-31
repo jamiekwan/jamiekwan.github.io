@@ -494,7 +494,7 @@ ul#navigation li{
 		text-transform: uppercase;
 	}
 
-.carousel{
+.carousel .item{
 	height: 100px;
 }
 
