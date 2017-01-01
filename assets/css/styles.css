@@ -494,7 +494,7 @@ ul#navigation li{
 	}
 
 // Fadein/Fadeout Element
-#fadein > div {
+#fade-in > div {
   height: 400px;
   opacity: 0; // hide init
 }
