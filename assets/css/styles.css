@@ -469,6 +469,7 @@ ul#navigation li{
 
 	#portfolio img.mid-text {
 		height: 50vh;
+		object-fit: cover;
 	}
 
 	#portfolio h4.subheading{
