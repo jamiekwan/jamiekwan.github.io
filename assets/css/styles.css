@@ -467,6 +467,10 @@ ul#navigation li{
     	object-fit: cover;
 	}
 
+	#portfolio img.mid-text {
+		height: 50vh;
+	}
+
 	#portfolio h4.subheading{
 		color: #283645;
 		font-size: 22px;
