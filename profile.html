@@ -2,26 +2,6 @@
 layout: profile
 title: Jamie Kwan | Profile
 ---
-<script>
-var fadein_tween = TweenMax.to('#fadein-trigger > div', .375,{ opacity: 1 });
-var fadeout_tween = TweenMax.to('#fadein-trigger > div', .375,{ opacity: 0 });
-
-var controller = new ScrollMagic.Controller();
-
-var fadein_scene = new ScrollMagic.Scene({
-  triggerElement: '#fadein-trigger',
-  reverse: true
-})
-.setTween(fadein_tween)
-.addTo(controller);
-
-var fadeout_scene = new ScrollMagic.Scene({
-  triggerElement: '#fadeout-trigger',
-  reverse: true
-})
-.setTween(fadeout_tween)
-.addTo(controller);
-</script>
 
 <div id="typ-body" class="profile-row row">
 	<div class="col-md-6 col-xl-6">
@@ -68,14 +48,11 @@ var fadeout_scene = new ScrollMagic.Scene({
     		<p><strong>Here are a few things I believe in:</strong></p>
     		<div class="text-muted">
         		<ul>
-        			<div id="fade-in"><li><mark>Design.</mark> As someone with a foot both in Architecture (physical) and Digital Media (virtual), I'm a big believer that design is about human experiences: about holistically thinking and reshaping the way people experience the world. As a designer, my work always starts with the 'why', and that vision informs everything from the scale of a building and down to the pixel.</li>
-        			</div>
+        			<li><mark>Design.</mark> As someone with a foot both in Architecture (physical) and Digital Media (virtual), I'm a big believer that design is about human experiences: about holistically thinking and reshaping the way people experience the world. As a designer, my work always starts with the 'why', and that vision informs everything from the scale of a building and down to the pixel.</li>
         			<br>
-        			<div id="fade-in"><li><mark>Urbanism.</mark> I'm always thnking about cities and urban spaces. I"m passionate for the community I live in, and how people connect with each other and their homes. My work beyond my 9-5 career is geared at building connections between communities, engaging the public in creative, collaborative play that ignites a sense of wonder, curiosity, and inspiration.</li>
-        			</div>
+        			<li><mark>Urbanism.</mark> I'm always thnking about cities and urban spaces. I"m passionate for the community I live in, and how people connect with each other and their homes. My work beyond my 9-5 career is geared at building connections between communities, engaging the public in creative, collaborative play that ignites a sense of wonder, curiosity, and inspiration.</li>
         			<br>
-        			<div id="fade-in"><li><marK>Storytelling.</marK> Technology evolves very quickly: buildings become increasingly complex through digital fabrication, and digital technologies become increasingly autonomous, ubiquitous, and responsive. But as long as your storytelling and emotional depth are intact, <i>that's</i> where people will connect with an experience.</li>
-        			</div>
+        			<li><marK>Storytelling.</marK> Technology evolves very quickly: buildings become increasingly complex through digital fabrication, and digital technologies become increasingly autonomous, ubiquitous, and responsive. But as long as your storytelling and emotional depth are intact, <i>that's</i> where people will connect with an experience.</li>
         			<br>
         		</ul>
     		</div>

@@ -493,12 +493,6 @@ ul#navigation li{
 		text-transform: uppercase;
 	}
 
-// Fadein/Fadeout Element
-#fade-in > div {
-  height: 400px;
-  opacity: 0; // hide init
-}
-
 /* Writing/Notes */
 
 #notes{
