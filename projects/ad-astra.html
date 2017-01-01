@@ -7,6 +7,17 @@ extra:
 featureimage_url: "../assets/images/projects/ad-astra.jpg"
 challenge: "Design a large-scale art installation for Toronto's busiest all-night street festival."
 solution: "Suspend visitors into the night sky as a retreat from a crowded, fast-paced all night art festival."
+
+images:
+  - image_path: ../assets/images/projects/ad-astra/5.jpg
+    title: Ad Astra
+  - image_path: ../assets/images/projects/ad-astra/1.jpg
+    title: Ad Astra
+  - image_path: ../assets/images/projects/ad-astra/3.jpg
+    title: Ad Astra
+  - image_path: ../assets/images/projects/ad-astra/2.jpg
+    title: Ad Astra
+
 ---
 
 In the midst of the night, this piece created a serene retreat within a crowded and fast-paced nighttime event. This interactive, audio-visual art installation was exhibited as part of Scotiabank’s Nuit Blanche 2013, Toronto’s largest all-night public art festival. The room - approximately 20x20 feet in size - was filled with over 150 spherical lights, using mirrored walls to create an infinite, immersive, and ephemeral spatial experience. With a visual trompe-l'oeil, tactile interaction with select lights generates musical feedback and lighting changes to create an atmosphere akin to a dynamic night sky.
@@ -16,29 +27,15 @@ In the midst of the night, this piece created a serene retreat within a crowded 
 <p><span class="detail">Rhys Male, ARTORONTO Magazine</span></p>
 </blockquote>
 
-
 <div class="row">
 	<hr>
+	{% for image in page.images %}
 	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ad-astra/5.jpg" data-lightbox="ad-astra">
-		<img src="../assets/images/projects/ad-astra/5.jpg" alt="Image" class="sm-img img-responsive"/>
+		<a href="{{ image.image_path }}" data-lightbox="ad-astra">
+		<img src="{{ image.image_path }}" alt="{{ image.title }}" class="sm-img img-responsive"/>
 		</a>
 	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ad-astra/1.jpg" data-lightbox="ad-astra">
-		<img src="../assets/images/projects/ad-astra/1.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ad-astra/3.jpg" data-lightbox="ad-astra">
-		<img src="../assets/images/projects/ad-astra/3.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ad-astra/2.jpg" data-lightbox="ad-astra">
-		<img src="../assets/images/projects/ad-astra/2.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>	
+	{% end for %}
 </div>
 
 <hr>
@@ -60,3 +57,26 @@ In the midst of the night, this piece created a serene retreat within a crowded 
 	</ul>
 </div>
 
+
+
+<!-- <div class="col-md-3 col-sm-6 col-xl-3">
+		<a href="../assets/images/projects/ad-astra/5.jpg" data-lightbox="ad-astra">
+		<img src="../assets/images/projects/ad-astra/5.jpg" alt="Image" class="sm-img img-responsive"/>
+		</a>
+	</div>
+	<div class="col-md-3 col-sm-6 col-xl-3">
+		<a href="../assets/images/projects/ad-astra/1.jpg" data-lightbox="ad-astra">
+		<img src="../assets/images/projects/ad-astra/1.jpg" alt="Image" class="sm-img img-responsive"/>
+		</a>
+	</div>
+	<div class="col-md-3 col-sm-6 col-xl-3">
+		<a href="../assets/images/projects/ad-astra/3.jpg" data-lightbox="ad-astra">
+		<img src="../assets/images/projects/ad-astra/3.jpg" alt="Image" class="sm-img img-responsive"/>
+		</a>
+	</div>
+	<div class="col-md-3 col-sm-6 col-xl-3">
+		<a href="../assets/images/projects/ad-astra/2.jpg" data-lightbox="ad-astra">
+		<img src="../assets/images/projects/ad-astra/2.jpg" alt="Image" class="sm-img img-responsive"/>
+		</a>
+	</div>	
+ -->
