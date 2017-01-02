@@ -6,43 +6,46 @@ info: "Creating a Playful Addition to an Age-Old Architecture Tool."
 extra: 
 featureimage_url: "../assets/images/projects/tracecase.jpg"
 concept: "A storage insert for the typical tracing paper roll making use of 3D printing capabilities."
+
+challenge: "Design a 3D-printed product that makes use of the technology, and solves a real-world problem."
+
+solution: "Looking to our own use-case, we created TraceCase: a 3D-printed insert that added value to the typical tracing paper roll for any architecture student."
+
+images:
+  - image_path: ../assets/images/projects/tracecase/2.jpg
+    title: TraceCase
+  - image_path: ../assets/images/projects/tracecase/5.jpg
+    title: TraceCase
+  - image_path: ../assets/images/projects/tracecase/6.jpg
+    title: TraceCase
+  - image_path: ../assets/images/projects/tracecase/4.jpg
+    title: TraceCase
+  - image_path: ../assets/images/projects/tracecase/3.jpg
+    title: TraceCase
+
 ---
 
-To the architect, designer, doodler and creator, rolls of tracing paper are staple in one's creative toolbox. The issue however is that the trace paper roll does not come with any means of closure. For all standard 12” trace paper rolls, TraceCase offers a way to transport trace and necessary drawing items in a tidy and efficient way.
+<p>To the architect, designer, doodler and creator, rolls of tracing paper are staple in one's creative toolbox. The issue however is that the trace paper roll does not come with any means of closure. For all standard 12” trace paper rolls, TraceCase offers a way to transport trace and necessary drawing items in a tidy and efficient way.</p>
 
-The TraceCase is designed to take advantage of digital fabrication technologies; while the design primarily demonstrates its function for the typical 12” trace paper roll, modifications can easily be made through 3D printing to adapt the size and length to any other type of paper roll, making the product accessible to other uses.
+<p>The TraceCase is designed to take advantage of digital fabrication technologies; while the design primarily demonstrates its function for the typical 12” trace paper roll, modifications can easily be made through 3D printing to adapt the size and length to any other type of paper roll, making the product accessible to other uses.</p>
+
+<p>This project received an Honorable Mention from the Extreme Redesign Competition, 2012.</p>
 
 <div class="row">
 	<hr>
+	{% for image in page.images %}
 	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/tracecase/2.jpg" data-lightbox="tracecase">
-		<img src="../assets/images/projects/tracecase/2.jpg" alt="Image" class="sm-img img-responsive"/>
+		<a href="{{ image.image_path }}" data-lightbox="tracecase">
+		<img src="{{ image.image_path }}" alt="{{ image.title }}" class="sm-img img-responsive"/>
 		</a>
 	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/tracecase/5.jpg" data-lightbox="tracecase">
-		<img src="../assets/images/projects/tracecase/5.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/tracecase/6.jpg" data-lightbox="tracecase">
-		<img src="../assets/images/projects/tracecase/6.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/tracecase/4.jpg" data-lightbox="tracecase">
-		<img src="../assets/images/projects/tracecase/4.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/tracecase/3.jpg" data-lightbox="tracecase">
-		<img src="../assets/images/projects/tracecase/3.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
+	{% endfor %}
 </div>
 
-<div class="text-muted info-links">
-	<strong>PROJECT DETAILS:</strong>
+<hr>
+
+<div class="text-muted">
+	<p><span class="detail">Project Details</span></p>
 	<ul>
 		<li>Team: S.GUILLEMIN</li>
 		<li><a href="https://dl.dropboxusercontent.com/u/18399884/TraceCase%20Movie%20Final.mp4" target="_blank">Stop-Motion Animation</a> (Edited by Seanna Guillemin)</li>
