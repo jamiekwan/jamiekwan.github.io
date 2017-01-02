@@ -5,7 +5,29 @@ heading: "Social Architecture for a Sublime Landscape."
 info: "Concept Design, Study Abroad 2012"
 extra: 
 featureimage_url: "../assets/images/projects/ctgu.jpg"
-concept: "A landmark campus building thatfosters interdisciplinary collaboration, whilst creating new public connections to the landscape."
+
+challenge: "Design new campus facilities and student spaces on the site of the new China Three Gorges University hydro dam."
+
+solution: "A landmark campus building that fosters interdisciplinary collaboration, whilst creating new public connections to the landscape. The proposal combined all programming and departments into a megastructure, stilted onto the existing water feature to preserve the natural landscape."
+
+images:
+  - image_path: ../assets/images/projects/ctgu/3.jpg
+    title: CTGU
+  - image_path: ../assets/images/projects/ctgu/5.jpg
+    title: CTGU
+  - image_path: ../assets/images/projects/ctgu/9.jpg
+    title: CTGU
+  - image_path: ../assets/images/projects/ctgu/4.jpg
+    title: CTGU
+  - image_path: ../assets/images/projects/ctgu/2.jpg
+    title: CTGU
+  - image_path: ../assets/images/projects/ctgu/10.jpg
+    title: CTGU
+  - image_path: ../assets/images/projects/ctgu/12.jpg
+    title: CTGU
+  - image_path: ../assets/images/projects/ctgu/13.jpg
+    title: CTGU
+
 ---
 
 A collaboration between Ryerson University and China Three Gorge's University's (CTGU), the project called on the master plan of their Water Science facilities in conjunction with the construction of a new hydro dam.
@@ -14,52 +36,19 @@ The design explores concepts in identity, landscape and interdisciplinary resear
 
 <div class="row">
 	<hr>
+	{% for image in page.images %}
 	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ctgu/3.jpg" data-lightbox="ctgu">
-		<img src="../assets/images/projects/ctgu/3.jpg" alt="Image" class="sm-img img-responsive"/>
+		<a href="{{ image.image_path }}" data-lightbox="ctgu">
+		<img src="{{ image.image_path }}" alt="{{ image.title }}" class="sm-img img-responsive"/>
 		</a>
 	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ctgu/5.jpg" data-lightbox="ctgu">
-		<img src="../assets/images/projects/ctgu/5.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ctgu/9.jpg" data-lightbox="ctgu">
-		<img src="../assets/images/projects/ctgu/9.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ctgu/4.jpg" data-lightbox="ctgu">
-		<img src="../assets/images/projects/ctgu/4.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ctgu/2.jpg" data-lightbox="ctgu">
-		<img src="../assets/images/projects/ctgu/2.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ctgu/10.jpg" data-lightbox="ctgu">
-		<img src="../assets/images/projects/ctgu/10.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ctgu/12.jpg" data-lightbox="ctgu">
-		<img src="../assets/images/projects/ctgu/12.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/ctgu/13.jpg" data-lightbox="ctgu">
-		<img src="../assets/images/projects/ctgu/13.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
+	{% endfor %}
 </div>
 
 <hr>
 
-<div class="text-muted info-links">
-	<strong>PROJECT DETAILS:</strong>
+<div class="text-muted">
+	<p><span class="detail">Project Details</span></p>
 	<ul>
 		<li>Team: H.NEAL, with G.LIU, G.PAN, M.YANG, Y.LI, F.LI (CTGU)</li>
 		<li>Software: AutoCAD, Rhino (w. VRay), Photoshop, Illustrator</li>
