@@ -2,7 +2,7 @@
 layout: portfolio
 title: China Sketchbook
 heading: Capturing Chinese Architecture and Culture through Pen &amp; Paper.
-info: "Study Abroad, China Three Gorges University (2012)"
+info: "Study Abroad: China Three Gorges University (2012)"
 extra: 
 featureimage_url: "../assets/images/projects/china-study.jpg"
 
@@ -16,37 +16,28 @@ images:
 
 ---
 
-Along with 15 other students, the 2-month trip took me through Eastern and Northern China, starting in Beijing - the People's Capital - and ending in the metropolis of Shanghai. Areas covered included the rural Shanxi province, visiting the Yungang Grottoes and Ancient Capital of Xi'an, as well as the Hubei province, staying at the China Three Gorges University and touring the Yangtze River and Shennongjia Mountain region.
+<p>Along with 15 other students, this trip took me through Eastern and Northern China, starting in Beijing - the People's Capital - and ending in the metropolis of Shanghai. Areas covered included the rural Shanxi province, visiting the Yungang Grottoes and Ancient Capital of Xi'an, as well as the Hubei province, staying at the China Three Gorges University and touring the Yangtze River and Shennongjia Mountain region.</p>
 
-Sketching was used as a main method for exploring the culture and architecture of traditional and modern Chinese sites, practicing sketching as a method of note-taking and analysis. 
-
+<p>Sketching was used as a main method for exploring the culture and architecture of traditional and modern Chinese sites, practicing sketching as a method of note-taking and analysis. A core theme throughout the trip was in the analysis of sustainable practices at both ancient and modern sites: architecturally and socially. This trip culminated in the <a href="../freeform" target="_blank">concept masterplan</a> of a Water Science Facility on the main campus of China Three Gorges University.</p>
 
 <div class="row">
 	<hr>
+	{% for image in page.images %}
 	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/china-study/4.jpg" data-lightbox="china-study">
-		<img src="../assets/images/projects/china-study/4.jpg" alt="Image" class="sm-img img-responsive"/>
+		<a href="{{ image.image_path }}" data-lightbox="china-study">
+		<img src="{{ image.image_path }}" alt="{{ image.title }}" class="sm-img img-responsive"/>
 		</a>
 	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/china-study/5.jpg" data-lightbox="china-study">
-		<img src="../assets/images/projects/china-study/5.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
-	<div class="col-md-3 col-sm-6 col-xl-3">
-		<a href="../assets/images/projects/china-study/2.jpg" data-lightbox="china-study">
-		<img src="../assets/images/projects/china-study/2.jpg" alt="Image" class="sm-img img-responsive"/>
-		</a>
-	</div>
+	{% endfor %}
 </div>
 
 <hr>
 
-<div class="text-muted info-links">
-	<strong>PROJECT DETAILS:</strong>
+<div class="text-muted">
+	<p><span class="detail">Details</span></p>
 	<ul>
-		<li>Locations: BEIJING, XI'AN, YICHANG, SHANGHAI</li>
-		<li>Dates Travelled: MAY - JUNE 2012	</li>
+		<li>Cities Visited: Beijing, Datong, Xi'an, Pingyao, YiChang, Suzhou, and Shanghai </li>
+		<li>Ryerson University Architecture Studio Abroad (Summer 2012)	</li>
 	</ul>
 </div>
 
