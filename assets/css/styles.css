@@ -508,6 +508,14 @@ ul#navigation li{
 		text-transform: uppercase;
 	}
 
+	#portfolio span.back-to-work {
+		font-family: 'Cabin', sans-serif;
+		font-style: normal;
+		font-size: 13px;
+		font-weight: bold;
+		color: rgba(0,0,0, 0.6); 
+		text-transform: uppercase;
+	}
 /* Writing/Notes */
 
 #notes{
