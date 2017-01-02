@@ -86,10 +86,12 @@
 <div id="page" class="container">
     <div id="portfolio" class="row">
     	<div class="col-md-offset-1 col-xl-offset-1 col-md-10 col-xl-10">
-			<hr class="xs-thick-hr" align="left">
-	    	<p><span class="detail">Challenge</span></p>
-			<h4 class="subheading">{{ page.challenge }}</h4>
-			<hr class="xs-thick-hr" align="left">
+			{% for text in page.challenge %}
+				<hr class="xs-thick-hr" align="left">
+		    	<p><span class="detail">Challenge</span></p>
+				<h4 class="subheading">{{ page.challenge }}</h4>
+				<hr class="xs-thick-hr" align="left">
+			{% endfor %}
 			<p><span class="detail">Solution</span></p>
 			<p>{{ page.solution }}</p>
 			<hr>
