@@ -2,7 +2,7 @@
 layout: post
 title: "A New Playground"
 date: 2016-11-06
-details: "Blog Post"
+details: "Personal Perspective"
 categories: "feature"
 ---
 
