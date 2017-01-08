@@ -75,6 +75,9 @@
     		<p><span class="heading">{{ page.heading }}</span></p>
     		<p class="info">{{ page.info }}</p>
     		<p class="info">{{ page.extra }}</p>
+			{% for text in page.client %}			
+				<p><span class="detail">Client</span>: {{ page.client }}</p>
+			{% endfor %}
     	</blockquote>
     </div>
 </div>
@@ -89,9 +92,6 @@
     <div id="portfolio" class="row">
     	<div class="col-md-offset-1 col-xl-offset-1 col-md-10 col-xl-10">
 
-			{% for text in page.client %}			
-				<p><span class="detail">Client</span>: {{ page.client }}</p>
-			{% endfor %}
 
 			{% for text in page.summary %}
 				<hr class="xs-thick-hr" align="left">
