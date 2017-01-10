@@ -9,7 +9,19 @@ layout: default
 			<p class="meta text-muted"><i>{{ page.date | date_to_long_string }}</i></p>
 			<br>
 		</div>
+	</div>
+</div>
 
+<div id="notes" class="row">
+	<div class="col-xs-12 col-md-5 col-md-offset-4 col-xl-6 col-xl-offset-3">
+		{% for image in page.icon %}		
+		<img src="{{ page.icon }}" class="img-responsive" align="center"> </img>	
+		{% endfor %}	
+	</div>
+</div>
+
+<div id ="notes" class="row">
+	<div class="col-xs-12 col-md-8 col-md-offset-2 col-xl-8 col-xl-offset-2">
 		<div>
 		  {{ content }}
 		</div>
