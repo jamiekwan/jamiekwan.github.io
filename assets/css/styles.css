@@ -533,7 +533,9 @@ ul#navigation li{
 		}
 		#notes h2.article-year{
 			color: rgba(255,255,0,0.4);
-			font-size: 30px;
+			font-size: 40px;
+			font-style: bold;
+			padding: 0px;
 		}
 		#notes ul{
 			padding-left: 0px;
