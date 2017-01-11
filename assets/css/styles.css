@@ -545,6 +545,8 @@ ul#navigation li{
 			#notes h2 span.article-date{
 				font-weight:bold;
 				color: rgba(0,0,0, 0.6);
+				text-transform: uppercase;
+				font-size: 12px;
 			}
 
 			#notes span.article-details{
