@@ -544,9 +544,9 @@ ul#navigation li{
 
 			#notes span.article-date{
 				font-weight:bold;
-				color: rgba(0,0,0,1);
+				color: rgba(99,121,146,1);
 				text-transform: uppercase;
-				font-size: 12px;
+				font-size: 13px;
 			}
 
 			#notes span.article-details{
