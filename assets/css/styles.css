@@ -532,8 +532,8 @@ ul#navigation li{
 			font-size: 22px; 
 		}
 		#notes h2.article-year{
-			color: rgba(255,255,0,0.4);
-			font-size: 40px;
+			color: rgba(255,255,0,0.8);
+			font-size: 45px;
 			font-style: bold;
 			padding: 0px;
 		}
@@ -549,6 +549,7 @@ ul#navigation li{
 		}
 
 			#notes span.article-date{
+				font-style: "Ubuntu", sans-serif;
 				font-weight:bold;
 				color: rgba(0,0,0,1);
 				text-transform: uppercase;
