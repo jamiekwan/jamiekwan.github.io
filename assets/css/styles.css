@@ -536,6 +536,7 @@ ul#navigation li{
 			font-size: 48px;
 			font-style: bold;
 			padding: 0px;
+			z-index: -1;
 		}
 		#notes ul{
 			padding-left: 0px;
