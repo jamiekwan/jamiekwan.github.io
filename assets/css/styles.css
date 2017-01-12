@@ -15,7 +15,7 @@ body{
 }
 
 mark{
-	background-color: rgba(255,255,0, 0.2);
+	background-color: rgba(255,225,0, 0.2);
 }
 
 .navbar-fixed-top {
@@ -115,18 +115,18 @@ ul#navigation li{
 			text-decoration: none;
 			font-family: 'Bitter', serif;
 			font-size: 99%;
-   			border-top: 5px solid rgb(255,255,0);
+   			border-top: 5px solid rgb(255,225,0);
 
 		}
 		#header a:hover.urbanist{
 			text-decoration: none;
    			font-family: 'Fjalla One', sans-serif;
-   			border-bottom: 5px solid rgb(255,255,0);
+   			border-bottom: 5px solid rgb(255,225,0);
 	    	text-transform: uppercase;
 	    }
 		#header a:hover.storyteller{
 			text-decoration: none;
-   			background: rgb(255,255,0);
+   			background: rgb(255,225,0);
    			font-family: 'Roboto Slab', serif;
 		}
 
@@ -333,7 +333,7 @@ ul#navigation li{
 #thumbnail-img h2 span {
    color: black; 
    font: 300 14px/0.5 'Cabin', sans-serif;   
-   background: rgba(255,255,0,1);
+   background: rgba(255,225,0,1);
    padding: 5px; 
 }
 
@@ -396,7 +396,7 @@ ul#navigation li{
 #profile a{
 	color: #283645;
 	font-size: 22px;
-	background-color: rgba(255,255,0, 0.2);
+	background-color: rgba(255,225,0, 0.2);
 	font-family: 'Roboto Slab', serif; 
 	font-style: italic;
 }
@@ -460,7 +460,7 @@ ul#navigation li{
 
 	#portfolio span.heading {
 		color: #283645;
-		background-color: rgba(255,255,0, 0.2);
+		background-color: rgba(255,225,0, 0.2);
 		font-size: 22px;
 		font-family: 'Roboto Slab', serif;  
 	}
@@ -504,7 +504,7 @@ ul#navigation li{
 		font-size: 13px;
 		font-weight: bold;
 		color: rgba(0,0,0, 0.6); 
-		background-color: rgba(255,255,0,0.2);
+		background-color: rgba(255,225,0,0.2);
 		text-transform: uppercase;
 	}
 
@@ -532,7 +532,7 @@ ul#navigation li{
 			font-size: 22px; 
 		}
 		#notes h2.article-year{
-			color: rgba(255,200,0,0.8);
+			color: rgba(255,225,0,0.8);
 			font-size: 48px;
 			font-style: bold;
 			padding: 0px;
@@ -565,7 +565,7 @@ ul#navigation li{
 		#notes a.article-name{
 			color: black;
 			font-size: 22px;
-			background-color: rgba(255,255,0, 0.2);
+			background-color: rgba(255,225,0, 0.2);
 			font-family: 'Roboto Slab', serif; 
 		}
 
@@ -577,7 +577,7 @@ ul#navigation li{
 		#notes span.article-name{
 			color: #283645;
 			font-size: 22px;
-			background-color: rgba(255,255,0, 0.2);
+			background-color: rgba(255,225,0, 0.2);
 			font-family: 'Roboto Slab', serif; 
 		}
 		#notes h4.article-subheading{
