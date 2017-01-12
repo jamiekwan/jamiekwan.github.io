@@ -527,11 +527,12 @@ ul#navigation li{
 			color: #637992;
 			border-bottom: 2px solid #637992;
 		}
-		#notes h2{
+		#notes h2 {
 			font-family:"Ubuntu", sans-serif;
 			font-size: 22px; 
 		}
-		#notes h2.article-year{
+		#notes span.article-year{
+			font-family:"Ubuntu", sans-serif;			
 			color: rgba(255,225,0,0.8);
 			font-size: 48px;
 			font-style: bold;

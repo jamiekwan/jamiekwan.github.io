@@ -15,7 +15,7 @@ title: Ideas / Perspectives
 			{% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
 			{% if forloop.first %}	
-				<li><h2 class="article-year">{{ this_year }}</h2></li>
+				<span class="article-year">{{ this_year }}</span>
 			{% endif %}
 
 				<li>
@@ -25,7 +25,7 @@ title: Ideas / Perspectives
 				</li><br>
 
 			{% if this_year != next_year %}
-				<h2 class="article-year">{{ next_year }}</h2>
+				<span class="article-year">{{ next_year }}</span>
 			{% endif %}
 		{% endfor %}
 
