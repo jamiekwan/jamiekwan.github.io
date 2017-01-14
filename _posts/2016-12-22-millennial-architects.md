@@ -16,15 +16,13 @@ The architectural profession is at an interesting place as we approach Canada's 
 We entered higher education on a path toward a well-defined profession, but we often ended up doing something completely different as a career or on the side. I always wanted to be an architect, but I discovered my passion for digital media, and have returned to working in an architectural office in a very different role. We might be defined by a job title, but most importantly, we’re embracing the fact that we are what creative recruiter Maria Scileppi refers to as “wonderful weirdos.”
 
 With our constant access to information, we haven't necessarily become experts in everything, but we’ve come pretty close to knowing a lot about a diverse range of topics that don’t necessarily intersect. We've gained an ability to communicate, understand, and collaborate with other kinds of people with other kinds of interests. Millennials have all become weirdos in the sense that we have vastly diverse interests and knowledge bases, that are increasingly informing our outlook on the industry and on our career paths.
-<br><br>
-<h4 class="article-subheading">
-So what does the next 50 years hold for the architectural profession? </h4>
-<br>
+
+<h4 class="article-subheading">So what does the next 50 years hold for the architectural profession? </h4>
+
 It's the same as any other industry. I think there's going to be an embrace of us wonderful weirdos, and a generation of new leaders who know how to collaborate with diverse groups will emerge. Technologists working in city planning, biologists working in architecture, even play and toy designers working in urban design. 
-<br><br>
-<h4 class="article-subheading">
-Architects will no longer just be architects. </h4>
-<br>
+
+<h4 class="article-subheading">Architects will no longer just be architects. </h4>
+
 Interests will bring a unique spin to every single “master builder” and unconventional interdisciplinary practices will become, well, conventional, resulting in more inclusive, more accessible, and more valued architecture. In the short time I’ve been in this profession, I've already worked with groups (artists, scientists, educators, “wonderful weirdos”) who impact architecture and cities, but whose activities and education lie far from the profession. That said, if we define creativity as the ability to connect disconnected things, then we're definitely going to start to achieve a new level of creativity.
 
 Next time you talk to a Millennial, ask them honestly what are they passionate about outside their careers? What do they want to do with their lives? You might hear an answer you weren’t expecting, and you might even get a glimpse of the future. 

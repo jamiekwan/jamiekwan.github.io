@@ -13,7 +13,6 @@ I find museums fascinating as they walk the boundaries of several interest group
 
 I wanted to address both of these interests by proposing a bottom-up approach to developing interactives and exhibitions: conscious of both implementation, scalability, meaning and educational impact.
 
-<br>
 <h4 class="article-subheading">Dino Poop as Inspiration?</h4>
 <hr class="xs-thick-hr" align="left">
 
@@ -39,7 +38,6 @@ I discovered that intersensory interactions (versus multisensory, to describe th
 
 <p><img src="/assets/images/projects/thesis/mwxx01.jpg" class="img-responsive"></p>
 
-<br>
 <hr class="xs-thick-hr" align="left">
 <h4 class="article-subheading">Interested in learning more about my research?</h4>
 Here's where you can find a <a href="http://mw2016.museumsandtheweb.com/session/immersive-and-multi-sensory-museum-experiences/" target="_blank">link</a> to the session and paper at MW2016. 
