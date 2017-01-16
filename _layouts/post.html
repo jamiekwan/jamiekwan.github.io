@@ -12,16 +12,13 @@ layout: default
 	</div>
 </div>
 
-<div id="notes" class="row">
-	<div class="col-xs-12 col-md-5 col-md-offset-4 col-xl-6 col-xl-offset-3">
-		{% for image in page.icon %}		
-		<img src="{{ page.icon }}" class="img-responsive post-icon"> </img>	
-		{% endfor %}	
-	</div>
-</div>
-
 <div id ="notes" class="row">
 	<div class="col-xs-12 col-md-8 col-md-offset-2 col-xl-8 col-xl-offset-2">
+		<div>		
+			{% for image in page.icon %}		
+				<img src="{{ page.icon }}" class="img-responsive post-icon"> </img>	
+			{% endfor %}	
+		</div>
 		<div>
 		  {{ content }}
 		</div>
