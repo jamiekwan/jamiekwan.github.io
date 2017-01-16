@@ -587,3 +587,6 @@ ul#navigation li{
 			font-size: 22px;
 			font-family: 'Roboto Slab', serif;  
 		}
+		#notes img.post-icon{
+			width: 100%;
+		}
