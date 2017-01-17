@@ -42,7 +42,7 @@ a {
 
 ::selection { /* Text Selection Highlight Colour */
     color: white;
-    background: #637992;
+    background: rgba(255,255,0,0.8);
 }
 
 ::-moz-selection {
