@@ -41,8 +41,8 @@ a {
 }
 
 ::selection { /* Text Selection Highlight Colour */
-    color: white;
-    background: rgba(255,255,0,0.8);
+    color: black;
+    background: rgba(255,225,0,0.8);
 }
 
 ::-moz-selection {
