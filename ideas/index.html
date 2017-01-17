@@ -27,10 +27,14 @@ title: Ideas / Perspectives
 						<span class="article-year">{{ this_year }}</span>
 					{% endif %}
  -->
-					{% if this_year != previous_year or this_year == blank %} 
+					{% if this_year != previous_year %} 
 						<span class="article-year">{{ next_year }}</span>
 					{% endif %}
 					
+					{% if forloop.last %}
+						<span class="article-year">{{ this_year }}</span>
+
+					{% endif %}
 					<span class="article-date">{{ post.date | date_to_long_string }}</span><br>
 					<a href="{{ post.url }}" title="{{ post.title }}" class="article-name">{{ post.title }}</a><br>
 					<span class="article-details">{{ post.details }}</span>
