@@ -552,6 +552,10 @@ ul#navigation li{
 			font-size:16px; 
 		}
 
+		#notes span.invisible-break{
+			padding-top: 36px;
+		}
+
 			#notes span.article-date{
 				font-style: "Ubuntu", sans-serif;
 				font-weight:bold;
