@@ -17,7 +17,7 @@ title: Ideas / Perspectives
 
 				<li>  <!-- potential idea; reduce lineheight for all li of 'bl-shift' class; apply class change based on if statement -->
 					{% if forloop.first %}	 <!-- if first, show current year -->
-					<span class="article-year">{{ this_year }}</span>
+						<span class="article-year">{{ this_year }}</span>
 					{% endif %}
 					<span class="article-date">{{ post.date | date_to_long_string }}</span><br>
 					<a href="{{ post.url }}" title="{{ post.title }}" class="article-name">{{ post.title }}</a><br>
