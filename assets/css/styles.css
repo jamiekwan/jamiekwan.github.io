@@ -536,8 +536,8 @@ ul#navigation li{
 			color: rgba(255,200,0,0.8);
 			font-size: 48px;
 			font-style: bold;
-			padding: 0px;
-			position: absolute;
+/*			padding: 0px;
+*/			position: absolute;
 			z-index: -1;
 		}
 		#notes ul{
