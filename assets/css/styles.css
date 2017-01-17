@@ -531,18 +531,9 @@ ul#navigation li{
 			font-family:"Ubuntu", sans-serif;
 			font-size: 22px; 
 		}
-		#notes span.article-year{
-			font-family:"Ubuntu", sans-serif;			
-			color: rgba(255,200,0,0.8);
-			font-size: 48px;
-			font-style: bold;
-			position: absolute;
-			z-index: -1;
-			margin: 0;
-			margin-top: -36px;
-		}
-		#notes ul{
+		#notes ul.article-index{
 			padding-left: 0px;
+			text-align: center;
 		}
 		#notes li{
 			list-style-type: none; 
@@ -550,7 +541,18 @@ ul#navigation li{
     		}
 		#notes span{
 			font-size:16px; 
+			text-align: center;
 		}
+			#notes span.article-year{
+				font-family:"Ubuntu", sans-serif;			
+				color: rgba(255,200,0,0.8);
+				font-size: 48px;
+				font-style: bold;
+				position: absolute;
+				z-index: -1;
+				margin: 0;
+				margin-top: -36px;
+			}
 			#notes span.article-date{
 				font-style: "Ubuntu", sans-serif;
 				font-weight:bold;
