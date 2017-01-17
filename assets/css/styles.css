@@ -548,10 +548,6 @@ ul#navigation li{
 			list-style-type: none; 
 			padding-top:20px;
     		}
-		#notes br.year-break{
-   			display: block;
-  			margin: 100px 0;
-		}
 		#notes span{
 			font-size:16px; 
 		}
