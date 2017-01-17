@@ -20,7 +20,7 @@ title: Ideas / Perspectives
 					{% if forloop.first %}	 <!-- if first, show current year -->
 						<span class="article-year">{{ this_year }}</span>
 					{% endif %}
-					{% if this_year != previous_year %} <!-- if the current year does not equal the next year, show next year -->
+					{% if this_year != previous_year or this_year == blank %} <!-- if the current year does not equal the next year, show next year -->
 						<span class="article-year">{{ next_year }}</span>
 					{% endif %}
 					<span class="article-date">{{ post.date | date_to_long_string }}</span><br>
