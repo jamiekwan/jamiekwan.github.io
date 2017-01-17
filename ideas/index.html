@@ -16,6 +16,11 @@ title: Ideas / Perspectives
 			{% capture previous_year %}{{ post.next.date | date: "%Y" }}{% endcapture %}
 			{% capture previous_month %}{{ post.next.date | date: "%B" }}{% endcapture %}
 
+
+				{% if this_year != previous_year or this_year == blank %} 
+					<br>
+				{% endif %}
+				
 				<li>  
 
 <!-- 					{% if forloop.first %}	 
@@ -30,6 +35,7 @@ title: Ideas / Perspectives
 					<a href="{{ post.url }}" title="{{ post.title }}" class="article-name">{{ post.title }}</a><br>
 					<span class="article-details">{{ post.details }}</span>
 				</li>
+
 
 
 		{% endfor %}
