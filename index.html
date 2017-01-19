@@ -14,10 +14,6 @@ imagesLoaded("#items",function(){
 	});
 });
 
-var $items = $grid.find('.item');
-$grid.addClass('is-showing-items')
-  .isotope( 'revealItemElements', $items );
-
 $("#select-filter").selectpicker({size: 6}).change(function(){
 	$container.isotope({ filter: "."+$(this).val(), transitionDuration: "1s" });
 });
