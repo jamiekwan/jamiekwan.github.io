@@ -600,3 +600,21 @@ ul#navigation li{
 		#notes img.post-icon{
 			width: 100%;
 		}
+		#notes blockquote.article-quote{
+			font-family: 'Roboto Slab', serif; 
+			margin: 1em 3em;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 22px;
+			font-style:italic;
+			color: rgba(0,0,0, 0.6); 
+		}
+		#notes span.article-quote-details{
+			font-family: 'Cabin', sans-serif;
+			font-style: normal;
+			font-size: 13px;
+			font-weight: bold;
+			color: rgba(0,0,0, 0.6); 
+			background-color: rgba(255,225,0,0.2);
+			text-transform: uppercase;
+		}
