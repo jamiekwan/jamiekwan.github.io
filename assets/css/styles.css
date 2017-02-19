@@ -41,7 +41,7 @@ a {
 }
 
 ::selection { /* Text Selection Highlight Colour */
-    color: black;
+    color: white;
     background: #283645;
 }
 
