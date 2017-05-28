@@ -904,7 +904,7 @@ span.detail {
 #desktop-only { display:block; }
 #mobile-only { display:none; }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
   #desktop-only { display:none; }
   #mobile-only { display:block; }
 }
@@ -918,7 +918,7 @@ p.footer-github {
   font-style: italic;
 }
 
-@media (min-width: 970px) {
+@media (min-width: 1050px) {
  .profile-row {
     position: relative;
   }
