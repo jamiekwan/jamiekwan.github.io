@@ -909,6 +909,10 @@ span.detail {
   #mobile-only { display:block; }
 }
 
+@media (max-width: 768px) {
+  #mobile-only-img {display:block;}
+}
+
 img.featureimg-mobile {
 	padding-bottom: 50px;
 }
