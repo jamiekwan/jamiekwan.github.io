@@ -532,10 +532,6 @@ hr {
   transform: translateY(0);
 }
 
-.hover-one .atom-work-item .static:hover img{
-  transform: scale(0,0);
-}
-
 /* =========================================================== 
     06. ABOUT PAGE
 ============================================================ */
