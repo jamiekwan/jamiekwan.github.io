@@ -532,16 +532,82 @@ hr {
   transform: translateY(0);
 }
 
-.static-item img h5 p{
-  transform: none;
-  transition: none;
+/*================= */
+
+.static {
+  padding-left: 0;
+  padding-bottom: 15px;
+}
+.static a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: #3b3b3b;
+}
+.static .desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.static .desc h5 span{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3b3b3b;
+  background: rgba(255,225,0,1); 
+  padding: 5px; 
+  line-height: 40px;
+
 }
 
-.static-item:hover img h5 p{
-  transform: none;
-  transition: none;
+.static .desc p {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #747474;
+  font-weight: 500;
 }
 
+.hover-one .static a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease 0.1s;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+}
+.hover-one .static img {
+  transition: all 0.5s ease 0s;
+}
+.hover-one .static .desc {
+  text-align: center;
+}
+.hover-one .static .desc h5,
+.hover-one .static .desc p {
+  transition: all 0.3s ease 0.2s;
+  opacity: 0;
+}
+.hover-one .static .desc h5 {
+  transform: translateY(60%);
+}
+.hover-one .static .desc p {
+  transform: translateY(-60%);
+}
+.hover-one .static:hover a:after {
+  opacity: 1;
+}
+/*.hover-one .static:hover img {
+  transform: scale(1.55, 1.55);
+}*/
+.hover-one .static:hover h5,
+.hover-one .static:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* =========================================================== 
     06. ABOUT PAGE
