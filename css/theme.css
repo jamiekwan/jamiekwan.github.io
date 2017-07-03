@@ -532,12 +532,14 @@ hr {
   transform: translateY(0);
 }
 
-.static-item {
+.static-item img h5 p{
   transform: none;
+  transition: none;
 }
 
-.static-item:hover {
+.static-item:hover img h5 p{
   transform: none;
+  transition: none;
 }
 
 
