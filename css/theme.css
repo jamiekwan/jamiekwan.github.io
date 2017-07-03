@@ -532,6 +532,15 @@ hr {
   transform: translateY(0);
 }
 
+.static-item {
+  transform: none;
+}
+
+.static-item:hover {
+  transform: none;
+}
+
+
 /* =========================================================== 
     06. ABOUT PAGE
 ============================================================ */
