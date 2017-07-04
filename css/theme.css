@@ -534,6 +534,10 @@ hr {
 
 /*=================*/
 
+.test-static {
+  pointer-events: none;
+}
+
 .static {
   padding-left: 0;
   padding-bottom: 15px;
