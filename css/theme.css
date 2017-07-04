@@ -549,7 +549,7 @@ hr {
   top: 50%;
   left: 50%;
   z-index: 2;
-  text-align: left;
+  text-align: center;
   transform: translate(-50%, -50%);
 }
 .static .desc h5 span{
