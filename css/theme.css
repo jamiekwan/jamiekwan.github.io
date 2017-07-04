@@ -559,7 +559,7 @@ hr {
   color: #3b3b3b;
   background: rgba(255,225,0,1); 
   padding: 5px; 
-  line-height: 40px;
+  line-height: 30px;
 
 }
 
@@ -569,7 +569,7 @@ hr {
   color: #747474;
   font-weight: 500;
 }
-/*
+
 .hover-one .static a:after {
   content: '';
   position: absolute;
@@ -581,7 +581,7 @@ hr {
   background-color: rgba(255, 255, 255, 0.8);
   opacity: 0;
 }
-.hover-one .static img {
+/*.hover-one .static img {
   transition: all 0.5s ease 0s;
 }
 .hover-one .static .desc {
@@ -607,8 +607,8 @@ hr {
 .hover-one .static:hover h5,
 .hover-one .static:hover p {
   opacity: 1;
-  tr*/ansform: translateY(0);
-}
+  transform: translateY(0);
+}*/
 
 /* =========================================================== 
     06. ABOUT PAGE
