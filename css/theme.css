@@ -548,8 +548,8 @@ hr {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+/*  transform: translate(-50%, -50%);
+*/  z-index: 2;
 }
 .static .desc h5 span{
   font-size: 18px;
@@ -568,7 +568,7 @@ hr {
   color: #747474;
   font-weight: 500;
 }
-
+/*
 .hover-one .static a:after {
   content: '';
   position: absolute;
@@ -600,13 +600,13 @@ hr {
 .hover-one .static:hover a:after {
   opacity: 1;
 }
-/*.hover-one .static:hover img {
+.hover-one .static:hover img {
   transform: scale(1.55, 1.55);
-}*/
+}
 .hover-one .static:hover h5,
 .hover-one .static:hover p {
   opacity: 1;
-  transform: translateY(0);
+  tr*/ansform: translateY(0);
 }
 
 /* =========================================================== 
