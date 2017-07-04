@@ -550,6 +550,7 @@ hr {
   left: 50%;
 /*  transform: translate(-50%, -50%);
 */  z-index: 2;
+  text-align: center;
 }
 .static .desc h5 span{
   font-size: 18px;
