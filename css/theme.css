@@ -546,11 +546,11 @@ hr {
 }
 .static .desc {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 50%;
+  left: 10%;
 /*  transform: translate(-50%, -50%);
 */  z-index: 2;
-  text-align: center;
+  text-align: left;
 }
 .static .desc h5 span{
   font-size: 18px;
