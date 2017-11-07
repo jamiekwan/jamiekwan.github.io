@@ -497,9 +497,9 @@ hr {
   background: rgba(1,111,185,1); 
 }
 
-.atom-work-item .blue p {
+.atom-work-item .blue p span{
   background: rgba(255,225,0,1); 
-  padding: 5px; 
+  padding: 2px; 
 }
 
 .hover-one .atom-work-item a:after {
