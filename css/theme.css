@@ -495,7 +495,11 @@ hr {
 .atom-work-item .blue h5 span{
   color: #ffffff;
   background: rgba(1,111,185,1); 
+}
 
+.atom-work-item .blue p {
+  background: rgba(255,225,0,1); 
+  padding: 5px; 
 }
 
 .hover-one .atom-work-item a:after {
