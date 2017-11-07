@@ -498,8 +498,10 @@ hr {
 }
 
 .atom-work-item .blue p span{
+  color: #ffffff;
+  font-style: italic;
   background: rgba(1,111,185,1); 
-  padding: 2px; 
+  padding: 3px; 
 }
 
 .hover-one .atom-work-item a:after {
