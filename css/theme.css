@@ -1009,8 +1009,13 @@ p.footer-github {
   }
 
 .bottom-align-text {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
+.typed-text {
+  color: #016FB9;
+  font-weight: bold;
+  border-bottom: 5px solid rgb(255,225,0);
+}
