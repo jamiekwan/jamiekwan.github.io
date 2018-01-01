@@ -1014,7 +1014,7 @@ p.footer-github {
   right: 0;
 }
 
-.typed-text {
+#typed {
   color: #016FB9;
   font-weight: bold;
   border-bottom: 5px solid rgb(255,225,0);
