@@ -1003,19 +1003,20 @@ p.footer-github {
   font-style: italic;
 }
 
+#typed {
+  color: #016FB9;
+  font-weight: bold;
+  border-bottom: 3px solid rgb(1,111,185);
+}
+
 @media (min-width: 1050px) {
  .profile-row {
     position: relative;
   }
 
 .bottom-align-text {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-#typed {
-  color: #016FB9;
-  font-weight: bold;
-  border-bottom: 3px solid rgb(1,111,185);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
