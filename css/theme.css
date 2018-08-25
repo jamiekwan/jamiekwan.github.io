@@ -984,6 +984,7 @@ span.detail {
   /*background-color: rgba(255,225,0, 0.5);*/
   text-transform: uppercase;
   border-bottom: 3px solid rgb(1,111,185);
+  padding-bottom: 10px;
 }
 
 #desktop-only { display:block; }
