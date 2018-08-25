@@ -998,7 +998,7 @@ img.featureimg-mobile {
 	padding-bottom: 50px;
 }
 
-p.footer-secondary {
+a.footer-secondary {
   font-size: 85%;
   border-bottom: 2px solid rgb(1,111,185);  
 }
