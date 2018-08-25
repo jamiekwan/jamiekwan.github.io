@@ -983,7 +983,7 @@ span.detail {
   color: rgba(0,0,0); 
   /*background-color: rgba(255,225,0, 0.5);*/
   text-transform: uppercase;
-  border-bottom: 5px solid rgb(0,44,73);
+  border-bottom: 3px solid rgb(1,111,185);
 }
 
 #desktop-only { display:block; }
