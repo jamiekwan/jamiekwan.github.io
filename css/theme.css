@@ -998,9 +998,9 @@ img.featureimg-mobile {
 	padding-bottom: 50px;
 }
 
-p.footer-github {
+p.footer-secondary {
   font-size: 85%;
-  font-style: italic;
+  border-bottom: 2px solid rgb(1,111,185);  
 }
 
 #typed {
