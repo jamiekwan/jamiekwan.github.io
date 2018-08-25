@@ -24,11 +24,10 @@
     01. Typography
 ============================================================ */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  /*background-color: #f7f7f7;*/
   font-size: 15px;
   line-height: 25px;
   color: #3b3b3b;
