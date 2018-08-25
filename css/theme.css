@@ -984,7 +984,7 @@ blockquote.secondary {
 span.detail {
   font-size: 14px;
   font-weight: bold;
-  color: rgba(0,0,0); 
+  color: rgba(0,0,0, 0.6); 
   /*background-color: rgba(255,225,0, 0.5);*/
   text-transform: uppercase;
   border-bottom: 3px solid rgb(1,111,185);
