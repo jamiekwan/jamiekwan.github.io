@@ -907,6 +907,7 @@ hr {
   margin-top: 7px;
 }
 .copyright p {
+  font-size: 85%;
   overflow: hidden;
   margin-bottom: 0;
   padding-top: 15px;
