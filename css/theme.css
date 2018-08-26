@@ -642,6 +642,8 @@ hr {
 .project-info li {
   font-weight: 700;
   padding: 10px 0;
+  font-style: italic;
+
 }
 .project-info li span {
   font-weight: 300;
