@@ -871,7 +871,7 @@ Portfolio
 .filter > li a {
 	text-transform: uppercase;
 	font-size: 14px;
-	color: rgba(102, 102, 102, 0.5);
+	color: rgba(102, 102, 102, 0.7);
 }
 
 .filter > li a:hover,
@@ -1508,7 +1508,7 @@ Responsive Media Querries
 	/* Headers */
 
 	.hs-title-size-1 {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.hs-title-size-2 {
