@@ -1,251 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Designer, Strategist, and Storyteller, creating human-centered experiences that prompt play and curiosity." />
-        <meta name="keywords" content="Experience Design Architecture Digital Media Interaction Engagement Play">
+---
+layout: default
+title: Jamie Kwan | Experience Design & Strategy
+---
 
-        <title>{{ page.title }}</title>
+<!-- HOME -->
+	{% for text in page.color %}
+	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" style="background-color:{{page.color}}">
+	{% endfor%}
 
+	{% for text in page.bgimage %}
+	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-background="assets/images/{{page.bgimage}}.jpg">
+	{% endfor %}
 
+		<div class="hs-caption container">
+			<div class="caption-content">
+				<div class="hs-title-size-1 font-alt m-b-20 wow fadeInUp" style="text-transform:uppercase">
+					{{ page.title }}
+				</div>
+				<div class="hs-title-size-3 font-alt wow fadeInUp" data-wow-delay="0.4s">
+					{{ page.oneliner }}
+					<br>
+					<i class="fa fa-angle-down"></i>
+				</div>
+			</div>
+		</div>
 
+	</section >
+	<!-- /HOME -->
 
-        <!-- ===============    favicon link     =============== -->
-        <link rel="icon" type="image/png" href="../assets/favicon-jk.ico" />
+	<!-- WRAPPER -->
+	<div class="wrapper">
 
-        <!-- ===============    Bootstrap core CSS     =============== -->
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" media="all" />
-		<link rel="stylesheet" type="text/css" href="../css/BootstrapXL.css" />
+		<!-- PORTFOLIO DESCRIPTION -->
+		<section class="module-small">
 
-        <!-- ===============    font-awesome core CSS     =============== -->
-        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" media="all" />
+			<div class="container">
 
-        <!-- ===============    theme core CSS     =============== -->
-        <link rel="stylesheet" type="text/css" href="../css/effect1.css" media="all" />
+				<div class="row">
 
-        <!-- ===============    theme core CSS     =============== -->
-        <link rel="stylesheet" type="text/css" href="../css/theme.css" media="all" />
+					<div class="col-sm-4 col-m-4 col-xl-4">
 
-        <!-- ===============    responsive core CSS     =============== -->
-        <link rel="stylesheet" type="text/css" href="../css/responsive.css" media="all" />
+						<div class="work-details">
+							<h3 class="work-details-title font-alt">Project Details</h3>
+							<ul>
+								{% for text in page.date %}<li class="font-inc"><strong>Date: </strong>{{ page.date }}</li>{% endfor %}
+								{% for text in page.client %}<li class="font-inc"><strong>Client: </strong>{{page.client}}</li>{% endfor %}
+							</ul>
+						</div>
 
-        <!-- ===============    spacing core CSS     =============== -->
-        <link rel="stylesheet" type="text/css" href="../css/spacing.min.css" media="all" />
+					</div>
 
-        <!-- ===============    theme content color core CSS     =============== -->
-        <link rel="stylesheet" type="text/css" href="../css/theme-content-color/blue.css" media="all" />
+					<div class="col-sm-6 col-sm-offset-2 col-m-6 col-m-offset-2 col-xl-6 col-xl-offset-2">
+						{{ content }}
+					</div>
 
-        <!-- ===============    Lightbox CSS    =============== -->        
-        <link rel="stylesheet" href="../css/lightbox.css"> 
+				</div>
 
+			</div>
 
-        <!-- ===============    Google fonts CSS     =============== -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Slab|Bitter' rel='stylesheet' type='text/css'>
+		</section>
+		<!-- /PORTFOLIO DESCRIPTION -->
 
-        <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<!-- PORTFOLIO CONTENT -->
+		<section>
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
+			<div class="container">
 
-    <body>
-        
+				{% for text in page.videoPath %}
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 wow fadeIn">
+						<div class="embed-responsive embed-responsive-16by9">
+							<p align="center"><iframe src="https://player.vimeo.com/video/{{page.videoPath}}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+						</div>
+					</div>
+				</div>
+				<br>
+				{% endfor %}
 
-        <!-- ===============    Start template markup     =============== -->
+				{% for image in page.images %}
 
-        <!-- START preloader section -->
-        <div class="ip-container" id="ip-container">
-            <div class="ip-header">
-                <div class="ip-loader">
-                    <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
-                        <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-                        <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="menu-wrapper">
-                <div class="container">
-                    <header>
-                        <div class="logo">
-                            <a href="http://www.jamiemkwan.com">
-                                <img src="../assets/logo.png" width=300px alt="Jamie Kwan">
-                            </a>
-                        </div>
-                        <div class="mobile-menu">
-                            <span class="line"></span>
-                        </div>
-                        <nav>
-                            <ul>
-                                <li class="active"><a href="http://www.jamiemkwan.com/#work">Work</a></li>
-                                <li><a href="../profile">Profile</a></li>
-                                <!-- <li><a href="../blog">Blog</a></li> -->
-                                <li><a href="mailto:jamie@studiobud.ca?subject=Hello!">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </header>
-                </div>
-            </div>
-        </div>
-        <!--/ END preloader section -->
+					{% for text in image.body-text %}
+					<br>
+					<div class="row">
 
-        <!-- START page title section -->
-        <div class="page-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-md-7 col-xs-12">
-                        <h1>{{ page.title }}</h1>
-                        <img src="../images/branding-border.png" alt="" class="heading-border">
-                        <p><b><span class="theme-color">{{ page.slogan }}</span></b>&nbsp;{{ page.oneliner }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/ END page title section -->
+						<div class="col-sm-8 col-sm-offset-2 wow fadeIn">
+							<h3 class="work-details-title font-alt">{{ image.body-heading }}</h3>
+							<p>{{ image.body-text }}</p>
+						</div>
 
-        <div id="desktop-only">
-            <!-- START parallax -->
-            <div class="small-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12 col-md-12">
-                            <div class="fixed-bg parallax-image img-responsive" data-background="../assets/projects/{{ page.featureimg }}/1.jpg" data-stellar-background-ratio="0.5"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/ END parallax -->
-        </div>
-<!-- START section -->
-<div>
-    <div class="container">
-        
-        <div class="row featureimg-mobile" id="mobile-only">
-            <div class="col-xl-12 col-m-12 col-sm-12 col-xs-12">
-                <img src="../assets/projects/{{ page.featureimg }}/1.jpg" class="img-responsive" vspace="50">
-            </div>
-        </div>
-                            
-        {% for text in page.challenge %}      
-        <div class="row">
-            <div class="col-xl-8 col-md-8">
+					</div>
+					<br>
+					{% endfor %}
 
-                <span class="detail">Narrative</span>
-                <h2 class="dark-text mb-10 mt-0 bigfont"><b>{{ page.challenge }}</b></h2>
-                <img src="../images/branding-border.png" alt="" class="heading-border">
-            </div>
-        </div>{% endfor %}
+					{% for text in image.quote %}
 
-        <div class="row">
+						<div class="col-sm-8 col-sm-offset-2 wow fadeIn">
+							<blockquote class="blockquote">
+								<p>"{{ image.quote }}"</p>
+								<footer class="blockquote-footer">{{ image.source }}</footer>
+							</blockquote>
+						</div>
+					<br>
+					{% endfor %}
 
-            {{ content }}
+					<div class="row">
 
-            <div class="col-xl-4 col-md-4 col-sm-8">
-                <ul class="project-info list-unstyled">
-                  {% for text in page.category %}<li>Category: <span>{{ page.category }}</span></li>{% endfor %}
-                  {% for text in page.client %}<li>Client: <span>{{ page.client }}</span></li>{% endfor %}
-                  {% for text in page.date %}<li>Date: <span>{{ page.date }}</span></li>{% endfor %}
-                  {% for text in page.team %}<li>Team: <span>{{ page.team }}</span></li>{% endfor %}
-                </ul>
-            </div>
-        </div>
+						<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 img-fluid wow fadeIn" data-wow-delay="0.2s">
+							<p>
+								<img src="{{ image.image_path }}" alt="{{ image.title }}">
+							</p>
+						</div>
 
-    </div>
-</div>
-<!--/ END section -->
-        
-        <!--START image gallery -->
-        <div class="container">
-            <div class="row"><br><hr><br>
-                <div class="work-grids-area hover-one masonry" id="atom-works-grid">
+						{% for text in image.caption-right %}
+							<div class="col-xs-2 col-sm-2 imageCaptionLine wow fadeInRight" data-wow-delay="0.1s" id="desktop-only">
+								<p class="imageCaption">{{ image.caption-right }}</p>
+							</div>
+						{% endfor %}
 
-                    {% for image in page.images %}
-                    <div class="col-md-4 col-sm-6 col-xs-12 col-xl-4 atom-work-item">
-                        <a href="{{ image.image_path }}" data-lightbox="{{ page.featureimg }}">
-                            <img src="{{ image.image_path }}" alt="{{ image.title }}" class="img-responsive"/>
-                        </a>
-                    </div>
-                    {% endfor %}
-
-                </div>
-            </div>
-        </div>
-        <!--/ END image gallery -->
+					</div>
 
 
-        <!-- START footer section -->
-        <footer class="atom-footer-area small-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-xl-6">
-                        <div class="copyright">
-                            <p><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">All Work &copy; 2018 Jamie Kwan</a></p>
-                            <p class="footer-secondary">All pixels coded with <i class="fa fa-heart" aria-hidden="true"></i> on <a href="https://github.com/jamiekwan/jamiekwan.github.io" target="_blank">GitHub</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-6 text-right">
-                        <ul class="list-inline social-icons">
-                            <li><a href="http://www.facebook.com/jamiemkwan" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="http://www.twitter.com/jamiemkwan" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="http://www.instagram.com/jamiemkwan" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/jamiemkwan/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="mailto:jamie@studiobud.ca?subject=Hello!"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!--/ END footer section -->
+				{% endfor %}
 
-        <!-- ===============    /End template markup     =============== -->
+			</div>
 
+		</section>
+		<!-- /PORTFOLIO CONTENT -->
+		
+		<!-- DIVIDER -->
+		<hr class="divider-w">
+		<!-- /DIVIDER -->
 
-        <!-- ===============    jQuery core jquery     =============== -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>
-        <!-- ===============    Bootstrap core jquery     =============== -->
-        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<!-- PAGINATION -->
+		<section class="module-small p-t-50">
 
-        <!-- ===============    modernizr core jquery     =============== -->
-        <script type="text/javascript" src="../js/modernizr.custom.js"></script>
+			<div class="container">
+			
+				<div class="pagination font-inc text-uppercase">
+			
+<!-- 					<a href="#"><i class="fa fa-angle-left"></i> Prev</a> -->
+					<a href="http://jamiemkwan.com">Back to Home</a>
+<!-- 					<a href="#">Next <i class="fa fa-angle-right"></i></a> -->
+			
+				</div>
+			
+			</div>
 
-        <!-- ===============    classie core jquery     =============== -->
-        <script type="text/javascript" src="../js/classie.js"></script>
+		</section>
+		<!-- /PAGINATION -->
 
-        <!-- ===============    pathLoader core jquery     =============== -->
-        <script type="text/javascript" src="../js/pathLoader.js"></script>
-
-        <!-- ===============    imagesloaded core jquery     =============== -->
-        <script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
-        
-        <!-- ===============    maps api core JavaScript     =============== -->
-        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
-
-        <!-- ===============    stellar core jquery     =============== -->
-        <script type="text/javascript" src="../js/jquery.stellar.min.js"></script>
-
-        <!-- ===============    smooth core jquery     =============== -->
-        <script type="text/javascript" src="../js/smooth.js"></script>
-
-        <!-- ===============    isotope core jquery     =============== -->
-        <script type="text/javascript" src="../js/isotopoe.pkgd.min.js"></script>
-
-        <!-- ===============    masonary core jquery     =============== -->
-        <script type="text/javascript" src="../js/masonary.min.js"></script>
-
-        <!-- ===============    ROW JavaScript Plugins    =============== -->
-        <script type="text/javascript" src="../js/row-plugins.js"></script>
-
-        <!-- ===============    Active core JavaScript     =============== -->
-        <script type="text/javascript" src="../js/active.js"></script>
-
-        <!-- ===============    Lightbox JavaScript     =============== -->
-        <script src="../js/lightbox.js"></script>
-    </body>
-</html>
+		<!-- DIVIDER -->
+		<hr class="divider-w">
+		<!-- /DIVIDER -->
