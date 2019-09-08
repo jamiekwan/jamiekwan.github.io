@@ -515,6 +515,7 @@ blockquote {
 	font-family: "Lexend Giga", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+	font-size: 10px;
 }
 
 .font-serif {
