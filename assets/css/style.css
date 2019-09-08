@@ -1218,7 +1218,7 @@ Pagination
 .pagination {
 	display: block;
 	text-align: center;
-	font-size: 14px;
+	font-size: 10px;
 }
 
 .pagination a + a {
