@@ -19,6 +19,7 @@ html {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	-ms-overflow-style: scrollbar;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -535,6 +536,46 @@ blockquote {
 	text-shadow: none !important;
 }
 
+.story-graphic{
+	z-index: 1;
+}
+
+.story-link{
+	color: white;
+}
+
+.story-top{
+	padding-top: 75px;
+}
+
+.story-mid{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.story-bottom{
+	padding-bottom: 75px;
+}
+
+.right-justified{
+	text-align: right;
+}
+
+#story a {
+	border-bottom: 4px solid rgb(1,111,185, 0.5) ;
+	color: rgb(1,111,185);
+	font-weight: 800;
+
+}
+
+ .header-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+.header-shape img {
+    width: 100%; }
+
 /* ------------------------------------------------------------------
 Navbar
 ------------------------------------------------------------------- */
@@ -705,7 +746,7 @@ Sections
 .wrapper {
 	position: relative;
 	background: #fff;
-	z-index: 1;
+	z-index: -1;
 }
 
 .module,

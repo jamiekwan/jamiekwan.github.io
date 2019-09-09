@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,7 @@
 	<meta name="description" content="Designer, Strategist, and Storyteller, creating human-centered experiences that prompt play and curiosity.">
 	<meta name="keywords" content="Experience Design Architecture Digital Media Interaction Brand Engagement Play Transmedia">
 	
-	<title>{{ page.title }}</title>
+	<title>TEST PAGE</title>
     
     <!-- ===============    favicon link     =============== -->
     <link rel="icon" type="image/png" href="assets/images/favicon-jk.ico" />
@@ -76,6 +79,18 @@
           });
         });
     </script>
+
+    <script> // parallax
+    	// object-fit polyfill run
+			objectFitImages();
+
+		/* init Jarallax */
+			jarallax(document.querySelectorAll('.jarallax'));
+
+			jarallax(document.querySelectorAll('.jarallax-keep-img'), {
+    		keepImg: true,
+			});
+    </script>
 </head>
 
 <body>
@@ -119,7 +134,72 @@
 	<!-- /NAVIGATION -->
 
 
-	{{ content }}
+<!--========================= COPY BACK ================================ -->
+
+	<section id="home" class="module-hero module-parallax module-fade bg-dark-50" data-background="assets/images/background/dmitri-popov-69420-unsplash.jpg">
+		<div class="hs-caption container">
+			<div class="caption-content">
+				<div class="hs-title-size-1 font-alt m-b-20 wow fadeInUp" style="text-transform:uppercase">
+					All stories have a beginning, a middle, and an end. 
+				</div>
+				<div class="hs-title-size-3 font-alt wow fadeInUp" data-wow-delay="0.4s">
+					Here's how my narrative continues to unfold.
+					
+					<div class="wow fadeInUp" data-wow-delay="1.0s">
+						<br><a href="#story" class="story-link"><i class="fa fa-chevron-circle-down"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="header-shape">
+            <img src="assets/images/header-shape.svg" alt="shape">
+        </div>
+
+	</section>
+
+	<div class="wrapper">
+	<section id="story">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-xs-1 col-xs-offset-1 story-top">
+					<img class="img-fluid wow fadeInDown story-graphic" data-wow-delay="0.2s" src="assets/images/circle.svg">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-1 wow fadeInUp story-mid">
+					<h3 class="work-details-title font-alt">In 2013, I started my career in Architecture after graduating from Ryerson University.</h3>
+					
+					<p>Fresh out of design school, I landed a job as a Jr. Architect, focused on immersing myself in the world of sustainable design, passive solar architecture, and community engagement. While most of my days were spent in design development and building permit drawings, I had the opportunity to facilitate youth-engagement workshops with the <a href="https://www.sustainable.to/east-scarborough-storefront/zn7776i2cl08rzh4qt2030769lxtua" target="_blank">East Scarborough Storefront</a>&mdash;an adaptive re-use community hub designed in part by the neighbourhood residents and kids. </p>
+					
+					<p>Seeing the impact of participation on the community sparked my interest in the human-side of the built environment.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-2 col-xs-offset-5">
+					<img class="img-fluid wow fadeInDown" data-wow-delay="0.5s" src="assets/images/curve.svg">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-5 wow fadeInRight story-mid story-bottom right-justified">
+					<h3 class="work-details-title font-alt">Simultaneously, I had a growing interest in tech, and designing for digital experiences.</h3>
+
+					<p>Technology opened up a new I had a passion for integrating digital technologies into architectural spaces, and worked with my friends to design interactive installations&mdash;including one that created an <a href="https://jamiemkwan.com/ad-astra" target="_blank">infinite starry night at the Bata Shoe Museum</a>.</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	</div>
+
+
+<!--========================= COPY BACK ================================ -->
+
+
 
 
 
