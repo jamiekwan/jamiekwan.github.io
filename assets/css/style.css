@@ -573,6 +573,7 @@ blockquote {
     bottom: 0;
     left: 0;
     width: 100%; }
+
 .header-shape img {
     width: 100%; }
 
@@ -746,7 +747,7 @@ Sections
 .wrapper {
 	position: relative;
 	background: #fff;
-	z-index: -1;
+	z-index: 1;
 }
 
 .module,
