@@ -536,12 +536,16 @@ blockquote {
 	text-shadow: none !important;
 }
 
+.story-graphic{
+	z-index: 1;
+}
+
 .story-link{
 	color: white;
 }
 
 .story-top{
-	padding-top: 100px;
+	padding-top: 75px;
 }
 
 .story-mid{
@@ -564,7 +568,7 @@ blockquote {
 
 }
 
-.header-shape {
+ .header-shape {
     position: absolute;
     bottom: 0;
     left: 0;
