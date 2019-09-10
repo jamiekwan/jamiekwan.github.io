@@ -1013,6 +1013,10 @@ Portfolio
 	color: #999;
 }
 
+.work-descr .story-link-in{
+	border-bottom: 2px solid #999;
+}
+
 /* */
 .works-grid-4 .work-title {
 	font-size: 14px;
