@@ -1013,7 +1013,7 @@ Portfolio
 	color: #999;
 }
 
-.work-descr .story-link-in{
+.story-link-in a {
 	border-bottom: 2px solid #999;
 }
 
