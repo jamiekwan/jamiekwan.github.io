@@ -1014,7 +1014,7 @@ Portfolio
 }
 
 .story-link-in a {
-	border-bottom: 2px solid #999;
+	border-bottom: 4px solid rgb(0,0,0,0.5);
 }
 
 /* */
