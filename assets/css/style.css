@@ -561,6 +561,10 @@ blockquote {
 	text-align: right;
 }
 
+.story-list li{
+	padding-bottom: 10px;
+}
+
 #story a {
 	border-bottom: 4px solid rgb(1,111,185, 0.5) ;
 	color: rgb(1,111,185);
