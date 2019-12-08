@@ -572,6 +572,12 @@ blockquote {
 
 }
 
+.logo-grid {
+	justify-content: center;
+	align-content: center;
+	padding-bottom: 50px;
+}
+
  .header-shape {
     position: absolute;
     bottom: 0;
