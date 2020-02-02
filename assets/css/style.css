@@ -578,6 +578,10 @@ blockquote {
 	padding-bottom: 50px;
 }
 
+.profile-top{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
 .header-shape {
     position: absolute;
     bottom: 0;
@@ -586,10 +590,6 @@ blockquote {
 
 .header-shape img {
     width: 100%; }
-
-.profile-top{
-	padding-top: 100px;
-}
 
 
 /* ------------------------------------------------------------------
