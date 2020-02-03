@@ -13,7 +13,7 @@ Place here your custom CSS styles
 #desktop-only { display:block; }
 #mobile-only { display:none; }
 
-@media (max-width: 1050px) {
+@media (max-width: 650px) {
   #desktop-only { display:none; }
   #mobile-only { display:block; }
 }
