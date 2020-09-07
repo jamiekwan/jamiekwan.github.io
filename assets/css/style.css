@@ -1043,6 +1043,7 @@ Portfolio
 
 /* Portfolio item hover */
 
+
 .work-item:hover .work-image:after {
 	background: rgba(0, 0, 0, .7);
 }
