@@ -43,7 +43,7 @@ Place here your custom CSS styles
 
 .imageCaption {
 	font-style: italic;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .imageCaptionLine {
@@ -57,6 +57,12 @@ Place here your custom CSS styles
 }
 
 .blockquote p{
-	font-size: 18px;
-	font-style: normal;
+	font-size: 20px;
+	font-style: italic;
+}
+
+
+.media-body {
+	padding-left: 10px;
+	padding-top: 7px;
 }
