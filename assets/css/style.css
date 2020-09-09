@@ -702,7 +702,7 @@ Navbar
 }
 
 /* -------------------------------------------------------------------
-Home Section
+Home Section 
 ------------------------------------------------------------------- */
 
 .module-hero {
@@ -770,7 +770,7 @@ Sections
 }
 
 .module,
-.module-small,
+.small,
 .module-header {
 	position: relative;
 	padding: 140px 0;
