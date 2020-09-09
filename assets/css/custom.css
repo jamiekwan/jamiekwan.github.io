@@ -66,3 +66,9 @@ Place here your custom CSS styles
 	padding-left: 10px;
 	padding-top: 7px;
 }
+
+
+.nav-discipline a:hover{
+	pointer-events: none;
+}
+
