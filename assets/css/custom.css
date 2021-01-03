@@ -62,6 +62,7 @@ Place here your custom CSS styles
 }
 
 .blockquote-2 p{
+	border-top: 4px solid rgb(1,111,185);	
 	font-size: 24px;
 	font-style: italic;
 	justify-content: center;
