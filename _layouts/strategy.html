@@ -1,0 +1,156 @@
+---
+layout: default
+title: Jamie Kwan | Experience Design & Strategy
+---
+
+<!-- HOME -->
+	{% for text in page.color %}
+	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" style="background: linear-gradient(135deg, {{page.color}})">
+	{% endfor%}
+
+	{% for text in page.bgimage %}
+	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-background="assets/images/{{page.bgimage}}.jpg">
+	{% endfor %}
+
+		<div class="hs-caption container">
+			<div class="caption-content">
+				<div class="hs-title-size-1 font-alt m-b-20 wow fadeInUp" style="text-transform:uppercase">
+					{{ page.title }}
+				</div>
+				<div class="hs-title-size-3 font-alt wow fadeInUp" data-wow-delay="0.4s">
+					{{ page.oneliner }}
+					<br>
+					<i class="fa fa-angle-down"></i>
+				</div>
+			</div>
+		</div>
+
+	</section >
+	<!-- /HOME --> 
+
+	<!-- WRAPPER -->
+	<div class="wrapper">
+		
+		{% for text in page.date %}
+		<!-- PORTFOLIO DESCRIPTION -->
+		<section class="module-small">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-4 col-m-4 col-xl-4">
+
+						<div class="work-details">
+							<h3 class="work-details-title font-alt">Project Details</h3>
+							<ul>
+								{% for text in page.date %}<li class="font-inc"><strong>Date: </strong>{{ page.date }}</li>{% endfor %}
+								{% for text in page.client %}<li class="font-inc"><strong>Client: </strong>{{page.client}}</li>{% endfor %}
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col-sm-6 col-sm-offset-1 col-m-6 col-m-offset-1 col-xl-6 col-xl-offset-1">
+						{{ content }}
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+		<!-- /PORTFOLIO DESCRIPTION -->
+		{% endfor %}
+
+		<!-- PORTFOLIO CONTENT -->
+		<section>
+
+			<div class="container">
+
+				{% for text in page.videoPath %}
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 wow fadeIn">
+						<div class="embed-responsive embed-responsive-16by9">
+							<p align="center"><iframe src="https://player.vimeo.com/video/{{page.videoPath}}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+						</div>
+					</div>
+				</div>
+				<br>
+				{% endfor %}
+
+				{% for image in page.images %}
+
+					{% for text in image.body-text %}
+					<br>
+					<div class="row">
+
+						<div class="col-sm-8 col-sm-offset-2 wow fadeIn">
+							<h3 class="work-details-title font-alt">{{ image.body-heading }}</h3>
+							<p>{{ image.body-text }}</p>
+						</div>
+
+					</div>
+					<br>
+					{% endfor %}
+
+					{% for text in image.quote %}
+
+						<div class="col-sm-8 col-sm-offset-2 wow fadeIn">
+							<blockquote class="blockquote">
+								<p>"{{ image.quote }}"</p>
+								<footer class="blockquote-footer">{{ image.source }}</footer>
+							</blockquote>
+						</div>
+					<br>
+					{% endfor %}
+
+					<div class="row">
+
+						<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 img-fluid wow fadeIn" data-wow-delay="0.2s">
+							<p>
+								<img src="{{ image.image_path }}" alt="{{ image.title }}">
+							</p>
+						</div>
+
+						{% for text in image.caption-right %}
+							<div class="col-xs-2 col-sm-2 imageCaptionLine wow fadeInRight" data-wow-delay="0.1s" id="desktop-only">
+								<p class="imageCaption">{{ image.caption-right }}</p>
+							</div>
+						{% endfor %}
+
+					</div>
+
+
+				{% endfor %}
+
+			</div>
+
+		</section>
+		<!-- /PORTFOLIO CONTENT -->
+		
+		<!-- DIVIDER -->
+		<hr class="divider-w">
+		<!-- /DIVIDER -->
+
+		<!-- PAGINATION -->
+		<section class="module-small p-t-50">
+
+			<div class="container">
+			
+				<div class="pagination font-inc text-uppercase">
+			
+<!-- 					<a href="#"><i class="fa fa-angle-left"></i> Prev</a> -->
+					<a href="http://jamiemkwan.com">Back to Home</a>
+<!-- 					<a href="#">Next <i class="fa fa-angle-right"></i></a> -->
+			
+				</div>
+			
+			</div>
+
+		</section>
+		<!-- /PAGINATION -->
+
+		<!-- DIVIDER -->
+		<hr class="divider-w">
+		<!-- /DIVIDER -->
