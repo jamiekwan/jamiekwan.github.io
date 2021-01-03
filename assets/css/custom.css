@@ -46,7 +46,12 @@ Place here your custom CSS styles
 	font-size: 14px;
 }
 
-.imageCaptionLine {
+.imageCaptionLineLeft {
+	border-left: 4px solid rgb(1,111,185);
+
+}
+
+.imageCaptionLineRight {
 	border-right: 4px solid rgb(1,111,185);
 
 }
