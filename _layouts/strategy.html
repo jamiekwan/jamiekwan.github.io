@@ -120,7 +120,7 @@ title: Jamie Kwan | Experience Design & Strategy
 					<br>
 					{% endfor %}
 
-					{% if image.wideImage == "Yes" %}
+					{% if text in image.wideImage == "Yes" %}
 
 						<div class="row">
 
@@ -130,7 +130,7 @@ title: Jamie Kwan | Experience Design & Strategy
 								</p>
 							</div>
 
-							{% else %}
+							{% elsif text in image.wideImage == "No" %}
 							<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 img-fluid wow fadeIn" data-wow-delay="0.2s">
 								<p>
 									<img src="{{ image.image_path }}" alt="{{ image.title }}">
