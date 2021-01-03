@@ -66,16 +66,15 @@ title: Jamie Kwan | Experience Design & Strategy
 		{% endfor %}
 		<!-- EXEC SUMMARY -->
 
-		<!-- PHOTO BREAK -->
-
-
-		<!-- PHOTO BREAK -->
-
 
 		<!-- PORTFOLIO CONTENT -->
 		<section>
 
 			<div class="container">
+
+				{% for text in page.image-wide %}
+
+				{% end for %}
 
 				{% for text in page.videoPath %}
 				<div class="row">
@@ -106,7 +105,7 @@ title: Jamie Kwan | Experience Design & Strategy
 					{% for text in image.quote %}
 
 						<div class="col-sm-10 col-sm-offset-1 wow fadeIn">
-							<blockquote class="blockquote">
+							<blockquote class="blockquote-2">
 								<p>"{{ image.quote }}"</p>
 								<footer class="blockquote-footer">{{ image.source }}</footer>
 							</blockquote>

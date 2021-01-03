@@ -61,6 +61,15 @@ Place here your custom CSS styles
 	font-style: italic;
 }
 
+.blockquote-2 p{
+	font-size: 24px;
+	font-style: italic;
+}
+
+.blockquote-footer p{
+	font-size: 12px;
+	font-style: italic;
+}
 
 .media-body {
 	padding-left: 10px;
