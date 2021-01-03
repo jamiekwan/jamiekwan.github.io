@@ -1,5 +1,5 @@
 ---
-layout: strategy
+layout: portfolio
 color: "rgb(2,78,168), rgb(113,2,168)"
 title: Future of Movies & Entertainment
 oneliner: "What are kids looking for in a future movie theatre experience? We found it had nothing to do with movies."
@@ -32,3 +32,4 @@ images:
 
 ---
 
+<p> test </p>
