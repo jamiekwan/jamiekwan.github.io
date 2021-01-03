@@ -29,7 +29,6 @@ images:
 
   - image_path: ../assets/images/projects/cineplex-future/01.jpg
     title: Workshop 1
-    caption-left: Test Caption
 
   - image_path: ../assets/images/projects/cineplex-future/06.jpg
     body-heading: "Workshop 2: How to Live Like Me"

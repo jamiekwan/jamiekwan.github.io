@@ -127,32 +127,16 @@ title: Jamie Kwan | Experience Design & Strategy
 
 					<div class="row">
 
-
-						{% for text in image.caption-left %}
-						<div class="col-xs-2 col-xs-offset-2 col-sm-2 col-sm-offset-3 imageCaptionLineLeft wow fadeInRight" data-wow-delay="0.1s" id="desktop-only">
-								<p class="imageCaption" style="text-align:right">{{ image.caption-left }}</p>
-						</div>
-
-						<div class="col-xs-8 col-sm-6  img-fluid wow fadeIn" data-wow-delay="0.2s">
-							<p>
-								<img src="{{ image.image_path }}" alt="{{ image.title }}">
-							</p>
-						</div>
-
-
-						{% endfor %}
-
-
-						{% for text in image.caption-right %}
 						<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 img-fluid wow fadeIn" data-wow-delay="0.2s">
 							<p>
 								<img src="{{ image.image_path }}" alt="{{ image.title }}">
 							</p>
 						</div>
 
-						<div class="col-xs-2 col-sm-2 imageCaptionLineRight wow fadeInRight" data-wow-delay="0.1s" id="desktop-only">
-							<p class="imageCaption">{{ image.caption-right }}</p>
-						</div>
+						{% for text in image.caption-right %}
+							<div class="col-xs-2 col-sm-2 imageCaptionLine wow fadeInRight" data-wow-delay="0.1s" id="desktop-only">
+								<p class="imageCaption">{{ image.caption-right }}</p>
+							</div>
 						{% endfor %}
 
 					</div>
