@@ -2,7 +2,7 @@
 layout: strategy
 color: "rgb(2,78,168), rgb(113,2,168)"
 title: Future of Movies & Entertainment
-oneliner: "What are kids looking for in a future movie theatre experience? <br>We found it had nothing to do with movies."
+oneliner: "What are kids looking for in a future cinema experience? <br>We found it had nothing to do with movies."
 
 client: "Cineplex Entertainment / Playdium"
 date: "September 2016, November 2018"
@@ -16,11 +16,11 @@ process: "We designed and facilitated co-creation workshops for both late Gen Z 
 results: "The first workshop resulted in five unique concepts, which we presented back to the executive and leadership teams with insights on potential future expectations for the movie-going experience. The second workshop and data informed the 2019 content calendar for Playdium, their newest location-based attraction."
 
 
-image-wide:
+image-divider:
   - image_path: ../assets/images/projects/cineplex-future/06.jpg
-    caption: "Workshop 2 - Collateral Design"
 
 images:
+
   - image_path: ../assets/images/projects/cineplex-future/05.jpg
     title: Workshop 1
     body-heading: "Workshop 1: Reinventing the Theatre"
@@ -32,6 +32,7 @@ images:
     title: Workshop 1
 
   - image_path: ../assets/images/projects/cineplex-future/06.jpg
+    wideImage: Yes
     body-heading: "Workshop 2: How to Live Like Me"
     body-text: "Two years later, Cineplex re-engaged Studio Bud as part of the development of a Marketing Communications Plan for the re-launch of Playdium in 2019. In order to best reach their young Gen Z audience (ages 10-14), Cineplex’s goal was to identify key insights into how, what, and when they should communicate with Gen Z through the Playdium marketing channels. The output of this project led to the development of their content calendar.<br><br> We designed a design thinking workshop that was framed as creating a guide to their lives, teaching a hypothetical new alien how to 'live like me'. What are your everyday carries in your bottomless backpack? What accounts are must-follows on your social media channels? For your end-of-year party, what does it look like and who do you invite?"
 

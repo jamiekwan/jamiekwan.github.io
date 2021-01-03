@@ -11,6 +11,9 @@ brief: "Partnering with TIFF's Visitor Experience team, we were asked to help th
 process: "We engaged their loyalty members and staff in a series of co-creation workshops, framed around the Hero's Journey of their customer segments (Film Seekers and Film Lovers), to pinpoint the motivations and expectations of their visitors from home to theatre."
 results: "We created a concept visitor experience, illustrated via storyboard and animatic, that allowed their visitors to step into the mind of the storyteller. TIFF used the concept images to gain buy-in from public stakeholders for further funding following an initial pilot project."
 
+image-wide:
+  - image_path: ../assets/images/projects/tiff/01.png
+
 images:
   - image_path: ../assets/images/projects/tiff/01.png
     title: On-Site Immersion
