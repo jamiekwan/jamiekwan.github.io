@@ -81,7 +81,7 @@ title: Jamie Kwan | Experience Design & Strategy
 				<br>
 				{% endfor %}
 				
-				{% for image in page.image-divider %}
+				{% for image in page.image-wide %}
 				<div class="row">
 					<div>
 						<div class="col-sm-10 col-sm-offset-1 col-m-10 col-m-offset-1 col-xl-10 col-xl-offset-1 img-fluid wow fadeIn" data-wow-delay="0.2s">
@@ -92,6 +92,7 @@ title: Jamie Kwan | Experience Design & Strategy
 					</div>	
 				</div>
 				{% endfor %}
+
 
 				{% for image in page.images %}
 
@@ -120,22 +121,7 @@ title: Jamie Kwan | Experience Design & Strategy
 					<br>
 					{% endfor %}
 
-					{% if text in image.wideImage == "Yes" %}
-
-						<div class="row">
-
-							<div class="col-sm-10 col-sm-offset-1 col-m-10 col-m-offset-1 col-xl-10 col-xl-offset-1 img-fluid wow fadeIn" data-wow-delay="0.2s">
-								<p>
-									<img src="{{ image.image_path }}" alt="{{ image.title }}">
-								</p>
-							</div>
-
-						</div>
-
-					{% endif %}
-
-
-					{% if text in image.wideImage == "No" %}
+					<div class="row">
 
 						<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 img-fluid wow fadeIn" data-wow-delay="0.2s">
 							<p>
@@ -149,8 +135,8 @@ title: Jamie Kwan | Experience Design & Strategy
 							</div>
 						{% endfor %}
 
-					{% endif %}
-				</div>
+					</div>
+
 
 				{% endfor %}
 
