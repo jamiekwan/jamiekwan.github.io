@@ -31,18 +31,29 @@ title: Jamie Kwan | Experience Design & Strategy
 	<!-- WRAPPER -->
 	<div class="wrapper">
 		
-		{% for text in page.date %}
 		<!-- PORTFOLIO DESCRIPTION -->
+		{% for text in page.client %}
 		<section class="module-small">
 
 			<div class="container">
 
 				<div class="row">
 
-					<div class="col-sm-6 col-sm-offset-1 col-m-6 col-m-offset-1 col-xl-6 col-xl-offset-1">
-						{{ content }}
+					<div class="col-sm-3 col-sm-offset-1 col-m-3 col-m-offset-1 col-xl-3 col-xl-offset-1">
+						<h3 class="work-details-title font-alt">Project Brief</h3>
+						<br>{{page.brief}}
 					</div>
-					
+					<div class="col-sm-3 col-m-3 col-xl-3">
+						<h3 class="work-details-title font-alt">Process</h3>
+						<br>{{page.process}}
+					</div>
+					<div class="col-sm-3 col-m-3 col-xl-3">
+						<h3 class="work-details-title font-alt">Results</h3>
+						<br>{{page.results}}
+					</div>
+
+<!-- 
+
 					<div class="col-sm-4 col-m-4 col-xl-4">
 
 						<div class="work-details">
@@ -53,16 +64,17 @@ title: Jamie Kwan | Experience Design & Strategy
 							</ul>
 						</div>
 
-					</div>
+					</div> -->
 
 
 				</div>
-
 			</div>
-
 		</section>
-		<!-- /PORTFOLIO DESCRIPTION -->
 		{% endfor %}
+		<!-- /PORTFOLIO DESCRIPTION -->
+
+
+
 
 		<!-- PORTFOLIO CONTENT -->
 		<section>
