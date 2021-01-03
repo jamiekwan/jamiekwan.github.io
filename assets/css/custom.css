@@ -64,11 +64,13 @@ Place here your custom CSS styles
 .blockquote-2 p{
 	font-size: 24px;
 	font-style: italic;
+	justify-content: center;
 }
 
 .blockquote-footer {
-	font-size: 12px;
-	font-style: italic;
+	font-size: 14px;
+	text-transform: uppercase;
+	justify-content: center;
 }
 
 .media-body {
