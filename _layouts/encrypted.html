@@ -22,6 +22,7 @@ layout: default
           encryptedHTML = encryptedMsg.substring(64),
           decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
+      if (decryptedHMAC !== encryptedHMAC) {
         alert('Bad passphrase!');
         return;
       }
