@@ -7,6 +7,12 @@ oneliner: "What are kids looking for in a future movie theatre experience? <br>W
 client: "Cineplex Entertainment / Playdium"
 date: "September 2016, November 2018"
 
+brief: "In 2015 and 2018, we worked alongside Cineplex to uncover consumer insights for their Gen Z market, exploring one big question: What is the future of entertainment in the eyes of Gen Z, and how do they expect it to be rolled out throughout the year?"
+
+process: "We designed and facilitated co-creation workshops for both late Gen Z (15-16 year olds) and early Gen Z (10-14 year olds), using play as a means of ideating with a blue sky. In a more focused workshop, we engaged the kids in a series of activities that pinpointed tone of voice, slang, and seasonal content interests."
+
+results: "The first workshop resulted in five unique concepts, which we presented back to the executive and leadership teams with insights on potential future expectations for the movie-going experience. The second workshop and data informed the 2019 content calendar for Playdium, their newest location-based attraction."
+
 
 images:
   - image_path: ../assets/images/projects/cineplex-future/05.jpg
@@ -22,4 +28,6 @@ images:
     body-heading: "Workshop 2: How to Live Like Me"
     body-text: "Two years later, Cineplex re-engaged Studio Bud as part of the development of a Marketing Communications Plan for the re-launch of Playdium in 2019. In order to best reach their young Gen Z audience (ages 10-14), Cineplex’s goal was to identify key insights into how, what, and when they should communicate with Gen Z through the Playdium marketing channels. The output of this project led to the development of their content calendar.<br><br> We designed a design thinking workshop that was framed as creating a guide to their lives, teaching a hypothetical new alien how to 'live like me'. What are your everyday carries in your bottomless backpack? What accounts are must-follows on your social media channels? For your end-of-year party, what does it look like and who do you invite?"
 
+
 ---
+
