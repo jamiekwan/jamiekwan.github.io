@@ -17,7 +17,7 @@ results: "The first workshop resulted in five unique concepts, which we presente
 
 
 image-wide:
-  - image_path: ../assets/images/projects/cineplex-future/06.jpg
+  - image_path: ../assets/images/projects/cineplex-future/02_wide.jpg
 
 images:
   - image_path: ../assets/images/projects/cineplex-future/05.jpg
