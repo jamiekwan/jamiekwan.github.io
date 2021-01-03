@@ -37,8 +37,13 @@ title: Jamie Kwan | Experience Design & Strategy
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-1 col-m-10 col-m-offset-1 col-xl-10 col-xl-offset-1">
+						
 						<h3 class="work-details-title font-alt">Project Brief</h3>
 						<p class="strategy-brief">{{page.brief}}</p>
+						<ul>
+							{% for text in page.date %}<li class="font-inc"><strong>Date: </strong>{{ page.date }}</li>{% endfor %}
+							{% for text in page.client %}<li class="font-inc"><strong>Client: </strong>{{page.client}}</li>{% endfor %}
+						</ul>
 						<hr>
 					</div>
 				</div>
