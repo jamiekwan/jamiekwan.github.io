@@ -2,7 +2,7 @@
 layout: strategy
 color: "rgb(2,78,168), rgb(113,2,168)"
 title: Future of Movies & Entertainment
-oneliner: "What are kids looking for in a future movie theatre experience? We found it had nothing to do with movies."
+oneliner: "What are kids looking for in a future movie theatre experience? <br>We found it had nothing to do with movies."
 
 client: "Cineplex Entertainment / Playdium"
 date: "September 2016, November 2018"
@@ -18,7 +18,7 @@ results: "The first workshop resulted in five unique concepts, which we presente
 
 image-wide:
   - image_path: ../assets/images/projects/cineplex-future/06.jpg
-    caption: Workshop 2 - Collateral Design
+    caption: "Workshop 2 - Collateral Design"
 
 images:
   - image_path: ../assets/images/projects/cineplex-future/05.jpg
