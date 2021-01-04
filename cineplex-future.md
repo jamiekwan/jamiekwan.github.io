@@ -33,9 +33,14 @@ images:
   - image_path: ../assets/images/projects/cineplex-future/07.jpg
     title: Post-Workshop - Insights Report
 
-  - image_path: ../assets/images/projects/cineplex-future/06.jpg
+  - image_path: ../assets/images/projects/cineplex-future/08.jpg
+    title: Workshop 2 - Early vs Late Gen Z
     body-heading: "Workshop 2: How to Live Like Me"
     body-text: "Two years later, Cineplex re-engaged Studio Bud as part of the development of a Marketing Communications Plan for the re-launch of Playdium in 2019. In order to best reach their young Gen Z audience (ages 10-14), Cineplex’s goal was to identify key insights into how, what, and when they should communicate with Gen Z through the Playdium marketing channels. The output of this project led to the development of their content calendar.<br><br> We designed a design thinking workshop that was framed as creating a guide to their lives, teaching a hypothetical new alien how to 'live like me'. What are your everyday carries in your bottomless backpack? What accounts are must-follows on your social media channels? For your end-of-year party, what does it look like and who do you invite?"
 
+  - image_path: ../assets/images/projects/cineplex-future/06.jpg
+    title: 'How to Live Like Me' Workshop
 
+  - image_path: ../assets/images/projects/cineplex-future/09.png
+    title: Post-Workshop - Insights Report
 ---
