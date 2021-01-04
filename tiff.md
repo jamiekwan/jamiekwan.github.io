@@ -12,7 +12,7 @@ process: "We engaged their loyalty members and staff in a series of co-creation 
 results: "We created a concept visitor experience, illustrated via storyboard and animatic, that allowed their visitors to step into the mind of the storyteller. TIFF used the concept images to gain buy-in from public stakeholders for further funding following an initial pilot project."
 
 image-wide:
-  - image_path: ../assets/images/projects/tiff/01.png
+  - image_path: ../assets/images/projects/tiff/05-wide.jpg
 
 images:
   - image_path: ../assets/images/projects/tiff/01.png
@@ -26,4 +26,3 @@ images:
 
 
 ---
-	<p>Step into the mind of a storyteller. Partnering with TIFF's visitor experience team, we engaged their members and staff in a series of workshops framed around the Hero's Journey, to help them understand how their space and attraction can help transform the average movie-goer into a movie-buff. We created an integrated visitor journey for their Film Lovers and Seekers, to step into the mind of the storyteller.</p>
