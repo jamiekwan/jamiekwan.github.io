@@ -26,6 +26,7 @@ images:
     caption-right: A detailed visitor journey was outlined in relation to the intended modes of experience and education. A more simplified in-gallery journey to show the differences of their Film Seekers and Film Lovers.
   - image_path: ../assets/images/projects/tiff/03.jpg
   - image_path: ../assets/images/projects/tiff/09.jpg
+    caption-right: Final Illustrations completed by Jonathan Davis.
     body-heading: Where Are They Now?
     body-text: TIFF implemented <a>Picture Palace</a>, a pilot project based on work done prior to our engagement. Their learnings from the first iteration of Picture Palace are being combined with a vision of the future in order to pitch for further and continued seasonal funding.
 ---
