@@ -27,5 +27,5 @@ images:
   - image_path: ../assets/images/projects/tiff/03.jpg
   - image_path: ../assets/images/projects/tiff/09.jpg
     body-heading: Where Are They Now?
-    body-text: "TIFF implemented Picture Palace, a pilot project based on work done prior to our engagement. Their learnings from the first iteration of Picture Palace is being combined with a vision of the future in order to pitch for further and continued seasonal funding."
+    body-text: TIFF implemented <a>Picture Palace</a>, a pilot project based on work done prior to our engagement. Their learnings from the first iteration of Picture Palace is being combined with a vision of the future in order to pitch for further and continued seasonal funding.
 ---
