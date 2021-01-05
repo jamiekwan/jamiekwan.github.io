@@ -20,13 +20,13 @@ images:
     title: The Hero's Journey
     caption-right: The Hero's Journey was used as a framework to understand the transformation a visitor would have with TIFF's programming, and where the threshold into the exhibit space would be.
     body-heading: The Hero's Journey
-    body-text: "Through focus groups with their Storytellers (Employees), Story Seekers (Customers), and Story Lovers (Members), we collaboratively mapped out the various moments and touchpoints and Hero (visitor) would have engaging with TIFF's platform and entering the space. While we were scoped to look at the temporary traveling exhibit space, we considered the space in the context of their overall business model and program offerings to determine how one experience leads into another, and ultimately builds on a transformational experience for our 'Hero'. The outcome of this journey mapping exercise started to establish where WOW moments would occur, and where crush space may be needed to decompress from the visitor experience for reflection."
+    body-text: "Through focus groups with their Storytellers (Employees), Film Seekers (Customers), and Film Lovers (Members), we collaboratively mapped out the various moments and touchpoints and Hero (visitor) would have engaging with TIFF's platform and entering the space. While we were scoped to look at the temporary traveling exhibit space, we considered the space in the context of their overall business model and program offerings to determine how one experience leads into another, and ultimately builds on a transformational experience for our 'Hero'. The outcome of this journey mapping exercise started to establish where WOW moments would occur, and where crush space may be needed to decompress from the visitor experience for reflection."
   - image_path: ../assets/images/projects/tiff/02.jpg
   - image_path: ../assets/images/projects/tiff/08.png
     caption-right: A detailed visitor journey was outlined in relation to the intended modes of experience and education. A more simplified in-gallery journey to show the differences of their Film Seekers and Film Lovers.
   - image_path: ../assets/images/projects/tiff/03.jpg
   - image_path: ../assets/images/projects/tiff/09.jpg
-    caption-right: Final Illustrations completed by Jonathan Davis.
+    caption-right: Final Artwork completed by Jonathan Davis.
     body-heading: Where Are They Now?
     body-text: TIFF implemented <a>Picture Palace</a>, a pilot project based on work done prior to our engagement. Their learnings from the first iteration of Picture Palace are being combined with a vision of the future in order to pitch for further and continued seasonal funding.
 ---

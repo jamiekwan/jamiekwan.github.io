@@ -32,6 +32,7 @@ images:
 
   - image_path: ../assets/images/projects/cineplex-future/07.jpg
     title: Post-Workshop - Insights Report
+    caption-right: We summarized the key findings and takeaways from the Ideation Workshop, drawing 10 Key Insights around the themes of Customization, Value & Affordability, and the Overarching Experience.
 
   - image_path: ../assets/images/projects/cineplex-future/08.jpg
     title: Workshop 2 - Early vs Late Gen Z
@@ -43,4 +44,5 @@ images:
 
   - image_path: ../assets/images/projects/cineplex-future/09.png
     title: Post-Workshop - Insights Report
+    caption-right: The final Insights Report built on what we learned previously, to become more focused on their content marketing strategy, as segmented by Young to Late Gen Z.
 ---
