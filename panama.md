@@ -13,4 +13,7 @@ process: "Benchmarking, on-site research, and pulse and stakeholder interviews w
 
 results: "A concept book was created to carry the project forward into development, outlining the concept master plans and research process. The personas were used throughout the entirety of the project, and remain a key tool in the client’s tourism development, as a means of maintaining a human-centered design mindset—a challenge when operating at the scale of the Panama Canal!"
 
+image-wide:
+  - image_path: ../assets/images/projects/panama/03.jpg
+
 ---
