@@ -23,6 +23,6 @@ images:
     quote: "The crowds have been incredible over the past two years and the energy has been absolutely electric. This year, we're building on that energy with even more interactive elements to allow community members to take part in the momentous lighting of the tallest tree in the city." 
     source: Sheila Jennings, General Manager, CF Toronto Eaton Centre
   - image_path: ../assets/images/projects/cf/03.png
-  - image_path: ../assets/images/projects/cf/04.jpg
+  - image_path: ../assets/images/projects/cf/04.png
     caption-right: The Holiday Experience Strategy noted other areas of opportunity, including activating Bell Trinity Square through photogenic and immersive lighting installations.
 ---
