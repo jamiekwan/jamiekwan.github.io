@@ -12,10 +12,10 @@ process: "We worked closely alongside their internal marketing and retained agen
 results: "Early planning concepts were refined, alongside technology and service implications, resulting in the piloting of a wearable RFID wristband experience, distributed in the week prior to unveiling and becoming a means of participation for the audience. The distribution of LED wristbands were aligned with social good initiatives and retail partnerships."
 
 image-wide:
-  - image_path: ../assets/images/projects/cf/01.jpg
+  - image_path: ../assets/images/projects/cf/02.jpg
 
 images:
-  - image_path: ../assets/images/projects/cf/02.jpg
+  - image_path: ../assets/images/projects/cf/01.jpg
     title: Benchmarking & Concept Design Report
     caption-right: The combined experiences, beyond the wristband addition in 2018, generated 13.8M media impressions around the Tree Lighting Event. Presented by Starbucks, 3,521 LED wristbands were recycled. (Source: Branded Cities)
     body-heading: Creating a Participatory Holiday Unveiling
