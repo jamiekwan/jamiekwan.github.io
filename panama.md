@@ -25,5 +25,5 @@ images:
   - image_path: ../assets/images/projects/panama/02.png
   - image_path: ../assets/images/projects/panama/04.png
     body-heading: Designing for Wonder
-    body-text: "We translated research, local and regional anecdotes, and futures thinking into five unique tourism offerings across the country for their 800,000+ annual tourists. The intent? Creating architecture and icons that the became the brand in itself for the whole world to see and pass through."
+    body-text: "We translated benchmarking research, local and regional anecdotes, and a futures-mindset into five unique tourism offerings across the country for their 800,000+ annual tourists. The intent? Creating iconic architecture that became part of the Canal's image in itself, for the whole world to literally see, pass through, and experience on land, water, and sky."
 ---
