@@ -28,5 +28,5 @@ images:
   - image_path: ../assets/images/projects/tiff/09.jpg
     caption-right: Final Artwork completed by Jonathan Davis.
     body-heading: Where Are They Now?
-    body-text: TIFF implemented <a href=https://www.youtube.com/watch?v=M6Upf4WtKDM>Picture Palace</a>, a pilot project based on work done prior to our engagement. Their learnings from the first iteration of Picture Palace are being combined with a vision of the future in order to pitch for further and continued seasonal funding.
+    body-text: TIFF implemented <a href="https://www.youtube.com/watch?v=M6Upf4WtKDM" target="_blank">Picture Palace</a>, a pilot project based on work done prior to our engagement. Their learnings from the first iteration of Picture Palace are being combined with a vision of the future in order to pitch for further and continued seasonal funding.
 ---
