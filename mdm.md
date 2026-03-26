@@ -1,6 +1,6 @@
 ---
 layout: project-collection
-permalink: /mdm
+permalink: mdm
 title: Master of Digital Media (MDM) | Activating Physical + Digital Play
 oneliner: "Designing differentiated experiences at the intersection of physical spaces and immersive media."
 color: "rgb(72,44,61), rgb(255,0,188)"

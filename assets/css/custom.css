@@ -20,7 +20,7 @@ Place here your custom CSS styles
 
 
 #typed {
-	border-bottom: 7px solid rgb(1,111,185);
+	border-bottom: 7px solid rgb(0,102,204);
 }
 
 .work-item {
@@ -28,7 +28,7 @@ Place here your custom CSS styles
 }
 
 .work-title span{
-	background-color: rgb(1,111,185);
+	background-color: rgb(0,102,204);
 	color: white;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -38,7 +38,7 @@ Place here your custom CSS styles
 }
 
 /*.theme-color span{ 
-	border-bottom: 4px solid rgb(1,111,185);
+	border-bottom: 4px solid rgb(0,102,204);
 }*/
 
 .imageCaption {
@@ -59,7 +59,7 @@ Place here your custom CSS styles
 
 .pc-subheader {
 	/* Match the visual style of `#filters .filter > li a` on index.html. */
-	color: rgba(102, 102, 102, 0.7);
+	color: rgba(113, 128, 145, 0.7);
 	margin: 0 0 8px;
 	font-style: normal;
 	/* Actual font sizing/uppercase comes from `.font-inc`. */
@@ -76,32 +76,32 @@ Place here your custom CSS styles
 
 .pc-card {
 	background: #fff;
-	border: 1px solid rgba(245, 245, 245, 1);
+	border: 1px solid rgba(252, 252, 255, 1);
 	box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 	border-radius: 2px;
 	padding: 18px 18px 10px 18px;
 }
 
 .pc-story-link {
-	border-bottom: 4px solid rgb(1,111,185, 0.5);
-	color: rgb(1,111,185);
+	border-bottom: 4px solid rgb(0,102,204, 0.5);
+	color: rgb(0,102,204);
 	font-weight: 800;
 	text-decoration: none;
 }
 
 .pc-story-link:hover {
-	color: rgb(1,111,185);
+	color: rgb(0,102,204);
 	text-decoration: none;
 }
 
 
 .imageCaptionLine {
-	border-right: 4px solid rgb(1,111,185);
+	border-right: 4px solid rgb(0,102,204);
 
 }
 
 .blockquote {
-	border-left: 4px solid rgb(1,111,185);
+	border-left: 4px solid rgb(0,102,204);
 	padding-left: 20px;
 }
 
@@ -111,7 +111,7 @@ Place here your custom CSS styles
 }
 
 .blockquote-2 p{
-	border-top: 4px solid rgb(1,111,185);	
+	border-top: 4px solid rgb(0,102,204);	
 	font-size: 24px;
 	font-style: italic;
 	justify-content: center;
