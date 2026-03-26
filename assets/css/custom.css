@@ -52,6 +52,37 @@ Place here your custom CSS styles
 	font-style: normal;
 }
 
+.pc-overview-title {
+	font-size: 18px;
+	margin-bottom: 12px !important;
+}
+
+.pc-subheader {
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	text-transform: none;
+	margin: 0 0 8px;
+}
+
+.pc-logo {
+	margin-bottom: 14px;
+}
+
+.pc-logo img {
+	max-width: 170px;
+	height: auto;
+}
+
+.pc-card {
+	background: #fff;
+	border: 1px solid rgba(245, 245, 245, 1);
+	box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+	border-radius: 2px;
+	padding: 18px 18px 10px 18px;
+}
+
 .pc-story-link {
 	border-bottom: 4px solid rgb(1,111,185, 0.5);
 	color: rgb(1,111,185);

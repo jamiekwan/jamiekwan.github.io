@@ -77,7 +77,11 @@
 				var homeSHeight = moduleHero.height();
 				var topScroll = $(document).scrollTop();
 				if ((moduleHero.hasClass('module-parallax')) && ($(scrollTopp).scrollTop() <= homeSHeight)) {
-					moduleHero.css('top', (topScroll * 0.55));
+					var parallaxSpeed = parseFloat(moduleHero.attr('data-parallax-speed'));
+					if (isNaN(parallaxSpeed)) {
+						parallaxSpeed = 0.35;
+					}
+					moduleHero.css('top', (topScroll * parallaxSpeed));
 				}
 				if (moduleHero.hasClass('module-fade') && ($(scrollTopp).scrollTop() <= homeSHeight)) {
 					moduleHero.css('opacity', (1 - topScroll/moduleHero.height() * 1));

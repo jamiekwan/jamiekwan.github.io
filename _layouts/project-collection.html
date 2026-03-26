@@ -43,13 +43,20 @@ key_projects:
 
 <!-- HOME -->
 {% if page.bgimage %}
-<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-background="assets/images/{{page.bgimage}}.jpg">
+<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-background="assets/images/{{page.bgimage}}.jpg" data-parallax-speed="{% if page.parallax_speed %}{{ page.parallax_speed }}{% else %}0.25{% endif %}">
 {% else %}
-<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-gradient="{{ page.color }}">
+<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-gradient="{{ page.color }}" data-parallax-speed="{% if page.parallax_speed %}{{ page.parallax_speed }}{% else %}0.25{% endif %}">
 {% endif %}
 
   <div class="hs-caption container">
     <div class="caption-content">
+      {% if page.logo_src %}
+        <div class="pc-logo wow fadeInUp">
+          {% if page.logo_href %}<a href="{{ page.logo_href }}" target="_blank" rel="noopener noreferrer">{% endif %}
+            <img src="{{ page.logo_src }}" alt="{{ page.logo_alt }}">
+          {% if page.logo_href %}</a>{% endif %}
+        </div>
+      {% endif %}
       <div class="hs-title-size-1 font-alt m-b-20 wow fadeInUp" style="text-transform:uppercase">
         {{ page.title }}
       </div>
@@ -87,10 +94,10 @@ key_projects:
       <div class="row">
         <div class="col-sm-4 col-m-4 col-xl-4">
           <div class="work-details">
-            <h3 class="work-details-title font-alt">Overview</h3>
+            <h3 class="work-details-title font-alt pc-overview-title">Overview</h3>
 
             {% if page.time %}
-              <h4 class="work-details-title font-alt" style="margin: 0 0 10px;">Time</h4>
+              <div class="pc-subheader">Time</div>
               <div class="pc-body">
                 {% for t in page.time %}<p style="margin-bottom: 10px;">{{ t }}</p>{% endfor %}
               </div>
@@ -99,21 +106,21 @@ key_projects:
             {% assign team_items = page.team | default: page.team_structure %}
 
             {% if page.role %}
-              <h4 class="work-details-title font-alt" style="margin: 0 0 10px;">Role</h4>
+              <div class="pc-subheader">Role</div>
               <div class="pc-body">
                 {% for r in page.role %}<p style="margin-bottom: 10px;">{{ r }}</p>{% endfor %}
               </div>
             {% endif %}
 
             {% if team_items %}
-              <h4 class="work-details-title font-alt" style="margin: 0 0 10px;">Team</h4>
+              <div class="pc-subheader">Team</div>
               <div class="pc-body">
                 {% for tm in team_items %}<p style="margin-bottom: 10px;">{{ tm }}</p>{% endfor %}
               </div>
             {% endif %}
 
             {% if page.co_designers %}
-              <h4 class="work-details-title font-alt" style="margin: 0 0 10px;">Co-Designers</h4>
+              <div class="pc-subheader">Co-Designers</div>
               <div class="pc-body">
                 {% for cd in page.co_designers %}<p style="margin-bottom: 10px;">{{ cd }}</p>{% endfor %}
               </div>
@@ -147,7 +154,7 @@ key_projects:
     <div class="container">
       <div class="row">
         <div class="col-sm-6 wow fadeIn">
-          <h3 class="work-details-title font-alt">Organizational structure</h3>
+          <h3 class="work-details-title font-alt">Explorations &amp; Discovery</h3>
           {% if page.org_structure %}
             {% for paragraph in page.org_structure %}
               {{ paragraph }}
@@ -178,39 +185,43 @@ key_projects:
 
       {% if page.key_projects %}
         {% for kp in page.key_projects %}
-          <div class="row" style="margin-bottom: 40px;">
-            <div class="col-sm-4 wow fadeIn">
-              {% if kp.url %}
-                <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>
-              {% endif %}
+          <div class="row wow fadeInUp" style="margin-bottom: 40px;">
+            <div class="col-sm-12 pc-card">
+              <div class="row">
+                <div class="col-sm-4">
+                  {% if kp.url %}
+                    <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                  {% endif %}
 
-              {% if kp.thumbnail %}
-                <img src="{{ kp.thumbnail }}" alt="{{ kp.title }}" class="img-fluid" />
-              {% endif %}
+                  {% if kp.thumbnail %}
+                    <img src="{{ kp.thumbnail }}" alt="{{ kp.title }}" class="img-fluid" />
+                  {% endif %}
 
-              {% if kp.url %}
-                </a>
-              {% endif %}
-            </div>
+                  {% if kp.url %}
+                    </a>
+                  {% endif %}
+                </div>
 
-            <div class="col-sm-8 wow fadeIn">
-              {% if kp.title %}
-                <h4 class="work-details-title font-alt p-t-0">{{ kp.title }}</h4>
-              {% endif %}
+                <div class="col-sm-8" id="story">
+                  {% if kp.title %}
+                    <h4 class="work-details-title font-alt p-t-0">{{ kp.title }}</h4>
+                  {% endif %}
 
-              {% if kp.exec_summary %}
-                <p>{{ kp.exec_summary }}</p>
-              {% endif %}
+                  {% if kp.exec_summary %}
+                    <p>{{ kp.exec_summary }}</p>
+                  {% endif %}
 
-              {% if kp.high_level_impact %}
-                <p><strong>High-level impact:</strong> {{ kp.high_level_impact }}</p>
-              {% endif %}
+                  {% if kp.high_level_impact %}
+                    <p><strong>High-level impact:</strong> {{ kp.high_level_impact }}</p>
+                  {% endif %}
 
-              {% if kp.url %}
-                <p class="p-t-10">
-                  <a class="pc-story-link" href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>Read the case story</a>
-                </p>
-              {% endif %}
+                  {% if kp.url %}
+                    <p class="p-t-10">
+                      <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>Read the case story</a>
+                    </p>
+                  {% endif %}
+                </div>
+              </div>
             </div>
           </div>
         {% endfor %}

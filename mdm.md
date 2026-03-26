@@ -4,6 +4,11 @@ permalink: /mdm
 title: Master of Digital Media (MDM) | Activating Physical + Digital Play
 oneliner: "Designing differentiated experiences at the intersection of physical spaces and immersive media."
 color: "rgb(72,44,61), rgb(255,0,188)"
+parallax_speed: 0.2
+
+logo_src: "assets/images/logos/tmu-logo/tmu-logo/digital/TMU-rgb.png"
+logo_alt: "Toronto Metropolitan University"
+logo_href: "https://www.torontomu.ca/brand/brand-toolkit/university-logo/"
 
 time:
   - "Master of Digital Media (MDM): 2015-2016"
@@ -21,7 +26,7 @@ org_structure:
   - |
     <p>My MDM work lived at the seam between real-world contexts (museums, classrooms, playful spaces) and immersive/digital media (content, sensing, projection, and interaction logic). I ran a studio-style loop: prototype quickly, test with audiences, and refine until the experience felt intuitive and emotionally meaningful.</p>
   - |
-    <p>Across projects, I treated the space itself as part of the interface, so scent, touch, and projected topography became ways to reveal story, not just "enhancements" for visuals.</p>
+    <p>Across projects, I treated the space itself as part of the in  terface, so scent, touch, and projected topography became ways to reveal story, not just "enhancements" for visuals.</p>
 
 org_structure_image: "../assets/images/projects/sensing-history/d1.jpg"
 org_structure_image_alt: "Static prototype image representing multisensory interaction design"
