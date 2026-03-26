@@ -97,7 +97,7 @@ key_projects:
             <h3 class="work-details-title font-alt pc-overview-title">Overview</h3>
 
             {% if page.time %}
-              <div class="pc-subheader">Time</div>
+              <div class="font-inc pc-subheader">Time</div>
               <div class="pc-body">
                 {% for t in page.time %}<p style="margin-bottom: 10px;">{{ t }}</p>{% endfor %}
               </div>
@@ -106,21 +106,21 @@ key_projects:
             {% assign team_items = page.team | default: page.team_structure %}
 
             {% if page.role %}
-              <div class="pc-subheader">Role</div>
+              <div class="font-inc pc-subheader">Role</div>
               <div class="pc-body">
                 {% for r in page.role %}<p style="margin-bottom: 10px;">{{ r }}</p>{% endfor %}
               </div>
             {% endif %}
 
             {% if team_items %}
-              <div class="pc-subheader">Team</div>
+              <div class="font-inc pc-subheader">Team</div>
               <div class="pc-body">
                 {% for tm in team_items %}<p style="margin-bottom: 10px;">{{ tm }}</p>{% endfor %}
               </div>
             {% endif %}
 
             {% if page.co_designers %}
-              <div class="pc-subheader">Co-Designers</div>
+              <div class="font-inc pc-subheader">Co-Designers</div>
               <div class="pc-body">
                 {% for cd in page.co_designers %}<p style="margin-bottom: 10px;">{{ cd }}</p>{% endfor %}
               </div>

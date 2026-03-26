@@ -58,12 +58,11 @@ Place here your custom CSS styles
 }
 
 .pc-subheader {
-	font-family: Montserrat, sans-serif;
-	font-size: 14px;
-	font-weight: 800;
-	letter-spacing: 0.05em;
-	text-transform: none;
+	/* Match the visual style of `#filters .filter > li a` on index.html. */
+	color: rgba(102, 102, 102, 0.7);
 	margin: 0 0 8px;
+	font-style: normal;
+	/* Actual font sizing/uppercase comes from `.font-inc`. */
 }
 
 .pc-logo {
