@@ -14,9 +14,14 @@ bgimage: "some-background"
 time:
   - "2019 - 2021"
 
-team_structure:
-  - "Role: Strategy Lead"
+role:
+  - "Role: Lead designer / prototyper"
+
+team:
   - "Team: Research + Design + Engineering"
+
+co_designers:
+  - "Co-designers: kids (10-16), artists, artists/policy makers, etc."
 
 org_structure:
   - "<p>Optional text describing the org structure...</p>"
@@ -32,7 +37,7 @@ key_projects:
     url: "/project-a"
     target_blank: false
     thumbnail: "assets/images/.../thumb.jpg"
-    exec_summary: "<p>Short story...</p>"
+    exec_summary: "Short story..."
     high_level_impact: "Outcome in one line"
 -->
 
@@ -82,23 +87,44 @@ key_projects:
       <div class="row">
         <div class="col-sm-4 col-m-4 col-xl-4">
           <div class="work-details">
-            <h3 class="work-details-title font-alt">Project Details</h3>
-            <ul>
-              {% if page.time %}
-                {% for t in page.time %}<li class="font-inc"><strong>Time: </strong>{{ t }}</li>{% endfor %}
-              {% endif %}
+            <h3 class="work-details-title font-alt">Overview</h3>
 
-              {% if page.team_structure %}
-                {% for ts in page.team_structure %}<li class="font-inc"><strong>Team Structure: </strong>{{ ts }}</li>{% endfor %}
-              {% endif %}
-            </ul>
+            {% if page.time %}
+              <h4 class="work-details-title font-alt" style="margin: 0 0 10px;">Time</h4>
+              <div class="pc-body">
+                {% for t in page.time %}<p style="margin-bottom: 10px;">{{ t }}</p>{% endfor %}
+              </div>
+            {% endif %}
+
+            {% assign team_items = page.team | default: page.team_structure %}
+
+            {% if page.role %}
+              <h4 class="work-details-title font-alt" style="margin: 0 0 10px;">Role</h4>
+              <div class="pc-body">
+                {% for r in page.role %}<p style="margin-bottom: 10px;">{{ r }}</p>{% endfor %}
+              </div>
+            {% endif %}
+
+            {% if team_items %}
+              <h4 class="work-details-title font-alt" style="margin: 0 0 10px;">Team</h4>
+              <div class="pc-body">
+                {% for tm in team_items %}<p style="margin-bottom: 10px;">{{ tm }}</p>{% endfor %}
+              </div>
+            {% endif %}
+
+            {% if page.co_designers %}
+              <h4 class="work-details-title font-alt" style="margin: 0 0 10px;">Co-Designers</h4>
+              <div class="pc-body">
+                {% for cd in page.co_designers %}<p style="margin-bottom: 10px;">{{ cd }}</p>{% endfor %}
+              </div>
+            {% endif %}
           </div>
         </div>
 
         <div class="col-sm-7 col-sm-offset-1 col-m-7 col-m-offset-1 col-xl-7 col-xl-offset-1">
           {% if page.approach %}
             <h3 class="work-details-title font-alt">Approach</h3>
-            <div class="p-b-10">
+            <div class="p-b-10 pc-body">
               {{ page.approach }}
             </div>
           {% endif %}
@@ -106,7 +132,7 @@ key_projects:
           {% if page.impact %}
             <hr>
             <h3 class="work-details-title font-alt">Impact</h3>
-            <div class="p-b-10">
+            <div class="p-b-10 pc-body">
               {{ page.impact }}
             </div>
           {% endif %}
@@ -151,9 +177,9 @@ key_projects:
       <h3 class="work-details-title font-alt p-t-10 p-b-10">Key Projects</h3>
 
       {% if page.key_projects %}
-        <div class="row">
-          {% for kp in page.key_projects %}
-            <div class="col-sm-4 wow fadeIn" style="margin-bottom: 30px;">
+        {% for kp in page.key_projects %}
+          <div class="row" style="margin-bottom: 40px;">
+            <div class="col-sm-4 wow fadeIn">
               {% if kp.url %}
                 <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>
               {% endif %}
@@ -165,21 +191,29 @@ key_projects:
               {% if kp.url %}
                 </a>
               {% endif %}
+            </div>
 
+            <div class="col-sm-8 wow fadeIn">
               {% if kp.title %}
-                <h4 class="work-details-title font-alt p-t-10">{{ kp.title }}</h4>
+                <h4 class="work-details-title font-alt p-t-0">{{ kp.title }}</h4>
               {% endif %}
 
               {% if kp.exec_summary %}
-                <div class="font-inc">{{ kp.exec_summary }}</div>
+                <p>{{ kp.exec_summary }}</p>
               {% endif %}
 
               {% if kp.high_level_impact %}
-                <p class="font-inc"><strong>High-level impact:</strong> {{ kp.high_level_impact }}</p>
+                <p><strong>High-level impact:</strong> {{ kp.high_level_impact }}</p>
+              {% endif %}
+
+              {% if kp.url %}
+                <p class="p-t-10">
+                  <a class="pc-story-link" href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>Read the case story</a>
+                </p>
               {% endif %}
             </div>
-          {% endfor %}
-        </div>
+          </div>
+        {% endfor %}
       {% endif %}
     </div>
   </section>

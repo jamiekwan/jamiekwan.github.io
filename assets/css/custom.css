@@ -46,6 +46,24 @@ Place here your custom CSS styles
 	font-size: 14px;
 }
 
+/* Project collection layout: caption-sized body text without italics. */
+.pc-body {
+	font-size: 14px;
+	font-style: normal;
+}
+
+.pc-story-link {
+	border-bottom: 4px solid rgb(1,111,185, 0.5);
+	color: rgb(1,111,185);
+	font-weight: 800;
+	text-decoration: none;
+}
+
+.pc-story-link:hover {
+	color: rgb(1,111,185);
+	text-decoration: none;
+}
+
 
 .imageCaptionLine {
 	border-right: 4px solid rgb(1,111,185);
