@@ -7,8 +7,6 @@ oneliner: "What are kids looking for in a future cinema experience? <br>We found
 client: "Cineplex Entertainment / Playdium"
 date: "September 2016, November 2018"
 
-brief: "We worked alongside Cineplex to uncover consumer insights for their Gen Z market, exploring one big question: What is the future of entertainment in the eyes of Gen Z, and how do they expect it to be rolled out throughout the year?"
-
 brief: "On two projects, two years apart, we worked alongside Cineplex to uncover consumer insights for their Gen Z market, exploring one big question: What is the future of entertainment in the eyes of Gen Z, and how do they expect it to be rolled out throughout the year?"
 
 process: "We designed and facilitated co-creation workshops for both late Gen Z (15-16 year olds) and early Gen Z (10-14 year olds), using play as a means of ideating with a blue sky. In a more focused workshop, we engaged the kids in a series of activities that pinpointed tone of voice, slang, and seasonal content interests. Between the lines of these unconstrained ideas, the Studio Bud team drew qualitative insight into their driving motivations."

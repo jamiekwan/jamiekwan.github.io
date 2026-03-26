@@ -1,0 +1,200 @@
+---
+layout: default
+title: Jamie Kwan | Project Collection
+---
+
+<!--
+Expected front matter (example):
+
+title: ...
+oneliner: ...
+color: "rgb(...), rgb(...)"
+bgimage: "some-background"
+
+time:
+  - "2019 - 2021"
+
+team_structure:
+  - "Role: Strategy Lead"
+  - "Team: Research + Design + Engineering"
+
+org_structure:
+  - "<p>Optional text describing the org structure...</p>"
+org_structure_image: "assets/images/.../diagram.png"
+org_structure_image_alt: "Org chart / structure infographic"
+org_structure_caption: "Optional caption"
+
+approach: "<p>Text or HTML...</p>"
+impact: "<p>Text or HTML...</p>"
+
+key_projects:
+  - title: "Project A"
+    url: "/project-a"
+    target_blank: false
+    thumbnail: "assets/images/.../thumb.jpg"
+    exec_summary: "<p>Short story...</p>"
+    high_level_impact: "Outcome in one line"
+-->
+
+<!-- HOME -->
+{% if page.bgimage %}
+<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-background="assets/images/{{page.bgimage}}.jpg">
+{% else %}
+<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-gradient="{{ page.color }}">
+{% endif %}
+
+  <div class="hs-caption container">
+    <div class="caption-content">
+      <div class="hs-title-size-1 font-alt m-b-20 wow fadeInUp" style="text-transform:uppercase">
+        {{ page.title }}
+      </div>
+      {% if page.oneliner %}
+      <div class="hs-title-size-3 font-alt wow fadeInUp" data-wow-delay="0.4s">
+        {{ page.oneliner }}
+        <br>
+        <i class="fa fa-angle-down"></i>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+ </section>
+<!-- /HOME -->
+
+<script>
+  // Apply gradient background for pages that provide `page.color`.
+  // This avoids inline Liquid inside a `style=""` attribute (IDE CSS lint parsing issues).
+  document.addEventListener('DOMContentLoaded', function () {
+    var nodes = document.querySelectorAll('[data-gradient]');
+    for (var i = 0; i < nodes.length; i++) {
+      var gradient = nodes[i].getAttribute('data-gradient');
+      if (gradient) nodes[i].style.background = 'linear-gradient(135deg, ' + gradient + ')';
+    }
+  });
+</script>
+
+<!-- WRAPPER -->
+<div class="wrapper">
+
+  <!-- DETAILS + STORY -->
+  <section class="module-small">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-m-4 col-xl-4">
+          <div class="work-details">
+            <h3 class="work-details-title font-alt">Project Details</h3>
+            <ul>
+              {% if page.time %}
+                {% for t in page.time %}<li class="font-inc"><strong>Time: </strong>{{ t }}</li>{% endfor %}
+              {% endif %}
+
+              {% if page.team_structure %}
+                {% for ts in page.team_structure %}<li class="font-inc"><strong>Team Structure: </strong>{{ ts }}</li>{% endfor %}
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-7 col-sm-offset-1 col-m-7 col-m-offset-1 col-xl-7 col-xl-offset-1">
+          {% if page.approach %}
+            <h3 class="work-details-title font-alt">Approach</h3>
+            <div class="p-b-10">
+              {{ page.approach }}
+            </div>
+          {% endif %}
+
+          {% if page.impact %}
+            <hr>
+            <h3 class="work-details-title font-alt">Impact</h3>
+            <div class="p-b-10">
+              {{ page.impact }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /DETAILS + STORY -->
+
+  <!-- ORG STRUCTURE -->
+  <section class="module-small">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 wow fadeIn">
+          <h3 class="work-details-title font-alt">Organizational structure</h3>
+          {% if page.org_structure %}
+            {% for paragraph in page.org_structure %}
+              {{ paragraph }}
+            {% endfor %}
+          {% endif %}
+        </div>
+
+        <div class="col-sm-6 wow fadeIn">
+          {% if page.org_structure_image %}
+            <div class="img-fluid">
+              <img src="{{ page.org_structure_image }}" alt="{{ page.org_structure_image_alt }}">
+            </div>
+          {% endif %}
+          {% if page.org_structure_caption %}
+            <p class="imageCaption" id="desktop-only">{{ page.org_structure_caption }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /ORG STRUCTURE -->
+
+  <!-- KEY PROJECTS -->
+  <section>
+    <div class="container">
+      <hr class="divider-w">
+      <h3 class="work-details-title font-alt p-t-10 p-b-10">Key Projects</h3>
+
+      {% if page.key_projects %}
+        <div class="row">
+          {% for kp in page.key_projects %}
+            <div class="col-sm-4 wow fadeIn" style="margin-bottom: 30px;">
+              {% if kp.url %}
+                <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>
+              {% endif %}
+
+              {% if kp.thumbnail %}
+                <img src="{{ kp.thumbnail }}" alt="{{ kp.title }}" class="img-fluid" />
+              {% endif %}
+
+              {% if kp.url %}
+                </a>
+              {% endif %}
+
+              {% if kp.title %}
+                <h4 class="work-details-title font-alt p-t-10">{{ kp.title }}</h4>
+              {% endif %}
+
+              {% if kp.exec_summary %}
+                <div class="font-inc">{{ kp.exec_summary }}</div>
+              {% endif %}
+
+              {% if kp.high_level_impact %}
+                <p class="font-inc"><strong>High-level impact:</strong> {{ kp.high_level_impact }}</p>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </section>
+  <!-- /KEY PROJECTS -->
+
+  <!-- PAGINATION -->
+  <section class="module-small p-t-50">
+    <div class="container">
+      <div class="pagination font-inc text-uppercase">
+        <a href="http://jamiemkwan.com">Back to Home</a>
+      </div>
+    </div>
+  </section>
+  <!-- /PAGINATION -->
+
+</div>
+<!-- /WRAPPER -->
+
