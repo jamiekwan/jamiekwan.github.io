@@ -30,7 +30,9 @@ org_structure:
 
 org_structure_image: "../assets/images/projects/sensing-history/d1.jpg"
 org_structure_image_alt: "Static prototype image representing multisensory interaction design"
-org_structure_caption: "Prototype-first iteration: physical computing + digital story, refined through audience feedback."
+org_structurhysical computing + digital story, refined through audience feedback."
+org_structure_quote: "Talking about what teens might want is one thing. <a>Watching them design their own experiences and talking to them directly about it is a whole other level of depth and insight.</a> Extremely valuable exercise."
+org_structure_quote_source: Darren Solomon, VP Marketing, Cineplex Entertainmente_caption: "Prototype-first iteration: p
 
 approach: |
   <p>I designed for differentiated experiences by combining multiple senses with meaningful digital content. Instead of asking people to watch, I built interactive reproductions and tabletop systems where discovery happens through touch, presence, and playful exploration.</p>
