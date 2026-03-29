@@ -11,13 +11,13 @@ logo_alt: "Toronto Metropolitan University"
 logo_href: "https://www.torontomu.ca/brand/brand-toolkit/university-logo/"
 
 time:
-  - "Master of Digital Media (MDM): 2015-2016"
+  - "Grad school: Sept 2014 - 2015"
 
 role:
-  - "Lead designer / prototyper building physical-digital interaction systems"
+  - "Design Technologist"
 
 team:
-  - "Collaborations with domain experts (multi-modal educational researchers, artists, and client teams)"
+  - "Collaborations with domain experts (multi-modal pedagogy and human-computer interaction (HCI) researchers, artists, and student peers)"
 
 co_designers:
   - "Kids (10-16) and creative participants (artists, policy makers, museum/public stakeholders)"
