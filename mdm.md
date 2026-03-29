@@ -1,5 +1,5 @@
 ---
-layout: project-collection
+layout: era
 permalink: mdm
 title: Master of Digital Media (MDM) | Activating Physical + Digital Play
 oneliner: "Designing differentiated experiences at the intersection of physical spaces and immersive media."
@@ -22,15 +22,15 @@ team:
 co_designers:
   - "Kids (10-16) and creative participants (artists, policy makers, museum/public stakeholders)"
 
-org_structure:
+methodology:
   - |
     <p>My MDM work lived at the seam between real-world contexts (museums, classrooms, playful spaces) and immersive/digital media (content, sensing, projection, and interaction logic). I ran a studio-style loop: prototype quickly, test with audiences, and refine until the experience felt intuitive and emotionally meaningful.</p>
   - |
     <p>Across projects, I treated the space itself as part of the interface, so scent, touch, and projected topography became ways to reveal story, not just "enhancements" for visuals.</p>
 
-org_structure_image: "../assets/images/projects/sensing-history/d1.jpg"
-org_structure_image_alt: "Static prototype image representing multisensory interaction design"
-org_structure_caption: "Prototype-first iteration: physical computing + digital story, refined through audience feedback."
+methodology_image: "../assets/images/projects/sensing-history/d1.jpg"
+methodology_image_alt: "Static prototype image representing multisensory interaction design"
+methodology_caption: "Prototype-first iteration: physical computing + digital story, refined through audience feedback."
 
 approach: |
   <p>I designed for differentiated experiences by combining multiple senses with meaningful digital content. Instead of asking people to watch, I built interactive reproductions and tabletop systems where discovery happens through touch, presence, and playful exploration.</p>
