@@ -2,7 +2,7 @@
 layout: strategy
 color: "rgb(2,78,168), rgb(113,2,168)"
 title: Future of Movies & Entertainment
-oneliner: "What are kids looking for in a future cinema experience? <br>We found it had nothing to do with movies."
+oneliner: "What are kids looking for in a future cinema experience? We found it had nothing to do with movies."
 
 client: "Cineplex Entertainment / Playdium"
 date: "September 2016, November 2018"
