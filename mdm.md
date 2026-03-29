@@ -35,7 +35,10 @@ org_structure_caption: "Prototype-first iteration: physical computing + digital 
 approach: |
   <p>I designed for differentiated experiences by combining multiple senses with meaningful digital content. Instead of asking people to watch, I built interactive reproductions and tabletop systems where discovery happens through touch, presence, and playful exploration.</p>
 
-  <p>"Talking about what teens might want is one thing. Watching them design their own experiences and talking to them directly about it is a whole other level of depth and insight. Extremely valuable exercise."</p>
+  <blockquote class="blockquote-2" id="story">
+    <p>"Talking about what teens might want is one thing. Watching them design their own experiences and talking to them directly about it is a whole other level of depth and insight. Extremely valuable exercise."</p>
+    <footer class="blockquote-footer">Darren Solomon, VP Marketing, Cineplex Entertainment</footer>
+  </blockquote>
 
   <p>Co-design was the method that connected physical space to immersive futures: kids and young audiences shaped ideas through play-based ideation, while artists and stakeholders contributed to the conversations that made the future feel possible, personal, and fun to try.</p>
 
