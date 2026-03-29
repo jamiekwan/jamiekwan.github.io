@@ -26,7 +26,12 @@ org_structure:
   - |
     <p>My MDM work lived at the seam between real-world contexts (museums, classrooms, playful spaces) and immersive/digital media (content, sensing, projection, and interaction logic). I ran a studio-style loop: prototype quickly, test with audiences, and refine until the experience felt intuitive and emotionally meaningful.</p>
   - |
-    <p>Across projects, I treated the space itself as part of the in  terface, so scent, touch, and projected topography became ways to reveal story, not just "enhancements" for visuals.</p>
+    <p>Across projects, I treated the space itself as part of the interface, so scent, touch, and projected topography became ways to reveal story, not just "enhancements" for visuals.</p>
+  - |  
+    <blockquote class="blockquote-2" id="story">
+      <p>"Talking about what teens might want is one thing. Watching them design their own experiences and talking to them directly about it is a whole other level of depth and insight. Extremely valuable exercise."</p>
+      <footer class="blockquote-footer">Darren Solomon, VP Marketing, Cineplex Entertainment</footer>
+    </blockquote>
 
 org_structure_image: "../assets/images/projects/sensing-history/d1.jpg"
 org_structure_image_alt: "Static prototype image representing multisensory interaction design"
@@ -34,11 +39,6 @@ org_structure_caption: "Prototype-first iteration: physical computing + digital 
 
 approach: |
   <p>I designed for differentiated experiences by combining multiple senses with meaningful digital content. Instead of asking people to watch, I built interactive reproductions and tabletop systems where discovery happens through touch, presence, and playful exploration.</p>
-
-  <blockquote class="blockquote-2" id="story">
-    <p>"Talking about what teens might want is one thing. Watching them design their own experiences and talking to them directly about it is a whole other level of depth and insight. Extremely valuable exercise."</p>
-    <footer class="blockquote-footer">Darren Solomon, VP Marketing, Cineplex Entertainment</footer>
-  </blockquote>
 
   <p>Co-design was the method that connected physical space to immersive futures: kids and young audiences shaped ideas through play-based ideation, while artists and stakeholders contributed to the conversations that made the future feel possible, personal, and fun to try.</p>
 
