@@ -28,7 +28,7 @@ methodology:
   - |
     <p>Across projects, I treated the space itself as part of the interface, so scent, touch, and projected topography became ways to reveal story, not just "enhancements" for visuals.</p>
 
-methodology_image: "../assets/images/projects/sensing-history/d1.jpg"
+methodology_image: "../assets/images/projects/sensing-history/d2.jpg"
 methodology_image_alt: "Static prototype image representing multisensory interaction design"
 methodology_caption: "Prototype-first iteration: physical computing + digital story, refined through audience feedback."
 
