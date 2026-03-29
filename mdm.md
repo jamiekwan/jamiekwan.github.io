@@ -27,12 +27,9 @@ org_structure:
     <p>My MDM work lived at the seam between real-world contexts (museums, classrooms, playful spaces) and immersive/digital media (content, sensing, projection, and interaction logic). I ran a studio-style loop: prototype quickly, test with audiences, and refine until the experience felt intuitive and emotionally meaningful.</p>
   - |
     <p>Across projects, I treated the space itself as part of the interface, so scent, touch, and projected topography became ways to reveal story, not just "enhancements" for visuals.</p>
-  - |  
-    <blockquote class="blockquote-2" id="story">
-      <p>"Talking about what teens might want is one thing. Watching them design their own experiences and talking to them directly about it is a whole other level of depth and insight. Extremely valuable exercise."</p>
-      <footer class="blockquote-footer">Darren Solomon, VP Marketing, Cineplex Entertainment</footer>
-    </blockquote>
 
+org_structure_quote:"Talking about what teens might want is one thing. Watching them design their own experiences and talking to them directly about it is a whole other level of depth and insight. Extremely valuable exercise."
+org_structure_quote_source: Darren Solomon, VP Marketing, Cineplex Entertainment
 org_structure_image: "../assets/images/projects/sensing-history/d1.jpg"
 org_structure_image_alt: "Static prototype image representing multisensory interaction design"
 org_structure_caption: "Prototype-first iteration: physical computing + digital story, refined through audience feedback."
@@ -46,6 +43,13 @@ impact: |
   <p>These projects demonstrated how physical space can become a storytelling engine for digital and immersive media. They also formed a repeatable playbook for communicating with diverse audiences by anchoring engagement in sensory discovery, embodied interaction, and co-created concepts.</p>
 
 key_projects:
+
+  - title: "Future of Movies & Entertainment"
+    url: "/cineplex-future"
+    thumbnail: "../assets/images/projects/cineplex-future/05.jpg"
+    exec_summary: "Play-based co-creation workshops with Gen Z that imagined future cinema and tied winning concepts to everyday social lives—'a home away from home.'"
+    high_level_impact: "Co-created insights that helped shape future content and experience rollouts."
+
   - title: "Sensing History"
     url: "/sensing-history"
     thumbnail: "../assets/images/projects/sensing-history/1.jpg"
@@ -63,11 +67,5 @@ key_projects:
     thumbnail: "../assets/images/projects/creative-catalyst/11.jpg"
     exec_summary: "An installation built around 'critical play,' blending analog + digital sketching and playful prompts to help artists and stakeholders engage future city questions."
     high_level_impact: "Converted serendipitous play into a structured pathway for creative dialogue."
-
-  - title: "Future of Movies & Entertainment"
-    url: "/cineplex-future"
-    thumbnail: "../assets/images/projects/cineplex-future/05.jpg"
-    exec_summary: "Play-based co-creation workshops with Gen Z that imagined future cinema and tied winning concepts to everyday social lives—'a home away from home.'"
-    high_level_impact: "Co-created insights that helped shape future content and experience rollouts."
 ---
 
