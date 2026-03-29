@@ -28,8 +28,6 @@ org_structure:
   - |
     <p>Across projects, I treated the space itself as part of the interface, so scent, touch, and projected topography became ways to reveal story, not just "enhancements" for visuals.</p>
 
-org_structure_quote:"Talking about what teens might want is one thing. Watching them design their own experiences and talking to them directly about it is a whole other level of depth and insight. Extremely valuable exercise."
-org_structure_quote_source: Darren Solomon, VP Marketing, Cineplex Entertainment
 org_structure_image: "../assets/images/projects/sensing-history/d1.jpg"
 org_structure_image_alt: "Static prototype image representing multisensory interaction design"
 org_structure_caption: "Prototype-first iteration: physical computing + digital story, refined through audience feedback."
