@@ -130,63 +130,6 @@ title: Jamie Kwan | Experience Design & Strategy
   </section>
 <!-- SERVICE DESIGN APPROACH -->
 
-
-<!-- KEY PROJECTS -->
-  <section>
-    <div class="container">
-      <hr class="divider-w">
-      <h3 class="work-details-title font-alt p-t-10 p-b-10">Key Projects</h3>
-
-      {% if page.key_projects %}
-        {% for kp in page.key_projects %}
-          <div class="row wow fadeInUp" style="margin-bottom: 40px;">
-            <div class="col-sm-12 pc-card">
-              <div class="row">
-                <div class="col-sm-4">
-                  {% if kp.url %}
-                    <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>
-                  {% endif %}
-
-                  {% if kp.thumbnail %}
-                    <img src="{{ kp.thumbnail }}" alt="{{ kp.title }}" class="img-fluid" />
-                  {% endif %}
-
-                  {% if kp.url %}
-                    </a>
-                  {% endif %}
-                </div>
-
-                <div class="col-sm-8" id="story">
-                  {% if kp.title %}
-                    <h4 class="work-details-title font-alt p-t-0">{{ kp.title }}</h4>
-                  {% endif %}
-
-                  {% if kp.exec_summary %}
-                    <p>{{ kp.exec_summary }}</p>
-                  {% endif %}
-
-                  {% if kp.high_level_impact %}
-                    <p><strong>High-level impact:</strong> {{ kp.high_level_impact }}</p>
-                  {% endif %}
-
-                  {% if kp.url %}
-                    <p class="p-t-10">
-                      <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>Read more</a>
-                    </p>
-                  {% endif %}
-                </div>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      {% endif %}
-    </div>
-  </section>
-  <!-- /KEY PROJECTS -->
-
-
-
-
 <!-- PORTFOLIO CONTENT -->
 <section>
 	<div class="container">
@@ -261,6 +204,63 @@ title: Jamie Kwan | Experience Design & Strategy
 
 </section>
 <!-- /PORTFOLIO CONTENT -->
+
+
+<!-- KEY PROJECTS -->
+  <section>
+    <div class="container">
+      <hr class="divider-w">
+      <h3 class="work-details-title font-alt p-t-10 p-b-10">Key Projects</h3>
+
+      {% if page.key_projects %}
+        {% for kp in page.key_projects %}
+          <div class="row wow fadeInUp" style="margin-bottom: 40px;">
+            <div class="col-sm-12 pc-card">
+              <div class="row">
+                <div class="col-sm-4">
+                  {% if kp.url %}
+                    <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                  {% endif %}
+
+                  {% if kp.thumbnail %}
+                    <img src="{{ kp.thumbnail }}" alt="{{ kp.title }}" class="img-fluid" />
+                  {% endif %}
+
+                  {% if kp.url %}
+                    </a>
+                  {% endif %}
+                </div>
+
+                <div class="col-sm-8" id="story">
+                  {% if kp.title %}
+                    <h4 class="work-details-title font-alt p-t-0">{{ kp.title }}</h4>
+                  {% endif %}
+
+                  {% if kp.exec_summary %}
+                    <p>{{ kp.exec_summary }}</p>
+                  {% endif %}
+
+                  {% if kp.high_level_impact %}
+                    <p><strong>High-level impact:</strong> {{ kp.high_level_impact }}</p>
+                  {% endif %}
+
+                  {% if kp.url %}
+                    <p class="p-t-10">
+                      <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>Read more</a>
+                    </p>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </section>
+  <!-- /KEY PROJECTS -->
+
+
+
 
 <!-- DIVIDER -->
 <hr class="divider-w">
