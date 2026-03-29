@@ -3,51 +3,37 @@ layout: default
 title: Jamie Kwan | Experience Design & Strategy
 ---
 
-
 <!-- HOME -->
-{% if page.bgimage %}
-<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-background="assets/images/{{page.bgimage}}.jpg" data-parallax-speed="{% if page.parallax_speed %}{{ page.parallax_speed }}{% else %}0.25{% endif %}">
-{% else %}
-<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-gradient="{{ page.color }}" data-parallax-speed="{% if page.parallax_speed %}{{ page.parallax_speed }}{% else %}0.25{% endif %}">
-{% endif %}
+	{% for text in page.color %}
+	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" style="background: linear-gradient(135deg, {{page.color}})">
+	{% endfor%}
 
-  <div class="hs-caption container">
-    <div class="caption-content">
-      {% if page.logo_src %}
-        <div class="pc-logo wow fadeInUp">
-          {% if page.logo_href %}<a href="{{ page.logo_href }}" target="_blank" rel="noopener noreferrer">{% endif %}
-            <img src="{{ page.logo_src }}" alt="{{ page.logo_alt }}">
-          {% if page.logo_href %}</a>{% endif %}
-        </div>
-      {% endif %}
-      <div class="hs-title-size-1 font-alt m-b-20 wow fadeInUp" style="text-transform:uppercase">
-        {{ page.title }}
-      </div>
-      {% if page.oneliner %}
-      <div class="hs-title-size-3 font-alt wow fadeInUp" data-wow-delay="0.4s">
-        {{ page.oneliner }}
-        <br>
-        <i class="fa fa-angle-down"></i>
-      </div>
-      {% endif %}
-    </div>
-  </div>
+	{% for text in page.bgimage %}
+	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-background="assets/images/{{page.bgimage}}.jpg">
+	{% endfor %}
 
- </section>
-<!-- /HOME -->
+		<div class="hs-caption container">
+			<div class="caption-content">
+			{% if page.logo_src %}
+				<div class="pc-logo wow fadeInUp">
+			{% if page.logo_href %}<a href="{{ page.logo_href }}" target="_blank" rel="noopener noreferrer">{% endif %}
+				<img src="{{ page.logo_src }}" alt="{{ page.logo_alt }}">
+			{% if page.logo_href %}</a>{% endif %}
+				</div>
+			{% endif %}
+				<div class="hs-title-size-1 font-alt m-b-20 wow fadeInUp" style="text-transform:uppercase">
+					{{ page.title }}
+				</div>
+				<div class="hs-title-size-3 font-alt wow fadeInUp" data-wow-delay="0.4s">
+					{{ page.oneliner }}
+					<br>
+					<i class="fa fa-angle-down"></i>
+				</div>
+			</div>
+		</div>
 
-<script>
-  // Apply gradient background for pages that provide `page.color`.
-  // This avoids inline Liquid inside a `style=""` attribute (IDE CSS lint parsing issues).
-  document.addEventListener('DOMContentLoaded', function () {
-    var nodes = document.querySelectorAll('[data-gradient]');
-    for (var i = 0; i < nodes.length; i++) {
-      var gradient = nodes[i].getAttribute('data-gradient');
-      if (gradient) nodes[i].style.background = 'linear-gradient(135deg, ' + gradient + ')';
-    }
-  });
-</script>
-
+	</section >
+	<!-- /HOME --> 
 
 
 <!-- DETAILS + STORY -->
