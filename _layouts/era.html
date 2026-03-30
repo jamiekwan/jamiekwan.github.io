@@ -210,11 +210,16 @@ title: Jamie Kwan | Experience Design & Strategy
 <!-- KEY PROJECTS -->
   <section>
     <div class="container">
-      <hr class="divider-w">
+    <hr class="divider-w">
+    	<div class="row wow fadeInUp">
+    		<div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1">
+    			<h3 class="work-details-title font-alt p-t-10 p-b-10">Key Projects</h3>
+    		</div>
+  		</div>
       {% if page.key_projects %}
+        {% for kp in page.key_projects %}
           <div class="row wow fadeInUp" style="margin-bottom: 40px;">
             <div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1 pc-card">
-                  {% for kp in page.key_projects %}
               <div class="row">
                 <div class="col-sm-4 col-md-4 col-xl-4">
                   {% if kp.url %}
