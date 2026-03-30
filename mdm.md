@@ -67,7 +67,8 @@ key_projects:
     high_level_impact: "Converted serendipitous play into a structured pathway for creative dialogue."
 
 insights_subheader:
-  - "Key learnings out of these explorations"
+  - |
+    <p>Key learnings out of these explorations</p>
 
 insights: 
   - insight-title: "The space itself is part of the experience."
