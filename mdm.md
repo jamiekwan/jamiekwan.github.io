@@ -66,12 +66,11 @@ key_projects:
     exec_summary: "An installation built around 'critical play,' blending analog + digital sketching and playful prompts to help artists and stakeholders engage future city questions."
     high_level_impact: "Converted serendipitous play into a structured pathway for creative dialogue."
 
-insights_subheader:
-  - |
-    <p>Key learnings out of these explorations</p>
+
 
 insights: 
-  - insight-title: "The space itself is part of the experience."
+  - insights_subheader: "Key learnings out of these explorations"
+    insight-title: "The space itself is part of the experience."
     exec_summary: "Physical environments carry meaning — scent, touch, sound, and spatial layout aren’t add-ons to a screen. They’re the primary way people discover and connect with content. When you design the room as part of the interface, digital layers feel natural instead of bolted on."
     outcome:
   - insight-title: "Bodies understand things screens can’t explain."
