@@ -3,7 +3,7 @@ layout: era
 permalink: mdm
 title: Master of Digital Media (MDM) | Activating Physical + Digital Play
 oneliner: "Designing differentiated experiences at the intersection of physical spaces and immersive media."
-bgimage: "cineplex.jpg"
+bgimage: "cineplex"
 parallax_speed: 0.2
 
 logo_src: "assets/images/logos/tmu-logo/tmu-logo/digital/TMU-rgb.png"
