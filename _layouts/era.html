@@ -107,7 +107,7 @@ title: Jamie Kwan | Experience Design & Strategy
     <div class="container">
       <div class="row">
       	<hr>
-        <div class="col-sm-6 wow fadeIn">
+        <div class="col-sm-5 col-md-5 col-xl-5 col-sm-offset-1 col-md-offset-1 col-xl-offset-1 wow fadeIn">
           <h3 class="work-details-title font-alt">Navigating with Curiosity</h3>
           {% if page.methodology %}
             {% for paragraph in page.methodology %}
@@ -116,7 +116,7 @@ title: Jamie Kwan | Experience Design & Strategy
           {% endif %}
         </div>
 
-        <div class="col-sm-6 wow fadeIn">
+        <div class="col-sm-5 col-md-5 col-xl-5 wow fadeIn">
           {% if page.methodology_image %}
             <div class="img-fluid">
               <img src="{{ page.methodology_image }}" alt="{{ page.methodology_image_alt }}">
@@ -216,9 +216,9 @@ title: Jamie Kwan | Experience Design & Strategy
       {% if page.key_projects %}
         {% for kp in page.key_projects %}
           <div class="row wow fadeInUp" style="margin-bottom: 40px;">
-            <div class="col-sm-12 pc-card">
+            <div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1 pc-card">
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3 col-md-3 col-xl-3">
                   {% if kp.url %}
                     <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>
                   {% endif %}
@@ -232,7 +232,7 @@ title: Jamie Kwan | Experience Design & Strategy
                   {% endif %}
                 </div>
 
-                <div class="col-sm-8" id="story">
+                <div class="col-sm-9 col-md-9 col-xl-9" id="story">
                   {% if kp.title %}
                     <h4 class="work-details-title font-alt p-t-0">{{ kp.title }}</h4>
                   {% endif %}
