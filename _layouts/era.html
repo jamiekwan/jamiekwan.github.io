@@ -264,16 +264,34 @@ title: Jamie Kwan | Experience Design & Strategy
 <!-- /KEY PROJECTS -->
 
 <!-- INSIGHTS -->
+{% if page.insights %}
 <section>
 	<div class="container">
 		<hr class="divider-w">
 		<div class="row wow fadeInUp">
 			<div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1">
-		      	<h3 class="work-details-title font-alt p-t-10 p-b-10">Insights</h3>
+		      	<h3 class="font-inc pc-subheader">Insights</h3>
 			</div>
 		</div>
+		<div class="row wow fadeInUp">
+			<div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1">
+          		<div class="font-inc pc-subheader">{{ subheader }}</div>
+			</div>
+		</div>
+		{% for text in page.insights %}
+		<div>
+			<div class="row wow fadeInUp">
+				<div class="col-sm-4 col-sm-offset-1">
+					<p> <b>{{ insight-title }}</b></p>
+				</div>
+				<div class="col-sm-6">
+					<p>{{ exec_summary }}</p>
+			</div>	
+		</div>
+		{% endfor %}
 	</div>
 </section>
+{% endif %}
 <!-- /INSIGHTS -->
 
 
