@@ -201,7 +201,6 @@ summary.pc-insight-summary {
 	gap: 12px;
 	user-select: none;
 	border-top: 1px solid rgba(0,0,0,0.15);
-	border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 
 summary.pc-insight-summary::-webkit-details-marker {
@@ -215,32 +214,17 @@ summary.pc-insight-summary::-webkit-details-marker {
 }
 
 .pc-insight-caret {
-	width: 16px;
-	height: 16px;
-	position: relative;
-	transition: opacity 0.15s ease-in-out;
+	width: 10px;
+	height: 10px;
+	border-right: 2px solid rgba(0,0,0,0.55);
+	border-bottom: 2px solid rgba(0,0,0,0.55);
+	transform: rotate(45deg);
+	transition: transform 0.35s ease;
 	flex: 0 0 auto;
 }
 
-.pc-insight-caret::before,
-.pc-insight-caret::after {
-	content: "";
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 12px;
-	height: 2px;
-	background: rgba(0,0,0,0.55);
-	transform: translate(-50%, -50%);
-}
-
-.pc-insight-caret::after {
-	width: 2px;
-	height: 12px;
-}
-
-details[open].pc-insight .pc-insight-caret::after {
-	opacity: 0;
+details[open].pc-insight .pc-insight-caret {
+	transform: rotate(225deg);
 }
 
 .pc-insight-body {
