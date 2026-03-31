@@ -52,6 +52,36 @@ Place here your custom CSS styles
 	font-style: normal;
 }
 
+/* Era layout: enforce standard body styling for body copy blocks. */
+.era-body-text {
+	font-size: 16px;
+	font-family: "Roboto", Verdana, sans-serif;
+	color: #4C5563;
+	font-style: normal;
+}
+
+/* Tighten spacing between Impact and Methodologies on era pages. */
+.era-methodologies {
+	padding-top: 30px;
+}
+
+/* Key projects: "Deliverable" tag + read-more arrow. */
+.pc-deliverable-tag {
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.9rem;
+	background: #DFF5E1;
+	color: #1E7A3E;
+	border: 1px solid #BFE9C6;
+}
+
+.pc-readmore-link i.fa {
+	margin-left: 6px;
+}
+
 .pc-overview-title {
 	font-size: 18px;
 	margin-bottom: 12px !important;

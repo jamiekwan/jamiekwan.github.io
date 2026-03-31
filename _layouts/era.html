@@ -83,15 +83,15 @@ title: Jamie Kwan | Experience Design & Strategy
     <div class="col-sm-6 col-m-6 col-xl-6">
       {% if page.approach %}
         <h3 class="work-details-title font-alt">Approach</h3>
-        <div class="p-b-10 pc-body">
+        <div class="p-b-10 pc-body era-body-text">
           {{ page.approach }}
         </div>
       {% endif %}
 
       {% if page.impact %}
-        <hr>
+        <hr class="divider-w">
         <h3 class="work-details-title font-alt">Impact</h3>
-        <div class="p-b-10 pc-body">
+        <div class="p-b-10 pc-body era-body-text">
           {{ page.impact }}
         </div>
       {% endif %}
@@ -103,10 +103,9 @@ title: Jamie Kwan | Experience Design & Strategy
 
 
 <!-- METHODOLOGIES -->
-<section class="module-small">
+<section class="module-small era-methodologies">
     <div class="container">
       <div class="row">
-      	<hr>
         <div class="col-sm-5 col-md-5 col-xl-5 col-sm-offset-1 col-md-offset-1 col-xl-offset-1 wow fadeIn">
           <h3 class="work-details-title font-alt">Navigating with Curiosity</h3>
           {% if page.methodology %}
@@ -245,13 +244,12 @@ title: Jamie Kwan | Experience Design & Strategy
                   {% endif %}
 
                   {% if kp.high_level_impact %}
-                    <p><code style="text-transform:uppercase; font-size: 0.9rem; letter-spacing: 1px;">Deliverable</code><br> {{ kp.high_level_impact }}</p>
+                    <p><code class="pc-deliverable-tag">Deliverable</code><br> {{ kp.high_level_impact }}</p>
                   {% endif %}
 
                   {% if kp.url %}
                     <p class="p-t-10 work-descr font-inc story-link-in" style="text-align: right;">
-                      <a href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>Read more <i class="bi bi-arrow-right"></i>
-					  </a>
+                      <a class="pc-readmore-link" href="{{ kp.url }}"{% if kp.target_blank %} target="_blank" rel="noopener noreferrer"{% endif %}>Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </p>
                   {% endif %}
                 </div>
