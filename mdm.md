@@ -42,7 +42,7 @@ impact: |
 
 key_projects:
 
-  - title: "Future of Movies & Entertainment"
+  - title: "Cineplex: Future of Entertainment"
     url: "/cineplex-future"
     thumbnail: "../assets/images/projects/cineplex-future/05.jpg"
     exec_summary: "Play-based co-creation workshops with Gen Z that imagined future cinema and tied winning concepts to everyday social lives—'a home away from home.'"
