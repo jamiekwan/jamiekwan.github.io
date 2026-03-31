@@ -139,3 +139,10 @@ Place here your custom CSS styles
 	font-weight: bold;
 }
 
+.report-card {
+    background: rgb(255, 248, 230);
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
