@@ -273,7 +273,8 @@ title: Jamie Kwan | Experience Design & Strategy
 		      	<h3 class="work-details-title font-alt p-t-10 p-b-10">Insights</h3>
 			</div>
 		</div>
-		
+
+		{% for ins in page.insights %}
 		{% for sub in page.insights %}
 		<div class="row wow fadeInUp">
 			<div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1">
@@ -282,8 +283,6 @@ title: Jamie Kwan | Experience Design & Strategy
 			</div>
 		</div>
 		{% endfor %}
-
-		{% for ins in page.insights %}
 		<div>
 			<div class="row wow fadeInUp">
 				<div class="col-sm-4 col-sm-offset-1">
