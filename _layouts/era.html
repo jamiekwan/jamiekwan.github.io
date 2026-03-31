@@ -244,7 +244,7 @@ title: Jamie Kwan | Experience Design & Strategy
                   {% endif %}
 
                   {% if kp.high_level_impact %}
-                    <p><code class="pc-deliverable-tag">Deliverable</code><br> {{ kp.high_level_impact }}</p>
+                    <p><code class="pc-deliverable-tag">Deliverable(s)</code><br> {{ kp.high_level_impact }}</p>
                   {% endif %}
 
                   {% if kp.url %}
@@ -263,7 +263,7 @@ title: Jamie Kwan | Experience Design & Strategy
 <!-- /KEY PROJECTS -->
 
 <!-- INSIGHTS -->
-{% if page.insights %}
+{% if page.insights or page.insight_groups %}
 <section>
 	<div class="container">
 		<hr class="divider-w">
@@ -272,18 +272,154 @@ title: Jamie Kwan | Experience Design & Strategy
 		      	<h3 class="work-details-title font-alt p-t-10 p-b-10">Insights</h3>
 			</div>
 		</div>
-		{% for ins in page.insights %}
-		<div>
-			<div class="row wow fadeInUp">
-				<div class="col-sm-4 col-sm-offset-1">
-					<div class="hs-title-size-1"><p style="text-transform: uppercase;">{{ ins.insight-title }}</p></div>
 
+		{% if page.insight_groups %}
+			{% for grp in page.insight_groups %}
+				{% assign group_title = grp.title | default: grp.heading | default: grp.group_title %}
+
+				{% if group_title %}
+				<div class="row wow fadeInUp">
+					<div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1">
+						<h4 class="pc-insights-group-title font-alt">{{ group_title }}</h4>
+					</div>
 				</div>
-				<div class="col-sm-6">
-					<p>{{ ins.exec_summary }}</p>
-			</div>	
-		</div>
-		{% endfor %}
+				{% endif %}
+
+				<div class="row wow fadeInUp">
+					<div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1">
+						<div class="pc-insights-accordion">
+							{% for ins in grp.insights %}
+								{% assign insight_title = ins.title | default: ins.insight_title | default: ins.insightTitle %}
+								{% if insight_title == nil and ins['insight-title'] %}
+									{% assign insight_title = ins['insight-title'] %}
+								{% endif %}
+
+								<details class="pc-insight">
+									<summary class="pc-insight-summary">
+										<span class="pc-insight-title">{{ insight_title | default: "Placeholder insight title" }}</span>
+										<span class="pc-insight-caret" aria-hidden="true"></span>
+									</summary>
+
+									<div class="pc-insight-body">
+										{% assign exec_summary = ins.exec_summary | default: ins.execSummary %}
+										{% if exec_summary %}
+											<div class="pc-insight-block">
+												<div class="pc-insight-label font-inc">Executive summary</div>
+												<p class="era-body-text">{{ exec_summary }}</p>
+											</div>
+										{% else %}
+											<div class="pc-insight-block">
+												<div class="pc-insight-label font-inc">Executive summary</div>
+												<p class="era-body-text">Placeholder: 2–3 sentences summarizing the core insight and why it matters in the context of this era/project.</p>
+											</div>
+										{% endif %}
+
+										{% if ins.outcomes %}
+											<div class="pc-insight-block">
+												<div class="pc-insight-label font-inc">Outcomes</div>
+												<ul class="pc-insight-list">
+													{% for o in ins.outcomes %}
+														<li>{{ o }}</li>
+													{% endfor %}
+												</ul>
+											</div>
+										{% else %}
+											<div class="pc-insight-block">
+												<div class="pc-insight-label font-inc">Outcomes</div>
+												<ul class="pc-insight-list">
+													<li>Placeholder: measurable change (adoption, time saved, conversion, satisfaction).</li>
+													<li>Placeholder: capability unlocked (new workflow, clearer decisions, fewer handoffs).</li>
+												</ul>
+											</div>
+										{% endif %}
+
+										{% assign details = ins.details | default: ins.body | default: ins.notes %}
+										{% if details %}
+											<div class="pc-insight-block">
+												<div class="pc-insight-label font-inc">Details</div>
+												<div class="era-body-text">{{ details }}</div>
+											</div>
+										{% else %}
+											<div class="pc-insight-block">
+												<div class="pc-insight-label font-inc">Details</div>
+												<p class="era-body-text">Placeholder: supporting evidence, examples, or implications. Use this space for the “so what” and what you’d do differently next time.</p>
+											</div>
+										{% endif %}
+									</div>
+								</details>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		{% else %}
+			<div class="row wow fadeInUp">
+				<div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1">
+					<div class="pc-insights-accordion">
+						{% for ins in page.insights %}
+							{% assign insight_title = ins.title | default: ins.insight_title | default: ins.insightTitle %}
+							{% if insight_title == nil and ins['insight-title'] %}
+								{% assign insight_title = ins['insight-title'] %}
+							{% endif %}
+
+							<details class="pc-insight">
+								<summary class="pc-insight-summary">
+									<span class="pc-insight-title">{{ insight_title | default: "Placeholder insight title" }}</span>
+									<span class="pc-insight-caret" aria-hidden="true"></span>
+								</summary>
+
+								<div class="pc-insight-body">
+									{% assign exec_summary = ins.exec_summary | default: ins.execSummary %}
+									{% if exec_summary %}
+										<div class="pc-insight-block">
+											<div class="pc-insight-label font-inc">Executive summary</div>
+											<p class="era-body-text">{{ exec_summary }}</p>
+										</div>
+									{% else %}
+										<div class="pc-insight-block">
+											<div class="pc-insight-label font-inc">Executive summary</div>
+											<p class="era-body-text">Placeholder: 2–3 sentences summarizing the core insight and why it matters in the context of this era/project.</p>
+										</div>
+									{% endif %}
+
+									{% if ins.outcomes %}
+										<div class="pc-insight-block">
+											<div class="pc-insight-label font-inc">Outcomes</div>
+											<ul class="pc-insight-list">
+												{% for o in ins.outcomes %}
+													<li>{{ o }}</li>
+												{% endfor %}
+											</ul>
+										</div>
+									{% else %}
+										<div class="pc-insight-block">
+											<div class="pc-insight-label font-inc">Outcomes</div>
+											<ul class="pc-insight-list">
+												<li>Placeholder: measurable change (adoption, time saved, conversion, satisfaction).</li>
+												<li>Placeholder: capability unlocked (new workflow, clearer decisions, fewer handoffs).</li>
+											</ul>
+										</div>
+									{% endif %}
+
+									{% assign details = ins.details | default: ins.body | default: ins.notes %}
+									{% if details %}
+										<div class="pc-insight-block">
+											<div class="pc-insight-label font-inc">Details</div>
+											<div class="era-body-text">{{ details }}</div>
+										</div>
+									{% else %}
+										<div class="pc-insight-block">
+											<div class="pc-insight-label font-inc">Details</div>
+											<p class="era-body-text">Placeholder: supporting evidence, examples, or implications. Use this space for the “so what” and what you’d do differently next time.</p>
+										</div>
+									{% endif %}
+								</div>
+							</details>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		{% endif %}
 	</div>
 </section>
 {% endif %}
