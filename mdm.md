@@ -73,7 +73,7 @@ insights:
     insight-title: "The space itself is part of the experience."
     exec_summary: "Physical environments carry meaning — scent, touch, sound, and spatial layout aren’t add-ons to a screen. They’re the primary way people discover and connect with content. When you design the room as part of the interface, digital layers feel natural instead of bolted on."
     outcome:
-    label: "test"
+    label:
   - insight-title: "Bodies understand things screens can’t explain."
     exec_summary: "When people can shape, hold, or smell something, complex ideas become intuitive. They don’t need instructions — the interaction teaches itself. This applies whether you’re communicating data, history, or a brand story."
     outcome:
