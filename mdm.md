@@ -73,22 +73,27 @@ insights:
     insight-title: "The space itself is part of the experience."
     exec_summary: "Physical environments carry meaning — scent, touch, sound, and spatial layout aren’t add-ons to a screen. They’re the primary way people discover and connect with content. When you design the room as part of the interface, digital layers feel natural instead of bolted on."
     outcome:
+    label: "test"
   - insight-title: "Bodies understand things screens can’t explain."
     exec_summary: "When people can shape, hold, or smell something, complex ideas become intuitive. They don’t need instructions — the interaction teaches itself. This applies whether you’re communicating data, history, or a brand story."
     outcome:
+    label:
   - insight-title: "The best experiences are designed with audiences, not for them."
     exec_summary: "Co-creation — especially play-based methods with diverse participants — surfaces needs and ideas that research decks miss. It’s what makes an experience feel personally relevant rather than generically “immersive.”"
     outcome:
+    label: 
   - insight-title: "You don’t need a massive budget to prototype sensory experiences."
     exec_summary: "Off-the-shelf sensors, basic fabrication tools, and everyday materials are enough to build and test working concepts quickly. This puts multisensory design within reach of small teams, not just big productions."
     outcome:
+    label:
   - insight-title: "Multisensory design gets gimmicky fast without a point of view."
     exec_summary: "Adding senses for novelty doesn’t make an experience better. What matters is understanding how bodies, spaces, and social contexts interact — and designing for open-ended discovery rather than scripted reactions."
     outcome:
+    label:
   - insight-title: "Play is a serious design method."
     exec_summary: "Hands-on, low-stakes activities — sketching, building, riffing — are how you turn a room full of strangers into co-creators. It makes ideation productive without making it feel like work, and it surfaces ideas that structured workshops often can’t."
     outcome:
-
+    label:
 
 ---
 
