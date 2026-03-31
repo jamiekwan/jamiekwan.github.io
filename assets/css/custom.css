@@ -194,7 +194,7 @@ details.pc-insight {
 summary.pc-insight-summary {
 	list-style: none;
 	cursor: pointer;
-	padding: 0;
+	padding: 16px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -210,24 +210,37 @@ summary.pc-insight-summary::-webkit-details-marker {
 
 .pc-insight-heading {
 	margin: 0;
-	padding: 16px;
+	padding: 0;
 	flex: 1 1 auto;
 }
 
 .pc-insight-caret {
-	width: 10px;
-	height: 10px;
-	border-right: 2px solid rgba(0,0,0,0.55);
-	border-bottom: 2px solid rgba(0,0,0,0.55);
-	transform: rotate(45deg);
-	transition: transform 0.15s ease-in-out;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	transition: opacity 0.15s ease-in-out;
 	flex: 0 0 auto;
-	margin-top: 1px;
-	margin-right: 16px;
 }
 
-details[open].pc-insight .pc-insight-caret {
-	transform: rotate(225deg);
+.pc-insight-caret::before,
+.pc-insight-caret::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 12px;
+	height: 2px;
+	background: rgba(0,0,0,0.55);
+	transform: translate(-50%, -50%);
+}
+
+.pc-insight-caret::after {
+	width: 2px;
+	height: 12px;
+}
+
+details[open].pc-insight .pc-insight-caret::after {
+	opacity: 0;
 }
 
 .pc-insight-body {
