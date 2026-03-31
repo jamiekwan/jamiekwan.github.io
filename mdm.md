@@ -67,54 +67,44 @@ key_projects:
     high_level_impact: "Converted serendipitous play into a structured pathway for creative dialogue."
 
 
-insights_groups:
-  - title: What I learned
-    insights: 
-      - title: The space itself is part of the experience.
-        exec_summary: Physical environments carry meaning — scent, touch, sound, and spatial layout aren’t add-ons to a screen. They’re the primary way people discover and connect with content. When you design the room as part of the interface, digital layers feel natural instead of bolted on.
+insight_groups:
+  - title: "What I learned"
+    insights:
+      - title: "The space itself is part of the experience."
+        exec_summary: "Physical environments carry meaning — scent, touch, sound, and spatial layout aren’t add-ons to a screen. They’re the primary way people discover and connect with content. When you design the room as part of the interface, digital layers feel natural instead of bolted on."
+        details: |
+          <p>Museum and classroom work reinforced that layout, materials, and ambient qualities do narrative work before anyone taps a UI. I stopped treating “environment” as production design and started treating it as part of the interaction model.</p>
+      - title: "The best experiences are designed with audiences, not for them."
+        exec_summary: "Co-creation — especially play-based methods with diverse participants — surfaces needs and ideas that research decks miss. It’s what makes an experience feel personally relevant rather than generically “immersive.”"
+        details: |
+          <p>Workshops with kids, artists, and stakeholders consistently produced concepts that felt lived-in. The pattern was simple: invite people to manipulate materials and futures early, then refine — don’t present a finished vision and ask for opinions.</p>
+      - title: "You don’t need a massive budget to prototype sensory experiences."
+        exec_summary: "Off-the-shelf sensors, basic fabrication tools, and everyday materials are enough to build and test working concepts quickly. This puts multisensory design within reach of small teams, not just big productions."
         outcomes:
-          - test
-          - test
-        details: | 
-          test test
-      - title: The best experiences are designed with audiences, not for them.
-        exec_summary: Co-creation — especially play-based methods with diverse participants — surfaces needs and ideas that research decks miss. It’s what makes an experience feel personally relevant rather than generically “immersive.”
+          - "Rapid physical + digital loops without waiting on bespoke hardware or large installs."
+          - "Honest signal on whether a sensory channel actually supports the story."
+        details: |
+          <p>DIY sensing and cheap fabrication let you test smell, touch, and projection mapping with real people in real rooms — which matters more than polish in early discovery.</p>
+      - title: "Multisensory design gets gimmicky fast without a point of view."
+        exec_summary: "Adding senses for novelty doesn’t make an experience better. What matters is understanding how bodies, spaces, and social contexts interact — and designing for open-ended discovery rather than scripted reactions."
+        details: |
+          <p>Each extra modality needs a reason tied to meaning or discovery. Otherwise it reads as spectacle. I anchor multisensory choices in what someone should understand or feel, not what impresses in a demo.</p>
+  - title: "What I'm carrying forward"
+    insights:
+      - title: "Bodies understand things screens can’t explain."
+        exec_summary: "When people can shape, hold, or smell something, complex ideas become intuitive. They don’t need instructions — the interaction teaches itself. This applies whether you’re communicating data, history, or a brand story."
         outcomes:
-          - test
-          - test
-        details: | 
-          test test
-      - title: You don’t need a massive budget to prototype sensory experiences.
-        exec_summary: Off-the-shelf sensors, basic fabrication tools, and everyday materials are enough to build and test working concepts quickly. This puts multisensory design within reach of small teams, not just big productions.
+          - "Embodied interfaces as a default for explaining complexity (topography, time, scale, cause and effect)."
+          - "Less reliance on textual explanation when the medium can be directly manipulable."
+        details: |
+          <p>Sandbox terrain, tactile artifacts, and spatial interaction became my go-to when the goal is comprehension and emotional connection, not just information delivery.</p>
+      - title: "Play is a serious design method."
+        exec_summary: "Hands-on, low-stakes activities — sketching, building, riffing — are how you turn a room full of strangers into co-creators. It makes ideation productive without making it feel like work, and it surfaces ideas that structured workshops often can’t."
         outcomes:
-          - test
-          - test
-        details: | 
-          test test
-      - title: Multisensory design gets gimmicky fast without a point of view.
-        exec_summary: Adding senses for novelty doesn’t make an experience better. What matters is understanding how bodies, spaces, and social contexts interact — and designing for open-ended discovery rather than scripted reactions.
-        outcomes:
-          - test
-          - test
-        details: | 
-          test test
-  - title: What I'm carrying forward
-    insights: 
-      - title: Bodies understand things screens can’t explain.
-        exec_summary: When people can shape, hold, or smell something, complex ideas become intuitive. They don’t need instructions — the interaction teaches itself. This applies whether you’re communicating data, history, or a brand story.
-        outcomes:
-          - test
-          - test
-        details: | 
-          test test
-    insights: 
-      - title: Play is a serious design method.
-        exec_summary: Hands-on, low-stakes activities — sketching, building, riffing — are how you turn a room full of strangers into co-creators. It makes ideation productive without making it feel like work, and it surfaces ideas that structured workshops often can’t.
-        outcomes:
-          - test
-          - test
-        details: | 
-          test test
+          - "Shared artifacts and games that make disagreement and imagination visible at the same time."
+          - "Faster alignment across disciplines because everyone is making, not only talking."
+        details: |
+          <p>I still use critical play and low-fidelity making to unlock futures work: it lowers the cost of proposing bold ideas and keeps participants invested in outcomes they helped shape.</p>
 
 ---
 
