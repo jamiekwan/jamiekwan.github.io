@@ -296,7 +296,7 @@ title: Jamie Kwan | Experience Design & Strategy
 
 								<details class="pc-insight">
 									<summary class="pc-insight-summary">
-										<span class="pc-insight-title">{{ insight_title | default: "Placeholder insight title" }}</span>
+										<h4 class="work-details-title font-alt p-t-0 pc-insight-heading">{{ insight_title }}</h4>
 										<span class="pc-insight-caret" aria-hidden="true"></span>
 									</summary>
 
@@ -307,29 +307,21 @@ title: Jamie Kwan | Experience Design & Strategy
 												<div class="pc-insight-label font-inc">Executive summary</div>
 												<p class="era-body-text">{{ exec_summary }}</p>
 											</div>
-										{% else %}
-											<div class="pc-insight-block">
-												<div class="pc-insight-label font-inc">Executive summary</div>
-												<p class="era-body-text">Placeholder: 2–3 sentences summarizing the core insight and why it matters in the context of this era/project.</p>
-											</div>
 										{% endif %}
 
-										{% if ins.outcomes %}
+										{% assign outcomes = ins.outcomes | default: ins.outcome %}
+										{% if outcomes %}
 											<div class="pc-insight-block">
 												<div class="pc-insight-label font-inc">Outcomes</div>
-												<ul class="pc-insight-list">
-													{% for o in ins.outcomes %}
-														<li>{{ o }}</li>
-													{% endfor %}
-												</ul>
-											</div>
-										{% else %}
-											<div class="pc-insight-block">
-												<div class="pc-insight-label font-inc">Outcomes</div>
-												<ul class="pc-insight-list">
-													<li>Placeholder: measurable change (adoption, time saved, conversion, satisfaction).</li>
-													<li>Placeholder: capability unlocked (new workflow, clearer decisions, fewer handoffs).</li>
-												</ul>
+												{% if outcomes.first %}
+													<ul class="pc-insight-list">
+														{% for o in outcomes %}
+															<li>{{ o }}</li>
+														{% endfor %}
+													</ul>
+												{% else %}
+													<p class="era-body-text">{{ outcomes }}</p>
+												{% endif %}
 											</div>
 										{% endif %}
 
@@ -339,10 +331,11 @@ title: Jamie Kwan | Experience Design & Strategy
 												<div class="pc-insight-label font-inc">Details</div>
 												<div class="era-body-text">{{ details }}</div>
 											</div>
-										{% else %}
+										{% endif %}
+
+										{% if ins.label %}
 											<div class="pc-insight-block">
-												<div class="pc-insight-label font-inc">Details</div>
-												<p class="era-body-text">Placeholder: supporting evidence, examples, or implications. Use this space for the “so what” and what you’d do differently next time.</p>
+												<div class="pc-insight-label font-inc">{{ ins.label }}</div>
 											</div>
 										{% endif %}
 									</div>
@@ -357,6 +350,10 @@ title: Jamie Kwan | Experience Design & Strategy
 				<div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1">
 					<div class="pc-insights-accordion">
 						{% for ins in page.insights %}
+							{% if ins.insights_subheader %}
+								<h4 class="pc-insights-group-title font-alt">{{ ins.insights_subheader }}</h4>
+							{% endif %}
+
 							{% assign insight_title = ins.title | default: ins.insight_title | default: ins.insightTitle %}
 							{% if insight_title == nil and ins['insight-title'] %}
 								{% assign insight_title = ins['insight-title'] %}
@@ -364,7 +361,7 @@ title: Jamie Kwan | Experience Design & Strategy
 
 							<details class="pc-insight">
 								<summary class="pc-insight-summary">
-									<span class="pc-insight-title">{{ insight_title | default: "Placeholder insight title" }}</span>
+									<h4 class="work-details-title font-alt p-t-0 pc-insight-heading">{{ insight_title }}</h4>
 									<span class="pc-insight-caret" aria-hidden="true"></span>
 								</summary>
 
@@ -375,29 +372,21 @@ title: Jamie Kwan | Experience Design & Strategy
 											<div class="pc-insight-label font-inc">Executive summary</div>
 											<p class="era-body-text">{{ exec_summary }}</p>
 										</div>
-									{% else %}
-										<div class="pc-insight-block">
-											<div class="pc-insight-label font-inc">Executive summary</div>
-											<p class="era-body-text">Placeholder: 2–3 sentences summarizing the core insight and why it matters in the context of this era/project.</p>
-										</div>
 									{% endif %}
 
-									{% if ins.outcomes %}
+									{% assign outcomes = ins.outcomes | default: ins.outcome %}
+									{% if outcomes %}
 										<div class="pc-insight-block">
 											<div class="pc-insight-label font-inc">Outcomes</div>
-											<ul class="pc-insight-list">
-												{% for o in ins.outcomes %}
-													<li>{{ o }}</li>
-												{% endfor %}
-											</ul>
-										</div>
-									{% else %}
-										<div class="pc-insight-block">
-											<div class="pc-insight-label font-inc">Outcomes</div>
-											<ul class="pc-insight-list">
-												<li>Placeholder: measurable change (adoption, time saved, conversion, satisfaction).</li>
-												<li>Placeholder: capability unlocked (new workflow, clearer decisions, fewer handoffs).</li>
-											</ul>
+											{% if outcomes.first %}
+												<ul class="pc-insight-list">
+													{% for o in outcomes %}
+														<li>{{ o }}</li>
+													{% endfor %}
+												</ul>
+											{% else %}
+												<p class="era-body-text">{{ outcomes }}</p>
+											{% endif %}
 										</div>
 									{% endif %}
 
@@ -407,10 +396,11 @@ title: Jamie Kwan | Experience Design & Strategy
 											<div class="pc-insight-label font-inc">Details</div>
 											<div class="era-body-text">{{ details }}</div>
 										</div>
-									{% else %}
+									{% endif %}
+
+									{% if ins.label %}
 										<div class="pc-insight-block">
-											<div class="pc-insight-label font-inc">Details</div>
-											<p class="era-body-text">Placeholder: supporting evidence, examples, or implications. Use this space for the “so what” and what you’d do differently next time.</p>
+											<div class="pc-insight-label font-inc">{{ ins.label }}</div>
 										</div>
 									{% endif %}
 								</div>
