@@ -8,7 +8,7 @@ parallax_speed: 0.2
 
 logo_src: "assets/images/logos/tmu-logo/tmu-logo/digital/TMU-rgb.png"
 logo_alt: "Toronto Metropolitan University"
-logo_href: "https://www.torontomu.ca/brand/brand-toolkit/university-logo/"
+logo_href: "https://www.torontomu.ca/master-digital-media/portfolio/"
 
 time:
   - "Grad school: Sept 2014 - 2015"
