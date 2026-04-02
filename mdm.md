@@ -99,7 +99,7 @@ insight_groups:
         details: |
           <p>Sandbox terrain, tactile artifacts, and spatial interaction became my go-to when the goal is comprehension and emotional connection, not just information delivery.</p>
       - title: "Play is a serious design method."
-        exec_summary: "Hands-on, low-stakes activities — sketching, building, riffing — are how you turn a room full of strangers into co-creators. It makes ideation productive without making it feel like work, and it surfaces ideas that structured workshops often can’t."
+        exec_summary: "Play is less about toys and gamified experiences; and more about a mindset of curiosity and asking what-if -- and kids are awesome at this. Hands-on, low-stakes activities — sketching, building, riffing — are how you turn a room full of strangers into co-creators. It makes ideation productive without making it feel like work, and it surfaces ideas that structured workshops often can’t."
         outcomes:
           - "Shared artifacts and games that make disagreement and imagination visible at the same time."
           - "Faster alignment across disciplines because everyone is making, not only talking."
