@@ -100,9 +100,29 @@ Place here your custom CSS styles
 	margin-bottom: 40px;
 }
 
-.pc-logo img {
+.pc-logo img,
+.pc-logo-item img {
 	max-width: 170px;
 	height: auto;
+}
+
+/* Era hero: one or two logos, centered; "+" matches TL;DR label weight (Montserrat), white on dark hero. */
+.pc-logo-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.pc-hero-logo-plus {
+	font-family: "Montserrat", sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 0.12em;
+	line-height: 1;
+	color: #fff;
+	padding: 0 14px;
+	flex-shrink: 0;
 }
 
 .pc-card {

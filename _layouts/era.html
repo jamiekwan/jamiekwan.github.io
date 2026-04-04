@@ -14,11 +14,25 @@ title: Jamie Kwan | Experience Design & Strategy
 
 		<div class="hs-caption container">
 			<div class="caption-content">
-			{% if page.logo_src %}
-				<div class="pc-logo wow fadeInUp">
-			{% if page.logo_href %}<a href="{{ page.logo_href }}" target="_blank" rel="noopener noreferrer">{% endif %}
-				<img src="{{ page.logo_src }}" alt="{{ page.logo_alt }}">
-			{% if page.logo_href %}</a>{% endif %}
+			{% if page.logo_src or page.logo_src_2 %}
+				<div class="pc-logo pc-logo-row wow fadeInUp">
+					{% if page.logo_src %}
+						<div class="pc-logo-item">
+							{% if page.logo_href %}<a href="{{ page.logo_href }}" target="_blank" rel="noopener noreferrer">{% endif %}
+								<img src="{{ page.logo_src }}" alt="{{ page.logo_alt | default: '' }}">
+							{% if page.logo_href %}</a>{% endif %}
+						</div>
+					{% endif %}
+					{% if page.logo_src and page.logo_src_2 %}
+						<span class="pc-hero-logo-plus" aria-hidden="true">+</span>
+					{% endif %}
+					{% if page.logo_src_2 %}
+						<div class="pc-logo-item">
+							{% if page.logo_href_2 %}<a href="{{ page.logo_href_2 }}" target="_blank" rel="noopener noreferrer">{% endif %}
+								<img src="{{ page.logo_src_2 }}" alt="{{ page.logo_alt_2 | default: '' }}">
+							{% if page.logo_href_2 %}</a>{% endif %}
+						</div>
+					{% endif %}
 				</div>
 			{% endif %}
 				<div class="hs-title-size-1 font-alt m-b-20 wow fadeInUp" style="text-transform:uppercase">
