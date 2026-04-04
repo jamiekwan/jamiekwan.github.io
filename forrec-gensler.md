@@ -6,7 +6,7 @@ oneliner: "How I brought the magic of theme parks to our everyday experiences."
 
 # Hero background image: file at assets/images/{value}.jpg (no extension here).
 # Swap for your project’s hero still when ready.
-bgimage: "projects/!professional/forrec/xixi.jpg"
+bgimage: "projects/!professional/forrec/xixi"
 parallax_speed: 0.2
 
 # --- Logos (hero, centered). Omit logo_src entirely if you don’t want a logo.

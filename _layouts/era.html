@@ -4,13 +4,13 @@ title: Jamie Kwan | Experience Design & Strategy
 ---
 
 <!-- HOME -->
-	{% for text in page.color %}
+	{% if page.color %}
 	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" style="background: linear-gradient(135deg, {{page.color}})">
-	{% endfor%}
-
-	{% for text in page.bgimage %}
+	{% elsif page.bgimage %}
 	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50" data-background="assets/images/{{page.bgimage}}.jpg">
-	{% endfor %}
+	{% else %}
+	<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-50">
+	{% endif %}
 
 		<div class="hs-caption container">
 			<div class="caption-content">
