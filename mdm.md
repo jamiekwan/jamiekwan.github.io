@@ -69,8 +69,6 @@ key_projects:
 # Optional TL;DR grid above the insights accordion (layout: era). Subheader "TL;DR" is fixed in the template.
 # Each item: `title` (Montserrat, uppercase in CSS) and `text` (body). Aliases: `heading`/`body`, `summary`.
 insights_tldr:
-  heading: "Four themes that tie this era together"
-  caption: "These threads run through the projects and lessons below—from embodied space and co-design to frugal prototyping and disciplined play."
   items:
     - title: "Physical space is the interface"
       text: "Rooms, materials, and multisensory cues do narrative work alongside screens; when bodies can shape, hold, or sense something, complex ideas often land before instructions do."

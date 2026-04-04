@@ -255,44 +255,20 @@ details[open].pc-insight .pc-insight-caret {
 }
 
 .pc-insights-tldr-label {
-	margin: 0 0 8px 0;
+	margin: 0 0 12px 0;
 	font-size: 13px;
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
 	color: rgba(180, 95, 75, 0.95);
 }
 
-.pc-insights-tldr-heading {
-	margin: 0 0 10px 0;
-	font-size: 18px;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	line-height: 1.35;
-}
-
-.pc-insights-tldr-caption {
-	margin: 0 0 22px 0;
-	color: rgba(55, 55, 55, 0.88);
-}
-
-.pc-insights-tldr-grid {
-	margin-left: -10px;
-	margin-right: -10px;
-}
-
-.pc-insights-tldr-grid > [class*="col-"] {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.pc-insights-tldr-card-wrap {
+.pc-insights-tldr-grid-wrap {
 	position: relative;
 	z-index: 0;
-	margin-bottom: 20px;
 }
 
-/* Grain + tri-color glow; blurred so it reads as ambient shadow behind the white card. */
-.pc-insights-tldr-card-wrap::before {
+/* Grain + tri-color glow once behind the whole TL;DR grid (not per card). */
+.pc-insights-tldr-grid-wrap::before {
 	content: "";
 	position: absolute;
 	left: -8px;
@@ -311,6 +287,21 @@ details[open].pc-insight .pc-insight-caret {
 		radial-gradient(ellipse 70% 95% at 100% 45%, rgba(255, 107, 107, 0.38) 0%, transparent 62%);
 	background-blend-mode: soft-light, normal, normal, normal, normal;
 	filter: blur(16px);
+}
+
+.pc-insights-tldr-grid {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.pc-insights-tldr-grid > [class*="col-"] {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pc-insights-tldr-card-wrap {
+	position: relative;
+	margin-bottom: 20px;
 }
 
 .pc-insights-tldr-card-inner {
