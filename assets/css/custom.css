@@ -259,7 +259,8 @@ details[open].pc-insight .pc-insight-caret {
 	font-size: 13px;
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
-	color: rgba(180, 95, 75, 0.95);
+	font-weight: bold;
+	color: #0066CC;
 }
 
 .pc-insights-tldr-grid-wrap {
