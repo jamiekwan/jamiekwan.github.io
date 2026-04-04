@@ -263,7 +263,7 @@ title: Jamie Kwan | Experience Design & Strategy
 <!-- /KEY PROJECTS -->
 
 <!-- INSIGHTS -->
-{% if page.insights or page.insight_groups %}
+{% if page.insights or page.insight_groups or page.insights_tldr %}
 <section>
 	<div class="container">
 		<hr class="divider-w">
@@ -272,6 +272,45 @@ title: Jamie Kwan | Experience Design & Strategy
 		      	<h3 class="work-details-title font-alt p-t-10 p-b-10">Insights from this Era</h3>
 			</div>
 		</div>
+
+		{% if page.insights_tldr %}
+			{% assign tldr = page.insights_tldr %}
+			<div class="row wow fadeInUp">
+				<div class="col-sm-10 col-md-10 col-xl-10 col-sm-offset-1 col-md-offset-1 col-xl-offset-1">
+					<div class="pc-insights-tldr">
+						<div class="font-inc pc-insights-tldr-label">TL;DR</div>
+						{% assign tldr_heading = tldr.heading | default: tldr.title %}
+						{% if tldr_heading %}
+							<h4 class="work-details-title font-alt pc-insights-tldr-heading">{{ tldr_heading }}</h4>
+						{% endif %}
+						{% assign tldr_caption = tldr.caption | default: tldr.subtitle %}
+						{% if tldr_caption %}
+							<p class="era-body-text pc-insights-tldr-caption">{{ tldr_caption }}</p>
+						{% endif %}
+						{% if tldr.items %}
+							<div class="row pc-insights-tldr-grid">
+								{% for item in tldr.items %}
+									<div class="col-sm-6 col-md-6 col-xl-6">
+										{% assign item_title = item.title | default: item.heading %}
+										{% assign item_text = item.text | default: item.body | default: item.summary %}
+										<div class="pc-insights-tldr-card-wrap">
+											<div class="pc-insights-tldr-card-inner">
+												{% if item_title %}
+													<h5 class="font-alt pc-insights-tldr-card-title">{{ item_title }}</h5>
+												{% endif %}
+												{% if item_text %}
+													<p class="era-body-text pc-insights-tldr-body">{{ item_text }}</p>
+												{% endif %}
+											</div>
+										</div>
+									</div>
+								{% endfor %}
+							</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		{% endif %}
 
 		{% if page.insight_groups %}
 			{% for grp in page.insight_groups %}

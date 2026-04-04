@@ -66,6 +66,20 @@ key_projects:
     exec_summary: "An installation built around 'critical play,' blending analog + digital sketching and playful prompts to help artists and stakeholders engage future city questions."
     high_level_impact: "Converted serendipitous play into a structured pathway for creative dialogue."
 
+# Optional TL;DR grid above the insights accordion (layout: era). Subheader "TL;DR" is fixed in the template.
+# Each item: `title` (Montserrat, uppercase in CSS) and `text` (body). Aliases: `heading`/`body`, `summary`.
+insights_tldr:
+  heading: "Four themes that tie this era together"
+  caption: "These threads run through the projects and lessons below—from embodied space and co-design to frugal prototyping and disciplined play."
+  items:
+    - title: "Physical space is the interface"
+      text: "Rooms, materials, and multisensory cues do narrative work alongside screens; when bodies can shape, hold, or sense something, complex ideas often land before instructions do."
+    - title: "Co-design beats presentation"
+      text: "The strongest directions came from workshops where kids, artists, and stakeholders built and riffed together—surfacing needs and futures that research decks alone rarely reach."
+    - title: "Prototype fast with modest means"
+      text: "Off-the-shelf sensors, basic fabrication, and rapid physical–digital loops made multisensory concepts testable early—without waiting on bespoke hardware or blockbuster budgets."
+    - title: "Meaning and play over novelty"
+      text: "Every extra sense and every playful exercise needed a point of view tied to discovery or comprehension; disciplined play aligned people across disciplines better than spectacle for its own sake."
 
 insight_groups:
   - title: "What I learned"
