@@ -54,7 +54,7 @@ co_designers:
 
 methodology:
   - |
-    <p>Replace with how you explored the work (process, principles, tools). You can add more list items; each item is one HTML block.</p>
+    test
 
 methodology_image: "../assets/images/projects/sensing-history/d2.jpg"
 methodology_image_alt: "Describe the image for screen readers"
