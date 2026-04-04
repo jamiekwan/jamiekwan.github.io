@@ -4,7 +4,7 @@
 # =============================================================================
 # How to use:
 # 1. Duplicate this file (e.g. my-project.md).
-# 2. Set `permalink` to the URL slug you want (no leading slash; site becomes /permalink).
+# 2. Remove `published: false` and set `permalink` to the URL slug you want (no leading slash).
 # 3. Fill `title` + `oneliner` — they appear in the dark hero.
 # 4. Choose ONE hero background: set `bgimage` (loads assets/images/{bgimage}.jpg) OR use
 #    `color` with a gradient string. Remove or leave empty the one you don’t use — check
@@ -21,9 +21,12 @@
 # =============================================================================
 
 layout: era
-permalink: forrec-gensler
+# Do not publish this starter file — it would collide with real pages that reuse the same
+# permalink. Duplicate this file, set a unique permalink, then remove `published: false`.
+published: false
+permalink: era-template
 
-title: "Forrec + Gensler | [Short headline — replace]"
+title: "Company 1 + Company 2 | [Short headline — replace]"
 oneliner: "One-line thesis for this era. Replace with your story hook."
 
 # Hero background image: file at assets/images/{value}.jpg (no extension here).
