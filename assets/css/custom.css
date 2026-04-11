@@ -371,49 +371,6 @@ details[open].pc-insight .pc-insight-caret {
 .pc-impact-content {
 	position: relative;
 	z-index: 101;
-	transition: color 0.65s ease;
-}
-
-.pc-impact-content .pc-impact-body-copy,
-.pc-impact-content .story-link-in a {
-	transition: color 0.65s ease, border-color 0.65s ease;
-}
-
-.pc-impact-content--light {
-	color: #F9FAFC;
-}
-
-.pc-impact-content--light .work-details-title,
-.pc-impact-content--light .pc-insight-heading {
-	color: #F9FAFC;
-}
-
-.pc-impact-content--light .pc-impact-body-copy {
-	color: #F9FAFC;
-}
-
-.pc-impact-content--light summary.pc-impact-summary {
-	border-top-color: rgba(249, 250, 252, 0.35);
-}
-
-.pc-impact-content--light .pc-insight-caret {
-	border-right-color: rgba(249, 250, 252, 0.75);
-	border-bottom-color: rgba(249, 250, 252, 0.75);
-}
-
-/* On tinted bg: same format as era read more, light ink + underline. */
-.pc-impact-content--light .story-link-in a,
-.pc-impact-content--light .pc-readmore-link {
-	color: #F9FAFC;
-	border-bottom: 4px solid rgba(249, 250, 252, 0.4);
-}
-
-.pc-impact-content--light .story-link-in a:hover,
-.pc-impact-content--light .story-link-in a:focus,
-.pc-impact-content--light .pc-readmore-link:hover,
-.pc-impact-content--light .pc-readmore-link:focus {
-	color: rgba(249, 250, 252, 0.75);
-	border-bottom-color: rgba(249, 250, 252, 0.55);
 }
 
 details.pc-impact-item {
@@ -463,10 +420,7 @@ details.pc-impact-item {
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.pc-impact-fixed-bg,
-	.pc-impact-content,
-	.pc-impact-content .pc-impact-body-copy,
-	.pc-impact-content .story-link-in a {
+	.pc-impact-fixed-bg {
 		transition: none;
 	}
 }

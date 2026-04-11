@@ -452,15 +452,14 @@
 		});
 
 		/* ---------------------------------------------- /*
-		 * Home Impact section: full-viewport background fade + light text
+		 * Home Impact section: full-viewport background fade
 		/* ---------------------------------------------- */
 
 		(function homeImpactScroll() {
 			var sec = document.getElementById('impact');
 			if (!sec) return;
 			var bg = sec.querySelector('.pc-impact-fixed-bg');
-			var inner = sec.querySelector('.pc-impact-content');
-			if (!bg || !inner) return;
+			if (!bg) return;
 
 			function updateImpactBg() {
 				var r = sec.getBoundingClientRect();
@@ -472,7 +471,6 @@
 					op = Math.min(enter, exit);
 				}
 				bg.style.opacity = op;
-				inner.classList.toggle('pc-impact-content--light', op > 0.35);
 			}
 
 			updateImpactBg();
