@@ -456,29 +456,23 @@
 		/* ---------------------------------------------- */
 
 		(function homeImpactScroll() {
-			var impact = document.getElementById('impact');
-			var bg = document.querySelector('.pc-impact-fixed-bg');
-			var content = document.querySelector('.pc-impact-content');
-			if (!impact || !bg || !content) {
-				return;
-			}
+			var sec = document.getElementById('impact');
+			if (!sec) return;
+			var bg = sec.querySelector('.pc-impact-fixed-bg');
+			var inner = sec.querySelector('.pc-impact-content');
+			if (!bg || !inner) return;
 
 			function updateImpactBg() {
-				var rect = impact.getBoundingClientRect();
+				var r = sec.getBoundingClientRect();
 				var vh = window.innerHeight;
 				var op = 0;
-				if (rect.top >= vh || rect.bottom <= 0) {
-					op = 0;
-				} else if (rect.top > 0) {
-					op = 1 - rect.top / vh;
-				} else if (rect.bottom <= vh) {
-					op = rect.bottom / vh;
-				} else {
-					op = 1;
+				if (r.bottom > 0 && r.top < vh) {
+					var enter = 1 - Math.max(0, Math.min(1, r.top / vh));
+					var exit = r.bottom < vh ? r.bottom / vh : 1;
+					op = Math.min(enter, exit);
 				}
-				op = Math.max(0, Math.min(1, op));
 				bg.style.opacity = op;
-				content.classList.toggle('pc-impact-content--light', op > 0.4);
+				inner.classList.toggle('pc-impact-content--light', op > 0.35);
 			}
 
 			updateImpactBg();
