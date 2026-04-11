@@ -451,6 +451,40 @@
 			return false;
 		});
 
+		/* ---------------------------------------------- /*
+		 * Home Impact section: full-viewport background fade + light text
+		/* ---------------------------------------------- */
+
+		(function homeImpactScroll() {
+			var impact = document.getElementById('impact');
+			var bg = document.querySelector('.pc-impact-fixed-bg');
+			var content = document.querySelector('.pc-impact-content');
+			if (!impact || !bg || !content) {
+				return;
+			}
+
+			function updateImpactBg() {
+				var rect = impact.getBoundingClientRect();
+				var vh = window.innerHeight;
+				var op = 0;
+				if (rect.top >= vh || rect.bottom <= 0) {
+					op = 0;
+				} else if (rect.top > 0) {
+					op = 1 - rect.top / vh;
+				} else if (rect.bottom <= vh) {
+					op = rect.bottom / vh;
+				} else {
+					op = 1;
+				}
+				op = Math.max(0, Math.min(1, op));
+				bg.style.opacity = op;
+				content.classList.toggle('pc-impact-content--light', op > 0.4);
+			}
+
+			updateImpactBg();
+			$(window).on('scroll resize', updateImpactBg);
+		})();
+
 	});
 
 })(jQuery);

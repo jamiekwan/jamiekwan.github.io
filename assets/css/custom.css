@@ -349,3 +349,115 @@ details[open].pc-insight .pc-insight-caret {
 .pc-insights-tldr-body {
 	margin: 0;
 }
+
+/* Home — Impact: scroll-linked full-viewport tint (see custom.js). */
+.pc-impact-section {
+	position: relative;
+	z-index: 1;
+	isolation: isolate;
+	padding-top: 48px;
+	padding-bottom: 56px;
+}
+
+.pc-impact-fixed-bg {
+	position: fixed;
+	inset: 0;
+	background: #5D6477;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 0;
+	transition: opacity 0.15s linear;
+}
+
+.pc-impact-content {
+	position: relative;
+	z-index: 1;
+	transition: color 0.25s ease;
+}
+
+.pc-impact-content--light {
+	color: #F9FAFC;
+}
+
+.pc-impact-content--light .work-details-title,
+.pc-impact-content--light .pc-insight-heading {
+	color: #F9FAFC;
+}
+
+.pc-impact-content--light .pc-impact-body-copy {
+	color: #F9FAFC;
+}
+
+.pc-impact-content--light summary.pc-impact-summary {
+	border-top-color: rgba(249, 250, 252, 0.35);
+}
+
+.pc-impact-content--light .pc-insight-caret {
+	border-right-color: rgba(249, 250, 252, 0.75);
+	border-bottom-color: rgba(249, 250, 252, 0.75);
+}
+
+.pc-impact-content--light .story-link-in a,
+.pc-impact-content--light .pc-readmore-link {
+	color: #F9FAFC;
+	border-bottom-color: rgba(249, 250, 252, 0.45);
+}
+
+.pc-impact-content--light .story-link-in a:hover,
+.pc-impact-content--light .pc-readmore-link:hover {
+	color: #F9FAFC;
+	border-bottom-color: rgba(249, 250, 252, 0.75);
+}
+
+details.pc-impact-item {
+	background: transparent;
+}
+
+.pc-impact-detail-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.pc-impact-detail-text {
+	flex: 1 1 240px;
+	min-width: 0;
+	text-align: left;
+}
+
+.pc-impact-detail-actions {
+	flex: 0 0 auto;
+	text-align: right;
+	align-self: flex-end;
+	min-width: 160px;
+}
+
+.pc-impact-detail-actions .work-descr {
+	text-align: right;
+}
+
+@media (max-width: 767px) {
+	.pc-impact-detail-actions {
+		width: 100%;
+		min-width: 0;
+		text-align: right;
+	}
+}
+
+.pc-impact-connect-after {
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	padding-bottom: 40px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.pc-impact-fixed-bg {
+		transition: none;
+	}
+	.pc-impact-content {
+		transition: none;
+	}
+}
