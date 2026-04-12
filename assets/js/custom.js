@@ -451,32 +451,6 @@
 			return false;
 		});
 
-		/* ---------------------------------------------- /*
-		 * Home Impact section: full-viewport background fade
-		/* ---------------------------------------------- */
-
-		(function homeImpactScroll() {
-			var sec = document.getElementById('impact');
-			if (!sec) return;
-			var bg = sec.querySelector('.pc-impact-fixed-bg');
-			if (!bg) return;
-
-			function updateImpactBg() {
-				var r = sec.getBoundingClientRect();
-				var vh = window.innerHeight;
-				var op = 0;
-				if (r.bottom > 0 && r.top < vh) {
-					var enter = 1 - Math.max(0, Math.min(1, r.top / vh));
-					var exit = r.bottom < vh ? r.bottom / vh : 1;
-					op = Math.min(enter, exit);
-				}
-				bg.style.opacity = op;
-			}
-
-			updateImpactBg();
-			$(window).on('scroll resize', updateImpactBg);
-		})();
-
 	});
 
 })(jQuery);

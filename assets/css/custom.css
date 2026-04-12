@@ -350,27 +350,14 @@ details[open].pc-insight .pc-insight-caret {
 	margin: 0;
 }
 
-/* Home — Impact: scroll-linked full-viewport tint (see custom.js). Below nav (1000). */
+/* Home — Impact block spacing. */
 .pc-impact-section {
-	position: relative;
-	z-index: 101;
 	padding-top: 48px;
 	padding-bottom: 56px;
 }
 
-.pc-impact-fixed-bg {
-	position: fixed;
-	inset: 0;
-	background: #5D6477;
-	opacity: 0;
-	pointer-events: none;
-	z-index: 100;
-	transition: opacity 0.65s ease;
-}
-
 .pc-impact-content {
 	position: relative;
-	z-index: 101;
 }
 
 details.pc-impact-item {
@@ -413,14 +400,6 @@ details.pc-impact-item {
 }
 
 .pc-impact-connect-after {
-	position: relative;
-	z-index: 150;
 	background: #fff;
 	padding-bottom: 40px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-	.pc-impact-fixed-bg {
-		transition: none;
-	}
 }
