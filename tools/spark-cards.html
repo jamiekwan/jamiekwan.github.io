@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spark Cards</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@500;600;700&family=Lexend:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    /* palette pulled from the swatch sheet */
+    --teal-900: #0a6a73;       /* deep teal — accents, sparkle */
+    --teal-700: #149aa3;
+    --teal-500: #4dc4cc;
+    --teal-300: #a8e2e6;
+    --teal-100: #d8eef0;
+    --teal-50:  #ecf6f7;       /* page background */
+
+    --slate-900: #0f1626;      /* darkest navy — ink */
+    --slate-700: #2a3142;
+    --slate-500: #5b6478;
+    --slate-300: #98a0b0;
+
+    --paper:    #ffffff;       /* card face */
+    --paper-2:  #f6f9fa;
+    --paper-3:  #eef3f4;
+
+    --ink:      var(--slate-900);
+    --ink-soft: var(--slate-500);
+    --accent:   var(--teal-900);
+    --accent-2: var(--teal-700);
+  }
+
+  /* ─── Type system ─────────────────────────────────────── */
+  /* Headings: Lexend (geometric sans, varied weights). small/xsmall
+     are uppercase + tracked. Body: Montserrat. */
+  .h-xxl   { font-family:'Lexend',sans-serif; font-weight:800; font-size: clamp(40px, 5vw, 56px); line-height: 1; letter-spacing: -0.01em; }
+  .h-xl    { font-family:'Lexend',sans-serif; font-weight:800; font-size: clamp(30px, 4vw, 44px); line-height: 1.05; letter-spacing: -0.005em; }
+  .h-lg    { font-family:'Lexend',sans-serif; font-weight:700; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; }
+  .h-md    { font-family:'Lexend',sans-serif; font-weight:700; font-size: clamp(18px, 2vw, 22px); line-height: 1.2; }
+  .h-sm    { font-family:'Lexend',sans-serif; font-weight:700; font-size: 13px; line-height: 1.1;
+             text-transform: uppercase; letter-spacing: 0.18em; }
+  .h-xs    { font-family:'Lexend',sans-serif; font-weight:600; font-size: 11px; line-height: 1.1;
+             text-transform: uppercase; letter-spacing: 0.22em; }
+  .b-slide { font-family:'Montserrat',sans-serif; font-weight:400; font-size: clamp(20px, 2.2vw, 24px); line-height: 1.35; }
+  .b-lg    { font-family:'Montserrat',sans-serif; font-weight:400; font-size: 17px; line-height: 1.5; }
+  .b       { font-family:'Montserrat',sans-serif; font-weight:400; font-size: 15px; line-height: 1.55; }
+  .b-sm    { font-family:'Montserrat',sans-serif; font-weight:400; font-size: 13px; line-height: 1.5; }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink);
+    background: var(--teal-50);
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(20, 154, 163, 0.08), transparent 40%),
+      radial-gradient(circle at 92% 90%, rgba(10, 106, 115, 0.06), transparent 50%);
+  }
+
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 32px 56px;
+    gap: 28px;
+  }
+
+  /* extra breathing room between the button and the footer */
+  .button-wrap { margin-bottom: 36px; }
+
+  /* ─── Header ───────────────────────────────────────────── */
+  .masthead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    max-width: 720px;
+  }
+  .eyebrow {
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .eyebrow::before, .eyebrow::after {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: var(--teal-300);
+  }
+  .masthead h1 {
+    margin: 0;
+    color: var(--slate-900);
+  }
+  .masthead h1 em {
+    font-style: normal;
+    color: var(--accent);
+  }
+  .masthead p {
+    margin: 0;
+    color: var(--ink-soft);
+    max-width: 560px;
+  }
+
+  /* ─── Table area ───────────────────────────────────────── */
+  .table {
+    position: relative;
+    width: min(960px, 100%);
+    background: var(--teal-100);
+    border: 1px solid var(--teal-300);
+    border-radius: 18px;
+    padding: 64px 48px 72px;
+    box-shadow:
+      inset 0 0 0 1px rgba(255,255,255,0.5),
+      0 24px 48px -32px rgba(10, 106, 115, 0.25);
+    background-image:
+      radial-gradient(circle at 22% 18%, rgba(255,255,255,0.55), transparent 55%);
+  }
+  .table::before, .table::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    width: 12px; height: 12px;
+    background: var(--teal-500);
+    opacity: 0.55;
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+  .table::before { left: 18px; }
+  .table::after { right: 18px; }
+
+  .stage {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+    justify-items: center;
+    min-height: 360px;
+  }
+
+  /* ─── Card geometry ────────────────────────────────────── */
+  /* landscape, ~1.379:1 */
+  .deck-slot, .reveal-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .pick-label {
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .pick-label .arrow {
+    display: inline-block;
+    transform: translateY(1px);
+  }
+
+  /* deck (left, smaller) */
+  .deck {
+    --card-w: 240px;
+    --card-h: 174px;
+    position: relative;
+    width: var(--card-w);
+    height: calc(var(--card-h) + 22px);
+    cursor: pointer;
+    user-select: none;
+  }
+  .deck-card {
+    position: absolute;
+    inset: 0;
+    width: var(--card-w);
+    height: var(--card-h);
+    border-radius: 10px;
+    background: var(--paper);
+    border: 1.5px solid var(--slate-900);
+    box-shadow:
+      0 1px 0 rgba(255,255,255,0.6) inset,
+      0 8px 14px -10px rgba(10, 22, 38, 0.35);
+    transition: transform 240ms ease;
+    overflow: hidden;
+  }
+  .deck-card .pattern {
+    position: absolute;
+    inset: 8px;
+    border-radius: 6px;
+    background-color: var(--teal-100);
+    background-image:
+      radial-gradient(circle at 50% 50%, var(--paper) 22%, transparent 23%);
+    background-size: 22px 22px;
+  }
+  .deck-card .pattern::after {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 1px dashed rgba(10, 106, 115, 0.35);
+    border-radius: 5px;
+  }
+  .deck-card:nth-child(1) { transform: translate(0, 22px) rotate(-3deg); }
+  .deck-card:nth-child(2) { transform: translate(0, 16px) rotate(-1.5deg); }
+  .deck-card:nth-child(3) { transform: translate(0, 10px) rotate(0.8deg); }
+  .deck-card:nth-child(4) { transform: translate(0, 4px) rotate(-0.4deg); }
+  .deck-card:nth-child(5) { transform: translate(0, 0) rotate(0.2deg); }
+
+  .deck:hover .deck-card:nth-child(5) { transform: translate(2px, -3px) rotate(1.2deg); }
+  .deck:hover .deck-card:nth-child(4) { transform: translate(0, 2px) rotate(-0.8deg); }
+
+  /* reveal (right, larger) */
+  .reveal-slot { position: relative; }
+  .reveal {
+    --card-w: 360px;
+    --card-h: 261px;
+    width: var(--card-w);
+    height: var(--card-h);
+    perspective: 1600px;
+    perspective-origin: 0% 50%; /* viewer to the LEFT — flip arcs from left to right */
+  }
+  .reveal-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    will-change: transform;
+  }
+
+  .face {
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    border: 1.5px solid var(--slate-900);
+    background: var(--paper);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-shadow:
+      0 1px 0 rgba(255,255,255,0.7) inset,
+      0 24px 36px -22px rgba(10, 22, 38, 0.35),
+      0 4px 0 -2px var(--teal-300);
+    overflow: hidden;
+  }
+
+  /* Front (the prompt) */
+  .face.front {
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .corner {
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .corner svg {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+  }
+
+  .prompt {
+    color: var(--slate-900);
+    text-wrap: pretty;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 6px 4px 12px;
+  }
+
+  /* Back (pattern) */
+  .face.back {
+    transform: rotateY(180deg);
+    background-color: var(--teal-100);
+  }
+  .face.back .pattern {
+    position: absolute;
+    inset: 12px;
+    border-radius: 8px;
+    background-color: var(--teal-300);
+    background-image:
+      radial-gradient(circle at 50% 50%, var(--paper) 22%, transparent 23%);
+    background-size: 28px 28px;
+  }
+  .face.back .pattern::after {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 1px dashed rgba(10, 106, 115, 0.4);
+    border-radius: 5px;
+  }
+
+  /* ─── FLIP ANIMATION ───────────────────────────────────── */
+  /* The card animation starts at the DECK position (left, smaller) showing its back,
+     and lands at the REVEAL position (right, larger) showing its front. A single
+     two-keyframe animation with one easing curve = perfectly smooth motion. */
+
+  .reveal {
+    --start-x: 0px;     /* x offset to deck centre, measured at runtime */
+    --start-y: 0px;
+    --start-scale: 0.667;  /* deck card 240w / reveal card 360w */
+    --start-rot: -180deg;
+  }
+  .reveal.is-drawing .reveal-inner {
+    animation: deal 900ms cubic-bezier(.4, 0, .2, 1) forwards;
+    transform-origin: 50% 50%;
+  }
+  @keyframes deal {
+    from {
+      transform:
+        translate3d(var(--start-x), var(--start-y), 0)
+        scale(var(--start-scale))
+        rotateY(var(--start-rot));
+      filter: drop-shadow(0 14px 18px rgba(10,22,38,0.22));
+    }
+    to {
+      transform:
+        translate3d(0, 0, 0)
+        scale(1)
+        rotateY(0deg);
+      filter: drop-shadow(0 6px 10px rgba(10,22,38,0.10));
+    }
+  }
+
+  /* faint placeholder glow on the reveal slot while flipping */
+  .reveal-slot .ghost {
+    position: absolute;
+    border: 1.5px dashed rgba(10, 106, 115, 0.35);
+    border-radius: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+  .reveal-slot.is-drawing .ghost { opacity: 1; }
+
+  /* Hide ALL front-face content while the card is flipping; fade in after landing. */
+  .face.front .corner,
+  .face.front .prompt {
+    opacity: 0;
+    transition: opacity 220ms ease;
+  }
+  /* idle (not drawing) state — content visible */
+  .reveal:not(.is-drawing) .face.front .corner,
+  .reveal:not(.is-drawing) .face.front .prompt {
+    opacity: 1;
+  }
+
+  /* prompt subtle slide-in once card lands */
+  @keyframes prompt-in {
+    0%   { opacity: 0; transform: translateY(4px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .face.front .prompt.animate { animation: prompt-in 360ms ease-out forwards; }
+
+  /* ─── Button ───────────────────────────────────────────── */
+  .button-wrap {
+    width: min(620px, 100%);
+    position: relative;
+  }
+  .spark-btn {
+    width: 100%;
+    appearance: none;
+    border: 2px solid #ffffff;
+    background: var(--accent);
+    color: #ffffff;
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    padding: 22px 28px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    box-shadow:
+      0 0 0 1.5px var(--accent),
+      0 5px 0 0 var(--slate-900),
+      0 1px 0 rgba(255,255,255,0.18) inset;
+    transition: transform 90ms ease, box-shadow 90ms ease, background 200ms ease;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .spark-btn:hover { background: var(--accent-2); }
+  .spark-btn:active {
+    transform: translateY(3px);
+    box-shadow:
+      0 0 0 1.5px var(--accent),
+      0 2px 0 0 var(--slate-900),
+      0 1px 0 rgba(255,255,255,0.18) inset;
+  }
+  .spark-btn:disabled { cursor: not-allowed; opacity: 0.9; }
+
+  .button-wrap::after {
+    content: "";
+    position: absolute;
+    left: 4px; right: 4px; bottom: -10px;
+    height: 6px;
+    border-radius: 3px;
+    background-image: repeating-linear-gradient(45deg,
+      var(--teal-700) 0,
+      var(--teal-700) 4px,
+      transparent 4px,
+      transparent 8px);
+    opacity: 0.6;
+  }
+
+  /* ─── Footer ────────────────────────────────────────────── */
+  .footstrip {
+    width: min(960px, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ink-soft);
+    padding: 0 6px;
+  }
+  .footstrip .ritual {
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .footstrip .ritual .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent);
+  }
+
+  /* responsive */
+  @media (max-width: 760px) {
+    .stage { grid-template-columns: 1fr; gap: 80px 0; }
+    .table { padding: 56px 24px 64px; }
+    .reveal { --card-w: min(320px, 90vw); --card-h: calc(min(320px, 90vw) / 1.379); }
+    .deck   { --card-w: 200px; --card-h: 145px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- reusable sparkle icon -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="sparkle" viewBox="0 0 24 24">
+      <!-- one big 4-point star + one little one -->
+      <path d="M10 2 C 10.7 6.2, 11.8 7.3, 16 8 C 11.8 8.7, 10.7 9.8, 10 14 C 9.3 9.8, 8.2 8.7, 4 8 C 8.2 7.3, 9.3 6.2, 10 2 Z"
+            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M18 13 C 18.4 15.2, 18.9 15.7, 21 16 C 18.9 16.3, 18.4 16.8, 18 19 C 17.6 16.8, 17.1 16.3, 15 16 C 17.1 15.7, 17.6 15.2, 18 13 Z"
+            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="page">
+
+  <header class="masthead">
+    <span class="eyebrow h-xs">Service Design Tools for Brave Play</span>
+    <h1 class="h-xxl">Spark <em>Cards</em></h1>
+    <p class="b-lg">A randomiser for the opening minutes of any standup or check-in. Draw a prompt the team hasn't seen coming — you can't prepare, you can't optimise, you respond in the moment.</p>
+  </header>
+
+  <section class="table" aria-label="Card table">
+    <div class="stage">
+
+      <!-- LEFT: stack of unflipped cards -->
+      <div class="deck-slot">
+        <span class="pick-label h-xs">
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><use href="#sparkle"/></svg>
+          Pick a Card
+          <span class="arrow">→</span>
+        </span>
+        <div class="deck" id="deck" aria-label="Card deck">
+          <div class="deck-card"><div class="pattern"></div></div>
+          <div class="deck-card"><div class="pattern"></div></div>
+          <div class="deck-card"><div class="pattern"></div></div>
+          <div class="deck-card"><div class="pattern"></div></div>
+          <div class="deck-card"><div class="pattern"></div></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: flipped revealed card -->
+      <div class="reveal-slot" id="reveal-slot">
+        <div class="ghost" style="inset:0"></div>
+        <div class="reveal" id="reveal" aria-live="polite">
+          <div class="reveal-inner" id="reveal-inner">
+            <div class="face front">
+              <div class="corner h-xs">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#sparkle"/></svg>
+                Spark Card
+              </div>
+              <div class="prompt b-slide animate" id="prompt">What are you most unsure about right now?</div>
+            </div>
+            <div class="face back">
+              <div class="pattern"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="button-wrap">
+    <button class="spark-btn" id="spark-btn" type="button">Spark a Prompt</button>
+  </div>
+
+  <div class="footstrip">
+    <span class="ritual h-xs"><span class="dot"></span> Team Ritual · Opening Minutes</span>
+    <span class="h-xs">Draw — Respond — Move On</span>
+  </div>
+
+</div>
+
+<script>
+  const PROMPTS = [
+    "What are you most unsure about right now?",
+    "Where did you hold back in your work this week, and why?",
+    "What's the next smallest thing we can carve out time to do?",
+    "What's a question you're afraid to ask out loud?",
+    "Where are you waiting for permission you don't actually need?",
+    "What would you ship today if no one would judge it?",
+    "What feedback have you been avoiding giving?",
+    "What's an assumption we keep treating as a fact?",
+    "Where is the work harder than it should be?",
+    "What did you learn this week that surprised you?",
+    "Who on the team should we be borrowing more from?",
+    "What's a small risk worth taking before Friday?",
+    "Where are we polishing instead of deciding?",
+    "What would you stop doing if no one noticed?",
+    "What's a piece of work you're quietly proud of?",
+    "If you could rewind one decision, which one?",
+    "Where are we measuring something that doesn't matter?",
+    "What's the bravest move available to us right now?",
+    "What support would unlock your next step?",
+    "What's one thing that drained you this week?",
+    "What's one thing that gave you energy this week?",
+    "Where did you change your mind recently?",
+    "What's a constraint we're treating as permanent?",
+    "What's something a beginner would notice that we've stopped seeing?",
+    "Where is the team strongest right now? Where most fragile?",
+    "What's a conversation we keep almost having?",
+    "What's the simplest version of this we haven't tried?",
+    "What would 'finished' actually look like?",
+    "What's the question behind the question we keep asking?",
+    "Where are we performing certainty we don't actually have?",
+    "What's a recent moment you wish you'd handled differently?",
+    "What's the boldest version of this idea? What's the safest? Which are we choosing, and why?",
+    "Who haven't we heard from yet, and what would they say?",
+    "What part of this work feels most alive right now?",
+    "What part feels most stuck?",
+    "What's a story we keep telling ourselves about this team?",
+    "Where would a fresh pair of eyes save us a week?",
+    "What would you do this week if you trusted yourself more?",
+    "What's a small permission you can give a teammate today?",
+    "What did you almost say in the last meeting, but didn't?",
+    "What's getting easier? What's getting harder?",
+    "Where are we mistaking activity for progress?",
+    "What's a 'good enough' we should ship instead of polish?",
+    "Whose problem is this, really?",
+    "What's a fear that's quietly steering this work?",
+    "What would you protect from change, and what would you let go?",
+    "What's one thing only you can do this week?",
+    "Where could we trade certainty for speed?",
+    "What's a habit of this team you're grateful for?",
+    "What's a habit of this team you'd quietly retire?",
+    "If we paused for a day, what would the team need to come back ready?",
+    "What's the most generous interpretation of someone you disagreed with this week?",
+    "What's the bravest play left on the board?"
+  ];
+
+  const reveal      = document.getElementById('reveal');
+  const revealSlot  = document.getElementById('reveal-slot');
+  const revealInner = document.getElementById('reveal-inner');
+  const promptEl    = document.getElementById('prompt');
+  const btn         = document.getElementById('spark-btn');
+  const deck        = document.getElementById('deck');
+
+  // shuffle bag (no immediate repeats)
+  let bag = [];
+  function refillBag(exclude) {
+    bag = PROMPTS.map((_, i) => i).filter(i => i !== exclude);
+    for (let i = bag.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [bag[i], bag[j]] = [bag[j], bag[i]];
+    }
+  }
+  refillBag(0);
+
+  function measureStart() {
+    // measure the deck's centre relative to the reveal card's centre,
+    // and the deck-to-reveal scale factor. The card animates from this
+    // pose (smaller, on the left, back-facing) to its resting pose.
+    const dRect = deck.getBoundingClientRect();
+    const rRect = reveal.getBoundingClientRect();
+    const dCx = dRect.left + dRect.width / 2;
+    const dCy = dRect.top  + dRect.height / 2;
+    const rCx = rRect.left + rRect.width / 2;
+    const rCy = rRect.top  + rRect.height / 2;
+    const scale = dRect.width / rRect.width; // <1
+    reveal.style.setProperty('--start-x', (dCx - rCx) + 'px');
+    reveal.style.setProperty('--start-y', (dCy - rCy) + 'px');
+    reveal.style.setProperty('--start-scale', scale.toFixed(4));
+  }
+
+  let busy = false;
+  function spark() {
+    if (busy) return;
+    busy = true;
+    btn.disabled = true;
+
+    // pick next prompt
+    if (bag.length === 0) refillBag();
+    const next = bag.pop();
+
+    // measure deck → reveal pose
+    measureStart();
+
+    // hide front-face content during the flip; defer text swap until landing
+    promptEl.classList.remove('animate');
+
+    // trigger the deal animation
+    reveal.classList.remove('is-drawing');
+    revealSlot.classList.remove('is-drawing');
+    void reveal.offsetWidth;
+    reveal.classList.add('is-drawing');
+    revealSlot.classList.add('is-drawing');
+
+    // also nudge the deck (a card "leaves" the pile)
+    const top = deck.querySelector('.deck-card:nth-child(5)');
+    if (top) {
+      top.animate(
+        [
+          { transform: 'translate(0, 0) rotate(0.2deg)' },
+          { transform: 'translate(8px, -6px) rotate(-3deg)', opacity: 0.0 },
+          { transform: 'translate(0, 0) rotate(0.2deg)', opacity: 1 }
+        ],
+        { duration: 900, easing: 'cubic-bezier(.4, 0, .2, 1)' }
+      );
+    }
+
+    // re-enable after animation; swap text & fade in only AFTER landing
+    setTimeout(() => {
+      reveal.classList.remove('is-drawing');
+      revealSlot.classList.remove('is-drawing');
+      // now that the card has arrived, set the new prompt and trigger the fade-in
+      promptEl.textContent = PROMPTS[next];
+      promptEl.classList.remove('animate');
+      void promptEl.offsetWidth;
+      promptEl.classList.add('animate');
+      btn.disabled = false;
+      busy = false;
+    }, 920);
+  }
+
+  btn.addEventListener('click', spark);
+  deck.addEventListener('click', spark);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space' || e.code === 'Enter') {
+      if (document.activeElement && document.activeElement.tagName === 'BUTTON') return;
+      e.preventDefault();
+      spark();
+    }
+  });
+
+  // recompute on resize so the deal still lands correctly
+  window.addEventListener('resize', () => { if (!busy) measureStart(); });
+  measureStart();
+</script>
+
+</body>
+</html>
