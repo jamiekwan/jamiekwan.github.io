@@ -80,6 +80,11 @@
 
   /* extra breathing room between the button and the footer */
   .button-wrap { margin-bottom: 36px; }
+  .btn-wrap {
+    margin: 28px auto 0;
+    display: flex; flex-direction: column; align-items: center;
+    width: max-content; max-width: 100%;
+  }
 
   /* ─── Header ───────────────────────────────────────────── */
   .masthead {
@@ -370,56 +375,59 @@
 
   /* ─── Button ───────────────────────────────────────────── */
   .button-wrap {
-    width: min(310px, 100%);
+    width: min(434px, 100%);
+    margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .button-wrap::after {
+    content: "";
+    position: absolute;
+    left: 4px; right: 4px; bottom: -7px;
+    height: 4px;
+    border-radius: 2px;
+    background-image: repeating-linear-gradient(45deg,
+      var(--teal-deep) 0,
+      var(--teal-deep) 3px,
+      transparent 3px,
+      transparent 6px);
+    opacity: 0.6;
   }
   .spark-btn {
     width: 100%;
     appearance: none;
     border: 1.5px solid #ffffff;
-    background: var(--accent);
+    background: var(--teal-deep);
     color: #ffffff;
     font-family: 'Lexend Giga', sans-serif;
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 0.05em;
-    padding: 12px 16px;
+    padding: 11px 18px;
     border-radius: 8px;
     cursor: pointer;
     position: relative;
     box-shadow:
-      0 0 0 1.5px var(--accent),
-      0 5px 0 0 var(--slate-900),
+      0 0 0 1px var(--teal-deep),
+      0 3px 0 0 var(--slate-900),
       0 1px 0 rgba(255,255,255,0.18) inset;
     transition: transform 90ms ease, box-shadow 90ms ease, background 200ms ease;
     text-transform: uppercase;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
   }
-  .spark-btn:hover { background: var(--accent-2); }
+  .spark-btn:hover { background: #006667; }
   .spark-btn:active {
     transform: translateY(2px);
     box-shadow:
-      0 0 0 1.5px var(--accent),
+      0 0 0 1px var(--teal-deep),
       0 1px 0 0 var(--slate-900),
       0 1px 0 rgba(255,255,255,0.18) inset;
   }
   .spark-btn:disabled { cursor: not-allowed; opacity: 0.9; }
-
-  .button-wrap::after {
-    content: "";
-    position: absolute;
-    left: 4px; right: 4px; bottom: -6px;
-    height: 4px;
-    border-radius: 2px;
-    background-image: repeating-linear-gradient(45deg,
-      var(--teal-700) 0,
-      var(--teal-700) 4px,
-      transparent 4px,
-      transparent 8px);
-    opacity: 0.6;
-  }
 
   /* ─── Footer / link line ───────────────────────────────── */
   .footer-row .right a {
