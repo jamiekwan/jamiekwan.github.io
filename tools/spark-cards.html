@@ -32,6 +32,9 @@
     --ink-soft: var(--slate-500);
     --accent:   var(--teal-900);
     --accent-2: var(--teal-700);
+    --teal-deep: var(--teal-900);
+
+    --font-body: 'Montserrat', sans-serif;
   }
 
   /* ─── Type system ─────────────────────────────────────── */
@@ -77,6 +80,11 @@
 
   /* extra breathing room between the button and the footer */
   .button-wrap { margin-bottom: 36px; }
+  .btn-wrap {
+    margin: 28px auto 0;
+    display: flex; flex-direction: column; align-items: center;
+    width: max-content; max-width: 100%;
+  }
 
   /* ─── Header ───────────────────────────────────────────── */
   .masthead {
@@ -367,56 +375,68 @@
 
   /* ─── Button ───────────────────────────────────────────── */
   .button-wrap {
-    width: min(620px, 100%);
+    width: min(434px, 100%);
+    margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .button-wrap::after {
+    content: "";
+    position: absolute;
+    left: 4px; right: 4px; bottom: -7px;
+    height: 4px;
+    border-radius: 2px;
+    background-image: repeating-linear-gradient(45deg,
+      var(--teal-deep) 0,
+      var(--teal-deep) 3px,
+      transparent 3px,
+      transparent 6px);
+    opacity: 0.6;
   }
   .spark-btn {
     width: 100%;
     appearance: none;
-    border: 2px solid #ffffff;
-    background: var(--accent);
+    border: 1.5px solid #ffffff;
+    background: var(--teal-deep);
     color: #ffffff;
     font-family: 'Lexend Giga', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 13px;
     letter-spacing: 0.05em;
-    padding: 22px 28px;
-    border-radius: 12px;
+    padding: 11px 18px;
+    border-radius: 8px;
     cursor: pointer;
     position: relative;
     box-shadow:
-      0 0 0 1.5px var(--accent),
-      0 5px 0 0 var(--slate-900),
+      0 0 0 1px var(--teal-deep),
+      0 3px 0 0 var(--slate-900),
       0 1px 0 rgba(255,255,255,0.18) inset;
     transition: transform 90ms ease, box-shadow 90ms ease, background 200ms ease;
     text-transform: uppercase;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
   }
-  .spark-btn:hover { background: var(--accent-2); }
+  .spark-btn:hover { background: #006667; }
   .spark-btn:active {
-    transform: translateY(3px);
+    transform: translateY(2px);
     box-shadow:
-      0 0 0 1.5px var(--accent),
-      0 2px 0 0 var(--slate-900),
+      0 0 0 1px var(--teal-deep),
+      0 1px 0 0 var(--slate-900),
       0 1px 0 rgba(255,255,255,0.18) inset;
   }
   .spark-btn:disabled { cursor: not-allowed; opacity: 0.9; }
 
-  .button-wrap::after {
-    content: "";
-    position: absolute;
-    left: 4px; right: 4px; bottom: -10px;
-    height: 6px;
-    border-radius: 3px;
-    background-image: repeating-linear-gradient(45deg,
-      var(--teal-700) 0,
-      var(--teal-700) 4px,
-      transparent 4px,
-      transparent 8px);
-    opacity: 0.6;
+  /* ─── Footer / link line ───────────────────────────────── */
+  .footer-row .right a {
+    color: var(--teal-deep);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
   }
+  .footer-row .right a:hover { color: #014C99; }
+  .footer-row .right { font-weight: 400; text-transform: none; letter-spacing: 0.02em; font-family: var(--font-body); font-size: 13px; color: var(--ink-soft); }
 
   /* ─── Footer ────────────────────────────────────────────── */
   .footstrip {
@@ -465,6 +485,7 @@
     <span class="eyebrow h-xs">Service Design Tools for Brave Play</span>
     <h1 class="h-xxl">Spark <em>Cards</em></h1>
     <p class="b-lg">A randomiser for the opening minutes of any standup or check-in. Draw a prompt the team hasn't seen coming — you can't prepare, you can't optimise, you respond in the moment.</p>
+    <p class="footer-row"><span class="right">Try pairing this with a <a href="https://jamiemkwan.com/tools/emoji-grid" target="_blank" rel="noopener">visual pulse check</a>.</span></p>
   </header>
 
   <section class="table" aria-label="Card table">
@@ -509,12 +530,11 @@
   </section>
 
   <div class="button-wrap">
-    <button class="spark-btn" id="spark-btn" type="button">Prompt a Spark</button>
+    <button class="spark-btn" id="spark-btn" type="button">Spark a Prompt</button>
   </div>
 
   <div class="footstrip">
     <span class="ritual h-xs"><span class="dot"></span> Team Ritual · Opening Minutes</span>
-    <span class="h-xs">Draw — Respond — Move On</span>
   </div>
 
 </div>
@@ -572,7 +592,8 @@
     "What's a habit of this team you'd quietly retire?",
     "If we paused for a day, what would the team need to come back ready?",
     "What's the most generous interpretation of someone you disagreed with this week?",
-    "What would we do if we had unlimited time and resources?"
+    "What's something we're overcomplicating that used to be simple?",
+    "Where are we solving last month's problem, instead of next month's?",
   ];
 
   const reveal      = document.getElementById('reveal');
