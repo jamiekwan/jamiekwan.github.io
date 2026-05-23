@@ -437,7 +437,40 @@ async function fetchLucy() {
   const picks = pool.slice(0, 10);
   // Pad in case the manifest has fewer than 10 entries.
   while (picks.length < 10 && pool.length > 0) picks.push(pool[picks.length % pool.length]);
-  return picks.map((name) => 'lucy/' + name);
+  // Downscale each to ~900px and return as data URLs. Camera-roll JPGs are
+  // often 4000×3000+, which blows mobile Safari's canvas-size cap when
+  // html-to-image tries to export 10 of them at 2× pixelRatio (the export
+  // comes back blank). Pre-shrinking makes both render and export reliable.
+  const paths = picks.map((name) => 'lucy/' + name);
+  return Promise.all(paths.map((p) => downscaleToDataURL(p, 900)));
+}
+
+function downscaleToDataURL(url, maxDim) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    let done = false;
+    const finish = (out) => { if (done) return; done = true; resolve(out); };
+    img.onload = () => {
+      try {
+        const w0 = img.naturalWidth || 1;
+        const h0 = img.naturalHeight || 1;
+        const scale = Math.min(1, maxDim / Math.max(w0, h0));
+        const w = Math.max(1, Math.round(w0 * scale));
+        const h = Math.max(1, Math.round(h0 * scale));
+        const c = document.createElement('canvas');
+        c.width = w; c.height = h;
+        const ctx = c.getContext('2d');
+        ctx.drawImage(img, 0, 0, w, h);
+        finish(c.toDataURL('image/jpeg', 0.85));
+      } catch (e) {
+        finish(url); // fallback to raw path
+      }
+    };
+    img.onerror = () => finish(url);
+    // Safety timeout — don't hang forever on a bad file.
+    setTimeout(() => finish(url), 10000);
+    img.src = url;
+  });
 }
 
 const SETS = [
