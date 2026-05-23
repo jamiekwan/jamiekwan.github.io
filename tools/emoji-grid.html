@@ -437,14 +437,11 @@ async function fetchLucy() {
   const picks = pool.slice(0, 10);
   // Pad in case the manifest has fewer than 10 entries.
   while (picks.length < 10 && pool.length > 0) picks.push(pool[picks.length % pool.length]);
-  // Downscale each to ~900px and return as data URLs. Camera-roll JPGs are
-  // often 4000×3000+, which blows mobile Safari's canvas-size cap when
-  // html-to-image tries to export 10 of them at 2× pixelRatio (the export
-  // comes back blank). Pre-shrinking makes both render and export reliable.
-  const paths = picks.map((name) => 'lucy/' + name);
-  return Promise.all(paths.map((p) => downscaleToDataURL(p, 900)));
+  return picks.map((name) => 'lucy/' + name);
 }
 
+// Shrink a same-origin image to a data URL. Used at download-time to keep
+// the export canvas under mobile Safari's size cap.
 function downscaleToDataURL(url, maxDim) {
   return new Promise((resolve) => {
     const img = new Image();
@@ -463,12 +460,11 @@ function downscaleToDataURL(url, maxDim) {
         ctx.drawImage(img, 0, 0, w, h);
         finish(c.toDataURL('image/jpeg', 0.85));
       } catch (e) {
-        finish(url); // fallback to raw path
+        finish(url);
       }
     };
     img.onerror = () => finish(url);
-    // Safety timeout — don't hang forever on a bad file.
-    setTimeout(() => finish(url), 10000);
+    setTimeout(() => finish(url), 8000);
     img.src = url;
   });
 }
@@ -674,9 +670,30 @@ function App() {
     if (!cloudRef.current || !window.htmlToImage) return;
     setDownloading(true);
     setErrorMsg(null);
+    // For the local Lucy set, the source files are full-res camera-roll JPGs.
+    // On mobile Safari, html-to-image at 2× pixelRatio overflows the canvas
+    // size cap and returns blank. Temporarily swap each lucy/* <img> src to
+    // a downscaled data URL just for the export, then restore.
+    const imgs = Array.from(cloudRef.current.querySelectorAll('img'));
+    const lucyImgs = imgs.filter((el) => /(^|\/)lucy\//.test(el.src) || /(^|\/)lucy\//.test(el.getAttribute('src') || ''));
+    const originals = lucyImgs.map((el) => el.src);
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const pixelRatio = isMobile ? 1.5 : 2;
     try {
+      if (lucyImgs.length) {
+        const small = await Promise.all(originals.map((u) => downscaleToDataURL(u, 900)));
+        // Apply swapped srcs and wait for them to actually decode in the DOM.
+        await Promise.all(lucyImgs.map((el, i) => new Promise((res) => {
+          const onDone = () => res();
+          el.addEventListener('load', onDone, { once: true });
+          el.addEventListener('error', onDone, { once: true });
+          el.src = small[i];
+          // Already-cached / sync case
+          if (el.complete) res();
+        })));
+      }
       const dataUrl = await window.htmlToImage.toPng(cloudRef.current, {
-        pixelRatio: 2,
+        pixelRatio,
         backgroundColor: null,
         style: { background: 'transparent' },
         cacheBust: true
@@ -691,6 +708,8 @@ function App() {
       console.warn('download failed', e);
       setErrorMsg('Could not export image (some sources block downloads). Try a different set.');
     } finally {
+      // Restore original srcs so the live grid keeps its full-res view.
+      lucyImgs.forEach((el, i) => { el.src = originals[i]; });
       setDownloading(false);
     }
   }, []);
