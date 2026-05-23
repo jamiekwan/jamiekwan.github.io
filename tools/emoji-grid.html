@@ -227,12 +227,33 @@
   .btn-secondary:hover { color: var(--teal-deep); }
   .btn-secondary:disabled { opacity: 0.5; cursor: wait; }
 
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: var(--font-token);
+    font-weight: 400; font-size: 8px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    padding: 6px 10px;
+    background: transparent;
+    border: 1px solid var(--panel-border);
+    border-radius: 5px;
+    color: var(--slate);
+    cursor: pointer;
+    transition: color 120ms var(--ease-out), border-color 120ms var(--ease-out), background 120ms var(--ease-out);
+  }
+  .btn-outline:hover {
+    color: var(--teal-deep);
+    border-color: var(--teal-deep);
+    background: rgba(0, 122, 124, 0.04);
+  }
+  .btn-outline:disabled { opacity: 0.5; cursor: wait; }
+
   .panel-actions {
     margin-top: 18px;
     width: 100%;
     max-width: 836px;
-    display: flex; align-items: center; justify-content: flex-end;
+    display: flex; align-items: center; justify-content: space-between;
     gap: 16px;
+    flex-wrap: wrap;
   }
   .button-row {
     width: 100%;
@@ -386,11 +407,46 @@ async function fetchFoxes() {
   return Promise.all(calls);
 }
 
+// Local image manifest for the "I'm feelin' lucky" button.
+// Files live in ./lucy/  — list every .JPG file in that folder here.
+const LUCY_IMAGES = [
+  'IMG_0030.JPG', 'IMG_0068.JPG', 'IMG_0069.JPG', 'IMG_0070.JPG', 'IMG_0114.JPG',
+  'IMG_0137.JPG', 'IMG_0161.JPG', 'IMG_0162.JPG', 'IMG_0179.JPG', 'IMG_0182.JPG',
+  'IMG_0184.JPG', 'IMG_0185.JPG', 'IMG_0188.JPG', 'IMG_0194.JPG', 'IMG_0261.JPG',
+  'IMG_0278.JPG', 'IMG_0333.JPG', 'IMG_0340.JPG', 'IMG_0341.JPG', 'IMG_0393.JPG',
+  'IMG_0423.JPG', 'IMG_0424.JPG', 'IMG_0434.JPG', 'IMG_0441.JPG', 'IMG_0476.JPG',
+  'IMG_0495.JPG', 'IMG_0525.JPG', 'IMG_0788.JPG', 'IMG_0791.JPG', 'IMG_0798.JPG',
+  'IMG_0890.JPG', 'IMG_1297.JPG', 'IMG_1333.JPG', 'IMG_1335.JPG', 'IMG_1408.JPG',
+  'IMG_1528.JPG', 'IMG_1534.JPG', 'IMG_1537.JPG', 'IMG_1545.JPG', 'IMG_1572.JPG',
+  'IMG_2253.JPG', 'IMG_2262.JPG', 'IMG_2366.JPG', 'IMG_2397.JPG', 'IMG_2398.JPG',
+  'IMG_2399.JPG', 'IMG_2573.JPG', 'IMG_2575.JPG', 'IMG_2576.JPG', 'IMG_2679.JPG',
+  'IMG_2721.JPG', 'IMG_3154.JPG', 'IMG_3246.JPG', 'IMG_3324.JPG', 'IMG_3325.JPG',
+  'IMG_3329.JPG', 'IMG_3765.JPG', 'IMG_3782.JPG', 'IMG_4099.JPG', 'IMG_4101.JPG',
+  'IMG_4103.JPG', 'IMG_5523.JPG', 'IMG_5524.JPG', 'IMG_5911.JPG', 'IMG_6635.JPG',
+  'IMG_6645.JPG', 'IMG_7069.JPG', 'IMG_7148.JPG', 'IMG_8296.JPG', 'IMG_8300.JPG',
+  'IMG_9178.JPG', 'IMG_9181.JPG'
+];
+
+async function fetchLucy() {
+  // Fisher-Yates-ish shuffle, then take 10.
+  const pool = LUCY_IMAGES.slice();
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  const picks = pool.slice(0, 10);
+  // Pad in case the manifest has fewer than 10 entries.
+  while (picks.length < 10 && pool.length > 0) picks.push(pool[picks.length % pool.length]);
+  return picks.map((name) => 'lucy/' + name);
+}
+
 const SETS = [
 { id: 'shibas', label: 'shibas', loadingLabel: 'Such fetch. Very load…', fetch: fetchShibas },
 { id: 'dogs', label: 'dogs', loadingLabel: 'Fetching good boys…', fetch: fetchDogs },
 { id: 'cats', label: 'cats', loadingLabel: 'Herding cats…', fetch: fetchCats },
 { id: 'foxes', label: 'foxes', loadingLabel: 'Outfoxing the cache…', fetch: fetchFoxes }];
+
+const LUCY_SET = { id: 'lucy', label: 'lucy', loadingLabel: 'Rummaging the camera roll…', fetch: fetchLucy };
 
 // Probe each image for its natural aspect ratio so we can avoid stacking
 // two portrait shots in the same column (that makes the grid look "tall").
@@ -577,6 +633,10 @@ function App() {
     fetchSet(pickRandomSet(lastSetId));
   }, [fetchSet, pickRandomSet, lastSetId]);
 
+  const lucky = useCallback(() => {
+    fetchSet(LUCY_SET);
+  }, [fetchSet]);
+
   const download = useCallback(async () => {
     if (!cloudRef.current || !window.htmlToImage) return;
     setDownloading(true);
@@ -659,6 +719,9 @@ function App() {
         </div>
 
         <div className="panel-actions">
+          <button className="btn-outline" onClick={lucky} disabled={loading}>
+            Hey, Lucy! I'm feelin' lucky.
+          </button>
           <button className="btn-secondary" onClick={download} disabled={loading || downloading || urls.length !== 10}>
             {downloading ? 'Preparing…' : 'Download image ↓'}
           </button>
