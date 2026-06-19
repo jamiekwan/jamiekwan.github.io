@@ -16,6 +16,19 @@ Place here your custom CSS styles
 @media (max-width: 760px) {
   #desktop-only { display:none; }
   #mobile-only { display:block; }
+
+  /* Ensure story content slides over parallax hero on mobile */
+  .wrapper.push-back {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+  }
+
+  /* Extra horizontal padding for collaboration cards on small screens */
+  .pc-insights-tldr-card-inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 
