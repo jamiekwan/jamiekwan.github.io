@@ -1,37 +1,52 @@
 ---
 layout: strategy
 color: "rgb(0,82,204), rgb(0,184,217)"
-title: "The CS Emblem — An Internal Brand for Customer Success at Atlassian"
-oneliner: "A new leader needed more than a strategy deck. She needed a symbol her team could rally behind."
+title: "An Emblem for Atlassian Customer Success"
+oneliner: "Four days. A new leader, three newly-merged teams, and a workforce that had already lived through two re-orgs. She needed something the org could rally behind."
 
 client: "Atlassian"
-date: "2023"
+date: "2024"
 
-brief: "When Atlassian's incoming Chief Customer Officer needed to unite three historically siloed teams under a single mission, she asked for something that could travel the world with her. In four days, we developed an internal brand identity — the CS Emblem — built to signal a new era: one in which Customer Success would no longer be seen as support, but as a strategic force at the centre of Atlassian's growth."
+brief: "When <a href='https://www.linkedin.com/posts/stephanieberner_this-was-an-exciting-moment-one-worth-sharing-activity-7192265272534130688-1DCM?utm_source=share&utm_medium=member_desktop&rcm=ACoAABAt1rQBsaqMwb5eLk3IjeZeJNC_66oWC_k' target='_blank'>Stephanie Berner</a> joined Atlassian as Chief Customer Officer, she inherited three teams that had never formally worked together — and a workforce that had already lived through two re-orgs in my four years there. This was number three. She needed to signal that this time was different. She had four days, and she asked me to build the brand."
 
-process: "Working against a four-day deadline, the brand was developed through a rapid creative sprint: defining the positioning, crafting a visual language, and pressure-testing it against the cultural context of a company where Confluence posts, peer recognition, and shared values are part of how people make meaning at work. The result was a mark and identity system designed to survive the scrutiny of an opinionated, brand-literate audience."
+process: "I worked with Stephanie and her leadership team to define the positioning first — what this org stood for, how it wanted to be seen, and what it needed to feel like from the inside. From there, I developed the visual identity: a mark built to live where Atlassian culture actually happens — in Confluence pages, Slack emoji, Zoom backgrounds, and town hall decks."
 
-results: "The CS Emblem launched at the opening of the CCO's worldwide listening tour and has since remained the brand of the Customer Success org — through two further re-orgs and a shift in company-wide strategy. Where most internal brands fade after the announcement deck, this one stuck."
+results: "The emblem launched at the start of Stephanie's global listening tour and has remained the identity of the Customer Success org ever since — through two more re-orgs and significant shifts in company direction. The project also opened the door to deeper, more strategic work: it was the foundation of the trust that gave me a seat at the table as the sole Service Designer driving programs like <a href='https://ideas.jamiemkwan.com/advisory-rebrand' target='_blank'>Advisory Services Next</a> and <a href='https://ideas.jamiemkwan.com/atlassian-los' target='_blank'>Building the Operating System for Customer Success</a>."
+
+key_projects:
+  - title: "Building the Operating System for Customer Success"
+    url: "https://ideas.jamiemkwan.com/atlassian-los"
+    target_blank: true
+    thumbnail: "../assets/images/projects/atlassian-los.gif"
+    exec_summary: "The org had ~20% user drop-off in enterprise adoption, 20+ stakeholders touching the customer journey with no shared language, and three teams — Digital/CSM, Advisory/Partners, and Education — that had never formally operated together. The work was to design the system underneath: a 9-service-area 'Levels of Service' framework that gave the whole CS org a common vocabulary, shaped executive narratives, and laddered into OKRs across three team backlogs. It also directly informed FY26 headcount decisions — 30+ new roles in Technical AI Architects and Implementation Consultants."
+    high_level_impact: "A unified customer journey map and LOS operating framework, co-developed with the Head of CX Strategy & Ops and Services Product Management, that became the shared foundation for how the org planned, delivered, and measured customer outcomes."
+
+  - title: "Advisory Services Next"
+    url: "https://ideas.jamiemkwan.com/advisory-rebrand"
+    target_blank: true
+    thumbnail: "../assets/images/projects/misc/atlassian.png"
+    exec_summary: "Atlassian's Technical Account Management service was running at a -77% margin and needed to be rebuilt from the ground up — not rebranded, but re-engineered. As the embedded Service Designer leading a team of five, I ran the full arc of service design methodology: design research with customers, account managers, and Solution Partners; service concept development and prototyping; and service blueprinting to optimize how the rebuilt offer would actually be delivered. The output was a tiered 'Advisory Services' model with a new delivery framework underneath it."
+    high_level_impact: "40% YoY services sales growth, 55% margin improvement, 30% reduction in deal cycle time, and a 260% ROI per a 2026 Forrester Total Economic Impact study."
 
 image-wide:
   - image_path: ../assets/images/projects/cs-emblem/01.png
 
 images:
   - image_path: ../assets/images/projects/cs-emblem/02.png
-    body-heading: "The Brief: Rally a Fatigued Team"
-    body-text: "Change fatigue was real. By the time this CCO arrived, the Customer Success org had weathered three re-orgs in four years — each one promising transformation, each one asking people to start over. The new leader's mandate was different: consolidate teams that had never formally operated together, and build belief that this time, the change was worth it. <br><br>At a company like Atlassian — where culture is load-bearing, where people send Karma to recognise peers, blog internally on Confluence, and genuinely live by values like <a href='https://www.atlassian.com/company/values' target='_blank'>Play as a Team</a> — internal brands aren't decorative. They're organisational infrastructure. A symbol that employees adopted would move faster and further than any town hall deck."
+    body-heading: "The context"
+    body-text: "By the time Stephanie arrived, change fatigue was real. People had been through this before — new structure, new leadership, new promises. The teams being consolidated had their own histories, their own identities, and not much reason to believe this re-org would feel any different from the last one. <br><br>At Atlassian, culture is a serious asset. People send Karma to recognise peers. They blog on Confluence. They genuinely care about the <a href='https://www.atlassian.com/company/values' target='_blank'>company values</a> — 'Play as a Team' isn't just a slogan, it's how things actually get decided. In that environment, a well-crafted internal brand isn't decorative. It's a tool for moving people."
 
   - image_path: ../assets/images/projects/cs-emblem/03.png
-    body-heading: "The Mark"
-    body-text: "The emblem was designed to feel earned rather than assigned — a mark of belonging for a team that had long operated in the background of Atlassian's story. The visual language drew from the precision and interconnectedness of Atlassian's broader design system while asserting something distinct: that this org had its own centre of gravity, its own north star. <br><br>The customer's voice was the organising principle of the identity — not as a platitude, but as the literal framing device. The form implied listening, convergence, and strength. It was built to work in Slack and Confluence, on slide decks and Zoom backgrounds, in all the places where Atlassian culture actually happens."
+    body-heading: "The mark"
+    body-text: "The design needed to do a few things at once: feel like it belonged inside Atlassian's visual system, while also asserting that this org was its own thing — not a sub-function, not a support team, but a group with a clear mission and a reason to exist. <br><br>The customer's voice was the organising idea. The mark implied listening and convergence without being literal about it — an identity that felt strong and cohesive rather than service-y. I built it to scale from a Slack emoji to a full slide backdrop without losing its intent."
 
   - image_path: ../assets/images/projects/cs-emblem/04.png
-    caption-right: "The mark was designed to travel — from Slack emoji to stage backdrop — without losing resolution or intent."
+    caption-right: "Built to scale from Slack emoji to stage backdrop."
 
   - image_path: ../assets/images/projects/cs-emblem/05.png
-    body-heading: "The World Tour"
-    body-text: "The CCO took the brand on a global listening tour — meeting CS teams across time zones, geographies, and product lines. The emblem preceded her in every room. It appeared in pre-read decks, on Zoom calls, in Confluence pages ahead of each stop. By the time she arrived in person, the identity wasn't being introduced. It was already part of the conversation. <br><br>That's the measure of an internal brand: not whether leadership adopts it, but whether the people being led reach for it themselves."
+    body-heading: "The listening tour"
+    body-text: "Stephanie took the brand on the road with her — meeting teams across time zones and geographies as part of a global listening tour. The emblem showed up in every pre-read, every Confluence page, every deck ahead of each stop. By the time she arrived in person, it wasn't new. People had already started using it themselves. <br><br>That's what you're really after with something like this: not adoption from the top down, but people claiming it as their own."
 
   - image_path: ../assets/images/projects/cs-emblem/06.jpg
-    caption-right: "The emblem as deployed across communications, internal tooling, and the listening tour's presentation suite."
+    caption-right: "Deployed across internal communications, tooling, and the listening tour presentation suite."
 ---
