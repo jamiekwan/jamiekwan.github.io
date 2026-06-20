@@ -18,15 +18,15 @@ key_projects:
     url: "https://ideas.jamiemkwan.com/atlassian-los"
     target_blank: true
     thumbnail: "../assets/images/projects/atlassian-los.gif"
-    exec_summary: "The org had ~20% user drop-off in enterprise adoption, 20+ stakeholders touching the customer journey with no shared language, and three teams — Digital/CSM, Advisory/Partners, and Education — that had never formally operated together. The work was to design the system underneath: a 9-service-area 'Levels of Service' framework that gave the whole CS org a common vocabulary, shaped executive narratives, and laddered into OKRs across three team backlogs. It also directly informed FY26 headcount decisions — 30+ new roles in Technical AI Architects and Implementation Consultants."
-    high_level_impact: "A unified customer journey map and LOS operating framework, co-developed with the Head of CX Strategy & Ops and Services Product Management, that became the shared foundation for how the org planned, delivered, and measured customer outcomes."
+    exec_summary: "The org had ~20% user drop-off in enterprise adoption, 20+ stakeholders touching the customer journey with no shared language, and three teams that had never formally operated together. The work was to design a 9-service-area framework that gave the org a common vocabulary and later informed the creation of two new specialist teams."
+    high_level_impact: "A unified customer journey map and operating framework that became the shared foundation for how the org planned, delivered, and measured customer outcomes."
 
   - title: "Advisory Services Next"
     url: "https://ideas.jamiemkwan.com/advisory-rebrand"
     target_blank: true
-    thumbnail: "../assets/images/projects/misc/atlassian.png"
-    exec_summary: "Atlassian's Technical Account Management service was running at a -77% margin and needed to be rebuilt from the ground up — not rebranded, but re-engineered. As the embedded Service Designer leading a team of five, I ran the full arc of service design methodology: design research with customers, account managers, and Solution Partners; service concept development and prototyping; and service blueprinting to optimize how the rebuilt offer would actually be delivered. The output was a tiered 'Advisory Services' model with a new delivery framework underneath it."
-    high_level_impact: "40% YoY services sales growth, 55% margin improvement, 30% reduction in deal cycle time, and a 260% ROI per a 2026 Forrester Total Economic Impact study."
+    thumbnail: "../assets/images/projects/misc/atlassian-asn.png"
+    exec_summary: "A flagship advisory service was bleeding money — running at a -77% margin — and even its own customers couldn't describe what they were paying for. The work was to turn an undefined, relationship-based offering into something legible, consistent, and sellable across every region it touched."
+    high_level_impact: "A service blueprint and branded delivery framework that standardized how the team engaged customers from first contact through value realization — later validated by a 260% ROI in a third-party economic impact study."
 
 image-wide:
   - image_path: ../assets/images/projects/cs-emblem/01.png
